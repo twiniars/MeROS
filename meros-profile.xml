@@ -64,6 +64,14 @@
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
+			<Stereotype name="ComponContain" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+				</AppliesTo>
+			</Stereotype>
 			<Stereotype name="Intrasystem" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="Class">
