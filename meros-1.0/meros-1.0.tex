@@ -2,8 +2,9 @@
 % encoding: utf8
 % !TEX encoding = utf8
 % !TEX program = pdflatex
+% !BIB program = biber
 
-\documentclass{ieeeaccess}
+\documentclass[11pt,oneside,a4paper]{article}
 
 \usepackage[cmex10]{amsmath}
 \usepackage[utf8]{inputenc}
@@ -29,15 +30,6 @@
 
 \usepackage{ifthen}
 
-% % %
-% BibTeX styles
-\bibliographystyle{IEEEtran}
-\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-
-\newcommand\orcidicon[1]{\href{https://orcid.org/#1}{\makebox[0.2cm]{
-			\includegraphics[width=0.2cm]{orcid_icon64x64}
-}}}
 
 
 
@@ -63,9 +55,6 @@
 \renewcommand{\labelenumii}{\theenumii}
 \renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
 \usepackage{tabularx}
-% compiler error without following two lines
-\usepackage{caption,setspace}
-\captionsetup{font={sf,small,stretch=0.80},labelfont={bf,color=accessblue}}
 %\usepackage{soul}
 \usepackage{xargs}
 
@@ -75,36 +64,34 @@
 %%%%%
 %%   Definicja wymagań
 %%%%
+
+
+\usepackage[backend=biber,maxnames=10,style=numeric,sorting=nty,abbreviate=false,giveninits=true,language=english]{biblatex}
+\addbibresource{meros.bib}
+
+
 \newcommand{\req}[1]{\textbf{\texttt{R#1}}}
 \newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{//#1\\}}
 \begin{document}
-	\history{Date of publication 03 August 2023, date of current version 25 August 2023.}
-	\doi{10.1109/ACCESS.2023.3301727}
 	
-	\title{MeROS: SysML-based Metamodel for ROS-based Systems}
-	
-	\author{\uppercase{Tomasz Winiarski}\authorrefmark{\orcidicon{0000-0002-9316-3284}1},
-		\IEEEmembership{Member, IEEE}}
-	\address[1]{Warsaw University of Technology, Institute of Control and Computation Engineering, Nowowiejska 15/19, 00-665 Warsaw, Poland}
-	\tfootnote{Research was funded by the Centre for Priority Research Area Artificial Intelligence and Robotics of Warsaw University of Technology within the Excellence Initiative: Research University (IDUB) programme}
-	
-	\markboth
-	{T. Winiarski \headeretal: MeROS: SysML-based Metamodel for ROS-based Systems}
-	{T. Winiarski \headeretal: MeROS: SysML-based Metamodel for ROS-based Systems}
-	
-	\corresp{Corresponding author: Tomasz Winiarski (e-mail: tomasz.winiarski@pw.edu.pl).}
-	
+	\title{MeROS: SysML-based Metamodel for ROS-based Systems - version 1.0 - reference manual}
+\author{MeROS developers group - https://github.com/twiniars/MeROS \\ tomasz.winiarski@pw.edu.pl}
+\date{\today}
+\maketitle
+
+
 	\begin{abstract}
 		The complexity of today's robot control systems implies difficulty in developing them efficiently and reliably. Systems engineering (SE) and frameworks come to help. The framework metamodels are needed to support the standardisation and correctness of the created application models. Although the use of frameworks is widespread nowadays, for the most popular of them, Robot Operating System (ROS), a~contemporary  metamodel has been missing so far. This article proposes a~new metamodel for ROS called MeROS, which addresses the running system and developer workspace. The ROS comes in two versions: ROS~1 and ROS~2. The metamodel includes both versions. In particular, the latest ROS~1 concepts are considered, such as nodelet, action, and metapackage. An essential addition to the original ROS concepts is the grouping of these concepts, which provides an opportunity to illustrate the system's decomposition and varying degrees of detail in its presentation. The metamodel is derived from the requirements and verified on the practical example of Rico assistive robot. The matter is described in a standardised way in SysML (Systems Modeling Language). Hence, common development tools that support SysML can help develop robot controllers in the spirit of SE.
 	\end{abstract}
 	
-	\begin{keywords}
-		Systems engineering, Robot Operating System ROS, ROS~1, ROS~2, Robotic framework, SysML, Platform Specific Model PSM
-	\end{keywords}
 	
-	\titlepgskip=-15pt
 	
 	\maketitle
+	
+	\section*{Important citation notice}
+
+\textbf{If you are to use MeROS, in your papers, please at first cite the IEEE ACCESS  article~\cite{earl2020}, where the initial version of MeROS is presented.}
+	
 	
 \section{Introduction}
 \label{sec:intro}	
@@ -772,95 +759,8 @@
 		\label{fig:rico_workspace_msgs_bdd}
 	\end{figure}
 	
-	
-\section{Related work}
-\label{sec:related-work}
-
-	Papers in the scope of the literature review are chosen based on an intensive study of the previous scientific work in robotic systems modelling. In particular, the survey \cite{de2021survey} is deeply analysed. As the qualification criterion for this review, the ROS metamodel was chosen that must be described using UML language or SysML language. Six papers describing five metamodels met this criterion, and all used UML to describe ROS~1. The metamodels are contrasted with the representative requirements to which MeROS is subjected (Tab.~\ref{tab:ros-spec-req-sota}) and that clearly differentiate compared metamodels.
-	For clarification, the table refers to aspects of the metamodels, which are visualised in the analysed papers' diagrams.
-	
-	
-	\begin{table}[htb]
-		\centering
-		\caption{MeROS requirements satisfaction in ROS specific metamodels.}
-		\setlength{\tabcolsep}{3.5pt} % Default value: 6pt
-		\renewcommand{\arraystretch}{1.0} % Default value: 1
-		\begin{tabular}{c c c c c c c c c c c c}
-			\toprule
-			Metamodel/req. & \rotatebox{90}{R3.1.1 Node}  & \rotatebox{90}{R3.1.2 Nodelet}  & \rotatebox{90}{R3.1.3 ROS plugin} & \rotatebox{90}{R3.1.4 ROS library} & \rotatebox{90}{R3.2.1 Topic} & \rotatebox{90}{R3.2.2 Service} & \rotatebox{90}{R3.2.3 Action}&
-			\rotatebox{90}{R3.3.1 Package} & \rotatebox{90}{R3.3.2 Metapackage}&
-			\rotatebox{90}{R3.4.2 ROS Parameter} &  \rotatebox{90}{R6.3 Grouping of concepts}\\
-			\midrule
-			Ecore     & $+$ & $-$ & $-$ & $-$ & $+$ & $+$ & $+$ & $-$ & $-$ & $+$ & $+$\\
-			RosSystem & $-$ & $-$ & $-$ & $-$ & $+$ & $+$ & $+$ & $-$ & $-$ & $-$ & $-$\\
-			HyperFlex & $+$ & $-$ & $-$ & $-$ & $+$ & $+$ & $+$ & $+$ & $-$ & $+$ & $-$\\
-			RoBMEX    & $+$ & $-$ & $-$ & $-$ & $+$ & $+$ & $-$ & $+$ & $+$ & $-$ & $+$\\
-			ROSMOD    & $+$ & $-$ & $-$ & $+$ & $-$ & $+$ & $-$ & $+$ & $-$ & $-$ & $+$\\
-			MeROS     & $+$ & $+$ & $+$ & $+$ & $+$ & $+$ & $+$ & $+$ & $+$ & $+$ & $+$\\
-			\bottomrule
-		\end{tabular}
-		\label{tab:ros-spec-req-sota}
-	\end{table}	
-	
-	The authors of \cite{wenger2016model} present Ecore -- the ROS 1 metamodel as the central part of the ReApp workbench created to support the efficiency of software creation for robotic systems. The metamodel is specified in a~single, extensive structural diagram, with the ROS node being its central part. The diagram describes the aspects of the running system and comprises all ROS communication methods. The nodes are integrated into an AppNetwork concept [R6.3]. 
-	
-	In the paper \cite{garcia2019bootstrapping}, the authors propose two methods based on the created RosSystem metamodel. It aims at the automated generation of models from manually written artefacts through static code analysis and monitoring the execution of the running system. A~large part of the work is concentrated on the toolchain. This ROS metamodel is structurally specified in a UML class diagram, emphasising communication methods.
-	
-	HyperFlex toolchain \cite{brugali2016hyperflex,gherardi2013variability} includes extensive and comprehensive metamodel addressing ROS 1 and complementary Orocos. Formerly, these two frameworks were used together to take from the RT properties of Orocos and the elasticity of ROS. The presentation of HyperFlex is complex \cite{brugali2016hyperflex,gherardi2013variability}, and both the running system and workspace are considered. Concepts such as nodelet or metapackage are missing due to the HyperFlex period of its foundation.
-	
-	RoBMEX \cite{ladeira2021robmex} was created as a~top-down methodology based on a~set of domain-specific languages that enhance the autonomy of ROS-based systems by allowing the creation of missions graphically and then generating automatically executable source codes conforming to the designed missions. Hence, the ROS metamodel was extended by the upper layer with mission/task specification. The metamodel is complex and inspiring and consists of running and workspace parts. Regarding the workspace, the grouping concepts are introduced as subpackages, classified in Tab.~\ref{tab:ros-spec-req-sota} as metapackage for generality.
-	
-	ROSMOD \cite{kumar2016rosmod} is the Robot Operating System Model-driven development tool suite, an integrated development environment for rapid prototyping component-based
-	software for ROS. Its internal metamodel is complex and comprises a~number of standard ROS concepts and additional grouping concepts. Although the description is extensive, the ROSMOD was created in 2016, hence some current concepts are missing, like ROS actions or nodelets.
-	
-	
-\section{Conclusions and discussion}
-\label{sec:conslusions}
-
-	Diagrams are an integral part of the description of component-based robot control systems. ROS comprises rqt\_graph tool that generates diagrams with the structure of the running system. This capability is readily used by software developers (e.g., \cite{thale2020ros,bisi2018development}) due to its ease of use. Unfortunately, this tool has many limitations despite its numerous advantages and configurability. Hence, in parallel to automatically generated diagrams, others are needed, some of which are based on UML/SysML. The most comprehensive modelling solutions include explicitly defined metamodels. As a~novelty regarding previous works, this paper proposes an up-to-date metamodel for finale release of ROS~1 and ROS~2 supported by profile to support the metamodel application in ROS applications models. In MeROS, the metamodel of original ROS concepts is extended by the abstract grouping concepts. It lets to present part of the system in a~PIM-like style instead of a~platform specific -- PSM.
-		
-	Although the adoption of UML/SysML-based domain metamodels has many positive implications, it also has its problems and limitations. Although the diagrams can be drawn in general-purpose graphics programs, this is not advisable, especially for complex systems. Modelling software such as Enterprise Architect or Visual Paradigm is highly recommended when creating UML/SysML projects.  In particular, creating a set of diagrams outside a SysML project is more time-consuming, and it is easier to introduce errors. In practice, the cost of modelling software is not a major obstacle, and its popularity makes it easier to implement its employment. A problem with SysML development environments is that they are not standardised in many aspects and vary considerably in functionality. This problem makes it difficult to use advanced features such as automatic model analysis, e.g. to check for metamodel compatibility.
-	
-	There are many methodologies for conducting and documenting projects, and not all are based on languages from the UML family. In some simplification, one could say that some project teams use UML extensively while others do not at all\footnote{\url{https://creately.com/guides/advantages-and-disadvantages-of-uml/}}. In the case of academic robotics projects, the lack of widespread UML use in earlier years may have been partly due to their typically relatively small scope. When projects are extensive and multi-asset, and the consequences of failure are high, the use of UML allows for greater efficiency of operation and reduced risk of project failure. Hence, contemporary complex robotics projects should benefit from appropriate tools to support their guidance and documentation, as has been the case for many large-scale projects, e.g., from the space industry (e.g., \cite{friedenthal2017architecting}) or the medical industry (e.g., \cite{BiomedicalHealthcare}).
-	
-	Many skilful and experienced programmers have not used UML\footnote{\url{https://www.techwalla.com/articles/the-disadvantages-of-uml}}. This is due to the lack of absolute necessity to use such tools both for the programming and the development of small projects. Hence, the first use of UML in a developers' team can consume a disproportionate amount of time. Another problem is the synchronisation of diagrams with source code. Here, the answer is, among other things, the appropriate level of generality of the diagrams so that unnecessary details are not mapped there. The automatic generation of code from the diagrams or the automatic generation of selected diagrams based on code can also be helpful. Finally, it is worth mentioning that UML diagrams do not constitute a complete system description. In particular, the description by diagrams can be complemented by mathematical expressions. A way of combining these two ways of description is presented in, e.g. \cite{earl2020}. SysML parametric diagrams also respond to this problem.
 			
-	System development involves the use of a~number of tools organised in toolchains. The degree of tools interaction varies. In software engineering, the aim is to create clear procedures for system development, indicating the dependencies between the successive stages of the development process. In robotics, there have been many works dedicated to toolchains (SmartMDSD \cite{dennis2016smartmdsd}, RobotML \cite{robotml2}, \cite{dal2022formal}), nowadays the ROS is common middleware (e.g. \cite{wienke2012meta}, BRIDE \cite{bubeck2014bride}, HyperFlex \cite{brugali2016hyperflex}). MeROS is part of the toolchain used in the Robot Programming and Machine Perception Team at Warsaw University of Technology (WUT). Currently, on the base of MeROS, the controllers are specified for the following robotic platforms:
-	 \begin{itemize}
-	 	\item Velma service robot  \cite{en14206693-grav-comp,Figat:2022:RAS} \footnote{\url{https://www.robotyka.ia.pw.edu.pl/robots/velma}} (Fig. \Ref{fig:velma}) (Custom controller based on ROS~1 and Orocos for hardware control and simulation in Gazebo),
-	 	\item assistive robot Rico \cite{tasker2020,karwowski2021hubero} \footnote{\url{https://www.robotyka.ia.pw.edu.pl/robots/rico}} (Fig.\ref{fig:rico}) (Extended PAL controller based on ROS~1 and Orocos, recent works with ROS~2 in simulation),
-	 	\item MiniRyś -- mobile robot with various modes of locomotions \footnote{\url{https://www.robotyka.ia.pw.edu.pl/robots/minirys}} (Custom controller based on ROS~2 for hardware control and simulation in Gazebo),
-	 	\item Dobot Magician -- portable, 4-DOF robotic manipulator \footnote{\url{https://www.robotyka.ia.pw.edu.pl/robots/magician}} (Custom controller based on ROS~2 for hardware control).
-	 \end{itemize}
-	 
-	   
-	
-	% The height can be increased to 5.5cm
-	\begin{figure}[htb]
-		\centering
-		\begin{subfigure}[b]{.43\columnwidth}
-			\includegraphics[height=5.5cm]{img/velma.jpg}
-			\caption{Velma.}
-			\label{fig:velma}
-		\end{subfigure}
-		\begin{subfigure}[b]{.47\columnwidth}
-			\includegraphics[height=5.5cm]{img/rico.jpg}
-			\caption{Rico.}\label{fig:rico}
-		\end{subfigure}
-		\caption{Robotic platforms specified with MeROS.}
-		\label{fig:robots}
-	\end{figure}
-		
-	At the forefront of the toolchain stays the modelling of the system with PIM using the EARL-based \cite{earl2020} SPSysML \cite{dudek2023spsysml}. EARL is derived from agent theory \cite{kornuta-bpan-2020, zielinski2010motion,zielinski2017variable}. Nowadays, in the intermediate stage, MeROS plays the major role as a~PSM. Finally, FABRIC  \cite{Seredynski-fabric-romoco-2019}, as well as alternative approaches \cite{winiarskimmar2015,figat2020robotic} are used to support code generation. Current work concerns deepening the integration of MeROS with the rest of the toolchain.
-	
-			
-	\bibliography{meros}
-	
-		
-	\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{img/autorzy/twiniarski.jpg}}]{Tomasz Winiarski} IEEE, INCOSE Member, M.Sc./Eng. (2002), PhD (2009) in control and robotics, from Warsaw University of Technology (WUT), assistant professor of WUT. He is a~member of the Robotics Group as the head of the Robotics Laboratory in the Institute of Control and Computation Engineering (ICCE), Faculty of Electronics and Information Technology (FEIT). He is working on the modelling and design of robots and programming methods of robot control systems. The research targets service and social robots as well as didactic robotic platforms. His personal experience concerns the development and modelling of robotic frameworks, manipulator position--force and impedance control, safety in robotic research. Recently, he was the head of the WUT group in AAL -- INCARE project "Integrated Solution for Innovative Elderly Care".
-	\end{IEEEbiography}
-	
-	
-	\EOD
+\AtNextBibliography{\small}
+\printbibliography
 	
 \end{document}
