@@ -11,4 +11,5 @@ The complexity of today's robot control systems implies difficulty in developing
 * IEEE ACCESS scientific paper with a complete description of the initial version of MeROS - https://ieeexplore.ieee.org/document/10207804. **It is recommended to cite it while publishing articles with MeROS usage**.
 * [MeROS 1.1 documentation (pdf)](https://github.com/twiniars/MeROS/blob/main/meros-1.1/meros-1.1.pdf) (current version - recommended for use),
 * [MeROS 1.0 documentation (pdf)](https://github.com/twiniars/MeROS/blob/main/meros-1.0/meros-1.0.pdf) (deprecated version)
+* [Changelog](CHANGELOG.md)
 
