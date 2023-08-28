@@ -7,5 +7,5 @@
 
 ## MeROS 1.1
 * added self composition of \<\<CommChannel\>\> https://github.com/twiniars/MeROS/issues/3
-* groups of packages https://github.com/twiniars/MeROS/issues/2
+* added groups of packages https://github.com/twiniars/MeROS/issues/2
 
