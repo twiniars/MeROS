@@ -13,3 +13,8 @@ The complexity of today's robot control systems implies difficulty in developing
 * [MeROS 1.0 documentation (pdf)](https://github.com/twiniars/MeROS/blob/main/meros-1.0/meros-1.0.pdf) (deprecated version)
 * [Changelog](CHANGELOG.md)
 
+## Contribution
+
+* User feedback and contribution is welcome with issues https://github.com/twiniars/MeROS/issues
+
+
