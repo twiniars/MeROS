@@ -6,7 +6,7 @@ The complexity of today's robot control systems implies difficulty in developing
 <img src="https://github.com/twiniars/MeROS/blob/main/meros-graphical-abstract.png"> 
 </p>
 
-## Additional resources
+## Resources
 
-* Paper with full description of MeROS - https://arxiv.org/abs/2303.08254
+* IEEE ACCESS scientific paper with a complete description of the initial version of MeROS - https://ieeexplore.ieee.org/document/10207804. **It is recommended to cite it while publishing articles with MeROS usage**. 
 * [MeROS SysML profile](meros-profile.xml) that defines SPsysML stereotypes,
