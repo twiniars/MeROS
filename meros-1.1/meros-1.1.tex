@@ -185,7 +185,7 @@
 %		\caption{Communication concepts requirements.} 
 %		\label{fig:communication_concepts_req}
 %	\end{figure}
-	Workspace concept [R3.3] comprises: (i) ROS Package [R3.3.1] and (ii) Metapackage [R3.3.2] introduced in the latest releases of ROS~1.
+	Workspace concept [R3.3] comprises: (i) ROS Package [R3.3.1], (ii) Metapackage [R3.3.2] introduced in the latest releases of ROS~1, (iii) Group of packages [R3.3.3] and (iv) Repository [R3.3.4].
 %	
 %	\begin{figure}[H]
 %		\centering
@@ -457,7 +457,7 @@
 	\end{figure}
 	
 	
-	The Package (Fig.~\ref{fig:ros_package_bdd}) composes the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. 
+	The Package (Fig.~\ref{fig:ros_package_bdd}) composes the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. It should be noted that in case of Actions, specific communication structures definitions are stored in Action Data Structures. The Misc <<block>> relates to other ROS and Non-ROS files, e.g., roslaunch configuration, obligatory package.xml, CMakeLists.txt. The Metapackage is introduced for conformity with the latest ROS~1 releases [R7] as well as ROS~2. 
 	
 	
 	\begin{figure}[H]
@@ -469,25 +469,7 @@
 		\label{fig:ros_package_bdd}
 	\end{figure}
 		
-	\pagebreak
-	
-
-	The Workspace (Fig.~\ref{fig:ros_workspace_bdd}) contains of Packages that compose the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. As Workspace has a specific file-system nature, Group of Packages were introduced as a more general component.
-
-	
-	The Package (Fig.~\ref{fig:ros_package_bdd}) composes the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. 
-	
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_pkg/ros_package_bdd.png}}
-		\end{center}
-		\caption{ROS Package composition -- bdd.} 
-		\label{fig:ros_package_bdd}
-	\end{figure}
-		
-	The Workspace (Fig.~\ref{fig:ros_workspace_bdd}) contains of Packages that compose the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. 
+	The Workspace (Fig.~\ref{fig:ros_workspace_bdd}) contains of Packages that compose the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. As Workspace has a specific file-system nature, Group of Packages were introduced as a more general component. The Repository plays a similar role to the Workspace, but reflects the place where sources are stored.
 	
 
 	\begin{figure}[H]
@@ -499,7 +481,7 @@
 		\label{fig:ros_workspace_bdd}
 	\end{figure}
 	
-	It should be noted that in case of Actions, specific communication structures definitions are stored in Action Data Structures. The Misc <<block>> relates to other ROS and Non-ROS files, e.g., roslaunch configuration, obligatory package.xml, CMakeLists.txt. The Metapackage is introduced for conformity with the latest ROS~1 releases [R7] as well as ROS~2. 
+
 		
 
 	
@@ -510,8 +492,7 @@
 	
 	This section depicts the behavioural and structural aspects of communication in the system. The previous section considers block definition diagrams (bdd). In the following part, the internal block diagrams (ibd) and behavioural diagrams are discussed. The goal is to present three modes of communication: Topic [R4.1] (sec.~\ref{sec:metamodel-topic}), Service [R4.2] (sec.~\ref{sec:metamodel-service}) and Action [R4.3] (sec.~\ref{sec:metamodel-action}). It should be noted that the concept of presentation of communication with and without a dedicated communication component is illustrated on communication with Topics but can also be applied to Services, Actions and Communication Channels.
 	
-	\pagebreak
-		
+		\pagebreak 
 	\subsubsection{Topic}
 	\label{sec:metamodel-topic}
 		
@@ -521,7 +502,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/topic_communication_with_dedicated_component_ibd.png}}
+			{\includegraphics[scale=1.0]{img/meros_pkg/topic_communication_with_dedicated_component_ibd.png}}
 		\end{center}
 		\caption{Topics with dedicated communication components -- all components -- ibd.} 
 		\label{fig:topic_communication_with_dedicated_component_ibd}
@@ -533,7 +514,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/topic_split_publisher_ibd.png}}
+			{\includegraphics[scale=1.0]{img/meros_pkg/topic_split_publisher_ibd.png}}
 		\end{center}
 		\caption{Topics with dedicated communication components -- publisher -- ibd.} 
 		\label{fig:topic_split_publisher_ibd}
@@ -543,7 +524,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/topic_split_subscriber_ibd.png}}
+			{\includegraphics[scale=1.0]{img/meros_pkg/topic_split_subscriber_ibd.png}}
 		\end{center}
 		\caption{Topics with dedicated communication components -- subscriber -- ibd.} 
 		\label{fig:topic_split_subscriber_ibd}
