@@ -8,8 +8,8 @@ The complexity of today's robot control systems implies difficulty in developing
 
 ## Resources
 * [MeROS 1.1 documentation (pdf)](https://github.com/twiniars/MeROS/blob/main/meros-1.1/meros-1.1.pdf) (current version - recommended for use)
-* [MeROS 1.1 A0 poster (pdf)](https://github.com/twiniars/MeROS/blob/main/meros-1.1/poster/meros-1.1-poster-a0.pdf)
-* [MeROS 1.1 B0 poster (pdf)](https://github.com/twiniars/MeROS/blob/main/meros-1.1/poster/meros-1.1-poster-b0.pdf)
+* [MeROS 1.1 poster A0 size (pdf)](https://github.com/twiniars/MeROS/blob/main/meros-1.1/poster/meros-1.1-poster-a0.pdf)
+* [MeROS 1.1 poster B0 size (pdf)](https://github.com/twiniars/MeROS/blob/main/meros-1.1/poster/meros-1.1-poster-b0.pdf)
 * [MeROS 1.0 documentation (pdf)](https://github.com/twiniars/MeROS/blob/main/meros-1.0/meros-1.0.pdf) (deprecated version)
 * [Changelog](CHANGELOG.md)
 * Author profie - https://www.robotyka.ia.pw.edu.pl/team/twiniarski/
