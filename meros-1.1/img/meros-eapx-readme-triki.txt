@@ -1,1 +1,0 @@
-Abyw wyłączyć etykiety parentów w kalsach trzeba wejść w properties dla całego diagramu a anstępne diagram->apperance i wyłączyć shos addtional parents

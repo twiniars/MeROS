@@ -1,1 +1,0 @@
-MeROS: SysML-based Metamodel for ROS-based Systems and its development process 
