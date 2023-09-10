@@ -1,0 +1,284 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="BFAF25B1-2" name="MeROS" version="1.0" notes="MeROS"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="ActionConn" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Connector">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="kind" value=""/>
+					</Apply>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+					<Apply type="Property">
+						<Property name="aggregation" value="none"/>
+						<Property name="default" value=""/>
+						<Property name="isComposite" value=""/>
+						<Property name="isDerived" value="false"/>
+						<Property name="isDerivedUnion" value="false"/>
+						<Property name="isID" value="false"/>
+						<Property name="isReadOnly" value="false"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ActionStruct" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="CommChannel" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Connector">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="kind" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="CommCompon" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Property">
+						<Property name="aggregation" value="none"/>
+						<Property name="default" value=""/>
+						<Property name="isComposite" value=""/>
+						<Property name="isDerived" value="false"/>
+						<Property name="isDerivedUnion" value="false"/>
+						<Property name="isID" value="false"/>
+						<Property name="isReadOnly" value="false"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ComponContain" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="GpPackages" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Intrasystem" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+					<Apply type="Port">
+						<Property name="isBehavior" value="false"/>
+						<Property name="isConjugated" value="false"/>
+						<Property name="isService" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Library" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Metapackage" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="MsgStruct" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Namespace" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Node" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+					<Apply type="Port">
+						<Property name="isBehavior" value="false"/>
+						<Property name="isConjugated" value="false"/>
+						<Property name="isService" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Nodelet" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="NonRosCompon" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="NonRosConn" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Package" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Parameter" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Plugin" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Repository" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="RosConn" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="RosSystem" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="RunningSystem" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ServiceConn" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Connector">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="kind" value=""/>
+					</Apply>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+					<Apply type="Property">
+						<Property name="aggregation" value="none"/>
+						<Property name="default" value=""/>
+						<Property name="isComposite" value=""/>
+						<Property name="isDerived" value="false"/>
+						<Property name="isDerivedUnion" value="false"/>
+						<Property name="isID" value="false"/>
+						<Property name="isReadOnly" value="false"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="SrvStruct" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="TopicConn" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Connector">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="kind" value=""/>
+					</Apply>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+					<Apply type="Object"/>
+					<Apply type="Property">
+						<Property name="aggregation" value="none"/>
+						<Property name="default" value=""/>
+						<Property name="isComposite" value=""/>
+						<Property name="isDerived" value="false"/>
+						<Property name="isDerivedUnion" value="false"/>
+						<Property name="isID" value="false"/>
+						<Property name="isReadOnly" value="false"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Workspace" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>
