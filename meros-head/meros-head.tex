@@ -165,58 +165,58 @@
 	\end{figure}
 	
 	Communicating components [R3.1] are: (i) ROS Node, (ii) ROS Nodelet, (iii) ROS plugin, and (iv) ROS library. Both plugin and library let to share the same code between various Nodes or ROS~1 specific Nodelets. Two ROS nodes are mandatory to execute the ROS~1 system: (i) ROS Master and (ii) rosout.
-%
-%	\begin{figure}[H]
-%		\centering
-%		\begin{center}
-%			{\includegraphics[scale=0.66]{img/requirement_pkg/communicating_components_req.png}}
-%		\end{center}
-%		\caption{Communicating components requirements.} 
-%		\label{fig:communicating_components_req}
-%	\end{figure}
-%	Communication methods are depicted in Fig.~\ref{fig:communication_concepts_req}.
+
+	\begin{figure}[H]
+		\centering
+		\begin{center}
+			{\includegraphics[scale=1]{img/requirement_pkg/communicating_components_req.png}}
+		\end{center}
+		\caption{Communicating components requirements.} 
+		\label{fig:communicating_components_req}
+	\end{figure}
+	Communication methods are depicted in Fig.~\ref{fig:communication_concepts_req}.
 	 Three methods of communication are considered [R3.2] with their inter-component connections and data structures: (i) ROS Topic, its Message and connection, (ii) ROS Service comprising data structure and connection, and finally (iii) ROS Action including data structure and connection.
 	
-%	\begin{figure}[H]
-%		\centering
-%		\begin{center}
-%			{\includegraphics[scale=0.66]{img/requirement_pkg/communication_concepts_req.png}}
-%		\end{center}
-%		\caption{Communication concepts requirements.} 
-%		\label{fig:communication_concepts_req}
-%	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\begin{center}
+			{\includegraphics[scale=1]{img/requirement_pkg/communication_concepts_req.png}}
+		\end{center}
+		\caption{Communication concepts requirements.} 
+		\label{fig:communication_concepts_req}
+	\end{figure}
 	Workspace concept [R3.3] comprises: (i) ROS Package [R3.3.1], (ii) Metapackage [R3.3.2] introduced in the latest releases of ROS~1, (iii) Group of packages [R3.3.3] and (iv) Repository [R3.3.4].
-%	
-%	\begin{figure}[H]
-%		\centering
-%		\begin{center}
-%			{\includegraphics[scale=0.66]{img/requirement_pkg/workspace_concepts_req.png}}
-%		\end{center}
-%		\caption{Workspace concepts requirements.} 
-%		\label{fig:workspace_concepts_req}
-%	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\begin{center}
+			{\includegraphics[scale=1]{img/requirement_pkg/workspace_concepts_req.png}}
+		\end{center}
+		\caption{Workspace concepts requirements.} 
+		\label{fig:workspace_concepts_req}
+	\end{figure}
 	Other concepts [R3.4] include four elements: (i) ROS Parameter Server manages (ii) ROS Parameters, (iii) roscore forms a collection of programs and nodes that are pre-requisites of a ROS~1-based system. Finally, (iv) ROS Namespace reflects the ROS concept to organise nodes and communication connections. Both ROS Master and rosout are executed with roscore. ROS Parameter Server is a part of ROS Master.
-%	
-%	\begin{figure}[H]
-	%		\centering
-	%		\begin{center}
-		%			{\includegraphics[scale=0.66]{img/requirement_pkg/other_concepts_req.png}}
-		%		\end{center}
-	%		\caption{Other ROS concepts requirements.} 
-	%		\label{fig:other_concepts_req}
-	%	\end{figure}
+	
+	\begin{figure}[H]
+			\centering
+			\begin{center}
+					{\includegraphics[scale=1]{img/requirement_pkg/other_concepts_req.png}}
+				\end{center}
+			\caption{Other ROS concepts requirements.} 
+			\label{fig:other_concepts_req}
+		\end{figure}
 
-%	Fig.~\ref{fig:roscore_req} presents additional roscore-related relations.
+	Fig.~\ref{fig:roscore_req} presents additional roscore-related relations.
 
 
-%	\begin{figure}[H]
-%		\centering
-%		\begin{center}
-%			{\includegraphics[scale=0.7]{img/requirement_pkg/roscore_req.png}}
-%		\end{center}
-%		\caption{roscore related requirements dependences.} 
-%		\label{fig:roscore_req}
-%	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\begin{center}
+			{\includegraphics[scale=1]{img/requirement_pkg/roscore_req.png}}
+		\end{center}
+		\caption{roscore related requirements dependences.} 
+		\label{fig:roscore_req}
+	\end{figure}
 	
 	\pagebreak
 	
