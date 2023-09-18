@@ -2,7 +2,7 @@
 
 # Changelog
 
-## MeROS 1.1 (Released 11 Sep 2023)
+## MeROS 1.1.1 (Released 11 Sep 2023)
 * added self composition of \<\<CommChannel\>\> (https://github.com/twiniars/MeROS/issues/3)
 * added groups of packages (https://github.com/twiniars/MeROS/issues/2)
 * added \<\<Repository\>\> as a specialisation of \<\<GpPackages\>\> (https://github.com/twiniars/MeROS/issues/11)
