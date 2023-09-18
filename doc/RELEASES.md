@@ -13,3 +13,4 @@
 9. Upload new documents (documentation, poster, profile)
 10. Modify Changlelog
 11. Modify README.md to link to new documents
+12. Pull repository on local PC
