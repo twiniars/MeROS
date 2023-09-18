@@ -6,74 +6,22 @@
 
 \documentclass[11pt,oneside,a4paper]{article}
 
-\usepackage[cmex10]{amsmath}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[colorlinks]{hyperref}
 \usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
-\usepackage{bm}
-%\usepackage{plotstable}
-\usepackage{graphicx}
 \usepackage{float}
 \usepackage{subcaption}
-\usepackage[linesnumbered,ruled,vlined,onelanguage]{algorithm2e}
-\usepackage{algorithmic}
 \usepackage{mathtools}
-%\usepackage[]{algorithmic}
-\usepackage{array}
-
-\usepackage{array}
-\usepackage{makecell}
-\usepackage{csvsimple}
-\usepackage{booktabs}
-\usepackage{xargs}
-\usepackage{color, colortbl}
-\usepackage{footmisc}
-
-\usepackage{ifthen}
-
-
-
-
-%%%%%
-%%  Comments 
-%%%%%
-\usepackage{xargs}
-
-
-
-\newcommand{\Fig}[1]{Fig.~\ref{#1}}
-
 \usepackage{fourier} 
-\usepackage{array}
-\usepackage{makecell}
-\usepackage{csvsimple}
-\usepackage{booktabs}
-
-\renewcommand\theadalign{bc}
-\renewcommand\theadfont{\bfseries}
-\renewcommand\theadgape{\Gape[4pt]}
-\renewcommand\cellgape{\Gape[4pt]}
-\renewcommand{\labelenumii}{\theenumii}
-\renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
-\usepackage{tabularx}
-%\usepackage{soul}
-\usepackage{xargs}
-
-\newcommand{\twc}[1]{\textcolor{red}{\textbf{TW}: #1}}
-\usepackage{hyperref} %<--- Load after everything else
-
-%%%%%
-%%   Definicja wymagań
-%%%%
-
 
 \usepackage[backend=biber,maxnames=10,style=numeric,sorting=nty,abbreviate=false,giveninits=true,language=english]{biblatex}
 \addbibresource{../meros.bib}
 
+%\newcommand{\twc}[1]{\textcolor{red}{\textbf{TW}: #1}}
+\newcommand{\Fig}[1]{Fig.~\ref{#1}}
 
-\newcommand{\req}[1]{\textbf{\texttt{R#1}}}
-\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{//#1\\}}
+
 \begin{document}
 	
 	\title{MeROS: SysML-based Metamodel for ROS-based Systems - version 1.1 - reference manual}
