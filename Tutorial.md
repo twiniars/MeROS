@@ -8,8 +8,10 @@
 
 * VP project creation
 * MeROS stereotypes - application in diagrams, import, export
-* Block definition diagrams - blocks creation, relations, and views
+* Block definition diagrams - blocks creation, relations, and views - 
 
 [![Watch the video](https://img.youtube.com/vi/Ac8aMxpEI1g/hqdefault.jpg)](https://www.youtube.com/embed/Ac8aMxpEI1g)
 
+## Part II
 
+* sequence diagrams, state machine diagrams
