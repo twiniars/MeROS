@@ -13,11 +13,11 @@
 
 [![Watch the video](https://img.youtube.com/vi/Ac8aMxpEI1g/hqdefault.jpg)](https://www.youtube.com/embed/Ac8aMxpEI1g)
 
-## Part II - Comming soon
+## Part II - Coming soon
 
 * sequence diagrams, state machine diagrams
 
-## Part III - Application of diagrams in Overleaf hosted Latex document - Comming soon
+## Part III - Application of diagrams in Overleaf hosted Latex document - Coming soon
 
 
 
