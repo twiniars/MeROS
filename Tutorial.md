@@ -17,7 +17,7 @@
 
 * sequence diagrams, state machine diagrams
 
-## Part III - Application of diagrams in Overleaf hosted Latex document - Comming soon
+## Part III - Application of diagrams in Overleaf hosted Latex document - Coming soon
 
 
 
