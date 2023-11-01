@@ -3,6 +3,7 @@
 # Practical tutorial to MeROS usage with Visual Paradigm (VP) (in Polish)
 
 * [MeROS Tutorial Visual Paradigm Project](meros_tutorial.vpp) (Download raw file to use it as a project in VP software)
+* [MeROS Stereotypes for Visual Paradigm](meros_stereotypes.xml) (Download raw file to import it in VP software)
 
 ## Part I - Introduction
 
