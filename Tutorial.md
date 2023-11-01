@@ -2,7 +2,7 @@
 
 # Practical tutorial to MeROS usage with Visual Paradigm (in Polish)
 
-* [Meros Tutorial Visual Paradigm Project](meros_tutorial.vpp) (Download raw file to use it as a project in Visual Paradigm software)
+* [MeROS Tutorial Visual Paradigm Project](meros_tutorial.vpp) (Download raw file to use it as a project in Visual Paradigm software)
 
 ## Part I
 
