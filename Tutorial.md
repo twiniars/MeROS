@@ -2,6 +2,8 @@
 
 # Practical tutorial to MeROS usage with Visual Paradigm (in Polish)
 
+* [Meros Tutorial Visual Paradigm Project](meros_tutorial.vpp)
+
 ## Part I
 
 * VP project creation
