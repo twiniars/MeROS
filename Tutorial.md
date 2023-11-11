@@ -13,9 +13,11 @@
 
 [![Watch the video](https://img.youtube.com/vi/-r2_D_HjsNs/hqdefault.jpg)](https://www.youtube.com/embed/-r2_D_HjsNs)
 
-## Part II - Coming soon
+## Part II - Requirements
 
-* sequence diagrams, state machine diagrams
+* Requirements diagrams,
+* Allocation of requirements
 
-## Part III - Application of diagrams in Overleaf hosted Latex document - Coming soon
+[![Watch the video](https://img.youtube.com/vi/oy06tMGAGNo/hqdefault.jpg)](https://www.youtube.com/embed/oy06tMGAGNo)
+
 
