@@ -20,4 +20,10 @@
 
 [![Watch the video](https://img.youtube.com/vi/oy06tMGAGNo/hqdefault.jpg)](https://www.youtube.com/embed/oy06tMGAGNo)
 
+## Part III - Presentation of elements of blocks
+
+* Presentation of elements of blocks
+
+[![Watch the video](https://img.youtube.com/vi/b5hw-Opv38I/hqdefault.jpg)](https://www.youtube.com/embed/b5hw-Opv38I)
+
 
