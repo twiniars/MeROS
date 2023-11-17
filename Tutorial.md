@@ -26,4 +26,8 @@
 
 [![Watch the video](https://img.youtube.com/vi/b5hw-Opv38I/hqdefault.jpg)](https://www.youtube.com/embed/b5hw-Opv38I)
 
+## Part IV - Sequence diagrams
 
+* Sequence diagrams
+
+[![Watch the video](https://img.youtube.com/vi/vmoTcreDeqI/hqdefault.jpg)](https://www.youtube.com/embed/vmoTcreDeqI)
