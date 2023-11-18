@@ -32,7 +32,7 @@
 
 [![Watch the video](https://img.youtube.com/vi/vmoTcreDeqI/hqdefault.jpg)](https://www.youtube.com/embed/vmoTcreDeqI)
 
-## Part IV - Diagrams in documentation
+## Part V - Diagrams in documentation
 
 * Diagrams in documentation
 
