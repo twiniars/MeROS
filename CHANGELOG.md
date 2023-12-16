@@ -2,6 +2,9 @@
 
 # Changelog
 
+## [MeROS 1.1.1 (Released 16 Dec 2023)](https://github.com/twiniars/MeROS/releases/tag/1.1.2)
+*  simplification of service and action connections by unidirectional arrow and removal of client and server labels on arrow ends (https://github.com/twiniars/MeROS/issues/12)
+
 ## [MeROS 1.1.1 (Released 18 Sep 2023)](https://github.com/twiniars/MeROS/releases/tag/1.1.1)
 * added self composition of \<\<CommChannel\>\> (https://github.com/twiniars/MeROS/issues/3)
 * added groups of packages (https://github.com/twiniars/MeROS/issues/2)
