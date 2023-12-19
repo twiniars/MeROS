@@ -37,3 +37,10 @@
 * Diagrams in documentation
 
 [![Watch the video](https://img.youtube.com/vi/yBAbCfkiQVw/hqdefault.jpg)](https://www.youtube.com/embed/yBAbCfkiQVw)
+
+## Part VI - Internal block diagrams
+
+* Diagrams in documentation
+
+[![Watch the video](https://img.youtube.com/vi/S8q7sBQxlCE/hqdefault.jpg)](https://www.youtube.com/embed/S8q7sBQxlCE)
+
