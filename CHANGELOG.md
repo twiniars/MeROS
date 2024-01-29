@@ -2,6 +2,11 @@
 
 # Changelog
 
+## [MeROS 1.2.0 (Released 30 Jan 2024)](https://github.com/twiniars/MeROS/releases/tag/1.2.0)
+*  Stereotype names correction
+*  Sources Container added to deal with source code outside ROS Workspace
+*  other small fixes
+
 ## [MeROS 1.1.2 (Released 16 Dec 2023)](https://github.com/twiniars/MeROS/releases/tag/1.1.2)
 *  simplification of service and action connections by unidirectional arrow and removal of client and server labels on arrow ends (https://github.com/twiniars/MeROS/issues/12)
 
