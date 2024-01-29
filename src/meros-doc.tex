@@ -689,7 +689,7 @@
 		\label{fig:rico_running_system_ibd}
 	\end{figure}
 
-	The system is based on TaskER framework \cite{tasker2020} developed from the RAPP approach to construct systems with variable structure \cite{zielinski2017variable}. The role of the TaskER is to schedule a robot’s tasks. It consists of (i) Task Requesters <<Node>>s to submit new tasks, (ii) Task Harmoniser <<Node>> to schedule tasks execution, (iii) dynamic <<Node>>s (here, <<Node>> \texttt{:Move To}) to execute a particular task on the robot hardware and (iv) cloud part, here <<NonRosCompon>> \texttt{:Voice Recognition and Synthesis Platform}. The common part of the controller is located in <<Intrasystem>> \texttt{:Rico}.
+	The system is based on TaskER framework \cite{tasker2020} developed from the RAPP approach to construct systems with variable structure \cite{zielinski2017variable}. The role of the TaskER is to schedule a robot’s tasks. It consists of (i) Task Requesters <<Node>>s to submit new tasks, (ii) Task Harmoniser <<Node>> to schedule tasks execution, (iii) dynamic <<Node>>s (here, <<Node>> \texttt{:Move To}) to execute a particular task on the robot hardware and (iv) cloud part, here <<NRosCompon>> \texttt{:Voice Recognition and Synthesis Platform}. The common part of the controller is located in <<Intrasystem>> \texttt{:Rico}.
 	
 	Fig.~\ref{fig:robot_core_ibd} illustrates how various instances of the same block are depicted in the model. Two <<Parameter>> Objects of the same classifier \texttt{:Double} are composed into <<Node>> \texttt{:MoveBase}.
 	
