@@ -12,7 +12,7 @@ The complexity of today's robot control systems implies difficulty in developing
 * [Changelog](CHANGELOG.md)
 * [Practical tutorial to MeROS usage with Visual Paradigm (in Polish)](Tutorial.md)
 * Author profie - https://www.robotyka.ia.pw.edu.pl/team/twiniarski/
-* IEEE ACCESS scientific paper with a complete description of the initial version of MeROS - https://ieeexplore.ieee.org/document/10207804. **Please cite it while publishing articles with MeROS usage**.
+* IEEE ACCESS scientific paper with a complete description of the initial version of MeROS - https://ieeexplore.ieee.org/document/10207804. **Please cite it while publishing articles that relates to MeROS**.
 
 ## Contribution
 
