@@ -2,6 +2,11 @@
 
 # Changelog
 
+
+## [MeROS 1.2.1 (Released 30 Jan 2024)](https://github.com/twiniars/MeROS/releases/tag/1.2.1)
+*  Shared associations introduced for generality of metamodel
+*  Workspaces can agreggate Repositiories now
+
 ## [MeROS 1.2.0 (Released 30 Jan 2024)](https://github.com/twiniars/MeROS/releases/tag/1.2.0)
 *  Stereotype names correction
 *  Sources Container added to deal with source code outside ROS Workspace
