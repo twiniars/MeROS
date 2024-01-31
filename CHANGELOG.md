@@ -2,6 +2,8 @@
 
 # Changelog
 
+## [MeROS 1.2.2 (Released 31 Jan 2024)](https://github.com/twiniars/MeROS/releases/tag/1.2.2)
+*  Plugins can be agrregated into Nodes
 
 ## [MeROS 1.2.1 (Released 30 Jan 2024)](https://github.com/twiniars/MeROS/releases/tag/1.2.1)
 *  Shared associations introduced for generality of metamodel
