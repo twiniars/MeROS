@@ -2,6 +2,10 @@
 
 # Changelog
 
+## [MeROS 1.2.3 (Released 5 Feb 2024)](https://github.com/twiniars/MeROS/releases/tag/1.2.3)
+*  Communication Channel decomposition fix in exemplary application
+*  other small fixes
+
 ## [MeROS 1.2.2 (Released 31 Jan 2024)](https://github.com/twiniars/MeROS/releases/tag/1.2.2)
 *  Plugins can be agrregated into Nodes
 
