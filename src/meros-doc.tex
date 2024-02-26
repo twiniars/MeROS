@@ -344,13 +344,13 @@
 		 	\label{fig:node_bdd}
 	 \end{figure}
 	 
-	The Intrasystem (Fig.~\ref{fig:intrasystem_bdd}) composes ROS and Non-ROS Communicating Component specializations as well as Connections between them. A Parameter block is introduced also for ROS~1. In ROS~2, due to safety reasons, Parameter is composed only into Nodes. Optionally Intrasystem composes the other Intrasystems.
+	The Intrasystem (Fig.~\ref{fig:intrasystem_bdd}) composes ROS and Non-ROS Communicating Components specializations as well as Connections between them. A Parameter block is introduced also for ROS~1. In ROS~2, due to safety reasons, Parameter is composed only into Nodes. Data File is introduced as a general concept to, e.g., store configuration data, store data gathered through experiments or act as a specific communication medium. Optionally Intrasystem composes the other Intrasystems.
 	
 
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_pkg/intrasystem_bdd.png}}
+			{\includegraphics[scale=0.95]{img/meros_pkg/intrasystem_bdd.png}}
 		\end{center}
 		\caption{Intrasystem compositions -- bdd.} 
 		\label{fig:intrasystem_bdd}
@@ -413,7 +413,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.92]{img/meros_pkg/ros_package_bdd.png}}
+			{\includegraphics[scale=.9]{img/meros_pkg/ros_package_bdd.png}}
 		\end{center}
 		\caption{ROS Package composition -- bdd.} 
 		\label{fig:ros_package_bdd}
@@ -425,7 +425,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.92]{img/meros_pkg/ros_workspace_bdd.png}}
+			{\includegraphics[scale=.9]{img/meros_pkg/ros_workspace_bdd.png}}
 		\end{center}
 		\caption{ROS Workspace composition -- bdd.} 
 		\label{fig:ros_workspace_bdd}
@@ -474,7 +474,7 @@
 		\caption{Topics with dedicated communication components -- ibd}
 	\end{figure}
 	
-	\pagebreak
+
 	
 	
 %
@@ -497,8 +497,9 @@
 %		\label{fig:topic_split_subscriber_ibd}
 %	\end{figure}
 	
+	\pagebreak
 	
-	Fig. \ref{fig:topic_communication_with_dedicated_component_sd} depicts the corresponding sequence diagram. Publishers send a message through Topics to the subscribers. The incoming message cause the subscriber to execute the callback function. 	Fig.~\ref{fig:topic_communication_without_dedicated_component_ibd} and Fig.~\ref{fig:topic_communication_without_dedicated_component_sd} present an alternative approach to depict the system communicating via topics. In this case, no dedicated communication components are used [R4.1.2]. 
+	Fig. \ref{fig:topic_communication_with_dedicated_component_sd} depicts the corresponding sequence diagram. Publishers send a message through Topics to the subscribers. The incoming message cause the subscriber to execute the callback function. 
 	
 	\begin{figure}[H]
 		\centering
@@ -508,6 +509,9 @@
 		\caption{Topics with dedicated communication components -- sd.} 
 		\label{fig:topic_communication_with_dedicated_component_sd}
 	\end{figure}
+		
+	
+	Fig.~\ref{fig:topic_communication_without_dedicated_component_ibd} and Fig.~\ref{fig:topic_communication_without_dedicated_component_sd} present an alternative approach to depict the system communicating via topics. In this case, no dedicated communication components are used [R4.1.2]. 
 	
 	
 	\begin{figure}[H]
@@ -527,6 +531,10 @@
 		\caption{Topics without dedicated communication components -- sd.} 
 		\label{fig:topic_communication_without_dedicated_component_sd}
 	\end{figure}
+	
+	
+	\pagebreak
+	
 	
 \subsection{Service}
 \label{ch:metamodel-service}
@@ -570,8 +578,6 @@
 		\label{fig:action_communication_compact_ibd}
 	\end{figure}
 	
-	
-	\pagebreak
 	
 	 An Action (Fig.~\ref{fig:action_communication_detailed_ibd}) is based on several Topics in ROS~1, while on Topics and Services in ROS~2.
 	
