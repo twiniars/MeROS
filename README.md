@@ -7,8 +7,8 @@ The complexity of today's robot control systems implies difficulty in developing
 </p>
 
 ## Resources
-* [MeROS 1.2 documentation (pdf)](https://github.com/twiniars/MeROS/releases/download/1.2.3/meros-1-2-3-doc.pdf) (current version - recommended for use)
-* [MeROS 1.2 poster (pdf)](https://github.com/twiniars/MeROS/releases/download/1.2.3/meros-1-2-3-poster-b0.pdf) (B0 size)
+* [MeROS 1.2 documentation (pdf)](https://github.com/twiniars/MeROS/releases/download/1.2.4/meros-1-2-4-doc.pdf) (current version - recommended for use)
+* [MeROS 1.2 poster (pdf)](https://github.com/twiniars/MeROS/releases/download/1.2.4/meros-1-2-4-poster-b0.pdf) (B0 size)
 * [Releases and Changelog](https://github.com/twiniars/MeROS/releases)
 * [Practical tutorial to MeROS usage with Visual Paradigm (in Polish)](Tutorial.md)
 * Author profie - https://www.robotyka.ia.pw.edu.pl/team/twiniarski/
