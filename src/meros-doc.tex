@@ -77,10 +77,6 @@
 	
 	
 \chapter{Metamodel requirements}
-
-
-\twci{Dodajemy słowo ROS w wymaganiach, tam gdzie jest to potrzebne}
-
 \label{ch:requirements}
 	The requirements [RX] formulation process for MeROS metamodel is multi-stage and iterative. In the beginning, the initial requirements were formulated based on: (i) literature review (both scientific and ROS wiki/community sources), (ii) author experience from supervising and supporting ROS-related projects, and finally, (iii) author experience from EARL (Embodied Agent-based cybeR-physical control systems modelling Language) \cite{earl2020} PIM development and its applications (e.g. \cite{tasker2020,karwowski2021hubero,en14206693-grav-comp}). Verification of subsequent versions of MeROS by its practical applications led to an iterative reformulation of requirements and MeROS itself. 
 	
@@ -104,7 +100,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.86]{img/requirement_pkg/structural_aspects_req.png}}
+			{\includegraphics[scale=.82]{img/requirement_pkg/structural_aspects_req.png}}
 		\end{center}
 		\caption{Structural aspects requirements.} 
 		\label{fig:structural_aspects_req}
@@ -117,7 +113,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.86]{img/requirement_pkg/original_ros_concepts_req.png}}
+			{\includegraphics[scale=.82]{img/requirement_pkg/original_ros_concepts_req.png}}
 		\end{center}
 		\caption{ROS concepts requirements.} 
 		\label{fig:ros_concepts_req}
@@ -230,20 +226,20 @@
 	
 	MeROS metamodel is formulated according to the requirements discussed in the previous section. Sec.~\ref{sec:metamodel-composition} presents MeROS blocks' structural composition, and sec.~\ref{sec:metamodel-communication} describes inter-component communication. From the metamodel perspective, the structural aspects [R2] are formulated in both sections, while behavioural [R1] is in the latter. The diagrams comprise selected requirements being allocated to expose the MeROS metamodel development process. 
 	
-	The MeROS diagrams were created in the Enterprise Architect development tool within the SysML project [R8] and organised in three packages [R6.1] (Fig.~\ref{fig:meros_project_packages_pkg}): (i) Requirement Model related to requirements formulation and analysis, (ii) MeROS -- the metamodel itself, (iii) Rico Controller -- the exemplary ROS~1 application of MeROS described in sec.~\ref{ch:application-example}. The stereotypes are introduced in MeROS metamodel with the dedicated MeROS profile [R6.2].
+	The MeROS diagrams were created in the Enterprise Architect development tool within the SysML project [R8] and organised in three packages [R6.1] (Fig.~\ref{fig:meros_project_packages_pkg}): (i) Requirement Model related to requirements formulation and analysis, (ii) MeROS -- the metamodel itself, (iii) Rico Controller -- the exemplary ROS~1 application of MeROS described in sec.~\ref{ch:application-example}. 
 	
 		
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.3]{img/meros_project_packages_pkg.png}}
+			{\includegraphics[scale=.9]{img/meros_project_packages_pkg.png}}
 		\end{center}
 		\caption{MeROS project SysML packages, where Rico Controller is an exemplary realisation of MeROS metamodel.} 
 		\label{fig:meros_project_packages_pkg}
 	\end{figure}
 	
-	
-	\twci{Dodać i zastosować zasady tworzenia nazw bloków i stereotypów. Nazwa bloku z uwględnieniem ROS, jesli coś jest dla ROS, natomiast w stereotypie jest ROS tylko jeśli ten sam kocenpt jest też w odmianie Non-ROS }
+	The stereotypes are introduced in MeROS metamodel with the dedicated MeROS profile [R6.2].
+	The stereotypes names are created to compromise the descriptiveness and short length. Hence, the ROS phrase is avoided in stereotypes unless only the ROS concept of a particular type exists.
 	
 	
 	
@@ -273,7 +269,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1]{img/meros_pkg/communicating_components_inherit_bdd.png}}
+			{\includegraphics[scale=1.0]{img/meros_pkg/communicating_components_inherit_bdd.png}}
 		\end{center}
 		\caption{Communicating Component and specialised blocks -- bdd.} 
 		\label{fig:communicating_components_bdd}
@@ -379,7 +375,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/intrasystem_specialisations_bdd.png}}
+			{\includegraphics[scale=1.0]{img/meros_pkg/intrasystem_specialisations_bdd.png}}
 		\end{center}
 		\caption{Instrasystem specialisations -- bdd.} 
 		\label{fig:intrasystem_specialisations_bdd}
@@ -429,7 +425,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.9]{img/meros_pkg/ros_package_bdd.png}}
+			{\includegraphics[scale=.85]{img/meros_pkg/ros_package_bdd.png}}
 		\end{center}
 		\caption{ROS Package composition -- bdd.} 
 		\label{fig:ros_package_bdd}
@@ -441,7 +437,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.9]{img/meros_pkg/ros_workspace_bdd.png}}
+			{\includegraphics[scale=.85]{img/meros_pkg/ros_workspace_bdd.png}}
 		\end{center}
 		\caption{ROS Workspace composition -- bdd.} 
 		\label{fig:ros_workspace_bdd}
@@ -688,7 +684,7 @@
 	\begin{figure}[H] 
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1]{img/rico_pkg/general_sd.png}}
+			{\includegraphics[scale=.95]{img/rico_pkg/general_sd.png}}
 		\end{center}
 		\caption{Concept scenario -- sd.} 
 		\label{fig:general_sd}
@@ -726,7 +722,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/rico_pkg/robot_core_ibd.png}}
+			{\includegraphics[scale=1.05]{img/rico_pkg/robot_core_ibd.png}}
 		\end{center}
 		\caption{Selected elements of <<Intrasystem>> \texttt{:Robot Core} -- ibd.} 
 		\label{fig:robot_core_ibd}
@@ -738,7 +734,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/rico_pkg/move_to_2_core_cm_ibd.png}}
+			{\includegraphics[scale=1.05]{img/rico_pkg/move_to_2_core_cm_ibd.png}}
 		\end{center}
 		\caption{Example of <<CommChannel>> -- ibd.} 
 		\label{fig:move_to_2_core_cm_ibd}
@@ -750,7 +746,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.85]{img/rico_pkg/motion_execution_sd.png}}
+			{\includegraphics[scale=.84]{img/rico_pkg/motion_execution_sd.png}}
 		\end{center}
 		\caption{Motion execution operation -- sd.} 
 		\label{fig:motion_execution_sd}
@@ -762,7 +758,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.85]{img/rico_pkg/command_motion_sd.png}}
+			{\includegraphics[scale=.84]{img/rico_pkg/command_motion_sd.png}}
 		\end{center}
 		\caption{Command motion operation with detailed Communication methods presentation -- sd.} 
 		\label{fig:command_motion_sd}
