@@ -451,9 +451,9 @@
 \section{Communication}
 \label{sec:metamodel-communication}
 	
-	This section depicts the behavioural and structural aspects of communication in the system. The previous section considers block definition diagrams (bdd). In the following part, the internal block diagrams (ibd) and behavioural diagrams are discussed. The goal is to present three modes of communication: Topic [R4.1] (sec.~\ref{ch:metamodel-topic}), Service [R4.2] (sec.~\ref{ch:metamodel-service}) and Action [R4.3] (sec.~\ref{ch:metamodel-action}). It should be noted that the concept of presentation of communication with and without a dedicated communication component is illustrated on communication with Topics but can also be applied to Services, Actions and Communication Channels. The dedicated component is especially needed when the particular Communication Channel is at first represented in a general way as the separated block corresponding to this component, then specified in detail in the internal block diagram. 
+	This section depicts the behavioural and structural aspects of communication in the system. The previous section considers block definition diagrams (bdd). In the following part, the internal block diagrams (ibd) and behavioural diagrams are discussed. The goal is to present three modes of communication: ROS Topic [R4.1] (sec.~\ref{ch:metamodel-topic}), ROS Service [R4.2] (sec.~\ref{ch:metamodel-service}) and ROS Action [R4.3] (sec.~\ref{ch:metamodel-action}). It should be noted that the concept of presentation of communication with and without a dedicated communication component is illustrated on communication with Topics but can also be applied to Services, Actions and Communication Channels. The dedicated component is especially needed when the particular Communication Channel is at first represented in a general way as the separated block corresponding to this component, then specified in detail in the internal block diagram. 
 	
-	\subsection{Topic}
+	\subsection{ROS Topic}
 	\label{ch:metamodel-topic}
 		
 	Fig.~\ref{fig:topic_communication_with_dedicated_component_ibd} presents the ibd diagram of publishers' and subscribers' communication via topics. This diagram uses a dedicated communication component for each Topic [R4.1.1]. There are no general limits to the number of publishers, subscribers and Topics they communicate with. 
@@ -547,7 +547,7 @@
 	\pagebreak
 	
 	
-\subsection{Service}
+\subsection{ROS Service}
 \label{ch:metamodel-service}
 	
 	For each ROS Service, there is at most one server and a~number of clients (Fig.~\ref{fig:service_communication_ibd} and Fig.~\ref{fig:service_communication_sd}). Service-type communication is bidirectional and realises RPC (remote procedure call).
@@ -573,7 +573,7 @@
 	\end{figure}
 	
 	
-\subsection{Action}
+\subsection{ROS Action}
 \label{ch:metamodel-action}
 	
 	ROS Action communication's general, simplified structure (Fig.~\ref{fig:action_communication_compact_ibd}) is analogous to ROS Service. These type of presentation is universal for ROS~1 and ROS~2.
