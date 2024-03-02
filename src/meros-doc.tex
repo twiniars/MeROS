@@ -13,14 +13,17 @@
 \usepackage{float}
 \usepackage{subcaption}
 \usepackage{mathtools}
-\usepackage{fourier} 
-
+\usepackage{color}
 \usepackage[backend=biber,maxnames=10,style=numeric,sorting=nty,abbreviate=false,giveninits=true,language=english]{biblatex}
+
 \addbibresource{../meros.bib}
 
 %\newcommand{\twc}[1]{\textcolor{red}{\textbf{TW}: #1}}
 \newcommand{\Fig}[1]{Fig.~\ref{#1}}
 
+\definecolor{amber}{rgb}{1.0, 0.49, 0.0}
+\newcommand{\twci}[1]{
+	\textcolor{amber}{TW: #1}}
 
 \begin{document}
 	
@@ -38,12 +41,16 @@
 	
 	\maketitle
 	
-	\chapter*{Important citation notice}
+\chapter*{Important citation notice}
 
 \textbf{If you are to use MeROS in your papers, please first cite the IEEE ACCESS  article~\cite{meros-access}, where the initial version of the MeROS is presented. You can also refer to MeROS project page \cite{meros-www} and mention the actual MeROS version you are using.}
 	
 	
 \chapter{Introduction}
+
+
+\twci{Dodać plik ze stereotypami w liczbie pojedynczej i mnogiej, podobnie jak w spsysml}
+
 \label{ch:intro}	
 	The development of civilisation has led to an increase in the importance of robotics. Many modern robotic systems are complex. To create them as effectively and reliably as possible, it is necessary to follow systems engineering (SE), where metamodels play an essential role~\cite{bezivin2004search,schmidt2006model,kent2002model}.
 	Robots, especially complex ones, are mostly controlled with usage of software. Hence, in robotics, SE is inextricably linked with software engineering, where frameworks have been crucial for many years \cite{mnkandla2009software,shehory2014agent}.
@@ -70,6 +77,10 @@
 	
 	
 \chapter{Metamodel requirements}
+
+
+\twci{Dodajemy słowo ROS w wymaganiach, tam gdzie jest to potrzebne}
+
 \label{ch:requirements}
 	The requirements [RX] formulation process for MeROS metamodel is multi-stage and iterative. In the beginning, the initial requirements were formulated based on: (i) literature review (both scientific and ROS wiki/community sources), (ii) author experience from supervising and supporting ROS-related projects, and finally, (iii) author experience from EARL (Embodied Agent-based cybeR-physical control systems modelling Language) \cite{earl2020} PIM development and its applications (e.g. \cite{tasker2020,karwowski2021hubero,en14206693-grav-comp}). Verification of subsequent versions of MeROS by its practical applications led to an iterative reformulation of requirements and MeROS itself. 
 	
@@ -230,6 +241,11 @@
 		\caption{MeROS project SysML packages, where Rico Controller is an exemplary realisation of MeROS metamodel.} 
 		\label{fig:meros_project_packages_pkg}
 	\end{figure}
+	
+	
+	\twci{Dodać i zastosować zasady tworzenia nazw bloków i stereotypów. Nazwa bloku z uwględnieniem ROS, jesli coś jest dla ROS, natomiast w stereotypie jest ROS tylko jeśli ten sam kocenpt jest też w odmianie Non-ROS }
+	
+	
 	
 \section{Metamodel composition}
 \label{sec:metamodel-composition}
