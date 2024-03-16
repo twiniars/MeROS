@@ -262,7 +262,7 @@
 	Consequently, some concepts (e.g., Node) occur in Workspaces and Intrasystems. It reduces the number of SysML blocks in the metamodel [R6.4] and eliminates the need for unnecessary mapping of SysML blocks [R6.5].
 		
 		
-	In MeROS, a~Communicating Component (Fig.~\ref{fig:communicating_components_bdd}) is a~crucial abstraction of a~number of ROS concepts to represent their standardised role regarding communication. 
+	In MeROS, a~ROS Communicating Component (Fig.~\ref{fig:communicating_components_bdd}) is a~crucial abstraction of a~number of ROS concepts to represent their standardised role regarding communication. 
 	
 		
 	\begin{figure}[H]
@@ -270,14 +270,14 @@
 		\begin{center}
 			{\includegraphics[scale=1.0]{img/meros_pkg/communicating_components_inherit_bdd.png}}
 		\end{center}
-		\caption{Communicating Component and specialised blocks -- bdd.} 
+		\caption{ROS Communicating Component and specialised blocks -- bdd.} 
 		\label{fig:communicating_components_bdd}
 	\end{figure}
 	
 	It should be noted that behavioural aspects of a~particular model specified in MeROS can be formulated by operation specification as an act (activity), sd (sequence), or stm (state machine) diagrams. The Intrasystem is one of the aggregates added to the base ROS concepts in MeROS. 
 	
 	
-	For clarity, relations of Communicating Components are depicted in several diagrams. Fig.~\ref{fig:communicating_component_topics_bdd} considers Topics and their Data Structures. Here, the Communicating Component can act as a publisher or a subscriber.	
+	For clarity, relations of Communicating Components are depicted in several diagrams. Fig.~\ref{fig:communicating_component_topics_bdd} considers Topics and their Data Structures. Here, the ROS Communicating Component can act as a publisher or a subscriber.	
 	 
 	
 	\begin{figure}[H]
@@ -285,11 +285,11 @@
 		\begin{center}
 			{\includegraphics[scale=1.1]{img/meros_pkg/communicating_component_topics_bdd.png}}
 		\end{center}
-		\caption{Communicating Component relations -- topics.} 
+		\caption{ROS Communicating Component relations -- Topics.} 
 		\label{fig:communicating_component_topics_bdd}
 	\end{figure}
 	
-	Fig.~\ref{fig:communication_blocks_services_bdd} depicts Services and their Data Structures. In this case, the Communicating Component can act as a server or a client.	
+	Fig.~\ref{fig:communication_blocks_services_bdd} depicts Services and their Data Structures. In this case, the ROS Communicating Component can act as a server or a client.	
 	
 		
 	\begin{figure}[H]
@@ -297,7 +297,7 @@
 		\begin{center}
 			{\includegraphics[scale=1.1]{img/meros_pkg/communicating_component_services_bdd.png}}
 		\end{center}
-		\caption{Communicating Component relations -- services.} 
+		\caption{ROS Communicating Component relations -- Services.} 
 		\label{fig:communication_blocks_services_bdd}
 	\end{figure}
 	
@@ -305,7 +305,7 @@
 	
 	\pagebreak
 	
-	The Actions are depicted in two diagrams -- Fig.~\ref{fig:communicating_component_actions_bdd} and Fig.~\ref{fig:action_bdd}. Similarly to Services, the Communicating Component can act as a server or a client.	 
+	The Actions are depicted in two diagrams -- Fig.~\ref{fig:communicating_component_actions_bdd} and Fig.~\ref{fig:action_bdd}. Similarly to Services, the ROS Communicating Component can act as a server or a client.	 
 	
 	
 	\begin{figure}[H]
@@ -313,7 +313,7 @@
 		\begin{center}
 			{\includegraphics[scale=1]{img/meros_pkg/communicating_component_actions_bdd.png}}
 		\end{center}
-		\caption{Communicating Component relations -- actions.} 
+		\caption{ROS Communicating Component relations -- Actions.} 
 		\label{fig:communicating_component_actions_bdd}
 	\end{figure}
 	
@@ -405,7 +405,7 @@
 	\end{figure}
 
 	
-	The Namespace (Fig.~\ref{fig:namespace_bdd}) aggregates elements of the Intrasystem, but only ROS related. In opposition to the Intrasystem, the Namespace does not specialise Communicating Component. Hence, it can not act as Communicating Component.
+	The Namespace (Fig.~\ref{fig:namespace_bdd}) aggregates elements of the Intrasystem, but only ROS related. In opposition to the Intrasystem, the Namespace does not specialise Communicating Components. Hence, it can not act as Communicating Components.
 	
 	
 	\begin{figure}[H]
