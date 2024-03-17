@@ -317,6 +317,8 @@
 		\label{fig:communicating_component_actions_bdd}
 	\end{figure}
 	
+	An Action Data Structure comprises data used by three of five Topics composed in Action, i.e., goal, feedback and result. Two remaining Topics, i.e., cancel and status are standardised.
+	
 	\begin{figure}[hbt]
 		\centering
 		\begin{center}
@@ -327,7 +329,7 @@
 	\end{figure}
 	
 	\pagebreak
-	Fig.~\ref{fig:communicating_component_other_bdd} describes how Non-ROS elements are taken into account in relation to communication. Additionally, the figure presents Communication Channel relation to ROS Communicating Component.
+	Fig.~\ref{fig:communicating_component_other_bdd} describes how Non-ROS elements are taken into account in relation to communication. Additionally, the figure presents Communication Channel relation to ROS Communicating Component. Besides standard ROS communication methods, the Non-ROS are also included (e.g., http request) to achieve interfaces with Non-ROS parts of the general system. 
 	
 
 	\begin{figure}[H]
@@ -339,7 +341,7 @@
 		\label{fig:communicating_component_other_bdd}
 	\end{figure}
 	
-	Besides standard ROS communication methods, the Non-ROS are also included (e.g., http request) to achieve interfaces with Non-ROS parts of the general system. An Action Data Structure comprises data used by three of five Topics composed in Action, i.e., goal, feedback and result. Two remaining Topics, i.e., cancel and status are standardised.
+
 	
 		 
  	The Node (Fig.~\ref{fig:node_bdd}) composes Parameters and Nodelets (the latter in ROS~1). Two specific Nodes are considered in the metamodel: ROS Master and rosout. In ROS~2, Component Container aggregates Nodes executed in a single process.
