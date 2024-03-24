@@ -80,8 +80,7 @@
 	The requirements [RX] formulation process for MeROS metamodel is multi-stage and iterative. In the beginning, the initial requirements were formulated based on: (i) literature review (both scientific and ROS wiki/community sources), (ii) author experience from supervising and supporting ROS-related projects, and finally, (iii) author experience from EARL (Embodied Agent-based cybeR-physical control systems modelling Language) \cite{earl2020} PIM development and its applications (e.g. \cite{tasker2020,karwowski2021hubero,en14206693-grav-comp}). Verification of subsequent versions of MeROS by its practical applications led to an iterative reformulation of requirements and MeROS itself. 
 	
 	MeROS requirements are depicted on a~number of dedicated SysML diagrams. The requirements are organised in a~tree-like nesting structure, with additional internal relations, and labelled following this structure. The general requirements are presented in Fig.~\ref{fig:general_req}. Here, and in the following diagrams, the elements (components, relations) specific for a particular version of ROS (ROS~1 or ROS~2) are labelled with an ,,rv''  tag with the ROS version that the element is specific for. The lack of this tag means the element is general for both ROS versions.
-	
-	
+		
 	\begin{figure}[H]
 		\centering
 		\begin{center}
@@ -90,8 +89,7 @@
 		\caption{General requirements.} 
 		\label{fig:general_req}
 	\end{figure}
-	
-	
+		
 	The SysML models have two main parts: behavioural [R1] and structural [R2]. MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. The ROS system is two-faced. While it is executed [R4], it has a~specific structure and behaviour, but from the developers' point of view, the workspace [R5] is the exposed aspect. The model should be compact and straightforward [R6] rather than unnecessarily elaborate and complicated. One of the assumptions that stand out MeROS from other ROS metamodels is conformity with the final ROS~1 release [R7] (Noetic Ninjemys). Although the SysML-based MeROS is classified into PSM [R8], it should be compatible with Non-ROS elements [R9]. Finally, MeROS metamodel should be valid both for ROS~1 and ROS~2.
 	
 	The system's structural aspects requirements are presented in Fig.~\ref{fig:structural_aspects_req}.
