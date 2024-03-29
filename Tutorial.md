@@ -1,6 +1,6 @@
 ## MeROS: SysML-based Metamodel for ROS-based Systems 
 
-# Practical tutorial to MeROS usage with Visual Paradigm (VP) (in Polish)
+# Practical tutorial to MeROS usage with Visual Paradigm (in Polish, Polish and English subtitles)
 
 * [MeROS Tutorial Visual Paradigm Project](meros_tutorial.vpp) (Download raw file to use it as a VP project)
 * [MeROS Stereotypes for Visual Paradigm](meros_vp_stereotypes.xml) (Download raw file to import it to VP)
