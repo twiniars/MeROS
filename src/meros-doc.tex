@@ -29,7 +29,7 @@
 
 \begin{document}
 	
-	\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 1.2.6 - reference manual}
+	\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 1.2.7 - reference manual}
 \author{MeROS developers group - https://github.com/twiniars/MeROS \\ tomasz.winiarski@pw.edu.pl}
 \date{\today}
 \maketitle
@@ -667,7 +667,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[width=0.9\columnwidth]{img/herbatka_u_winiara.jpg}}
+			{\includegraphics[width=.6\columnwidth]{img/herbatka_u_winiara.jpg}}
 		\end{center}
 		\caption{Transportation attendance by Rico robot \url{https://vimeo.com/670252925}} 
 		\label{fig:herbatka_u_winiara}
@@ -677,13 +677,26 @@
 	
 	 The purpose of the following description is not to document the entire system but to illustrate, by example, representative aspects of the MeROS application.
 	
+	The Rico <<System>> consists of two parts. Its <<Workspace>> and <<RunningSystem>> (Fig.~\ref{fig:rico_controller_bdd}).
+	
+	
+	\begin{figure}[H] 
+		\centering
+		\begin{center}
+			{\includegraphics[scale=.85]{img/rico_pkg/rico_controller_bdd.png}}
+		\end{center}
+		\caption{Rico <<System>> composition.} 
+		\label{fig:rico_controller_bdd}
+	\end{figure}
+	
+	
 	The part of the application scenario is conceptually presented in Fig.~\ref{fig:general_sd}.
 	
 
 	\begin{figure}[H] 
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.95]{img/rico_pkg/general_sd.png}}
+			{\includegraphics[scale=.85]{img/rico_pkg/general_sd.png}}
 		\end{center}
 		\caption{Concept scenario.} 
 		\label{fig:general_sd}
@@ -697,7 +710,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=0.95]{img/rico_pkg/rico_running_system_bdd.png}}
+			{\includegraphics[scale=0.85]{img/rico_pkg/rico_running_system_bdd.png}}
 		\end{center}
 		\caption{Rico \stRunningSystem{} composition.}
 		\label{fig:rico_running_system_bdd}
@@ -708,7 +721,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=0.95]{img/rico_pkg/rico_running_system_ibd.png}}
+			{\includegraphics[scale=0.85]{img/rico_pkg/rico_running_system_ibd.png}}
 		\end{center}
 		\caption{Structure of \stRunningSystem{}\texttt{:Rico}.} 
 		\label{fig:rico_running_system_ibd}
