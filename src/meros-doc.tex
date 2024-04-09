@@ -29,7 +29,7 @@
 
 \begin{document}
 	
-	\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 1.2.7 - reference manual}
+	\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 1.2.8 - reference manual}
 \author{MeROS developers group - https://github.com/twiniars/MeROS \\ tomasz.winiarski@pw.edu.pl}
 \date{\today}
 \maketitle
@@ -90,7 +90,7 @@
 		\label{fig:general_req}
 	\end{figure}
 		
-	The SysML models have two main parts: behavioural [R1] and structural [R2]. MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. The ROS system is two-faced. While it is executed [R4], it has a~specific structure and behaviour, but from the developers' point of view, the workspace [R5] is the exposed aspect. The model should be compact and straightforward [R6] rather than unnecessarily elaborate and complicated. One of the assumptions that stand out MeROS from other ROS metamodels is conformity with the final ROS~1 release [R7] (Noetic Ninjemys). Although the SysML-based MeROS is classified into PSM [R8], it should be compatible with Non-ROS elements [R9]. Finally, MeROS metamodel should be valid both for ROS~1 and ROS~2.
+	The SysML models have two main parts: behavioural [R1] and structural [R2]. MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. The ROS system is two-faced. While it is executed [R4], it has a~specific structure and behaviour, but from the developers' point of view, the sources [R5] are the exposed aspect. The model should be compact and straightforward [R6] rather than unnecessarily elaborate and complicated. One of the assumptions that stand out MeROS from other ROS metamodels is conformity with the final ROS~1 release [R7] (Noetic Ninjemys). Although the SysML-based MeROS is classified into PSM [R8], it should be compatible with Non-ROS elements [R9]. Finally, MeROS metamodel should be valid both for ROS~1 and ROS~2.
 	
 	The system's structural aspects requirements are presented in Fig.~\ref{fig:structural_aspects_req}.
 	
@@ -417,32 +417,31 @@
 		\label{fig:namespace_bdd}
 	\end{figure}
 	
-	
-	The Package (Fig.~\ref{fig:ros_package_bdd}) composes the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. It should be noted that in case of Actions, specific communication structures definitions are stored in Action Data Structures. The Misc <<block>> relates to other ROS and Non-ROS files, e.g., roslaunch configuration, obligatory package.xml, CMakeLists.txt. The Metapackage is introduced for conformity with the latest ROS~1 releases [R7] as well as ROS~2. 
+	The Sources Container has various specialisations such as ROS Workspace and Workspace. It also plays a role of general container for ROS Packages and Data Files. 
+	The Workspace (Fig.~\ref{fig:sources_container_bdd}) contains of Packages that compose the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. As Workspace has a specific file-system nature, Group of Packages were introduced as a more general component. The Repository plays a similar role to the Workspace, but reflects the place where sources are stored.
 	
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.81]{img/meros_pkg/ros_package_bdd.png}}
+			{\includegraphics[scale=.78]{img/meros_pkg/sources_container_bdd.png}}
+		\end{center}
+		\caption{Sources Container and its specialisations.} 
+		\label{fig:sources_container_bdd}
+	\end{figure}
+	
+	The ROS Package (Fig.~\ref{fig:ros_package_bdd}) composes the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. It should be noted that in case of Actions, specific communication structures definitions are stored in Action Data Structures. The Misc <<block>> relates to other ROS and Non-ROS files, e.g., roslaunch configuration, obligatory package.xml, CMakeLists.txt. The Metapackage is introduced for conformity with the latest ROS~1 releases [R7] as well as ROS~2. 
+	
+	
+	\begin{figure}[H]
+		\centering
+		\begin{center}
+			{\includegraphics[scale=.78]{img/meros_pkg/ros_package_bdd.png}}
 		\end{center}
 		\caption{ROS Package composition.} 
 		\label{fig:ros_package_bdd}
 	\end{figure}
 		
-	The Workspace (Fig.~\ref{fig:ros_workspace_bdd}) contains of Packages that compose the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. As Workspace has a specific file-system nature, Group of Packages were introduced as a more general component. The Repository plays a similar role to the Workspace, but reflects the place where sources are stored.
-	
-
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=.81]{img/meros_pkg/ros_workspace_bdd.png}}
-		\end{center}
-		\caption{ROS Workspace composition.} 
-		\label{fig:ros_workspace_bdd}
-	\end{figure}
-	
-
 		
 
 	
