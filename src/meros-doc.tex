@@ -233,7 +233,7 @@
 
 	The degree of specificity of a metamodel is a compromise between its comprehensiveness (and, therefore, more general formulation) and a more accurate representation of a particular subclass of specific implementations. The metamodel contains compositions of elements and other primary relationships. Attributes and operations range widely, in particular between ROS~1 and ROS~2. Hence, their inclusion would lead to overgrowth and complication of the metamodel [R6]. Models derived from the metamodel can define their operations and new relations specific to a particular system. 
 	
-	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence, Groups of Packages (especially Workspaces) and Intrasystems are composed into System (Fig.~\ref{fig:ros_system_bdd}). 
+	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence, Sources Containers (especially Workspaces) and Intrasystems are composed into System (Fig.~\ref{fig:ros_system_bdd}). System can aggregate other Systems.
 	
 		
 	\begin{figure}[H]
@@ -405,8 +405,8 @@
 		\label{fig:namespace_bdd}
 	\end{figure}
 	
-	The Sources Container has various specialisations such as ROS Workspace and Workspace. It also plays a role of general container for ROS Packages and Data Files. 
-	The Workspace (Fig.~\ref{fig:sources_container_bdd}) contains of Packages that compose the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. As Workspace has a specific file-system nature, Group of Packages were introduced as a more general component. The Repository plays a similar role to the Workspace, but reflects the place where sources are stored.
+	The Sources Container has various specialisations such as Group of Packages, Repository and Workspace. It also plays a role of general container for ROS Packages, Data Files and Non-ROS Communicating Components. 
+	The Workspace (Fig.~\ref{fig:sources_container_bdd}) contains of Packages that compose the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. As Workspace has a specific file-system nature with various types of files stored, Group of Packages were introduced as specific aggregation od ROS Packages only. The Repository plays a similar role to the Workspace, but reflects the place where sources are stored with version control.
 	
 	
 	\begin{figure}[H]
