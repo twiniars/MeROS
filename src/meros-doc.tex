@@ -90,27 +90,30 @@
 		\label{fig:general_req}
 	\end{figure}
 		
-	The SysML models have two main parts: behavioural [R1] and structural [R2]. MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. The ROS system is two-faced. While it is executed [R4], it has a~specific structure and behaviour, but from the developers' point of view, the sources [R5] are the exposed aspect. The model should be compact and straightforward [R6] rather than unnecessarily elaborate and complicated. Although the SysML-based MeROS is classified into PSM [R8], it should be compatible with Non-ROS elements [R9]. Finally, MeROS metamodel should be valid both for final ROS~1 release (Noetic Ninjemys) and ROS~2 [R10].
+	The SysML models have two main parts: behavioural [R1] and structural [R2]. MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. The ROS system is two-faced. While it is executed [R4], it has a~specific structure and behaviour, but from the developers' point of view, the sources [R5] are the exposed aspect. The model should be compact and straightforward [R6] rather than unnecessarily elaborate and complicated. It is also universal. It does not imply itself the specific procedure of its use [R7]. These procedures are specified outside of the MeROS metamodel. Although the SysML-based MeROS is classified into PSM [R8], it should be compatible with Non-ROS elements [R9]. Finally, MeROS metamodel should be valid both for final ROS~1 release (Noetic Ninjemys) and ROS~2 [R10].
 	
 	The system's structural aspects requirements are presented in Fig.~\ref{fig:structural_aspects_req}.
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.82]{img/requirement_pkg/structural_aspects_req.png}}
+			{\includegraphics[scale=1.0]{img/requirement_pkg/structural_aspects_req.png}}
 		\end{center}
 		\caption{Structural aspects requirements.} 
 		\label{fig:structural_aspects_req}
 	\end{figure}
 	
 	A~vital addition to the original ROS concepts is the abstract grouping of: (i) communicating methods [R2.1] and (ii) communicating components [R2.2]. The motivation for the introduction of these aggregates is presented further on. It should be noted that several ROS concepts group other concepts in a~particular way, especially to deploy the system. Action aggregates Topics and Services (in ROS~2), ROS~1 Node aggregates Nodelets, and ROS~2 Component Container aggregates Nodes.
-	The ROS concepts that MeROS models are organised into four major classes (Fig.~\ref{fig:ros_concepts_req}): (i) Communicating components [R3.1], (ii) Communication methods [R3.2], (iii) Workspace [R3.3], and (iv) Other [R3.4].
+	
+	\pagebreak
+	
+	The ROS concepts that MeROS models are organised into four major classes (Fig.~\ref{fig:ros_concepts_req}): (i)~Communicating components [R3.1], (ii) Communication methods [R3.2], (iii) Workspace [R3.3], and (iv) Other [R3.4].
 	
 
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.82]{img/requirement_pkg/original_ros_concepts_req.png}}
+			{\includegraphics[scale=1.1]{img/requirement_pkg/original_ros_concepts_req.png}}
 		\end{center}
 		\caption{ROS concepts requirements.} 
 		\label{fig:ros_concepts_req}
@@ -126,6 +129,9 @@
 		\caption{Communicating components requirements.} 
 		\label{fig:communicating_components_req}
 	\end{figure}
+	
+	\pagebreak
+	
 	Communication methods are depicted in Fig.~\ref{fig:communication_concepts_req}.
 	 Three methods of communication are considered [R3.2] with their inter-component connections and data structures: (i) ROS Topic, its Message and connection, (ii) ROS Service comprising data structure and connection, and finally (iii) ROS Action including data structure and connection.
 	
@@ -143,7 +149,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.05]{img/requirement_pkg/workspace_concepts_req.png}}
+			{\includegraphics[scale=1.1]{img/requirement_pkg/workspace_concepts_req.png}}
 		\end{center}
 		\caption{Workspace concepts requirements.} 
 		\label{fig:workspace_concepts_req}
@@ -160,15 +166,13 @@
 			\label{fig:other_concepts_req}
 		\end{figure}
 
-\pagebreak
-
 	Fig.~\ref{fig:roscore_req} presents additional roscore-related relations.
 
 
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{img/requirement_pkg/roscore_req.png}}
+			{\includegraphics[scale=1.1]{img/requirement_pkg/roscore_req.png}}
 		\end{center}
 		\caption{roscore related requirements dependences.} 
 		\label{fig:roscore_req}
@@ -193,7 +197,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=0.88]{img/requirement_pkg/compactness_and_simplicity_req.png}}
+			{\includegraphics[scale=1.0]{img/requirement_pkg/compactness_and_simplicity_req.png}}
 		\end{center}
 		\caption{Compactness and simplicity requirements.} 
 		\label{fig:compactness_and_simplicity_req}
@@ -349,7 +353,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_pkg/running_system_bdd.png}}
+			{\includegraphics[scale=1.1]{img/meros_pkg/running_system_bdd.png}}
 		\end{center}
 		\caption{Running System composition.} 
 		\label{fig:running_system_bdd}
@@ -365,7 +369,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_pkg/running_system_communication_bdd.png}}
+			{\includegraphics[scale=1.1]{img/meros_pkg/running_system_communication_bdd.png}}
 		\end{center}
 		\caption{Running System communication.} 
 		\label{fig:running_system_communication_bdd}
@@ -396,14 +400,14 @@
 		\label{fig:namespace_bdd}
 	\end{figure}
 	
-	The Sources Container has various specialisations such as Group of Packages, Repository and Workspace. It also plays a~role of general container for ROS Packages, Data Files and Non-ROS Communicating Components. 
-	The Workspace (Fig.~\ref{fig:sources_container_bdd}) contains of Packages that compose the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. As Workspace has a~specific file-system nature with various types of files stored, Group of Packages were introduced as specific aggregation od ROS Packages only. The Repository plays a~similar role to the Workspace, but reflects the place where sources are stored with version control.
+	The Sources Container has various specialisations such as Group of Packages, Workspace, and Versatile Sources Container. It also plays a~role of general container for ROS Packages, while Versatile Sources Container aggregates also Data Files and Non-ROS Communicating Components.  
+	The Workspace (Fig.~\ref{fig:sources_container_bdd}) contains of Packages that compose the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. As Workspace has a~specific file-system nature with various types of files stored, Group of Packages were introduced as specific aggregation od ROS Packages only. The Repository, a~specialisation of Versatile Sources Container, plays a~similar role to the Workspace, but reflects the place where sources are stored with version control.
 	
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.71]{img/meros_pkg/sources_container_bdd.png}}
+			{\includegraphics[scale=.91]{img/meros_pkg/sources_container_bdd.png}}
 		\end{center}
 		\caption{Sources Container and its specialisations.} 
 		\label{fig:sources_container_bdd}
@@ -415,7 +419,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.71]{img/meros_pkg/ros_package_bdd.png}}
+			{\includegraphics[scale=.91]{img/meros_pkg/ros_package_bdd.png}}
 		\end{center}
 		\caption{ROS Package composition.} 
 		\label{fig:ros_package_bdd}
