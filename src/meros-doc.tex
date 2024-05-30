@@ -29,7 +29,7 @@
 
 \begin{document}
 	
-	\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 1.2.9 - reference manual}
+	\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 2.0.0 - reference manual}
 \author{MeROS developers group - https://github.com/twiniars/MeROS \\ tomasz.winiarski@pw.edu.pl}
 \date{\today}
 \maketitle
@@ -233,7 +233,7 @@
 
 	The degree of specificity of a~metamodel is a~compromise between its comprehensiveness (and, therefore, more general formulation) and a~more accurate representation of a~particular subclass of specific implementations. The metamodel contains compositions of elements and other primary relationships. Attributes and operations range widely, in particular between ROS~1 and ROS~2. Hence, their inclusion would lead to overgrowth and complication of the metamodel [R6]. Models derived from the metamodel can define their operations and new relations specific to a~particular system. 
 	
-	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence, Sources Containers (especially Workspaces) and Intrasystems are composed into System (Fig.~\ref{fig:ros_system_bdd}). System can aggregate other Systems.
+	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence, Sources Containers (especially Workspaces) and Running Systems are composed into System (Fig.~\ref{fig:ros_system_bdd}). System can aggregate other Systems.
 	
 		
 	\begin{figure}[H]
@@ -245,7 +245,7 @@
 		\label{fig:ros_system_bdd}
 	\end{figure}
 	
-	Consequently, some concepts (e.g., Node) occur in Workspaces and Intrasystems. It reduces the number of SysML blocks in the metamodel [R6.4] and eliminates the need for unnecessary mapping of SysML blocks [R6.5].
+	Consequently, some concepts (e.g., Node) occur in Workspaces and Running Systems. It reduces the number of SysML blocks in the metamodel [R6.4] and eliminates the need for unnecessary mapping of SysML blocks [R6.5].
 		
 		
 	In MeROS, a~ROS Communicating Component (Fig.~\ref{fig:communicating_components_bdd}) is a~crucial abstraction of a~number of ROS concepts to represent their standardised role regarding communication. 
@@ -260,7 +260,7 @@
 		\label{fig:communicating_components_bdd}
 	\end{figure}
 	
-	It should be noted that behavioural aspects of a~particular model specified in MeROS can be formulated by operation specification as an act (activity), sd (sequence), or stm (state machine) diagrams. The Intrasystem is one of the aggregates added to the base ROS concepts in MeROS. 
+	It should be noted that behavioural aspects of a~particular model specified in MeROS can be formulated by operation specification as an act (activity), sd (sequence), or stm (state machine) diagrams. The Running System is one of the aggregates added to the base ROS concepts in MeROS. 
 	
 	
 	For clarity, relations of Communicating Components are depicted in several diagrams. Fig.~\ref{fig:communicating_component_topics_bdd} considers Topics and their Data Structures. Here, the ROS Communicating Component can act as a~publisher or a~subscriber.	
@@ -343,30 +343,21 @@
 		 	\label{fig:node_bdd}
 	 \end{figure}
 	 
-	The Intrasystem (Fig.~\ref{fig:intrasystem_bdd}) composes ROS and Non-ROS Communicating Components specializations as well as Connections between them. A~Parameter block is introduced also for ROS~1. In ROS~2, due to safety reasons, Parameter is composed only into Nodes. Data File is introduced as a~general concept to, e.g., store configuration data, store data gathered through experiments or act as a~specific communication medium. Optionally Intrasystem composes the other Intrasystems.
+	The Running System (Fig.~\ref{fig:running_system_bdd}) composes ROS and Non-ROS Communicating Components specializations as well as Connections between them. A~Parameter block is introduced also for ROS~1. In ROS~2, due to safety reasons, Parameter is composed only into Nodes. Data File is introduced as a~general concept to, e.g., store configuration data, store data gathered through experiments or act as a~specific communication medium. Optionally Running System composes the other Running Systems.
 	
 
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=0.95]{img/meros_pkg/intrasystem_bdd.png}}
+			{\includegraphics[scale=1.0]{img/meros_pkg/running_system_bdd.png}}
 		\end{center}
-		\caption{Intrasystem compositions.} 
-		\label{fig:intrasystem_bdd}
+		\caption{Running System composition.} 
+		\label{fig:running_system_bdd}
 	\end{figure} 
 	 	 
-  	There are two specialisations of the Intrasystem (Fig.~\ref{fig:intrasystem_specialisations_bdd}). The Running System is a~specialisation of the Intrasystem that can be executed. Hence, two Nodes are needed for ROS~1: rosout and ROS master. The Communication Channel as as specialisation of the Intrasystem is introduced to specify communication between various Communicating Components. 
-	It should be noted that although MeROS could be classified as PSM, the initial, general system description with Communications Channels and general Intrasystems corresponds to PIM specification. Then, the detailing of these aggregates corresponds to the transition from PIM to PSM. 
+	The Communication Channel as as specialisation of the Running System is introduced to specify communication between various Communicating Components. 
+	It should be noted that although MeROS could be classified as PSM, the initial, general system description with Communications Channels and general Running System corresponds to PIM specification. Then, the detailing of these aggregates corresponds to the transition from PIM to PSM. 
 	
-		
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_pkg/intrasystem_specialisations_bdd.png}}
-		\end{center}
-		\caption{Instrasystem specialisations.} 
-		\label{fig:intrasystem_specialisations_bdd}
-	\end{figure}
 		
 	The way Communicating Components use various types of connections is presented in Fig.~\ref{fig:running_system_communication_bdd}. Both ROS and Non-ROS Communicating Components can communicate via Non-ROS Connections, but only ROS Communicating Components use ROS Connections.
 
@@ -374,7 +365,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.91]{img/meros_pkg/running_system_communication_bdd.png}}
+			{\includegraphics[scale=1.0]{img/meros_pkg/running_system_communication_bdd.png}}
 		\end{center}
 		\caption{Running System communication.} 
 		\label{fig:running_system_communication_bdd}
@@ -393,7 +384,7 @@
 	\end{figure}
 
 	
-	The Namespace (Fig.~\ref{fig:namespace_bdd}) aggregates elements of the Intrasystem, but only ROS related. In opposition to the Intrasystem, the Namespace does not specialise Communicating Components. Hence, it can not act as Communicating Components.
+	The Namespace (Fig.~\ref{fig:namespace_bdd}) aggregates elements of the Running System, but only ROS related. In opposition to the Running System, the Namespace does not specialise Communicating Component. Hence, it can not act as Communicating Component.
 	
 	
 	\begin{figure}[H]
@@ -418,7 +409,7 @@
 		\label{fig:sources_container_bdd}
 	\end{figure}
 	
-	The ROS Package (Fig.~\ref{fig:ros_package_bdd}) composes the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. It should be noted that in case of Actions, specific communication structures definitions are stored in Action Data Structures. The Misc <<block>> relates to other ROS and Non-ROS files, e.g., roslaunch configuration, obligatory package.xml, CMakeLists.txt. The Metapackage is introduced for conformity with the latest ROS~1 releases [R7] as well as ROS~2. 
+	The ROS Package (Fig.~\ref{fig:ros_package_bdd}) composes the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. It should be noted that in case of Actions, specific communication structures definitions are stored in Action Data Structures. The Misc \stblock{} relates to other ROS and Non-ROS files, e.g., roslaunch configuration, obligatory package.xml, CMakeLists.txt. The Metapackage is introduced for conformity with the latest ROS~1 releases [R7] as well as ROS~2. 
 	
 	
 	\begin{figure}[H]
@@ -664,16 +655,16 @@
 	
 	 The purpose of the following description is not to document the entire system but to illustrate, by example, representative aspects of the MeROS application.
 	
-	The Rico <<System>> consists of two parts. Its <<Workspace>> and <<RunningSystem>> (Fig.~\ref{fig:rico_controller_bdd}).
+	The Rico \stSystem{} consists of two parts. Its \stWorkspace{} and \stRunSystem{} (Fig.~\ref{fig:rico_system_bdd}).
 	
 	
 	\begin{figure}[H] 
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.85]{img/rico_pkg/rico_controller_bdd.png}}
+			{\includegraphics[scale=.85]{img/rico_pkg/rico_system_bdd.png}}
 		\end{center}
-		\caption{Rico <<System>> composition.} 
-		\label{fig:rico_controller_bdd}
+		\caption{Rico \stSystem{} composition.} 
+		\label{fig:rico_system_bdd}
 	\end{figure}
 	
 	
@@ -689,32 +680,32 @@
 		\label{fig:general_sd}
 	\end{figure}
 	
-	Here, the system (\stRunningSystem{} \texttt{:Rico}) and its behaviour are formulated in a~general way. An actor (e.g. an elderly person) asks the robot to move. Then, the system recognises the voice command and vocally confirms the command's acceptance. Finally, the robot executes the motion and vocally informs that the motion is finished.
-	In the following part of the description, the \stRunningSystem{} \texttt{:Rico} and sequence diagram frame \texttt{motion execution} from Fig.~\ref{fig:general_sd} are presented in a~explicit way.
+	Here, the system (\stRunSystem{} \texttt{:Rico}) and its behaviour are formulated in a~general way. An actor (e.g. an elderly person) asks the robot to move. Then, the system recognises the voice command and vocally confirms the command's acceptance. Finally, the robot executes the motion and vocally informs that the motion is finished.
+	In the following part of the description, the \stRunSystem{} \texttt{:Rico} and sequence diagram frame \texttt{motion execution} from Fig.~\ref{fig:general_sd} are presented in a~explicit way.
 	
-	The block definition diagram in Fig.~\ref{fig:rico_running_system_bdd} depicts the composition of \stRunningSystem{} \texttt{:Rico}.
+	The block definition diagram in Fig.~\ref{fig:rico_running_system_bdd} depicts the composition of \stRunSystem{} \texttt{:Rico}.
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
 			{\includegraphics[scale=0.85]{img/rico_pkg/rico_running_system_bdd.png}}
 		\end{center}
-		\caption{Rico \stRunningSystem{} composition.}
+		\caption{Rico \stRunSystem{} composition.}
 		\label{fig:rico_running_system_bdd}
 	\end{figure}
 	
-	The \stRunningSystem{} \texttt{:Rico} structure is depicted in Fig.~\ref{fig:rico_running_system_ibd}. Here, and in the following diagrams, the \texttt{rosout} and \texttt{ROS master} \stNode{}s were omitted to make the diagrams more compact. Dedicated block is needed for \stCommChannel{} \texttt{:Move To to Robot Core}, because this \stCommChannel{} is specified in detail later on.
+	The \stRunSystem{} \texttt{:Rico} structure is depicted in Fig.~\ref{fig:rico_running_system_ibd}. Here, and in the following diagrams, the \texttt{rosout} and \texttt{ROS master} \stNode{}s were omitted to make the diagrams more compact. Dedicated block is needed for \stCommChannel{} \texttt{:Move To to Robot Core}, because this \stCommChannel{} is specified in detail later on.
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
 			{\includegraphics[scale=0.85]{img/rico_pkg/rico_running_system_ibd.png}}
 		\end{center}
-		\caption{Structure of \stRunningSystem{}\texttt{:Rico}.} 
+		\caption{Structure of \stRunSystem{}\texttt{:Rico}.} 
 		\label{fig:rico_running_system_ibd}
 	\end{figure}
 
-	The system is based on TaskER framework \cite{tasker2020} developed from the RAPP approach to construct systems with variable structure \cite{zielinski2017variable}. The role of the TaskER is to schedule a~robot’s tasks. It consists of (i) Task Requesters \stNode{}s to submit new tasks, (ii) Task Harmoniser \stNode{} to schedule tasks execution, (iii) dynamic \stNode{}s (here, \stNode{} \texttt{:Move To}) to execute a~particular task on the robot hardware and (iv) cloud part, here \stNRosCompon{} \texttt{:Voice Recognition and Synthesis Platform}. The common part of the controller is located in \stIntrasystem{} \texttt{:Rico}.
+	The system is based on TaskER framework \cite{tasker2020} developed from the RAPP approach to construct systems with variable structure \cite{zielinski2017variable}. The role of the TaskER is to schedule a~robot’s tasks. It consists of (i) Task Requesters \stNode{}s to submit new tasks, (ii) Task Harmoniser \stNode{} to schedule tasks execution, (iii) dynamic \stNode{}s (here, \stNode{} \texttt{:Move To}) to execute a~particular task on the robot hardware and (iv) cloud part, here \stNRosCompon{} \texttt{:Voice Recognition and Synthesis Platform}. The common part of the controller is located in \stRunSystem{} \texttt{:Rico}.
 	
 	Fig.~\ref{fig:robot_core_ibd} illustrates how various instances of the same block are depicted in the model. Two \stParameter{} Objects of the same classifier \texttt{:Double} are composed into \stNode{} \texttt{:MoveBase}.
 	
@@ -723,7 +714,7 @@
 		\begin{center}
 			{\includegraphics[scale=1.05]{img/rico_pkg/robot_core_ibd.png}}
 		\end{center}
-		\caption{Selected elements of \stIntrasystem{} \texttt{:Robot Core}.} 
+		\caption{Selected elements of \stRunSystem{} \texttt{:Robot Core}.} 
 		\label{fig:robot_core_ibd}
 	\end{figure}
 				
@@ -740,7 +731,7 @@
 	\end{figure}
 	
 		
-	The part of the scenario generally described in Fig.~\ref{fig:general_sd} is depicted in detail in Fig.~\ref{fig:motion_execution_sd}. The presentation remains conceptual from the behavioural point of view, but it considers the particular parts of the \stRunningSystem{} \texttt{:Rico}.
+	The part of the scenario generally described in Fig.~\ref{fig:general_sd} is depicted in detail in Fig.~\ref{fig:motion_execution_sd}. The presentation remains conceptual from the behavioural point of view, but it considers the particular parts of the \stRunSystem{} \texttt{:Rico}.
 	
 	\begin{figure}[H]
 		\centering
