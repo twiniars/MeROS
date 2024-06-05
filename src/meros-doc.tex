@@ -347,32 +347,32 @@
 		 	\label{fig:node_bdd}
 	 \end{figure}
 	 
-	The Running System (Fig.~\ref{fig:running_system_bdd}) composes ROS and Non-ROS Communicating Components specializations as well as Connections between them. A~Parameter block is introduced also for ROS~1. In ROS~2, due to safety reasons, Parameter is composed only into Nodes. Data File is introduced as a~general concept to, e.g., store configuration data, store data gathered through experiments or act as a~specific communication medium. Optionally Running System composes the other Running Systems.
+	The Running System (Fig.~\ref{fig:system_bdd}) composes ROS and Non-ROS Communicating Components specializations as well as Connections between them. A~Parameter block is introduced also for ROS~1. In ROS~2, due to safety reasons, Parameter is composed only into Nodes. Data File is introduced as a~general concept to, e.g., store configuration data, store data gathered through experiments or act as a~specific communication medium. Optionally Running System composes the other Running Systems.
 	
 
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/running_system_bdd.png}}
+			{\includegraphics[scale=1.1]{img/meros_pkg/system_bdd.png}}
 		\end{center}
 		\caption{Running System composition.} 
-		\label{fig:running_system_bdd}
+		\label{fig:system_bdd}
 	\end{figure} 
 	 	 
 	The Communication Channel as as specialisation of the Running System is introduced to specify communication between various Communicating Components. 
 	It should be noted that although MeROS could be classified as PSM, the initial, general system description with Communications Channels and general Running System corresponds to PIM specification. Then, the detailing of these aggregates corresponds to the transition from PIM to PSM. 
 	
 		
-	The way Communicating Components use various types of connections is presented in Fig.~\ref{fig:running_system_communication_bdd}. Both ROS and Non-ROS Communicating Components can communicate via Non-ROS Connections, but only ROS Communicating Components use ROS Connections.
+	The way Communicating Components use various types of connections is presented in Fig.~\ref{fig:system_communication_bdd}. Both ROS and Non-ROS Communicating Components can communicate via Non-ROS Connections, but only ROS Communicating Components use ROS Connections.
 
 
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/running_system_communication_bdd.png}}
+			{\includegraphics[scale=1.1]{img/meros_pkg/system_communication_bdd.png}}
 		\end{center}
-		\caption{Running System communication.} 
-		\label{fig:running_system_communication_bdd}
+		\caption{System communication.} 
+		\label{fig:system_communication_bdd}
 	\end{figure}
 	
 		 The specializations of ROS connection (Topic connections, Service connections, and Action connections) are depicted in Fig.~\ref{fig:ros_connections_bdd}. 
@@ -687,26 +687,26 @@
 	Here, the system (\stRunSystem{} \texttt{:Rico}) and its behaviour are formulated in a~general way. An actor (e.g. an elderly person) asks the robot to move. Then, the system recognises the voice command and vocally confirms the command's acceptance. Finally, the robot executes the motion and vocally informs that the motion is finished.
 	In the following part of the description, the \stRunSystem{} \texttt{:Rico} and sequence diagram frame \texttt{motion execution} from Fig.~\ref{fig:general_sd} are presented in a~explicit way.
 	
-	The block definition diagram in Fig.~\ref{fig:rico_running_system_bdd} depicts the composition of \stRunSystem{} \texttt{:Rico}.
+	The block definition diagram in Fig.~\ref{fig:rico_system_bdd} depicts the composition of \stRunSystem{} \texttt{:Rico}.
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=0.85]{img/rico_pkg/rico_running_system_bdd.png}}
+			{\includegraphics[scale=0.85]{img/rico_pkg/rico_system_bdd.png}}
 		\end{center}
 		\caption{Rico \stRunSystem{} composition.}
-		\label{fig:rico_running_system_bdd}
+		\label{fig:rico_system_bdd}
 	\end{figure}
 	
-	The \stRunSystem{} \texttt{:Rico} structure is depicted in Fig.~\ref{fig:rico_running_system_ibd}. Here, and in the following diagrams, the \texttt{rosout} and \texttt{ROS master} \stNode{}s were omitted to make the diagrams more compact. Dedicated block is needed for \stCommChannel{} \texttt{:Move To to Robot Core}, because this \stCommChannel{} is specified in detail later on.
+	The \stRunSystem{} \texttt{:Rico} structure is depicted in Fig.~\ref{fig:rico_system_ibd}. Here, and in the following diagrams, the \texttt{rosout} and \texttt{ROS master} \stNode{}s were omitted to make the diagrams more compact. Dedicated block is needed for \stCommChannel{} \texttt{:Move To to Robot Core}, because this \stCommChannel{} is specified in detail later on.
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=0.85]{img/rico_pkg/rico_running_system_ibd.png}}
+			{\includegraphics[scale=0.85]{img/rico_pkg/rico_system_ibd.png}}
 		\end{center}
 		\caption{Structure of \stRunSystem{}\texttt{:Rico}.} 
-		\label{fig:rico_running_system_ibd}
+		\label{fig:rico_system_ibd}
 	\end{figure}
 
 	The system is based on TaskER framework \cite{tasker2020} developed from the RAPP approach to construct systems with variable structure \cite{zielinski2017variable}. The role of the TaskER is to schedule a~robot’s tasks. It consists of (i) Task Requesters \stNode{}s to submit new tasks, (ii) Task Harmoniser \stNode{} to schedule tasks execution, (iii) dynamic \stNode{}s (here, \stNode{} \texttt{:Move To}) to execute a~particular task on the robot hardware and (iv) cloud part, here \stNRosCompon{} \texttt{:Voice Recognition and Synthesis Platform}. The common part of the controller is located in \stRunSystem{} \texttt{:Rico}.
