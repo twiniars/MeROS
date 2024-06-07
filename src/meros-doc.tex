@@ -237,7 +237,7 @@
 
 	The degree of specificity of a~metamodel is a~compromise between its comprehensiveness (and, therefore, more general formulation) and a~more accurate representation of a~particular subclass of specific implementations. The metamodel contains compositions of elements and other primary relationships. Attributes and operations range widely, in particular between ROS~1 and ROS~2. Hence, their inclusion would lead to overgrowth and complication of the metamodel [R6]. Models derived from the metamodel can define their operations and new relations specific to a~particular system. 
 	
-	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence, Sources Containers (especially Workspaces) and Running Systems are composed into System (Fig.~\ref{fig:ros_system_bdd}). System can aggregate other Systems.
+	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence, Sources Containers (especially Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}). 	The Communication Channel as as specialisation of the System is introduced to specify communication between various Communicating Components. System can aggregate other Systems.
 	
 		
 	\begin{figure}[H]
@@ -249,7 +249,7 @@
 		\label{fig:ros_system_bdd}
 	\end{figure}
 	
-	Consequently, some concepts (e.g., Node) occur in Workspaces and Running Systems. It reduces the number of SysML blocks in the metamodel [R6.4] and eliminates the need for unnecessary mapping of SysML blocks [R6.5].
+	Consequently, some concepts (e.g., Node), a~specialisations of Running System Component, occur in Sources Containers. It reduces the number of SysML blocks in the metamodel [R6.4] and eliminates the need for unnecessary mapping of SysML blocks [R6.5].
 		
 		
 	In MeROS, a~ROS Communicating Component (Fig.~\ref{fig:communicating_components_bdd}) is a~crucial abstraction of a~number of ROS concepts to represent their standardised role regarding communication. 
@@ -264,7 +264,7 @@
 		\label{fig:communicating_components_bdd}
 	\end{figure}
 	
-	It should be noted that behavioural aspects of a~particular model specified in MeROS can be formulated by operation specification as an act (activity), sd (sequence), or stm (state machine) diagrams. The Running System is one of the aggregates added to the base ROS concepts in MeROS. 
+	It should be noted that behavioural aspects of a~particular model specified in MeROS can be formulated by operation specification as an act (activity), sd (sequence), or stm (state machine) diagrams. 
 	
 	
 	For clarity, relations of Communicating Components are depicted in several diagrams. Fig.~\ref{fig:communicating_component_topics_bdd} considers Topics and their Data Structures. Here, the ROS Communicating Component can act as a~publisher or a~subscriber.	
@@ -347,7 +347,7 @@
 		 	\label{fig:node_bdd}
 	 \end{figure}
 	 
-	The Running System Component (Fig.~\ref{fig:running_system_component_bdd}) is a generalisation of ROS and Non-ROS Communicating Components specializations as well as Connections between them. A~Parameter block is introduced also for ROS~1. In ROS~2, due to safety reasons, Parameter is composed only into Nodes. Database is introduced as a~general concept to, e.g., store configuration data, store data gathered through experiments or act as a~specific communication medium.
+	The Running System Component (Fig.~\ref{fig:running_system_component_bdd}) is a~generalisation of ROS and Non-ROS Communicating Components specializations as well as Connections between them. A~Parameter block is introduced also for ROS~1. In ROS~2, due to safety reasons, Parameter is composed only into Nodes. Database is introduced as a~general concept to, e.g., store configuration data, store data gathered through experiments or act as a~specific communication medium.
 	
 
 	\begin{figure}[H]
@@ -359,7 +359,7 @@
 		\label{fig:running_system_component_bdd}
 	\end{figure} 
 	 	 
-	The Communication Channel as as specialisation of the Running System is introduced to specify communication between various Communicating Components. 
+
 	It should be noted that although MeROS could be classified as PSM, the initial, general system description with Communications Channels and general Running System corresponds to PIM specification. Then, the detailing of these aggregates corresponds to the transition from PIM to PSM. 
 	
 		
@@ -626,19 +626,7 @@
 \label{ch:application}
 	
 	
-\section{Application hints}
-\label{ch:application-hints}
-
-	MeROS metamodel can be employed in various ways in broad context of SE. Although, it is difficult to speak of an indication of the best procedure for its application, it is possible to formulate some practical guidelines for building a~particular system model based on MeROS. 
-
-	\begin{itemize}
-		\item Before defining a~SysML Object, one must define the Block of which it is an instance. It is best to place Block definitions on the bdd diagrams as well. Afterwards, the definition of Objects and the formulation of the other diagrams can follow.
-		\item The Object is an instance of the Block, and the Object's classifier corresponds to the Block's name. The Object's name specifies the name of the Block instance. The stereotypes for Block and Object are the same.
-		\item The same Blocks and the same Objects should not be duplicated. A~Block or Object is defined once and used in different diagrams (in particular, the same Blocks in both the Running System and Workspace diagrams or Objects in the ibd and sd diagrams).
-		\item In practice, as long as automatic validation of models formulated in MeROS is not planned, there is no need to formulate a~complete model in a~SysML project. 
-	\end{itemize}
-		
-	To help develop user projects, the MeROS UML profile and other materials are accessible from MeROS project page\footnote{\url{http://github.com/twiniars/meros}}. 
+	MeROS metamodel can be employed in various ways in broad context of SE. To help to develop projects, the MeROS UML profile and other materials are accessible from MeROS project page\footnote{\url{http://github.com/twiniars/meros}}. 
 	
 	
 \section{Exemplary system}
@@ -649,7 +637,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[width=.6\columnwidth]{img/herbatka_u_winiara.jpg}}
+			{\includegraphics[width=\columnwidth]{img/herbatka_u_winiara.jpg}}
 		\end{center}
 		\caption{Transportation attendance by Rico robot \url{https://vimeo.com/670252925}} 
 		\label{fig:herbatka_u_winiara}
@@ -658,27 +646,28 @@
 	
 	
 	 The purpose of the following description is not to document the entire system but to illustrate, by example, representative aspects of the MeROS application.
-	
-	The Rico \stSystem{} consists of two parts. Its \stWorkspace{} and \stRunSystemCompon{} (Fig.~\ref{fig:rico_system_bdd}).
+	 
+	\newpage
+	The Rico \stSystem{} consists of two parts. Its \stWorkspace{} and a number of \stRunSystemCompon{} (Fig.~\ref{fig:rico_system_bdd}).
 	
 	
 	\begin{figure}[H] 
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.85]{img/rico_pkg/rico_system_bdd.png}}
+			{\includegraphics[scale=.9]{img/rico_pkg/rico_system_bdd.png}}
 		\end{center}
 		\caption{Rico \stSystem{} composition.} 
 		\label{fig:rico_system_bdd}
 	\end{figure}
 	
 	
-	The part of the application scenario is conceptually presented in Fig.~\ref{fig:general_sd}.
+	The fragment of the application scenario is conceptually presented in Fig.~\ref{fig:general_sd}.
 	
 
 	\begin{figure}[H] 
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.85]{img/rico_pkg/general_sd.png}}
+			{\includegraphics[scale=.9]{img/rico_pkg/general_sd.png}}
 		\end{center}
 		\caption{Concept scenario.} 
 		\label{fig:general_sd}
@@ -687,18 +676,7 @@
 	Here, the system (\stSystem{} \texttt{:Rico}) and its behaviour are formulated in a~general way. An actor (e.g. an elderly person) asks the robot to move. Then, the system recognises the voice command and vocally confirms the command's acceptance. Finally, the robot executes the motion and vocally informs that the motion is finished.
 	In the following part of the description, the \stSystem{} \texttt{:Rico} and sequence diagram frame \texttt{motion execution} from Fig.~\ref{fig:general_sd} are presented in a~explicit way.
 	
-	The block definition diagram in Fig.~\ref{fig:rico_system_bdd} depicts the composition of \stSystem{} \texttt{:Rico}.
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=0.85]{img/rico_pkg/rico_system_bdd.png}}
-		\end{center}
-		\caption{Rico \stSystem{} composition.}
-		\label{fig:rico_system_bdd}
-	\end{figure}
-	
-	The \stSystem{} \texttt{:Rico} structure is depicted in Fig.~\ref{fig:rico_system_ibd}. Here, and in the following diagrams, the \texttt{rosout} and \texttt{ROS master} \stNode{}s were omitted to make the diagrams more compact. Dedicated block is needed for \stCommChannel{} \texttt{:Move To to Robot Core}, because this \stCommChannel{} is specified in detail later on.
+		The \stSystem{} \texttt{:Rico} structure is depicted in Fig.~\ref{fig:rico_system_ibd}. Here, and in the following diagrams, the \texttt{rosout} and \texttt{ROS master} \stNode{}s were omitted to make the diagrams more compact. Dedicated block is needed for \stCommChannel{} \texttt{:Move To to Robot Core}, because this \stCommChannel{} is specified in detail later on.
 	
 	\begin{figure}[H]
 		\centering
@@ -716,7 +694,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.05]{img/rico_pkg/robot_core_ibd.png}}
+			{\includegraphics[scale=.85]{img/rico_pkg/robot_core_ibd.png}}
 		\end{center}
 		\caption{Selected elements of \stSystem{} \texttt{:Robot Core}.} 
 		\label{fig:robot_core_ibd}
@@ -728,7 +706,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.05]{img/rico_pkg/move_to_2_core_cm_ibd.png}}
+			{\includegraphics[scale=1.1]{img/rico_pkg/move_to_2_core_cm_ibd.png}}
 		\end{center}
 		\caption{Example of \stCommChannel{}.} 
 		\label{fig:move_to_2_core_cm_ibd}
@@ -740,7 +718,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.84]{img/rico_pkg/motion_execution_sd.png}}
+			{\includegraphics[scale=1.1]{img/rico_pkg/motion_execution_sd.png}}
 		\end{center}
 		\caption{Motion execution operation.} 
 		\label{fig:motion_execution_sd}
@@ -752,7 +730,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.84]{img/rico_pkg/command_motion_sd.png}}
+			{\includegraphics[scale=1.0]{img/rico_pkg/command_motion_sd.png}}
 		\end{center}
 		\caption{Command motion operation with detailed Communication methods presentation.} 
 		\label{fig:command_motion_sd}
