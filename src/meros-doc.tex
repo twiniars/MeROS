@@ -237,7 +237,7 @@
 
 	The degree of specificity of a~metamodel is a~compromise between its comprehensiveness (and, therefore, more general formulation) and a~more accurate representation of a~particular subclass of specific implementations. The metamodel contains compositions of elements and other primary relationships. Attributes and operations range widely, in particular between ROS~1 and ROS~2. Hence, their inclusion would lead to overgrowth and complication of the metamodel [R6]. Models derived from the metamodel can define their operations and new relations specific to a~particular system. 
 	
-	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence, Sources Containers (especially Workspaces) and Running Systems are composed into System (Fig.~\ref{fig:ros_system_bdd}). System can aggregate other Systems.
+	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence, Sources Containers (especially Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}). 	The Communication Channel as as specialisation of the System is introduced to specify communication between various Communicating Components. System can aggregate other Systems.
 	
 		
 	\begin{figure}[H]
@@ -249,7 +249,7 @@
 		\label{fig:ros_system_bdd}
 	\end{figure}
 	
-	Consequently, some concepts (e.g., Node) occur in Workspaces and Running Systems. It reduces the number of SysML blocks in the metamodel [R6.4] and eliminates the need for unnecessary mapping of SysML blocks [R6.5].
+	Consequently, some concepts (e.g., Node), a specialisations of Running System Component, occur in Sources Containers. It reduces the number of SysML blocks in the metamodel [R6.4] and eliminates the need for unnecessary mapping of SysML blocks [R6.5].
 		
 		
 	In MeROS, a~ROS Communicating Component (Fig.~\ref{fig:communicating_components_bdd}) is a~crucial abstraction of a~number of ROS concepts to represent their standardised role regarding communication. 
@@ -359,7 +359,7 @@
 		\label{fig:running_system_component_bdd}
 	\end{figure} 
 	 	 
-	The Communication Channel as as specialisation of the Running System is introduced to specify communication between various Communicating Components. 
+
 	It should be noted that although MeROS could be classified as PSM, the initial, general system description with Communications Channels and general Running System corresponds to PIM specification. Then, the detailing of these aggregates corresponds to the transition from PIM to PSM. 
 	
 		
