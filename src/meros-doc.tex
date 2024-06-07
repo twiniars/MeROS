@@ -347,16 +347,16 @@
 		 	\label{fig:node_bdd}
 	 \end{figure}
 	 
-	The Running System (Fig.~\ref{fig:system_bdd}) composes ROS and Non-ROS Communicating Components specializations as well as Connections between them. A~Parameter block is introduced also for ROS~1. In ROS~2, due to safety reasons, Parameter is composed only into Nodes. Data File is introduced as a~general concept to, e.g., store configuration data, store data gathered through experiments or act as a~specific communication medium. Optionally Running System composes the other Running Systems.
+	The Running System Component (Fig.~\ref{fig:running_system_component_bdd}) is a generalisation of ROS and Non-ROS Communicating Components specializations as well as Connections between them. A~Parameter block is introduced also for ROS~1. In ROS~2, due to safety reasons, Parameter is composed only into Nodes. Database is introduced as a~general concept to, e.g., store configuration data, store data gathered through experiments or act as a~specific communication medium.
 	
 
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/system_bdd.png}}
+			{\includegraphics[scale=1.1]{img/meros_pkg/running_system_component_bdd.png}}
 		\end{center}
-		\caption{Running System composition.} 
-		\label{fig:system_bdd}
+		\caption{Running System Component specialisations composition.} 
+		\label{fig:running_system_component_bdd}
 	\end{figure} 
 	 	 
 	The Communication Channel as as specialisation of the Running System is introduced to specify communication between various Communicating Components. 
@@ -659,7 +659,7 @@
 	
 	 The purpose of the following description is not to document the entire system but to illustrate, by example, representative aspects of the MeROS application.
 	
-	The Rico \stSystem{} consists of two parts. Its \stWorkspace{} and \stRunSystem{} (Fig.~\ref{fig:rico_system_bdd}).
+	The Rico \stSystem{} consists of two parts. Its \stWorkspace{} and \stRunSystemCompon{} (Fig.~\ref{fig:rico_system_bdd}).
 	
 	
 	\begin{figure}[H] 
@@ -684,32 +684,32 @@
 		\label{fig:general_sd}
 	\end{figure}
 	
-	Here, the system (\stRunSystem{} \texttt{:Rico}) and its behaviour are formulated in a~general way. An actor (e.g. an elderly person) asks the robot to move. Then, the system recognises the voice command and vocally confirms the command's acceptance. Finally, the robot executes the motion and vocally informs that the motion is finished.
-	In the following part of the description, the \stRunSystem{} \texttt{:Rico} and sequence diagram frame \texttt{motion execution} from Fig.~\ref{fig:general_sd} are presented in a~explicit way.
+	Here, the system (\stSystem{} \texttt{:Rico}) and its behaviour are formulated in a~general way. An actor (e.g. an elderly person) asks the robot to move. Then, the system recognises the voice command and vocally confirms the command's acceptance. Finally, the robot executes the motion and vocally informs that the motion is finished.
+	In the following part of the description, the \stSystem{} \texttt{:Rico} and sequence diagram frame \texttt{motion execution} from Fig.~\ref{fig:general_sd} are presented in a~explicit way.
 	
-	The block definition diagram in Fig.~\ref{fig:rico_system_bdd} depicts the composition of \stRunSystem{} \texttt{:Rico}.
+	The block definition diagram in Fig.~\ref{fig:rico_system_bdd} depicts the composition of \stSystem{} \texttt{:Rico}.
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
 			{\includegraphics[scale=0.85]{img/rico_pkg/rico_system_bdd.png}}
 		\end{center}
-		\caption{Rico \stRunSystem{} composition.}
+		\caption{Rico \stSystem{} composition.}
 		\label{fig:rico_system_bdd}
 	\end{figure}
 	
-	The \stRunSystem{} \texttt{:Rico} structure is depicted in Fig.~\ref{fig:rico_system_ibd}. Here, and in the following diagrams, the \texttt{rosout} and \texttt{ROS master} \stNode{}s were omitted to make the diagrams more compact. Dedicated block is needed for \stCommChannel{} \texttt{:Move To to Robot Core}, because this \stCommChannel{} is specified in detail later on.
+	The \stSystem{} \texttt{:Rico} structure is depicted in Fig.~\ref{fig:rico_system_ibd}. Here, and in the following diagrams, the \texttt{rosout} and \texttt{ROS master} \stNode{}s were omitted to make the diagrams more compact. Dedicated block is needed for \stCommChannel{} \texttt{:Move To to Robot Core}, because this \stCommChannel{} is specified in detail later on.
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
 			{\includegraphics[scale=0.85]{img/rico_pkg/rico_system_ibd.png}}
 		\end{center}
-		\caption{Structure of \stRunSystem{}\texttt{:Rico}.} 
+		\caption{Structure of \stSystem{}\texttt{:Rico}.} 
 		\label{fig:rico_system_ibd}
 	\end{figure}
 
-	The system is based on TaskER framework \cite{tasker2020} developed from the RAPP approach to construct systems with variable structure \cite{zielinski2017variable}. The role of the TaskER is to schedule a~robot’s tasks. It consists of (i) Task Requesters \stNode{}s to submit new tasks, (ii) Task Harmoniser \stNode{} to schedule tasks execution, (iii) dynamic \stNode{}s (here, \stNode{} \texttt{:Move To}) to execute a~particular task on the robot hardware and (iv) cloud part, here \stNRosCompon{} \texttt{:Voice Recognition and Synthesis Platform}. The common part of the controller is located in \stRunSystem{} \texttt{:Rico}.
+	The system is based on TaskER framework \cite{tasker2020} developed from the RAPP approach to construct systems with variable structure \cite{zielinski2017variable}. The role of the TaskER is to schedule a~robot’s tasks. It consists of (i) Task Requesters \stNode{}s to submit new tasks, (ii) Task Harmoniser \stNode{} to schedule tasks execution, (iii) dynamic \stNode{}s (here, \stNode{} \texttt{:Move To}) to execute a~particular task on the robot hardware and (iv) cloud part, here \stNRosCompon{} \texttt{:Voice Recognition and Synthesis Platform}. The common part of the controller is located in \stSystem{} \texttt{:Rico}.
 	
 	Fig.~\ref{fig:robot_core_ibd} illustrates how various instances of the same block are depicted in the model. Two \stParameter{} Objects of the same classifier \texttt{:Double} are composed into \stNode{} \texttt{:MoveBase}.
 	
@@ -718,7 +718,7 @@
 		\begin{center}
 			{\includegraphics[scale=1.05]{img/rico_pkg/robot_core_ibd.png}}
 		\end{center}
-		\caption{Selected elements of \stRunSystem{} \texttt{:Robot Core}.} 
+		\caption{Selected elements of \stSystem{} \texttt{:Robot Core}.} 
 		\label{fig:robot_core_ibd}
 	\end{figure}
 				
@@ -735,7 +735,7 @@
 	\end{figure}
 	
 		
-	The part of the scenario generally described in Fig.~\ref{fig:general_sd} is depicted in detail in Fig.~\ref{fig:motion_execution_sd}. The presentation remains conceptual from the behavioural point of view, but it considers the particular parts of the \stRunSystem{} \texttt{:Rico}.
+	The part of the scenario generally described in Fig.~\ref{fig:general_sd} is depicted in detail in Fig.~\ref{fig:motion_execution_sd}. The presentation remains conceptual from the behavioural point of view, but it considers the particular parts of the \stSystem{} \texttt{:Rico}.
 	
 	\begin{figure}[H]
 		\centering
