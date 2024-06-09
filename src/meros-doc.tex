@@ -237,7 +237,7 @@
 
 	The degree of specificity of a~metamodel is a~compromise between its comprehensiveness (and, therefore, more general formulation) and a~more accurate representation of a~particular subclass of specific implementations. The metamodel contains compositions of elements and other primary relationships. Attributes and operations range widely, in particular between ROS~1 and ROS~2. Hence, their inclusion would lead to overgrowth and complication of the metamodel [R6]. Models derived from the metamodel can define their operations and new relations specific to a~particular system. 
 	
-	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence, Sources Containers (especially Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}). 	The Communication Channel as as specialisation of the System is introduced to specify communication between various Communicating Components. System can aggregate other Systems.
+	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence facade blocks, i.e., Sources Containers (specialised especially by Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}). The Communication Channel as as specialisation of the System is introduced to specify communication between various Communicating Components. System can aggregate other Systems.
 	
 		
 	\begin{figure}[H]
