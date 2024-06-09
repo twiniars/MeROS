@@ -29,14 +29,14 @@
 
 \begin{document}
 	
-	\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 2.0.0 - reference manual}
+	\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 2.0.1 - reference manual}
 \author{MeROS developers group - https://github.com/twiniars/MeROS \\ tomasz.winiarski@pw.edu.pl}
 \date{\today}
 \maketitle
 
 
 	\begin{abstract}
-		The complexity of today's robot control systems implies difficulty in developing them efficiently and reliably. Systems engineering (SE) and frameworks come to help. The framework metamodels are needed to support the standardisation and correctness of the created application models. MeROS is a~metamodel for ROS, which addresses the running system and developer workspace. The ROS comes in two versions: ROS~1 and ROS~2. The metamodel includes both versions. In particular, the latest ROS~1 concepts are considered, such as nodelet, action, and metapackage. An essential addition to the original ROS concepts is the grouping of these concepts, which provides an opportunity to illustrate the system's decomposition and varying degrees of detail in its presentation. The metamodel is derived from the requirements and verified on the practical examples. The matter is described in a~standardised way in SysML (Systems Modeling Language). Hence, common development tools that support SysML can help develop robot controllers in the spirit of SE.
+		The complexity of today's robot control systems implies difficulty in developing them efficiently and reliably. Systems engineering (SE) and frameworks come to help. The framework metamodels are needed to support the standardisation and correctness of the created application models. MeROS is a~metamodel for ROS, which addresses the running system and developer workspace. The ROS comes in two versions: ROS~1 and ROS~2. The metamodel includes both versions. In particular, the latest ROS~1 concepts are considered, such as nodelet, and action. An essential addition to the original ROS concepts is the grouping of these concepts, which provides an opportunity to illustrate the system's decomposition and varying degrees of detail in its presentation. The metamodel is derived from the requirements and verified on the practical examples. The matter is described in a~standardised way in SysML (Systems Modeling Language). Hence, common development tools that support SysML can help develop robot controllers in the spirit of SE.
 	\end{abstract}
 	
 	
@@ -243,7 +243,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.95]{img/meros_pkg/system_bdd.png}}
+			{\includegraphics[scale=.94]{img/meros_pkg/system_bdd.png}}
 		\end{center}
 		\caption{System general composition.} 
 		\label{fig:ros_system_bdd}
@@ -257,7 +257,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.95]{img/meros_pkg/communicating_component_specialisations_bdd.png}}
+			{\includegraphics[scale=.94]{img/meros_pkg/communicating_component_specialisations_bdd.png}}
 		\end{center}
 		\caption{Communicating Component and specialised blocks -- bdd.} 
 		\label{fig:communicating_components_bdd}
@@ -352,7 +352,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/running_system_component_bdd.png}}
+			{\includegraphics[scale=1.15]{img/meros_pkg/running_system_component_bdd.png}}
 		\end{center}
 		\caption{Running System Component specialisations composition.} 
 		\label{fig:running_system_component_bdd}
@@ -368,7 +368,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/system_communication_bdd.png}}
+			{\includegraphics[scale=1.15]{img/meros_pkg/system_communication_bdd.png}}
 		\end{center}
 		\caption{System communication.} 
 		\label{fig:system_communication_bdd}
@@ -380,7 +380,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.91]{img/meros_pkg/ros_connections_bdd.png}}
+			{\includegraphics[scale=1.0]{img/meros_pkg/ros_connections_bdd.png}}
 		\end{center}
 		\caption{ROS Connections.} 
 		\label{fig:ros_connections_bdd}
@@ -393,7 +393,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.91]{img/meros_pkg/namespace_bdd.png}}
+			{\includegraphics[scale=1.0]{img/meros_pkg/namespace_bdd.png}}
 		\end{center}
 		\caption{Namespace composition.} 
 		\label{fig:namespace_bdd}
@@ -412,21 +412,50 @@
 		\label{fig:sources_container_bdd}
 	\end{figure}
 	
-	The ROS Package (Fig.~\ref{fig:ros_package_bdd}) composes the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. It should be noted that in case of Actions, specific communication structures definitions are stored in Action Data Structures. The Misc \stblock{} relates to other ROS and Non-ROS files, e.g., roslaunch configuration, obligatory package.xml, CMakeLists.txt. The Metapackage is introduced for conformity with the latest ROS~1 releases [R7] as well as ROS~2. 
-	
+	The ROS Package (Fig.~\ref{fig:ros_package_bdd}) composes the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. It should be noted that in case of Actions, specific communication structures definitions are stored in Action Data Structures. The Misc \stblock{} relates to other ROS and Non-ROS files, e.g., roslaunch configuration, obligatory package.xml, CMakeLists.txt. 	
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.91]{img/meros_pkg/ros_package_bdd.png}}
+			{\includegraphics[scale=1.0]{img/meros_pkg/ros_package_bdd.png}}
 		\end{center}
 		\caption{ROS Package composition.} 
 		\label{fig:ros_package_bdd}
 	\end{figure}
 		
 		
+The composition of Versatile Sources Container is presented in Fig.~\ref{fig:ver_sources_contain_bdd}.
 
+	\begin{figure}[H]
+		\centering
+		\begin{center}
+			{\includegraphics[scale=1.0]{img/meros_pkg/ver_sources_contain_bdd.png}}
+		\end{center}
+		\caption{Versatile Sources Container composition.} 
+		\label{fig:ver_sources_contain_bdd}
+	\end{figure}
 	
+The composition of Repository is presented in Fig.~\ref{fig:repository_bdd}.	
+	
+	\begin{figure}[H]
+		\centering
+		\begin{center}
+			{\includegraphics[scale=1.0]{img/meros_pkg/repository_bdd.png}}
+		\end{center}
+		\caption{Repository composition.} 
+		\label{fig:repository_bdd}
+	\end{figure}
+
+The composition of ROS Workspace is presented in Fig.~\ref{fig:ros_workspace_bdd}.
+
+	\begin{figure}[H]
+		\centering
+		\begin{center}
+			{\includegraphics[scale=1.0]{img/meros_pkg/ros_workspace_bdd.png}}
+		\end{center}
+		\caption{ROS Workspace composition.} 
+		\label{fig:ros_workspace_bdd}
+	\end{figure}
 	
 	
 \section{Communication}
