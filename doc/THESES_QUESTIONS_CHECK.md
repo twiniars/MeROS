@@ -5,7 +5,7 @@
 3. Czy wskazano wszelkie Repozytoria, Przestrzenie Robocze, Pakiety i inne potrzebne Kontenery Źródeł? Czy do Pakietów przypisano autorskie Komponenty Systemu Uruchomieniowego?
 4. Czy przedstawiono wszystkie autorskie Węzły?
 5. Czy określono na poziomie ogólnym i szczegółowym Kanały Komunikacyjne?
-6. Czy przedstawiono wymagania i zaalokowano je wszystkie jawnie w Systemie?
+6. Czy przedstawiono wymagania i zaalokowano wszystkie wymagania liścienne jawnie w Systemie?
 7. Czy na wstępnie określono cele funkcjonalne i sposób walidacji? Dotyczy to w szczególności koncepcyjnych diagramów sekwencji, przypadków użycia, diagramów aktywności w zależności od charakteru pracy.
 8. Czy sformułowano opis projektu na poziomie koncepcyjnym w sensie strukturalnym i behawioralnym?
 9. Czy sformułowano implementacyjny opis projektu w sensie strukturalnym i behawioralnym?
