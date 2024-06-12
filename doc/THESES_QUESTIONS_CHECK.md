@@ -11,4 +11,4 @@
 9. Czy sformułowano implementacyjny opis projektu w sensie strukturalnym i behawioralnym?
 10. Czy przeprowadzono weryfikację przejścia pomiędzy poziomem koncepcyjnym a implementacyjnym opisu projektu? W szczególności wiąże to się z przypisaniem wszelkich bloków na poziomie implementacyjnym (np. Node) ich koncepcyjnym odpowiednikom (np. Systemom), w tym agregatom.
 11. Czy przeprowadzono testy zgodnie z założeniami walidacyjnymi?
-12. Czy oceniono wyników testów, najlepiej w sensie nie tylko jakoścowym ale i ilościowym?
+12. Czy oceniono wyników testów, najlepiej w sensie nie tylko jakościowym ale i ilościowym?
