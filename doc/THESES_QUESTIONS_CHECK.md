@@ -1,6 +1,6 @@
 # MeROS: Pytania na jakie powinna odpowiadać praca dyplomowa w kontekście MeROS. Dotyczy to zarówno diagramów jak i towarzyszącego im tekstu.
 
-1. Czy wszędzie zastosowano właściwe stereotypy? Czy wykorzystywana jest bieżąca wersja MeROS?
+1. Czy wszędzie zastosowano właściwe stereotypy? Czy wykorzystywana jest bieżąca wersja MeROS? Czy podano wersję MeROS, która jest wykorzystywana?
 2. Jakie wyszczególniono Systemy? Jak wygląda dekompozycja ogólnego Systemu, na którym prowadzono prace? Czy wyszczególniono Systemy dla zastanej części sterownika oraz autorskiej części sterownika?
 3. Czy wskazano wszelkie Repozytoria, Przestrzenie Robocze, Pakiety i inne potrzebne Kontenery Źródeł? Czy do Pakietów przypisano autorskie Komponenty Systemu Uruchomieniowego?
 4. Czy przedstawiono wszystkie autorskie Węzły?
