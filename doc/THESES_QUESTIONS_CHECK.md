@@ -11,5 +11,5 @@
 9. Czy sformułowano implementacyjny opis projektu w sensie strukturalnym i behawioralnym?
 10. Czy przeprowadzono weryfikację przejścia pomiędzy poziomem koncepcyjnym a implementacyjnym opisu projektu? W szczególności wiąże to się z przypisaniem wszelkich bloków na poziomie implementacyjnym (np. Node) ich koncepcyjnym odpowiednikom (np. Systemom), w tym agregatom.
 11. Zastosowanie (deployment). Czy opisano na diagramach SysML (zasadniczo bdd i ibd) sprzęt, na którym uruchamiane jest oprogramowanie opisane w MeROS? Czy powiązano bloki tych diagramów z odpowiadającymi im blokami oprogramowania opisanego w MeROS?
-12. Czy przeprowadzono testy zgodnie z założeniami walidacyjnymi?
+12. Czy przeprowadzono testy zgodnie z założeniami walidacyjnymi? Czy powstal odpowiedni film ilustrujący testy/działanie systemu? Jeśli nie to dlaczego
 13. Czy oceniono wyników testów, najlepiej w sensie nie tylko jakościowym ale i ilościowym (np. czas szybkość działania, niezawodność w sensie statystycznym)?
