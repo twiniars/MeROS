@@ -29,7 +29,7 @@
 
 \begin{document}
 	
-	\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 3.0.0 - reference manual}
+	\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 3.0.1 - reference manual}
 \author{MeROS developers group - https://github.com/twiniars/MeROS \\ tomasz.winiarski@pw.edu.pl}
 \date{\today}
 \maketitle
@@ -90,7 +90,7 @@
 		\label{fig:general_req}
 	\end{figure}
 		
-	The SysML models have two main parts: behavioural [R1] and structural [R2]. MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. The ROS system is two-faced. While it is executed [R4], it has a~specific structure and behaviour, but from the developers' point of view, the sources [R5] are the exposed aspect. The model should be compact and straightforward [R6] rather than unnecessarily elaborate and complicated. It is also universal. It does not imply itself the specific procedure of its use [R7]. These procedures are specified outside of the MeROS metamodel. Although the SysML-based MeROS is classified into PSM [R8], it should be compatible with Non-ROS elements [R9]. Finally, MeROS metamodel should be valid both for final ROS~1 release (Noetic Ninjemys) and ROS~2 [R10].
+	The SysML models have two main parts: behavioural [R1] and structural [R2]. MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. The ROS system is two-faced. While it is executed [R4], it has a~specific structure and behaviour, but from the developers' point of view, the sources [R5] are the exposed aspect. The model should be compact and straightforward [R6] rather than unnecessarily elaborate and complicated. It is also universal. It does not imply itself the specific procedure of its use [R7]. These procedures are specified outside of the MeROS metamodel. Although the SysML-based MeROS is classified into PSM [R8], it should be compatible with Non-ROS elements [R9]. MeROS metamodel should be valid both for final ROS~1 release (Noetic Ninjemys) and ROS~2 [R10]. Finally, embodiment [R11] (e.g. system deployment) should be considered.
 	
 	The system's structural aspects requirements are presented in Fig.~\ref{fig:structural_aspects_req}.
 	
@@ -239,7 +239,7 @@
 	Hence, models derived from the metamodel can define their stereotypes, operations and new relations specific to a~particular System. 
 	
 	
-	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence blocks, i.e., Sources Containers (specialised especially by Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}). The Communication Channel as as specialisation of the System is introduced to specify communication between various Communicating Components. System can aggregate other Systems.
+	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence blocks, i.e., Sources Containers (specialised especially by Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}). The Communication Channel as as specialisation of the System is introduced to specify communication between various Communicating Components. Hardware block reflects to embodiment [R11]. System can aggregate other Systems.
 	
 		
 	\begin{figure}[H]
