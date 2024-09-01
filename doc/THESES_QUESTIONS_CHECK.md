@@ -7,7 +7,7 @@
 5. Czy wyszczególniono Systemy dla zastanej części sterownika oraz autorskiej części sterownika?
 6. Czy wskazano wszelkie Repozytoria, Przestrzenie Robocze, Pakiety i inne potrzebne Kontenery Źródeł?
 7. Czy do Pakietów przypisano autorskie Komponenty Systemu Uruchomieniowego?
-8. Czy przedstawiono wszystkie autorskie Węzły?
+8. Czy przedstawiono wszystkie autorskie Węzły i inne Komponenty Systemu Uruchomieniowego?
 9. Czy określono na poziomie ogólnym i szczegółowym Kanały Komunikacyjne?
 10. Czy przedstawiono wymagania i zaalokowano jawnie w Systemie wszystkie wymagania liścienne?
 11. Czy na wstępnie określono cele funkcjonalne i sposób walidacji? Dotyczy to w szczególności koncepcyjnych diagramów sekwencji, przypadków użycia, diagramów aktywności w zależności od charakteru pracy.
