@@ -13,7 +13,7 @@
 11. Czy na wstępnie określono cele funkcjonalne i sposób walidacji? Dotyczy to w szczególności koncepcyjnych diagramów sekwencji, przypadków użycia, diagramów aktywności w zależności od charakteru pracy.
 12. Czy sformułowano opis projektu na poziomie koncepcyjnym w sensie strukturalnym i behawioralnym?
 13. Czy sformułowano implementacyjny opis projektu w sensie strukturalnym i behawioralnym?
-14. Czy wszystkie elementy wystepujące na diargamach (np. \<\<Node\>\>), są agregowane przez inne elementy i jest to zilustrowane na diagramach (zasadniczo bdd)?
+14. Czy wszystkie elementy wystepujące na diagramach (np. \<\<Node\>\>), są agregowane przez inne elementy i jest to zilustrowane na diagramach (zasadniczo bdd)?
 15. Czy przeprowadzono weryfikację przejścia pomiędzy poziomem koncepcyjnym a implementacyjnym opisu projektu? W szczególności wiąże to się z przypisaniem wszelkich bloków na poziomie implementacyjnym (np. Node) ich koncepcyjnym odpowiednikom (np. Systemom), w tym agregatom.
 16. Zastosowanie (deployment). Czy opisano na diagramach SysML (zasadniczo bdd i ibd) sprzęt, na którym uruchamiane jest oprogramowanie opisane w MeROS? Czy powiązano bloki tych diagramów z odpowiadającymi im blokami oprogramowania opisanego w MeROS?
 17. Czy czcionka na diagramach wstawionych do pracy jest zbliżona wielkością do tej w tekście pracy? Jeśli jest za mała zwykle właściwym krokiem jest dekompozycja diagramów, czy też zmniejszenie liczby elementów na pojedynczym diagramie. Diagramy należy wstawiać zadająć im wielkość za pomocą scale=x, gdzie powinno być zbliżone do 1.0.
