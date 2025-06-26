@@ -1,910 +1,767 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Stereotypes version="20090707">
 	<ApplicationStereotypes>
-		<Stereotype abstract="false" baseType="Requirement" documentation="" id="A6f2s_GGAqAAhwBN" leaf="false" name="requirement" root="false">
-			<TaggedValueDefinitionContainer id="u6f2s_GGAqAAhwBP" name="">
+		<Stereotype abstract="false" baseType="Requirement" documentation="" id="OEkM4GmGAqAA4gBN" leaf="false" name="requirement" root="false">
+			<TaggedValueDefinitionContainer id="NEkM4GmGAqAA4gBP" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition defaultValue="" documentation="" id="B6f2s_GGAqAAhwBR" name="Text" type="3"/>
-					<TaggedValueDefinition defaultValue="" documentation="" id="b6f2s_GGAqAAhwBS" name="ID" type="0"/>
-					<TaggedValueDefinition defaultValue="" documentation="" id="76f2s_GGAqAAhwBT" name="source" type="0"/>
-					<TaggedValueDefinition defaultValue="" documentation="" id="X6f2s_GGAqAAhwBU" name="kind" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="dEkM4GmGAqAA4gBR" name="Text" type="3"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id="zEkM4GmGAqAA4gBS" name="ID" type="0"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id="zEkM4GmGAqAA4gBT" name="source" type="0"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id="zEkM4GmGAqAA4gBU" name="kind" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="X6f2s_GGAqAAhwBU0" value="Functional"/>
-							<ValueSpecification id="X6f2s_GGAqAAhwBU1" value="Performance"/>
-							<ValueSpecification id="X6f2s_GGAqAAhwBU2" value="Interface"/>
+							<ValueSpecification id="zEkM4GmGAqAA4gBU0" value="Functional"/>
+							<ValueSpecification id="zEkM4GmGAqAA4gBU1" value="Performance"/>
+							<ValueSpecification id="zEkM4GmGAqAA4gBU2" value="Interface"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="36f2s_GGAqAAhwBV" name="verifyMethod" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="LEkM4GmGAqAA4gBV" name="verifyMethod" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="36f2s_GGAqAAhwBV0" value="Analysis"/>
-							<ValueSpecification id="36f2s_GGAqAAhwBV1" value="Demonstration"/>
-							<ValueSpecification id="36f2s_GGAqAAhwBV2" value="Inspection"/>
-							<ValueSpecification id="36f2s_GGAqAAhwBV3" value="Test"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBV0" value="Analysis"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBV1" value="Demonstration"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBV2" value="Inspection"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBV3" value="Test"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="P6f2s_GGAqAAhwBW" name="risk" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="LEkM4GmGAqAA4gBW" name="risk" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="P6f2s_GGAqAAhwBW0" value="High"/>
-							<ValueSpecification id="P6f2s_GGAqAAhwBW1" value="Medium"/>
-							<ValueSpecification id="P6f2s_GGAqAAhwBW2" value="Low"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBW0" value="High"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBW1" value="Medium"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBW2" value="Low"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="v6f2s_GGAqAAhwBX" name="status" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="LEkM4GmGAqAA4gBX" name="status" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="v6f2s_GGAqAAhwBX0" value="Proposed"/>
-							<ValueSpecification id="v6f2s_GGAqAAhwBX1" value="Approved"/>
-							<ValueSpecification id="v6f2s_GGAqAAhwBX2" value="Rejected"/>
-							<ValueSpecification id="v6f2s_GGAqAAhwBX3" value="Deferred"/>
-							<ValueSpecification id="v6f2s_GGAqAAhwBX4" value="Implemented"/>
-							<ValueSpecification id="v6f2s_GGAqAAhwBX5" value="Mandatory"/>
-							<ValueSpecification id="v6f2s_GGAqAAhwBX6" value="Obsolete"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX0" value="Proposed"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX1" value="Approved"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX2" value="Rejected"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX3" value="Deferred"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX4" value="Implemented"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX5" value="Mandatory"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX6" value="Obsolete"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="UseCase" documentation="" id="w5f2s_GGAqAAhwKm" leaf="false" name="UseCase" root="false">
-			<TaggedValueDefinitionContainer id="E5f2s_GGAqAAhwKn" name="">
+		<Stereotype abstract="false" baseType="UseCase" documentation="" id="aSkM4GmGAqAA4gKm" leaf="false" name="UseCase" root="false">
+			<TaggedValueDefinitionContainer id="eSkM4GmGAqAA4gKn" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition defaultValue="" documentation="" id="E5f2s_GGAqAAhwKo" name="Level" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="eSkM4GmGAqAA4gKo" name="Level" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="E5f2s_GGAqAAhwKo0" value="Summary"/>
-							<ValueSpecification id="E5f2s_GGAqAAhwKo1" value="User"/>
-							<ValueSpecification id="E5f2s_GGAqAAhwKo2" value="Subfunction"/>
+							<ValueSpecification id="eSkM4GmGAqAA4gKo0" value="Summary"/>
+							<ValueSpecification id="eSkM4GmGAqAA4gKo1" value="User"/>
+							<ValueSpecification id="eSkM4GmGAqAA4gKo2" value="Subfunction"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="k5f2s_GGAqAAhwKp" name="Complexity" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id=".SkM4GmGAqAA4gKp" name="Complexity" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="k5f2s_GGAqAAhwKp0" value="Low"/>
-							<ValueSpecification id="k5f2s_GGAqAAhwKp1" value="Medium"/>
-							<ValueSpecification id="k5f2s_GGAqAAhwKp2" value="High"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKp0" value="Low"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKp1" value="Medium"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKp2" value="High"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="k5f2s_GGAqAAhwKq" name="Use Case Status" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id=".SkM4GmGAqAA4gKq" name="Use Case Status" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="k5f2s_GGAqAAhwKq0" value="Name Only"/>
-							<ValueSpecification id="k5f2s_GGAqAAhwKq1" value="Initial"/>
-							<ValueSpecification id="k5f2s_GGAqAAhwKq2" value="Base"/>
-							<ValueSpecification id="k5f2s_GGAqAAhwKq3" value="Complete"/>
-							<ValueSpecification id="k5f2s_GGAqAAhwKq4" value="Deferred"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKq0" value="Name Only"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKq1" value="Initial"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKq2" value="Base"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKq3" value="Complete"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKq4" value="Deferred"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="U5f2s_GGAqAAhwKr" name="Implementation Status" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id=".SkM4GmGAqAA4gKr" name="Implementation Status" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="U5f2s_GGAqAAhwKr0" value="Scheduled"/>
-							<ValueSpecification id="U5f2s_GGAqAAhwKr1" value="Started"/>
-							<ValueSpecification id="U5f2s_GGAqAAhwKr2" value="Partially Complete"/>
-							<ValueSpecification id="U5f2s_GGAqAAhwKr3" value="Complete"/>
-							<ValueSpecification id="U5f2s_GGAqAAhwKr4" value="Partially Deferred"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKr0" value="Scheduled"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKr1" value="Started"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKr2" value="Partially Complete"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKr3" value="Complete"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKr4" value="Partially Deferred"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="U5f2s_GGAqAAhwKs" name="Preconditions" type="4"/>
-					<TaggedValueDefinition defaultValue="" documentation="" id="U5f2s_GGAqAAhwKt" name="Post-conditions" type="4"/>
-					<TaggedValueDefinition defaultValue="" documentation="" id="05f2s_GGAqAAhwKu" name="Author" type="0"/>
-					<TaggedValueDefinition defaultValue="" documentation="" id="05f2s_GGAqAAhwKv" name="Assumptions" type="4"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id=".SkM4GmGAqAA4gKs" name="Preconditions" type="4"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id=".SkM4GmGAqAA4gKt" name="Post-conditions" type="4"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id=".SkM4GmGAqAA4gKu" name="Author" type="0"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id=".SkM4GmGAqAA4gKv" name="Assumptions" type="4"/>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="UseCase" documentation="" id="AFf2s_GGAqAAhwK6" leaf="false" name="Case Story" root="false"/>
-		<Stereotype abstract="false" baseType="UseCase" documentation="" id="CFf2s_GGAqAAhwK8" leaf="false" name="Context" root="false">
+		<Stereotype abstract="false" baseType="UseCase" documentation="" id="3SkM4GmGAqAA4gK6" leaf="false" name="Case Story" root="false"/>
+		<Stereotype abstract="false" baseType="UseCase" documentation="" id="QykM4GmGAqAA4gK8" leaf="false" name="Context" root="false">
 			<Formats>
 				<Fill color1="Cr:71,151,250,255" gradientStyle="0" transparency="0" type="1"/>
 			</Formats>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="ArchiMateBusinessActor" documentation="" iconPath="" id="sTf2s_GGAqAAhwQY" leaf="false" name="Individual" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateBusinessActor" documentation="" iconPath="" id="cTf2s_GGAqAAhwQZ" leaf="false" name="Organizational Unit" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateBusinessActor" documentation="" iconPath="" id="cTf2s_GGAqAAhwQa" leaf="false" name="Organization" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateBusinessActor" documentation="" iconPath="" id="8Tf2s_GGAqAAhwQb" leaf="false" name="Threat Agent" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateBusinessService" documentation="" iconPath="" id="8Tf2s_GGAqAAhwQc" leaf="false" name="Business Decision" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateBusinessCollaboration" documentation="" iconPath="" id="8Tf2s_GGAqAAhwQd" leaf="false" name="Social Network" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateBusinessProcess" documentation="" iconPath="" id="8Tf2s_GGAqAAhwQe" leaf="false" name="Business Activity" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateBusinessEvent" documentation="" iconPath="" id="CTf2s_GGAqAAhwQf" leaf="false" name="Threat Event (Risk &amp; Security Overlay)" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateBusinessEvent" documentation="" iconPath="" id="CTf2s_GGAqAAhwQg" leaf="false" name="Loss Event (Risk &amp; Security Overlay)" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateApplicationComponent" documentation="" iconPath="" id="iTf2s_GGAqAAhwQh" leaf="false" name="Logical Application Component" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateApplicationComponent" documentation="" iconPath="" id="iTf2s_GGAqAAhwQi" leaf="false" name="Physical Application Component" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateApplicationInterface" documentation="" iconPath="" id="iTf2s_GGAqAAhwQj" leaf="false" name="Application-to-Application Interface" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateApplicationInterface" documentation="" iconPath="" id="iTf2s_GGAqAAhwQk" leaf="false" name="Graphical User Interface" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateNode" documentation="" iconPath="" id="iTf2s_GGAqAAhwQl" leaf="false" name="Logical Technology Component" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateNode" documentation="" iconPath="" id="STf2s_GGAqAAhwQm" leaf="false" name="Physical Technology Component" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateDevice" documentation="" iconPath="" id="STf2s_GGAqAAhwQn" leaf="false" name="Mobile Device" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateDevice" documentation="" iconPath="" id="STf2s_GGAqAAhwQo" leaf="false" name="Embedded Device" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateNetworkBox" documentation="" iconPath="" id="STf2s_GGAqAAhwQp" leaf="false" name="WiFi Network" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateNetworkBox" documentation="" iconPath="" id="STf2s_GGAqAAhwQq" leaf="false" name="Wide Area Network" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateInfrastructureService" documentation="" iconPath="" id="STf2s_GGAqAAhwQr" leaf="false" name="Processing Service" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateInfrastructureService" documentation="" iconPath="" id="yTf2s_GGAqAAhwQs" leaf="false" name="Storage Service" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateInfrastructureService" documentation="" iconPath="" id="yTf2s_GGAqAAhwQt" leaf="false" name="Communication Service" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateEquipment" documentation="" iconPath="" id="yTf2s_GGAqAAhwQu" leaf="false" name="Vehicle" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateEquipment" documentation="" iconPath="" id="yTf2s_GGAqAAhwQv" leaf="false" name="Train" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateFacility" documentation="" iconPath="" id="yTf2s_GGAqAAhwQw" leaf="false" name="Factory" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateMaterial" documentation="" iconPath="" id="KTf2s_GGAqAAhwQx" leaf="false" name="Ore" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateMaterial" documentation="" iconPath="" id="KTf2s_GGAqAAhwQy" leaf="false" name="Building Material" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateMaterial" documentation="" iconPath="" id="KTf2s_GGAqAAhwQz" leaf="false" name="Fuel" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateDistributionNetworkBox" documentation="" iconPath="" id="KTf2s_GGAqAAhwQ0" leaf="false" name="Rail Network" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateDistributionNetworkBox" documentation="" iconPath="" id="KTf2s_GGAqAAhwQ1" leaf="false" name="Energy Grid" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateDriver" documentation="" iconPath="" id="qTf2s_GGAqAAhwQ2" leaf="false" name="Metric" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateAssessment" documentation="" iconPath="" id="qTf2s_GGAqAAhwQ3" leaf="false" name="Vulnerability (Risk &amp; Security Overlay)" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateAssessment" documentation="" iconPath="" id="qTf2s_GGAqAAhwQ4" leaf="false" name="Risk (Risk &amp; Security Overlay)" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateGoal" documentation="" iconPath="" id="qTf2s_GGAqAAhwQ5" leaf="false" name="Business Objective" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateGoal" documentation="" iconPath="" id="qTf2s_GGAqAAhwQ6" leaf="false" name="Control Objective (Risk &amp; Security Overlay)" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMatePrinciple" documentation="" iconPath="" id="qTf2s_GGAqAAhwQ7" leaf="false" name="Business Policy" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateRequirement" documentation="" iconPath="" id="aTf2s_GGAqAAhwQ8" leaf="false" name="Control Measure (Risk &amp; Security Overlay)" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateRequirement" documentation="" iconPath="" id="aTf2s_GGAqAAhwQ9" leaf="false" name="Business Rule" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateCapability" documentation="" iconPath="" id="aTf2s_GGAqAAhwQ." leaf="false" name="Capability Increment" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateCourseOfAction" documentation="" iconPath="" id="aTf2s_GGAqAAhwQ_" leaf="false" name="Strategy" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateCourseOfAction" documentation="" iconPath="" id="aTf2s_GGAqAAhwRA" leaf="false" name="Tactic" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateWorkPackage" documentation="" iconPath="" id="aTf2s_GGAqAAhwRB" leaf="false" name="Program" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateWorkPackage" documentation="" iconPath="" id="6Tf2s_GGAqAAhwRC" leaf="false" name="Project" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateGrouping" documentation="" iconPath="" id="6Tf2s_GGAqAAhwRD" leaf="false" name="Risk Domain (Risk &amp; Security Overlay)" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateFlow" documentation="" iconPath="" id="6Tf2s_GGAqAAhwRE" leaf="false" name="Money Flow" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateAssignment" documentation="" iconPath="" id="6Tf2s_GGAqAAhwRF" leaf="false" name="Responsibilities assignment" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateAssignment" documentation="" iconPath="" id="6Tf2s_GGAqAAhwRG" leaf="false" name="Behavior assignment" root="false"/>
-		<Stereotype abstract="false" baseType="ArchiMateOrJunction" documentation="" iconPath="" id="GTf2s_GGAqAAhwRH" leaf="false" name="Or-join" root="false"/>
-		<Stereotype abstract="false" baseType="Actor" documentation="" iconPath="" id="GTf2s_GGAqAAhwRI" leaf="false" name="metaclass" root="false"/>
-		<Stereotype abstract="false" baseType="Node" documentation="" iconPath="" id="GTf2s_GGAqAAhwRJ" leaf="false" name="device" root="false"/>
-		<Stereotype abstract="false" baseType="Node" documentation="" iconPath="" id="GTf2s_GGAqAAhwRK" leaf="false" name="executionEnvironment" root="false"/>
-		<Stereotype abstract="false" baseType="NOTE" documentation="" iconPath="" id="GTf2s_GGAqAAhwRL" leaf="false" name="localPrecondition" root="false"/>
-		<Stereotype abstract="false" baseType="NOTE" documentation="" iconPath="" id="mTf2s_GGAqAAhwRM" leaf="false" name="localPostcondition" root="false"/>
-		<Stereotype abstract="false" baseType="NOTE" documentation="" iconPath="" id="mTf2s_GGAqAAhwRN" leaf="false" name="decisionInput" root="false"/>
-		<Stereotype abstract="false" baseType="Actor" documentation="" iconPath="" id="mTf2s_GGAqAAhwRO" leaf="false" name="stakeholder" root="false"/>
-		<Stereotype abstract="false" baseType="NOTE" documentation="" iconPath="" id="mTf2s_GGAqAAhwRP" leaf="false" name="rationale" root="false"/>
-		<Stereotype abstract="false" baseType="NOTE" documentation="" iconPath="" id="mTf2s_GGAqAAhwRQ" leaf="false" name="problem" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" iconPath="" id="WTf2s_GGAqAAhwRR" leaf="false" name="system" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionActor" documentation="" iconPath="" id="WTf2s_GGAqAAhwRS" leaf="false" name="user" root="false"/>
-		<Stereotype abstract="false" baseType="CombinedFragment" documentation="" iconPath="" id="WTf2s_GGAqAAhwRT" leaf="false" name="flow of events" root="false"/>
-		<Stereotype abstract="false" baseType="Actor" documentation="" iconPath="" id="WTf2s_GGAqAAhwRU" leaf="false" name="powertype" root="false"/>
-		<Stereotype abstract="false" baseType="Actor" documentation="" iconPath="" id="WTf2s_GGAqAAhwRV" leaf="false" name="process" root="false"/>
-		<Stereotype abstract="false" baseType="Actor" documentation="" iconPath="" id="WTf2s_GGAqAAhwRW" leaf="false" name="thread" root="false"/>
-		<Stereotype abstract="false" baseType="Actor" documentation="" iconPath="" id="2Tf2s_GGAqAAhwRX" leaf="false" name="utility" root="false"/>
-		<Stereotype abstract="false" baseType="UseCase" documentation="" iconPath="" id="2Tf2s_GGAqAAhwRY" leaf="false" name="metaclass" root="false"/>
-		<Stereotype abstract="false" baseType="UseCase" documentation="" iconPath="" id="2Tf2s_GGAqAAhwRZ" leaf="false" name="powertype" root="false"/>
-		<Stereotype abstract="false" baseType="UseCase" documentation="" iconPath="" id="2Tf2s_GGAqAAhwRa" leaf="false" name="process" root="false"/>
-		<Stereotype abstract="false" baseType="UseCase" documentation="" iconPath="" id="2Tf2s_GGAqAAhwRb" leaf="false" name="thread" root="false"/>
-		<Stereotype abstract="false" baseType="UseCase" documentation="" iconPath="" id="2Tf2s_GGAqAAhwRc" leaf="false" name="utility" root="false"/>
-		<Stereotype abstract="false" baseType="Abstraction" documentation="" iconPath="" id="OTf2s_GGAqAAhwRd" leaf="false" name="derive" root="false"/>
-		<Stereotype abstract="false" baseType="Activity" documentation="" iconPath="" id="OTf2s_GGAqAAhwRe" leaf="false" name="controlOperator" root="false"/>
-		<Stereotype abstract="false" baseType="ActivityPartition" documentation="" iconPath="" id="OTf2s_GGAqAAhwRf" leaf="false" name="allocateActivityPartition" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLAllocate" documentation="" iconPath="" id="OTf2s_GGAqAAhwRg" leaf="false" name="allocate" root="false"/>
-		<Stereotype abstract="false" baseType="ActivityParameterNode" documentation="" iconPath="" id="uTf2s_GGAqAAhwRh" leaf="false" name="optional" root="false"/>
-		<Stereotype abstract="false" baseType="InputPin" documentation="" iconPath="" id="uTf2s_GGAqAAhwRi" leaf="false" name="optional" root="false"/>
-		<Stereotype abstract="false" baseType="OutputPin" documentation="" iconPath="" id="uTf2s_GGAqAAhwRj" leaf="false" name="optional" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLParticipantProperty" documentation="" iconPath="" id="uTf2s_GGAqAAhwRk" leaf="false" name="participant" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBoundReference" documentation="" iconPath="" id="uTf2s_GGAqAAhwRl" leaf="false" name="boundReference" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLElementGroup" documentation="" iconPath="" id="eTf2s_GGAqAAhwRm" leaf="false" name="elementGroup" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBindingConnector" documentation="" iconPath="" id="eTf2s_GGAqAAhwRn" leaf="false" name="equal" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLConstraintProperty" documentation="" iconPath="" id="eTf2s_GGAqAAhwRo" leaf="false" name="DirectedFeature" root="false">
-			<TaggedValueDefinitionContainer id="eTf2s_GGAqAAhwRp" name="">
+		<Stereotype abstract="false" baseType="ArchiMateBusinessActor" documentation="" iconPath="" id="n6kM4GmGAqAA4gQY" leaf="false" name="Individual" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateBusinessActor" documentation="" iconPath="" id="X6kM4GmGAqAA4gQZ" leaf="false" name="Organizational Unit" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateBusinessActor" documentation="" iconPath="" id="X6kM4GmGAqAA4gQa" leaf="false" name="Organization" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateBusinessActor" documentation="" iconPath="" id="X6kM4GmGAqAA4gQb" leaf="false" name="Threat Agent" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateBusinessService" documentation="" iconPath="" id="X6kM4GmGAqAA4gQc" leaf="false" name="Business Decision" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateBusinessCollaboration" documentation="" iconPath="" id="36kM4GmGAqAA4gQd" leaf="false" name="Social Network" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateBusinessProcess" documentation="" iconPath="" id="36kM4GmGAqAA4gQe" leaf="false" name="Business Activity" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateBusinessEvent" documentation="" iconPath="" id="36kM4GmGAqAA4gQf" leaf="false" name="Threat Event (Risk &amp; Security Overlay)" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateBusinessEvent" documentation="" iconPath="" id="36kM4GmGAqAA4gQg" leaf="false" name="Loss Event (Risk &amp; Security Overlay)" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateApplicationComponent" documentation="" iconPath="" id="P6kM4GmGAqAA4gQh" leaf="false" name="Logical Application Component" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateApplicationComponent" documentation="" iconPath="" id="P6kM4GmGAqAA4gQi" leaf="false" name="Physical Application Component" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateApplicationInterface" documentation="" iconPath="" id="P6kM4GmGAqAA4gQj" leaf="false" name="Application-to-Application Interface" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateApplicationInterface" documentation="" iconPath="" id="P6kM4GmGAqAA4gQk" leaf="false" name="Graphical User Interface" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateNode" documentation="" iconPath="" id="P6kM4GmGAqAA4gQl" leaf="false" name="Logical Technology Component" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateNode" documentation="" iconPath="" id="P6kM4GmGAqAA4gQm" leaf="false" name="Physical Technology Component" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateDevice" documentation="" iconPath="" id="P6kM4GmGAqAA4gQn" leaf="false" name="Mobile Device" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateDevice" documentation="" iconPath="" id="P6kM4GmGAqAA4gQo" leaf="false" name="Embedded Device" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateNetworkBox" documentation="" iconPath="" id="v6kM4GmGAqAA4gQp" leaf="false" name="WiFi Network" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateNetworkBox" documentation="" iconPath="" id="v6kM4GmGAqAA4gQq" leaf="false" name="Wide Area Network" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateInfrastructureService" documentation="" iconPath="" id="v6kM4GmGAqAA4gQr" leaf="false" name="Processing Service" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateInfrastructureService" documentation="" iconPath="" id="v6kM4GmGAqAA4gQs" leaf="false" name="Storage Service" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateInfrastructureService" documentation="" iconPath="" id="f6kM4GmGAqAA4gQt" leaf="false" name="Communication Service" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateEquipment" documentation="" iconPath="" id="f6kM4GmGAqAA4gQu" leaf="false" name="Vehicle" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateEquipment" documentation="" iconPath="" id="f6kM4GmGAqAA4gQv" leaf="false" name="Train" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateFacility" documentation="" iconPath="" id="f6kM4GmGAqAA4gQw" leaf="false" name="Factory" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateMaterial" documentation="" iconPath="" id="f6kM4GmGAqAA4gQx" leaf="false" name="Ore" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateMaterial" documentation="" iconPath="" id="f6kM4GmGAqAA4gQy" leaf="false" name="Building Material" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateMaterial" documentation="" iconPath="" id="f6kM4GmGAqAA4gQz" leaf="false" name="Fuel" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateDistributionNetworkBox" documentation="" iconPath="" id="f6kM4GmGAqAA4gQ0" leaf="false" name="Rail Network" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateDistributionNetworkBox" documentation="" iconPath="" id="f6kM4GmGAqAA4gQ1" leaf="false" name="Energy Grid" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateDriver" documentation="" iconPath="" id="f6kM4GmGAqAA4gQ2" leaf="false" name="Metric" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateAssessment" documentation="" iconPath="" id="_6kM4GmGAqAA4gQ3" leaf="false" name="Vulnerability (Risk &amp; Security Overlay)" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateAssessment" documentation="" iconPath="" id="_6kM4GmGAqAA4gQ4" leaf="false" name="Risk (Risk &amp; Security Overlay)" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateGoal" documentation="" iconPath="" id="_6kM4GmGAqAA4gQ5" leaf="false" name="Business Objective" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateGoal" documentation="" iconPath="" id="_6kM4GmGAqAA4gQ6" leaf="false" name="Control Objective (Risk &amp; Security Overlay)" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMatePrinciple" documentation="" iconPath="" id="AGkM4GmGAqAA4gQ7" leaf="false" name="Business Policy" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateRequirement" documentation="" iconPath="" id="AGkM4GmGAqAA4gQ8" leaf="false" name="Control Measure (Risk &amp; Security Overlay)" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateRequirement" documentation="" iconPath="" id="AGkM4GmGAqAA4gQ9" leaf="false" name="Business Rule" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateCapability" documentation="" iconPath="" id="AGkM4GmGAqAA4gQ." leaf="false" name="Capability Increment" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateCourseOfAction" documentation="" iconPath="" id="AGkM4GmGAqAA4gQ_" leaf="false" name="Strategy" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateCourseOfAction" documentation="" iconPath="" id="AGkM4GmGAqAA4gRA" leaf="false" name="Tactic" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateWorkPackage" documentation="" iconPath="" id="AGkM4GmGAqAA4gRB" leaf="false" name="Program" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateWorkPackage" documentation="" iconPath="" id="AGkM4GmGAqAA4gRC" leaf="false" name="Project" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateGrouping" documentation="" iconPath="" id="AGkM4GmGAqAA4gRD" leaf="false" name="Risk Domain (Risk &amp; Security Overlay)" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateFlow" documentation="" iconPath="" id="gGkM4GmGAqAA4gRE" leaf="false" name="Money Flow" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateAssignment" documentation="" iconPath="" id="gGkM4GmGAqAA4gRF" leaf="false" name="Responsibilities assignment" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateAssignment" documentation="" iconPath="" id="gGkM4GmGAqAA4gRG" leaf="false" name="Behavior assignment" root="false"/>
+		<Stereotype abstract="false" baseType="ArchiMateOrJunction" documentation="" iconPath="" id="gGkM4GmGAqAA4gRH" leaf="false" name="Or-join" root="false"/>
+		<Stereotype abstract="false" baseType="Actor" documentation="" iconPath="" id="gGkM4GmGAqAA4gRI" leaf="false" name="metaclass" root="false"/>
+		<Stereotype abstract="false" baseType="Node" documentation="" iconPath="" id="gGkM4GmGAqAA4gRJ" leaf="false" name="device" root="false"/>
+		<Stereotype abstract="false" baseType="Node" documentation="" iconPath="" id="gGkM4GmGAqAA4gRK" leaf="false" name="executionEnvironment" root="false"/>
+		<Stereotype abstract="false" baseType="NOTE" documentation="" iconPath="" id="gGkM4GmGAqAA4gRL" leaf="false" name="localPrecondition" root="false"/>
+		<Stereotype abstract="false" baseType="NOTE" documentation="" iconPath="" id="gGkM4GmGAqAA4gRM" leaf="false" name="localPostcondition" root="false"/>
+		<Stereotype abstract="false" baseType="NOTE" documentation="" iconPath="" id="QGkM4GmGAqAA4gRN" leaf="false" name="decisionInput" root="false"/>
+		<Stereotype abstract="false" baseType="Actor" documentation="" iconPath="" id="QGkM4GmGAqAA4gRO" leaf="false" name="stakeholder" root="false"/>
+		<Stereotype abstract="false" baseType="NOTE" documentation="" iconPath="" id="QGkM4GmGAqAA4gRP" leaf="false" name="rationale" root="false"/>
+		<Stereotype abstract="false" baseType="NOTE" documentation="" iconPath="" id="QGkM4GmGAqAA4gRQ" leaf="false" name="problem" root="false"/>
+		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" iconPath="" id="QGkM4GmGAqAA4gRR" leaf="false" name="system" root="false"/>
+		<Stereotype abstract="false" baseType="InteractionActor" documentation="" iconPath="" id="QGkM4GmGAqAA4gRS" leaf="false" name="user" root="false"/>
+		<Stereotype abstract="false" baseType="CombinedFragment" documentation="" iconPath="" id="QGkM4GmGAqAA4gRT" leaf="false" name="flow of events" root="false"/>
+		<Stereotype abstract="false" baseType="Actor" documentation="" iconPath="" id="QGkM4GmGAqAA4gRU" leaf="false" name="powertype" root="false"/>
+		<Stereotype abstract="false" baseType="Actor" documentation="" iconPath="" id="QGkM4GmGAqAA4gRV" leaf="false" name="process" root="false"/>
+		<Stereotype abstract="false" baseType="Actor" documentation="" iconPath="" id="QGkM4GmGAqAA4gRW" leaf="false" name="thread" root="false"/>
+		<Stereotype abstract="false" baseType="Actor" documentation="" iconPath="" id="QGkM4GmGAqAA4gRX" leaf="false" name="utility" root="false"/>
+		<Stereotype abstract="false" baseType="UseCase" documentation="" iconPath="" id="wGkM4GmGAqAA4gRY" leaf="false" name="metaclass" root="false"/>
+		<Stereotype abstract="false" baseType="UseCase" documentation="" iconPath="" id="wGkM4GmGAqAA4gRZ" leaf="false" name="powertype" root="false"/>
+		<Stereotype abstract="false" baseType="UseCase" documentation="" iconPath="" id="wGkM4GmGAqAA4gRa" leaf="false" name="process" root="false"/>
+		<Stereotype abstract="false" baseType="UseCase" documentation="" iconPath="" id="wGkM4GmGAqAA4gRb" leaf="false" name="thread" root="false"/>
+		<Stereotype abstract="false" baseType="UseCase" documentation="" iconPath="" id="wGkM4GmGAqAA4gRc" leaf="false" name="utility" root="false"/>
+		<Stereotype abstract="false" baseType="Abstraction" documentation="" iconPath="" id="wGkM4GmGAqAA4gRd" leaf="false" name="derive" root="false"/>
+		<Stereotype abstract="false" baseType="Activity" documentation="" iconPath="" id="wGkM4GmGAqAA4gRe" leaf="false" name="controlOperator" root="false"/>
+		<Stereotype abstract="false" baseType="ActivityPartition" documentation="" iconPath="" id="IGkM4GmGAqAA4gRf" leaf="false" name="allocateActivityPartition" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLAllocate" documentation="" iconPath="" id="IGkM4GmGAqAA4gRg" leaf="false" name="allocate" root="false"/>
+		<Stereotype abstract="false" baseType="ActivityParameterNode" documentation="" iconPath="" id="IGkM4GmGAqAA4gRh" leaf="false" name="optional" root="false"/>
+		<Stereotype abstract="false" baseType="InputPin" documentation="" iconPath="" id="IGkM4GmGAqAA4gRi" leaf="false" name="optional" root="false"/>
+		<Stereotype abstract="false" baseType="OutputPin" documentation="" iconPath="" id="IGkM4GmGAqAA4gRj" leaf="false" name="optional" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLParticipantProperty" documentation="" iconPath="" id="IGkM4GmGAqAA4gRk" leaf="false" name="participant" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBoundReference" documentation="" iconPath="" id="IGkM4GmGAqAA4gRl" leaf="false" name="boundReference" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLElementGroup" documentation="" iconPath="" id="IGkM4GmGAqAA4gRm" leaf="false" name="elementGroup" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBindingConnector" documentation="" iconPath="" id="IGkM4GmGAqAA4gRn" leaf="false" name="equal" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLConstraintProperty" documentation="" iconPath="" id="IGkM4GmGAqAA4gRo" leaf="false" name="DirectedFeature" root="false">
+			<TaggedValueDefinitionContainer id="IGkM4GmGAqAA4gRp" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="eTf2s_GGAqAAhwRq" name="FeatureDirectionKind" type="2">
+					<TaggedValueDefinition documentation="" id="IGkM4GmGAqAA4gRq" name="FeatureDirectionKind" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="eTf2s_GGAqAAhwRq0" value="provided"/>
-							<ValueSpecification id="eTf2s_GGAqAAhwRq1" value="required"/>
-							<ValueSpecification id="eTf2s_GGAqAAhwRq2" value="providedrequired"/>
+							<ValueSpecification id="IGkM4GmGAqAA4gRq0" value="provided"/>
+							<ValueSpecification id="IGkM4GmGAqAA4gRq1" value="required"/>
+							<ValueSpecification id="IGkM4GmGAqAA4gRq2" value="providedrequired"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="SysMLParticipantProperty" documentation="" iconPath="" id=".Tf2s_GGAqAAhwRr" leaf="false" name="DirectedFeature" root="false">
-			<TaggedValueDefinitionContainer id=".Tf2s_GGAqAAhwRs" name="">
+		<Stereotype abstract="false" baseType="SysMLParticipantProperty" documentation="" iconPath="" id="oGkM4GmGAqAA4gRr" leaf="false" name="DirectedFeature" root="false">
+			<TaggedValueDefinitionContainer id="oGkM4GmGAqAA4gRs" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id=".Tf2s_GGAqAAhwRt" name="FeatureDirectionKind" type="2">
+					<TaggedValueDefinition documentation="" id="oGkM4GmGAqAA4gRt" name="FeatureDirectionKind" type="2">
 						<EnumerationValues>
-							<ValueSpecification id=".Tf2s_GGAqAAhwRt0" value="provided"/>
-							<ValueSpecification id=".Tf2s_GGAqAAhwRt1" value="required"/>
-							<ValueSpecification id=".Tf2s_GGAqAAhwRt2" value="providedrequired"/>
+							<ValueSpecification id="oGkM4GmGAqAA4gRt0" value="provided"/>
+							<ValueSpecification id="oGkM4GmGAqAA4gRt1" value="required"/>
+							<ValueSpecification id="oGkM4GmGAqAA4gRt2" value="providedrequired"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="SysMLBoundReference" documentation="" iconPath="" id="BTf2s_GGAqAAhwRu" leaf="false" name="DirectedFeature" root="false">
-			<TaggedValueDefinitionContainer id="BTf2s_GGAqAAhwRv" name="">
+		<Stereotype abstract="false" baseType="SysMLBoundReference" documentation="" iconPath="" id="YGkM4GmGAqAA4gRu" leaf="false" name="DirectedFeature" root="false">
+			<TaggedValueDefinitionContainer id="YGkM4GmGAqAA4gRv" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="BTf2s_GGAqAAhwRw" name="FeatureDirectionKind" type="2">
+					<TaggedValueDefinition documentation="" id="YGkM4GmGAqAA4gRw" name="FeatureDirectionKind" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="BTf2s_GGAqAAhwRw0" value="provided"/>
-							<ValueSpecification id="BTf2s_GGAqAAhwRw1" value="required"/>
-							<ValueSpecification id="BTf2s_GGAqAAhwRw2" value="providedrequired"/>
+							<ValueSpecification id="YGkM4GmGAqAA4gRw0" value="provided"/>
+							<ValueSpecification id="YGkM4GmGAqAA4gRw1" value="required"/>
+							<ValueSpecification id="YGkM4GmGAqAA4gRw2" value="providedrequired"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="hTf2s_GGAqAAhwRx" leaf="false" name="DirectedFeature" root="false">
-			<TaggedValueDefinitionContainer id="hTf2s_GGAqAAhwRy" name="">
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="YGkM4GmGAqAA4gRx" leaf="false" name="DirectedFeature" root="false">
+			<TaggedValueDefinitionContainer id="YGkM4GmGAqAA4gRy" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="hTf2s_GGAqAAhwRz" name="FeatureDirectionKind" type="2">
+					<TaggedValueDefinition documentation="" id="YGkM4GmGAqAA4gRz" name="FeatureDirectionKind" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="hTf2s_GGAqAAhwRz0" value="provided"/>
-							<ValueSpecification id="hTf2s_GGAqAAhwRz1" value="required"/>
-							<ValueSpecification id="hTf2s_GGAqAAhwRz2" value="providedrequired"/>
+							<ValueSpecification id="YGkM4GmGAqAA4gRz0" value="provided"/>
+							<ValueSpecification id="YGkM4GmGAqAA4gRz1" value="required"/>
+							<ValueSpecification id="YGkM4GmGAqAA4gRz2" value="providedrequired"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="Operation" documentation="" iconPath="" id="RTf2s_GGAqAAhwR0" leaf="false" name="DirectedFeature" root="false">
-			<TaggedValueDefinitionContainer id="RTf2s_GGAqAAhwR1" name="">
+		<Stereotype abstract="false" baseType="Operation" documentation="" iconPath="" id="4GkM4GmGAqAA4gR0" leaf="false" name="DirectedFeature" root="false">
+			<TaggedValueDefinitionContainer id="4GkM4GmGAqAA4gR1" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="RTf2s_GGAqAAhwR2" name="FeatureDirectionKind" type="2">
+					<TaggedValueDefinition documentation="" id="4GkM4GmGAqAA4gR2" name="FeatureDirectionKind" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="RTf2s_GGAqAAhwR20" value="provided"/>
-							<ValueSpecification id="RTf2s_GGAqAAhwR21" value="required"/>
-							<ValueSpecification id="RTf2s_GGAqAAhwR22" value="providedrequired"/>
+							<ValueSpecification id="4GkM4GmGAqAA4gR20" value="provided"/>
+							<ValueSpecification id="4GkM4GmGAqAA4gR21" value="required"/>
+							<ValueSpecification id="4GkM4GmGAqAA4gR22" value="providedrequired"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="Reception" documentation="" iconPath="" id="RTf2s_GGAqAAhwR3" leaf="false" name="DirectedFeature" root="false">
-			<TaggedValueDefinitionContainer id="RTf2s_GGAqAAhwR4" name="">
+		<Stereotype abstract="false" baseType="Reception" documentation="" iconPath="" id="4GkM4GmGAqAA4gR3" leaf="false" name="DirectedFeature" root="false">
+			<TaggedValueDefinitionContainer id="4GkM4GmGAqAA4gR4" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="RTf2s_GGAqAAhwR5" name="FeatureDirectionKind" type="2">
+					<TaggedValueDefinition documentation="" id="4GkM4GmGAqAA4gR5" name="FeatureDirectionKind" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="RTf2s_GGAqAAhwR50" value="provided"/>
-							<ValueSpecification id="RTf2s_GGAqAAhwR51" value="required"/>
-							<ValueSpecification id="RTf2s_GGAqAAhwR52" value="providedrequired"/>
+							<ValueSpecification id="4GkM4GmGAqAA4gR50" value="provided"/>
+							<ValueSpecification id="4GkM4GmGAqAA4gR51" value="required"/>
+							<ValueSpecification id="4GkM4GmGAqAA4gR52" value="providedrequired"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="State2" documentation="" iconPath="" id="xTf2s_GGAqAAhwR6" leaf="false" name="Default" root="false">
+		<Stereotype abstract="false" baseType="State2" documentation="" iconPath="" id="4GkM4GmGAqAA4gR6" leaf="false" name="Default" root="false">
 			<Formats>
 				<Fill color1="Cr:97,166,196,255" color2="Cr:133,48,10,255" gradientStyle="1" transparency="0" type="1"/>
 			</Formats>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="ActivityAction" documentation="" iconPath="" id="ZTf2s_GGAqAAhwR7" leaf="false" name="Default" root="false">
+		<Stereotype abstract="false" baseType="ActivityAction" documentation="" iconPath="" id="EGkM4GmGAqAA4gR7" leaf="false" name="Default" root="false">
 			<Formats>
 				<Fill color1="Cr:97,166,196,255" color2="Cr:133,48,10,255" gradientStyle="1" transparency="0" type="1"/>
 			</Formats>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="ActivityAction" documentation="" iconPath="" id="FTf2s_GGAqAAhwR8" leaf="false" name="valueSpecificationAction" root="false"/>
-		<Stereotype abstract="false" baseType="State2" documentation="" iconPath="" id="FTf2s_GGAqAAhwR9" leaf="false" name="parallel" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLActivityBlock" documentation="" iconPath="" id="FTf2s_GGAqAAhwR." leaf="false" name="activity" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLValueType" documentation="" iconPath="" id="lTf2s_GGAqAAhwR_" leaf="false" name="valueType" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLUnit" documentation="" iconPath="" id="lTf2s_GGAqAAhwSA" leaf="false" name="unit" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLQuantityKind" documentation="" iconPath="" id="lTf2s_GGAqAAhwSB" leaf="false" name="quantityKind" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="lTf2s_GGAqAAhwSC" leaf="false" name="block" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="VTf2s_GGAqAAhwSD" leaf="false" name="domain" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="VTf2s_GGAqAAhwSE" leaf="false" name="external" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="VTf2s_GGAqAAhwSF" leaf="false" name="system" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="VTf2s_GGAqAAhwSG" leaf="false" name="act as" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="VTf2s_GGAqAAhwSH" leaf="false" name="act as regulation" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="1Tf2s_GGAqAAhwSI" leaf="false" name="affect achievement" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="1Tf2s_GGAqAAhwSJ" leaf="false" name="affect employment" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="1Tf2s_GGAqAAhwSK" leaf="false" name="amplify" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="NTf2s_GGAqAAhwSL" leaf="false" name="basis for" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="NTf2s_GGAqAAhwSM" leaf="false" name="channel efforts" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="NTf2s_GGAqAAhwSN" leaf="false" name="claim" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="NTf2s_GGAqAAhwSO" leaf="false" name="component of plan for" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="tTf2s_GGAqAAhwSP" leaf="false" name="define" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="tTf2s_GGAqAAhwSQ" leaf="false" name="deliver" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="dTf2s_GGAqAAhwSR" leaf="false" name="deploy" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="dTf2s_GGAqAAhwSS" leaf="false" name="determine" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="dTf2s_GGAqAAhwST" leaf="false" name="discharge" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="dTf2s_GGAqAAhwSU" leaf="false" name="effect enforcement level" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="9Tf2s_GGAqAAhwSV" leaf="false" name="enable" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="9Tf2s_GGAqAAhwSW" leaf="false" name="establish" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="9Tf2s_GGAqAAhwSX" leaf="false" name="formulated based on" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="9Tf2s_GGAqAAhwSY" leaf="false" name="govern" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="DTf2s_GGAqAAhwSZ" leaf="false" name="guide" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="DTf2s_GGAqAAhwSa" leaf="false" name="identify" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="DTf2s_GGAqAAhwSb" leaf="false" name="implement" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="jTf2s_GGAqAAhwSc" leaf="false" name="judge" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="TTf2s_GGAqAAhwSd" leaf="false" name="make" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="TTf2s_GGAqAAhwSe" leaf="false" name="make operative" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="TTf2s_GGAqAAhwSf" leaf="false" name="manage" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="TTf2s_GGAqAAhwSg" leaf="false" name="provide" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="TTf2s_GGAqAAhwSh" leaf="false" name="provide impetus" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="TTf2s_GGAqAAhwSi" leaf="false" name="quantify" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="zTf2s_GGAqAAhwSj" leaf="false" name="realize" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="zTf2s_GGAqAAhwSk" leaf="false" name="recognize" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="zTf2s_GGAqAAhwSl" leaf="false" name="require" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="zTf2s_GGAqAAhwSm" leaf="false" name="responsible" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="LTf2s_GGAqAAhwSn" leaf="false" name="significant to" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="LTf2s_GGAqAAhwSo" leaf="false" name="source" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="LTf2s_GGAqAAhwSp" leaf="false" name="support achievement" root="false"/>
-		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="LTf2s_GGAqAAhwSq" leaf="false" name="use" root="false"/>
-		<Stereotype abstract="false" baseType="Realization" documentation="" iconPath="" id="rTf2s_GGAqAAhwSr" leaf="false" name="MotivationRealization" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="rTf2s_GGAqAAhwSs" leaf="false" name="ServiceInterface" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="rTf2s_GGAqAAhwSt" leaf="false" name="Participant" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="rTf2s_GGAqAAhwSu" leaf="false" name="Agent" root="false"/>
-		<Stereotype abstract="false" baseType="Port" documentation="" iconPath="" id="Czf2s_GGAqAAhwSx" leaf="false" name="SoaMLPort" root="false">
-			<TaggedValueDefinitionContainer id="Czf2s_GGAqAAhwSy" name="">
+		<Stereotype abstract="false" baseType="ActivityAction" documentation="" iconPath="" id="UGkM4GmGAqAA4gR8" leaf="false" name="valueSpecificationAction" root="false"/>
+		<Stereotype abstract="false" baseType="State2" documentation="" iconPath="" id="UGkM4GmGAqAA4gR9" leaf="false" name="parallel" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLActivityBlock" documentation="" iconPath="" id="UGkM4GmGAqAA4gR." leaf="false" name="activity" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLValueType" documentation="" iconPath="" id="UGkM4GmGAqAA4gR_" leaf="false" name="valueType" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLUnit" documentation="" iconPath="" id="UGkM4GmGAqAA4gSA" leaf="false" name="unit" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLQuantityKind" documentation="" iconPath="" id="UGkM4GmGAqAA4gSB" leaf="false" name="quantityKind" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="UGkM4GmGAqAA4gSC" leaf="false" name="block" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="UGkM4GmGAqAA4gSD" leaf="false" name="domain" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="UGkM4GmGAqAA4gSE" leaf="false" name="external" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="0GkM4GmGAqAA4gSG" leaf="false" name="act as" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="0GkM4GmGAqAA4gSH" leaf="false" name="act as regulation" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="0GkM4GmGAqAA4gSI" leaf="false" name="affect achievement" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="0GkM4GmGAqAA4gSJ" leaf="false" name="affect employment" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="0GkM4GmGAqAA4gSK" leaf="false" name="amplify" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="0GkM4GmGAqAA4gSL" leaf="false" name="basis for" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="0GkM4GmGAqAA4gSM" leaf="false" name="channel efforts" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="0GkM4GmGAqAA4gSN" leaf="false" name="claim" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="MGkM4GmGAqAA4gSO" leaf="false" name="component of plan for" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="MGkM4GmGAqAA4gSP" leaf="false" name="define" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="MGkM4GmGAqAA4gSQ" leaf="false" name="deliver" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="MGkM4GmGAqAA4gSR" leaf="false" name="deploy" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="MGkM4GmGAqAA4gSS" leaf="false" name="determine" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="MGkM4GmGAqAA4gST" leaf="false" name="discharge" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="MGkM4GmGAqAA4gSU" leaf="false" name="effect enforcement level" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="MGkM4GmGAqAA4gSV" leaf="false" name="enable" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="MGkM4GmGAqAA4gSW" leaf="false" name="establish" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="MGkM4GmGAqAA4gSX" leaf="false" name="formulated based on" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="sGkM4GmGAqAA4gSY" leaf="false" name="govern" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="sGkM4GmGAqAA4gSZ" leaf="false" name="guide" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="sGkM4GmGAqAA4gSa" leaf="false" name="identify" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="sGkM4GmGAqAA4gSb" leaf="false" name="implement" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="sGkM4GmGAqAA4gSc" leaf="false" name="judge" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="sGkM4GmGAqAA4gSd" leaf="false" name="make" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="cGkM4GmGAqAA4gSe" leaf="false" name="make operative" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="cGkM4GmGAqAA4gSf" leaf="false" name="manage" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="cGkM4GmGAqAA4gSg" leaf="false" name="provide" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="cGkM4GmGAqAA4gSh" leaf="false" name="provide impetus" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="cGkM4GmGAqAA4gSi" leaf="false" name="quantify" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="cGkM4GmGAqAA4gSj" leaf="false" name="realize" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="cGkM4GmGAqAA4gSk" leaf="false" name="recognize" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="cGkM4GmGAqAA4gSl" leaf="false" name="require" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="cGkM4GmGAqAA4gSm" leaf="false" name="responsible" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="cGkM4GmGAqAA4gSn" leaf="false" name="significant to" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="cGkM4GmGAqAA4gSo" leaf="false" name="source" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="8GkM4GmGAqAA4gSp" leaf="false" name="support achievement" root="false"/>
+		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="8GkM4GmGAqAA4gSq" leaf="false" name="use" root="false"/>
+		<Stereotype abstract="false" baseType="Realization" documentation="" iconPath="" id="8GkM4GmGAqAA4gSr" leaf="false" name="MotivationRealization" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="8GkM4GmGAqAA4gSs" leaf="false" name="ServiceInterface" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="8GkM4GmGAqAA4gSt" leaf="false" name="Participant" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="8GkM4GmGAqAA4gSu" leaf="false" name="Agent" root="false"/>
+		<Stereotype abstract="false" baseType="Port" documentation="" iconPath="" id="FGkM4GmGAqAA4gSx" leaf="false" name="SoaMLPort" root="false">
+			<TaggedValueDefinitionContainer id="FGkM4GmGAqAA4gSy" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition defaultValue="true" documentation="" id="Czf2s_GGAqAAhwSz" name="connectorRequired" type="7"/>
+					<TaggedValueDefinition defaultValue="true" documentation="" id="FGkM4GmGAqAA4gSz" name="connectorRequired" type="7"/>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="Port" documentation="" iconPath="" id="Czf2s_GGAqAAhwS0" leaf="false" name="Service" root="false"/>
-		<Stereotype abstract="false" baseType="Port" documentation="" iconPath="" id="Szf2s_GGAqAAhwS2" leaf="false" name="Request" root="false"/>
-		<Stereotype abstract="false" baseType="Port" documentation="" iconPath="" id="qzf2s_GGAqAAhwS4" leaf="false" name="proxy" root="false"/>
-		<Stereotype abstract="false" baseType="Port" documentation="" iconPath="" id="qzf2s_GGAqAAhwS5" leaf="false" name="full" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" iconPath="" id="qzf2s_GGAqAAhwS6" leaf="false" name="ServiceChannel" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="qzf2s_GGAqAAhwS7" leaf="false" name="MessageType" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="qzf2s_GGAqAAhwS8" leaf="false" name="Attachment" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="azf2s_GGAqAAhwS9" leaf="false" name="Consumer" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="azf2s_GGAqAAhwS." leaf="false" name="Provider" root="false"/>
-		<Stereotype abstract="false" baseType="Collaboration2" documentation="" iconPath="" id="azf2s_GGAqAAhwS_" leaf="false" name="SoaMLCollaboration" root="false">
-			<TaggedValueDefinitionContainer id="azf2s_GGAqAAhwTA" name="">
+		<Stereotype abstract="false" baseType="Port" documentation="" iconPath="" id="lGkM4GmGAqAA4gS0" leaf="false" name="Service" root="false"/>
+		<Stereotype abstract="false" baseType="Port" documentation="" iconPath="" id="VGkM4GmGAqAA4gS2" leaf="false" name="Request" root="false"/>
+		<Stereotype abstract="false" baseType="Port" documentation="" iconPath="" id="1GkM4GmGAqAA4gS4" leaf="false" name="proxy" root="false"/>
+		<Stereotype abstract="false" baseType="Port" documentation="" iconPath="" id="1GkM4GmGAqAA4gS5" leaf="false" name="full" root="false"/>
+		<Stereotype abstract="false" baseType="Connector" documentation="" iconPath="" id="1GkM4GmGAqAA4gS6" leaf="false" name="ServiceChannel" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="1GkM4GmGAqAA4gS7" leaf="false" name="MessageType" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="1GkM4GmGAqAA4gS8" leaf="false" name="Attachment" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="1GkM4GmGAqAA4gS9" leaf="false" name="Consumer" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="NGkM4GmGAqAA4gS." leaf="false" name="Provider" root="false"/>
+		<Stereotype abstract="false" baseType="Collaboration2" documentation="" iconPath="" id="NGkM4GmGAqAA4gS_" leaf="false" name="SoaMLCollaboration" root="false">
+			<TaggedValueDefinitionContainer id="NGkM4GmGAqAA4gTA" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition defaultValue="true" documentation="" id="azf2s_GGAqAAhwTB" name="strict" type="7"/>
+					<TaggedValueDefinition defaultValue="true" documentation="" id="NGkM4GmGAqAA4gTB" name="strict" type="7"/>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="Collaboration2" documentation="" iconPath="" id="azf2s_GGAqAAhwTC" leaf="false" name="ServicesArchitecture" root="false"/>
-		<Stereotype abstract="false" baseType="Collaboration2" documentation="" iconPath="" id="Gzf2s_GGAqAAhwTE" leaf="false" name="ServiceContract" root="false"/>
-		<Stereotype abstract="false" baseType="CollaborationOccurrence" documentation="" iconPath="" id="Wzf2s_GGAqAAhwTG" leaf="false" name="SoaMLCollaborationUse" root="false">
-			<TaggedValueDefinitionContainer id="Wzf2s_GGAqAAhwTH" name="">
+		<Stereotype abstract="false" baseType="Collaboration2" documentation="" iconPath="" id="NGkM4GmGAqAA4gTC" leaf="false" name="ServicesArchitecture" root="false"/>
+		<Stereotype abstract="false" baseType="Collaboration2" documentation="" iconPath="" id="tGkM4GmGAqAA4gTE" leaf="false" name="ServiceContract" root="false"/>
+		<Stereotype abstract="false" baseType="CollaborationOccurrence" documentation="" iconPath="" id="dGkM4GmGAqAA4gTG" leaf="false" name="SoaMLCollaborationUse" root="false">
+			<TaggedValueDefinitionContainer id="dGkM4GmGAqAA4gTH" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="Wzf2s_GGAqAAhwTI" name="strict" type="7"/>
+					<TaggedValueDefinition documentation="" id="dGkM4GmGAqAA4gTI" name="strict" type="7"/>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="Wzf2s_GGAqAAhwTJ" leaf="false" name="Capability" root="false"/>
-		<Stereotype abstract="false" baseType="Dependency" documentation="" iconPath="" id="Wzf2s_GGAqAAhwTK" leaf="false" name="Expose" root="false"/>
-		<Stereotype abstract="false" baseType="NOTE" documentation="" iconPath="" id="2zf2s_GGAqAAhwTL" leaf="false" name="Milestone" root="false">
-			<TaggedValueDefinitionContainer id="2zf2s_GGAqAAhwTM" name="">
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="dGkM4GmGAqAA4gTJ" leaf="false" name="Capability" root="false"/>
+		<Stereotype abstract="false" baseType="Dependency" documentation="" iconPath="" id="9GkM4GmGAqAA4gTK" leaf="false" name="Expose" root="false"/>
+		<Stereotype abstract="false" baseType="NOTE" documentation="" iconPath="" id="9GkM4GmGAqAA4gTL" leaf="false" name="Milestone" root="false">
+			<TaggedValueDefinitionContainer id="9GkM4GmGAqAA4gTM" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition defaultValue="0" documentation="" id="2zf2s_GGAqAAhwTN" name="progress" type="5"/>
-					<TaggedValueDefinition documentation="" id="2zf2s_GGAqAAhwTO" name="signal" type="1"/>
-					<TaggedValueDefinition documentation="" id="2zf2s_GGAqAAhwTP" name="value" type="4"/>
+					<TaggedValueDefinition defaultValue="0" documentation="" id="9GkM4GmGAqAA4gTN" name="progress" type="5"/>
+					<TaggedValueDefinition documentation="" id="9GkM4GmGAqAA4gTO" name="signal" type="1"/>
+					<TaggedValueDefinition documentation="" id="9GkM4GmGAqAA4gTP" name="value" type="4"/>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="Package" documentation="" iconPath="" id="Ozf2s_GGAqAAhwTQ" leaf="false" name="Catalog" root="false"/>
-		<Stereotype abstract="false" baseType="Artifact" documentation="" iconPath="" id="Ozf2s_GGAqAAhwTR" leaf="false" name="NodeDescriptor" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="Ozf2s_GGAqAAhwTS" leaf="false" name="FreeFormDescriptor" root="false"/>
-		<Stereotype abstract="false" baseType="Artifact" documentation="" iconPath="" id="Ozf2s_GGAqAAhwTT" leaf="false" name="Category" root="false"/>
-		<Stereotype abstract="false" baseType="InstanceSpecification" documentation="" iconPath="" id="ezf2s_GGAqAAhwTV" leaf="false" name="FreeFormValue" root="false"/>
-		<Stereotype abstract="false" baseType="InstanceSpecification" documentation="" iconPath="" id="ezf2s_GGAqAAhwTW" leaf="false" name="CategoryValue" root="false"/>
-		<Stereotype abstract="false" baseType="Dependency" documentation="" iconPath="" id="Bzf2s_GGAqAAhwTY" leaf="false" name="Categorization" root="false"/>
-		<Stereotype abstract="false" baseType="ObjectNode" documentation="" iconPath="" id="hzf2s_GGAqAAhwTZ" leaf="false" name="noBuffer" root="false"/>
-		<Stereotype abstract="false" baseType="ActivityParameterNode" documentation="" iconPath="" id="hzf2s_GGAqAAhwTa" leaf="false" name="noBuffer" root="false"/>
-		<Stereotype abstract="false" baseType="CentralBufferNode" documentation="" iconPath="" id="hzf2s_GGAqAAhwTb" leaf="false" name="noBuffer" root="false"/>
-		<Stereotype abstract="false" baseType="DataStoreNode" documentation="" iconPath="" id="Rzf2s_GGAqAAhwTc" leaf="false" name="noBuffer" root="false"/>
-		<Stereotype abstract="false" baseType="ExpansionNode" documentation="" iconPath="" id="Rzf2s_GGAqAAhwTd" leaf="false" name="noBuffer" root="false"/>
-		<Stereotype abstract="false" baseType="InputPin" documentation="" iconPath="" id="Rzf2s_GGAqAAhwTe" leaf="false" name="noBuffer" root="false"/>
-		<Stereotype abstract="false" baseType="OutputPin" documentation="" iconPath="" id="xzf2s_GGAqAAhwTf" leaf="false" name="noBuffer" root="false"/>
-		<Stereotype abstract="false" baseType="ValuePin" documentation="" iconPath="" id="xzf2s_GGAqAAhwTg" leaf="false" name="noBuffer" root="false"/>
-		<Stereotype abstract="false" baseType="ValuePin" documentation="" iconPath="" id="xzf2s_GGAqAAhwTh" leaf="false" name="controlValue" root="false">
-			<TaggedValueDefinitionContainer id="xzf2s_GGAqAAhwTi" name="">
+		<Stereotype abstract="false" baseType="Package" documentation="" iconPath="" id="9GkM4GmGAqAA4gTQ" leaf="false" name="Catalog" root="false"/>
+		<Stereotype abstract="false" baseType="Artifact" documentation="" iconPath="" id="DGkM4GmGAqAA4gTR" leaf="false" name="NodeDescriptor" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="DGkM4GmGAqAA4gTS" leaf="false" name="FreeFormDescriptor" root="false"/>
+		<Stereotype abstract="false" baseType="Artifact" documentation="" iconPath="" id="DGkM4GmGAqAA4gTT" leaf="false" name="Category" root="false"/>
+		<Stereotype abstract="false" baseType="InstanceSpecification" documentation="" iconPath="" id="jGkM4GmGAqAA4gTV" leaf="false" name="FreeFormValue" root="false"/>
+		<Stereotype abstract="false" baseType="InstanceSpecification" documentation="" iconPath="" id="jGkM4GmGAqAA4gTW" leaf="false" name="CategoryValue" root="false"/>
+		<Stereotype abstract="false" baseType="Dependency" documentation="" iconPath="" id="TGkM4GmGAqAA4gTY" leaf="false" name="Categorization" root="false"/>
+		<Stereotype abstract="false" baseType="ObjectNode" documentation="" iconPath="" id="zGkM4GmGAqAA4gTZ" leaf="false" name="noBuffer" root="false"/>
+		<Stereotype abstract="false" baseType="ActivityParameterNode" documentation="" iconPath="" id="zGkM4GmGAqAA4gTa" leaf="false" name="noBuffer" root="false"/>
+		<Stereotype abstract="false" baseType="CentralBufferNode" documentation="" iconPath="" id="zGkM4GmGAqAA4gTb" leaf="false" name="noBuffer" root="false"/>
+		<Stereotype abstract="false" baseType="DataStoreNode" documentation="" iconPath="" id="zGkM4GmGAqAA4gTc" leaf="false" name="noBuffer" root="false"/>
+		<Stereotype abstract="false" baseType="ExpansionNode" documentation="" iconPath="" id="zGkM4GmGAqAA4gTd" leaf="false" name="noBuffer" root="false"/>
+		<Stereotype abstract="false" baseType="InputPin" documentation="" iconPath="" id="zGkM4GmGAqAA4gTe" leaf="false" name="noBuffer" root="false"/>
+		<Stereotype abstract="false" baseType="OutputPin" documentation="" iconPath="" id="zGkM4GmGAqAA4gTf" leaf="false" name="noBuffer" root="false"/>
+		<Stereotype abstract="false" baseType="ValuePin" documentation="" iconPath="" id="zGkM4GmGAqAA4gTg" leaf="false" name="noBuffer" root="false"/>
+		<Stereotype abstract="false" baseType="ValuePin" documentation="" iconPath="" id="zGkM4GmGAqAA4gTh" leaf="false" name="controlValue" root="false">
+			<TaggedValueDefinitionContainer id="zGkM4GmGAqAA4gTi" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="xzf2s_GGAqAAhwTj" name="value" type="2">
+					<TaggedValueDefinition documentation="" id="zGkM4GmGAqAA4gTj" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="xzf2s_GGAqAAhwTj0" value="Enable"/>
-							<ValueSpecification id="xzf2s_GGAqAAhwTj1" value="Disable"/>
+							<ValueSpecification id="zGkM4GmGAqAA4gTj0" value="Enable"/>
+							<ValueSpecification id="zGkM4GmGAqAA4gTj1" value="Disable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="OutputPin" documentation="" iconPath="" id="Jzf2s_GGAqAAhwTk" leaf="false" name="controlValue" root="false">
-			<TaggedValueDefinitionContainer id="pzf2s_GGAqAAhwTl" name="">
+		<Stereotype abstract="false" baseType="OutputPin" documentation="" iconPath="" id="LGkM4GmGAqAA4gTk" leaf="false" name="controlValue" root="false">
+			<TaggedValueDefinitionContainer id="LGkM4GmGAqAA4gTl" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="pzf2s_GGAqAAhwTm" name="value" type="2">
+					<TaggedValueDefinition documentation="" id="LGkM4GmGAqAA4gTm" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="pzf2s_GGAqAAhwTm0" value="Enable"/>
-							<ValueSpecification id="pzf2s_GGAqAAhwTm1" value="Disable"/>
+							<ValueSpecification id="LGkM4GmGAqAA4gTm0" value="Enable"/>
+							<ValueSpecification id="LGkM4GmGAqAA4gTm1" value="Disable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="InputPin" documentation="" iconPath="" id="Zzf2s_GGAqAAhwTn" leaf="false" name="controlValue" root="false">
-			<TaggedValueDefinitionContainer id="Zzf2s_GGAqAAhwTo" name="">
+		<Stereotype abstract="false" baseType="InputPin" documentation="" iconPath="" id="LGkM4GmGAqAA4gTn" leaf="false" name="controlValue" root="false">
+			<TaggedValueDefinitionContainer id="rGkM4GmGAqAA4gTo" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="Zzf2s_GGAqAAhwTp" name="value" type="2">
+					<TaggedValueDefinition documentation="" id="rGkM4GmGAqAA4gTp" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="Zzf2s_GGAqAAhwTp0" value="Enable"/>
-							<ValueSpecification id="Zzf2s_GGAqAAhwTp1" value="Disable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTp0" value="Enable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTp1" value="Disable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="ExpansionNode" documentation="" iconPath="" id="Zzf2s_GGAqAAhwTq" leaf="false" name="controlValue" root="false">
-			<TaggedValueDefinitionContainer id="Zzf2s_GGAqAAhwTr" name="">
+		<Stereotype abstract="false" baseType="ExpansionNode" documentation="" iconPath="" id="rGkM4GmGAqAA4gTq" leaf="false" name="controlValue" root="false">
+			<TaggedValueDefinitionContainer id="rGkM4GmGAqAA4gTr" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="Zzf2s_GGAqAAhwTs" name="value" type="2">
+					<TaggedValueDefinition documentation="" id="rGkM4GmGAqAA4gTs" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="Zzf2s_GGAqAAhwTs0" value="Enable"/>
-							<ValueSpecification id="Zzf2s_GGAqAAhwTs1" value="Disable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTs0" value="Enable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTs1" value="Disable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="ObjectNode" documentation="" iconPath="" id="5zf2s_GGAqAAhwTt" leaf="false" name="controlValue" root="false">
-			<TaggedValueDefinitionContainer id="5zf2s_GGAqAAhwTu" name="">
+		<Stereotype abstract="false" baseType="ObjectNode" documentation="" iconPath="" id="rGkM4GmGAqAA4gTt" leaf="false" name="controlValue" root="false">
+			<TaggedValueDefinitionContainer id="rGkM4GmGAqAA4gTu" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="5zf2s_GGAqAAhwTv" name="value" type="2">
+					<TaggedValueDefinition documentation="" id="rGkM4GmGAqAA4gTv" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="5zf2s_GGAqAAhwTv0" value="Enable"/>
-							<ValueSpecification id="5zf2s_GGAqAAhwTv1" value="Disable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTv0" value="Enable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTv1" value="Disable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="ActivityParameterNode" documentation="" iconPath="" id="5zf2s_GGAqAAhwTw" leaf="false" name="controlValue" root="false">
-			<TaggedValueDefinitionContainer id="5zf2s_GGAqAAhwTx" name="">
+		<Stereotype abstract="false" baseType="ActivityParameterNode" documentation="" iconPath="" id="rGkM4GmGAqAA4gTw" leaf="false" name="controlValue" root="false">
+			<TaggedValueDefinitionContainer id="rGkM4GmGAqAA4gTx" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="5zf2s_GGAqAAhwTy" name="value" type="2">
+					<TaggedValueDefinition documentation="" id="rGkM4GmGAqAA4gTy" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="5zf2s_GGAqAAhwTy0" value="Enable"/>
-							<ValueSpecification id="5zf2s_GGAqAAhwTy1" value="Disable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTy0" value="Enable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTy1" value="Disable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="CentralBufferNode" documentation="" iconPath="" id="Fzf2s_GGAqAAhwTz" leaf="false" name="controlValue" root="false">
-			<TaggedValueDefinitionContainer id="Fzf2s_GGAqAAhwT0" name="">
+		<Stereotype abstract="false" baseType="CentralBufferNode" documentation="" iconPath="" id="bGkM4GmGAqAA4gTz" leaf="false" name="controlValue" root="false">
+			<TaggedValueDefinitionContainer id="bGkM4GmGAqAA4gT0" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="Fzf2s_GGAqAAhwT1" name="value" type="2">
+					<TaggedValueDefinition documentation="" id="bGkM4GmGAqAA4gT1" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="Fzf2s_GGAqAAhwT10" value="Enable"/>
-							<ValueSpecification id="Fzf2s_GGAqAAhwT11" value="Disable"/>
+							<ValueSpecification id="bGkM4GmGAqAA4gT10" value="Enable"/>
+							<ValueSpecification id="bGkM4GmGAqAA4gT11" value="Disable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="DataStoreNode" documentation="" iconPath="" id="Fzf2s_GGAqAAhwT2" leaf="false" name="controlValue" root="false">
-			<TaggedValueDefinitionContainer id="Fzf2s_GGAqAAhwT3" name="">
+		<Stereotype abstract="false" baseType="DataStoreNode" documentation="" iconPath="" id="bGkM4GmGAqAA4gT2" leaf="false" name="controlValue" root="false">
+			<TaggedValueDefinitionContainer id="bGkM4GmGAqAA4gT3" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="Fzf2s_GGAqAAhwT4" name="value" type="2">
+					<TaggedValueDefinition documentation="" id="bGkM4GmGAqAA4gT4" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="Fzf2s_GGAqAAhwT40" value="Enable"/>
-							<ValueSpecification id="Fzf2s_GGAqAAhwT41" value="Disable"/>
+							<ValueSpecification id="bGkM4GmGAqAA4gT40" value="Enable"/>
+							<ValueSpecification id="bGkM4GmGAqAA4gT41" value="Disable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="ObjectNode" documentation="" iconPath="" id="lzf2s_GGAqAAhwT5" leaf="false" name="overwrite" root="false"/>
-		<Stereotype abstract="false" baseType="ActivityParameterNode" documentation="" iconPath="" id="lzf2s_GGAqAAhwT6" leaf="false" name="overwrite" root="false"/>
-		<Stereotype abstract="false" baseType="CentralBufferNode" documentation="" iconPath="" id="lzf2s_GGAqAAhwT7" leaf="false" name="overwrite" root="false"/>
-		<Stereotype abstract="false" baseType="DataStoreNode" documentation="" iconPath="" id="lzf2s_GGAqAAhwT8" leaf="false" name="overwrite" root="false"/>
-		<Stereotype abstract="false" baseType="ExpansionNode" documentation="" iconPath="" id="Vzf2s_GGAqAAhwT9" leaf="false" name="overwrite" root="false"/>
-		<Stereotype abstract="false" baseType="InputPin" documentation="" iconPath="" id="Vzf2s_GGAqAAhwT." leaf="false" name="overwrite" root="false"/>
-		<Stereotype abstract="false" baseType="OutputPin" documentation="" iconPath="" id="Vzf2s_GGAqAAhwT_" leaf="false" name="overwrite" root="false"/>
-		<Stereotype abstract="false" baseType="ValuePin" documentation="" iconPath="" id="Vzf2s_GGAqAAhwUA" leaf="false" name="overwrite" root="false"/>
-		<Stereotype abstract="false" baseType="Transition2" documentation="" iconPath="" id="Vzf2s_GGAqAAhwUB" leaf="false" name="Default" root="false"/>
-		<Stereotype abstract="false" baseType="Transition2" documentation="" iconPath="" id="1zf2s_GGAqAAhwUC" leaf="false" name="initial" root="false"/>
-		<Stereotype abstract="false" baseType="Abstraction" documentation="" iconPath="" id="1zf2s_GGAqAAhwUD" leaf="false" name="refine" root="false"/>
-		<Stereotype abstract="false" baseType="Abstraction" documentation="" iconPath="" id="1zf2s_GGAqAAhwUE" leaf="false" name="trace" root="false"/>
-		<Stereotype abstract="false" baseType="AssociationEnd" documentation="" iconPath="" id="1zf2s_GGAqAAhwUF" leaf="false" name="global" root="false"/>
-		<Stereotype abstract="false" baseType="AssociationEnd" documentation="" iconPath="" id="1zf2s_GGAqAAhwUG" leaf="false" name="adjunct" root="false"/>
-		<Stereotype abstract="false" baseType="Dependency" documentation="" iconPath="" id="1zf2s_GGAqAAhwUH" leaf="false" name="appliedProfile" root="false"/>
-		<Stereotype abstract="false" baseType="Dependency" documentation="" iconPath="" id="Nzf2s_GGAqAAhwUI" leaf="false" name="conform" root="false"/>
-		<Stereotype abstract="false" baseType="Dependency" documentation="" iconPath="" id="Nzf2s_GGAqAAhwUJ" leaf="false" name="modelLibrary" root="false"/>
-		<Stereotype abstract="false" baseType="Generalization" documentation="" iconPath="" id="Nzf2s_GGAqAAhwUK" leaf="false" name="implementation" root="false"/>
-		<Stereotype abstract="false" baseType="Generalization" documentation="" iconPath="" id="Nzf2s_GGAqAAhwUL" leaf="false" name="ORM Implementation" root="false"/>
-		<Stereotype abstract="false" baseType="Package" documentation="" iconPath="" id="tzf2s_GGAqAAhwUM" leaf="false" name="auxiliary" root="false"/>
-		<Stereotype abstract="false" baseType="Package" documentation="" iconPath="" id="tzf2s_GGAqAAhwUN" leaf="false" name="view" root="false"/>
-		<Stereotype abstract="false" baseType="Package" documentation="" iconPath="" id="tzf2s_GGAqAAhwUO" leaf="false" name="framework" root="false"/>
-		<Stereotype abstract="false" baseType="Package" documentation="" iconPath="" id="tzf2s_GGAqAAhwUP" leaf="false" name="modelLibrary" root="false"/>
-		<Stereotype abstract="false" baseType="Package" documentation="" iconPath="" id="tzf2s_GGAqAAhwUQ" leaf="false" name="XSDschema" root="false">
-			<TaggedValueDefinitionContainer id="tzf2s_GGAqAAhwUR" name="">
+		<Stereotype abstract="false" baseType="ObjectNode" documentation="" iconPath="" id="bGkM4GmGAqAA4gT5" leaf="false" name="overwrite" root="false"/>
+		<Stereotype abstract="false" baseType="ActivityParameterNode" documentation="" iconPath="" id="7GkM4GmGAqAA4gT6" leaf="false" name="overwrite" root="false"/>
+		<Stereotype abstract="false" baseType="CentralBufferNode" documentation="" iconPath="" id="7GkM4GmGAqAA4gT7" leaf="false" name="overwrite" root="false"/>
+		<Stereotype abstract="false" baseType="DataStoreNode" documentation="" iconPath="" id="7GkM4GmGAqAA4gT8" leaf="false" name="overwrite" root="false"/>
+		<Stereotype abstract="false" baseType="ExpansionNode" documentation="" iconPath="" id="7GkM4GmGAqAA4gT9" leaf="false" name="overwrite" root="false"/>
+		<Stereotype abstract="false" baseType="InputPin" documentation="" iconPath="" id="7GkM4GmGAqAA4gT." leaf="false" name="overwrite" root="false"/>
+		<Stereotype abstract="false" baseType="OutputPin" documentation="" iconPath="" id="7GkM4GmGAqAA4gT_" leaf="false" name="overwrite" root="false"/>
+		<Stereotype abstract="false" baseType="ValuePin" documentation="" iconPath="" id="7GkM4GmGAqAA4gUA" leaf="false" name="overwrite" root="false"/>
+		<Stereotype abstract="false" baseType="Transition2" documentation="" iconPath="" id="7GkM4GmGAqAA4gUB" leaf="false" name="Default" root="false"/>
+		<Stereotype abstract="false" baseType="Transition2" documentation="" iconPath="" id="7GkM4GmGAqAA4gUC" leaf="false" name="initial" root="false"/>
+		<Stereotype abstract="false" baseType="Abstraction" documentation="" iconPath="" id="7GkM4GmGAqAA4gUD" leaf="false" name="refine" root="false"/>
+		<Stereotype abstract="false" baseType="Abstraction" documentation="" iconPath="" id="HGkM4GmGAqAA4gUE" leaf="false" name="trace" root="false"/>
+		<Stereotype abstract="false" baseType="AssociationEnd" documentation="" iconPath="" id="HGkM4GmGAqAA4gUF" leaf="false" name="global" root="false"/>
+		<Stereotype abstract="false" baseType="AssociationEnd" documentation="" iconPath="" id="HGkM4GmGAqAA4gUG" leaf="false" name="adjunct" root="false"/>
+		<Stereotype abstract="false" baseType="Dependency" documentation="" iconPath="" id="HGkM4GmGAqAA4gUH" leaf="false" name="appliedProfile" root="false"/>
+		<Stereotype abstract="false" baseType="Dependency" documentation="" iconPath="" id="HGkM4GmGAqAA4gUI" leaf="false" name="conform" root="false"/>
+		<Stereotype abstract="false" baseType="Dependency" documentation="" iconPath="" id="HGkM4GmGAqAA4gUJ" leaf="false" name="modelLibrary" root="false"/>
+		<Stereotype abstract="false" baseType="Generalization" documentation="" iconPath="" id="HGkM4GmGAqAA4gUK" leaf="false" name="implementation" root="false"/>
+		<Stereotype abstract="false" baseType="Generalization" documentation="" iconPath="" id="HGkM4GmGAqAA4gUL" leaf="false" name="ORM Implementation" root="false"/>
+		<Stereotype abstract="false" baseType="Package" documentation="" iconPath="" id="HGkM4GmGAqAA4gUM" leaf="false" name="auxiliary" root="false"/>
+		<Stereotype abstract="false" baseType="Package" documentation="" iconPath="" id="HGkM4GmGAqAA4gUN" leaf="false" name="view" root="false"/>
+		<Stereotype abstract="false" baseType="Package" documentation="" iconPath="" id="nGkM4GmGAqAA4gUO" leaf="false" name="framework" root="false"/>
+		<Stereotype abstract="false" baseType="Package" documentation="" iconPath="" id="nGkM4GmGAqAA4gUP" leaf="false" name="modelLibrary" root="false"/>
+		<Stereotype abstract="false" baseType="Package" documentation="" iconPath="" id="nGkM4GmGAqAA4gUQ" leaf="false" name="XSDschema" root="false">
+			<TaggedValueDefinitionContainer id="nGkM4GmGAqAA4gUR" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="tzf2s_GGAqAAhwUS" name="Namespace" type="0"/>
-					<TaggedValueDefinition documentation="" id="dzf2s_GGAqAAhwUT" name="NamespacePrefix" type="0"/>
+					<TaggedValueDefinition documentation="" id="nGkM4GmGAqAA4gUS" name="Namespace" type="0"/>
+					<TaggedValueDefinition documentation="" id="nGkM4GmGAqAA4gUT" name="NamespacePrefix" type="0"/>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="SubSystem" documentation="" iconPath="" id="dzf2s_GGAqAAhwUU" leaf="false" name="facade" root="false"/>
-		<Stereotype abstract="false" baseType="SubSystem" documentation="" iconPath="" id="dzf2s_GGAqAAhwUV" leaf="false" name="framework" root="false"/>
-		<Stereotype abstract="false" baseType="SubSystem" documentation="" iconPath="" id="dzf2s_GGAqAAhwUW" leaf="false" name="modelLibrary" root="false"/>
-		<Stereotype abstract="false" baseType="SubSystem" documentation="" iconPath="" id="dzf2s_GGAqAAhwUX" leaf="false" name="profile" root="false"/>
-		<Stereotype abstract="false" baseType="SubSystem" documentation="" iconPath="" id="9zf2s_GGAqAAhwUY" leaf="false" name="stub" root="false"/>
-		<Stereotype abstract="false" baseType="SubSystem" documentation="" iconPath="" id="9zf2s_GGAqAAhwUZ" leaf="false" name="topLevel" root="false"/>
-		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="9zf2s_GGAqAAhwUa" leaf="false" name="appliedProfile" root="false"/>
-		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="9zf2s_GGAqAAhwUb" leaf="false" name="call" root="false"/>
-		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="9zf2s_GGAqAAhwUc" leaf="false" name="create" root="false"/>
-		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="Dzf2s_GGAqAAhwUd" leaf="false" name="instantiate" root="false"/>
-		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="Dzf2s_GGAqAAhwUe" leaf="false" name="modelLibrary" root="false"/>
-		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="Dzf2s_GGAqAAhwUf" leaf="false" name="responsibility" root="false"/>
-		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="Dzf2s_GGAqAAhwUg" leaf="false" name="send" root="false"/>
-		<Stereotype abstract="false" baseType="DiagonalMessage" documentation="" iconPath="" id="Dzf2s_GGAqAAhwUh" leaf="false" name="balking" root="false"/>
-		<Stereotype abstract="false" baseType="DiagonalMessage" documentation="" iconPath="" id="Dzf2s_GGAqAAhwUi" leaf="false" name="time-out" root="false"/>
-		<Stereotype abstract="false" baseType="SelfMessage" documentation="" iconPath="" id="jzf2s_GGAqAAhwUj" leaf="false" name="balking" root="false"/>
-		<Stereotype abstract="false" baseType="SelfMessage" documentation="" iconPath="" id="jzf2s_GGAqAAhwUk" leaf="false" name="time-out" root="false"/>
-		<Stereotype abstract="false" baseType="SequenceMessage" documentation="" iconPath="" id="jzf2s_GGAqAAhwUl" leaf="false" name="balking" root="false"/>
-		<Stereotype abstract="false" baseType="SequenceMessage" documentation="" iconPath="" id="jzf2s_GGAqAAhwUm" leaf="false" name="time-out" root="false"/>
-		<Stereotype abstract="false" baseType="MessageFrom" documentation="" iconPath="" id="jzf2s_GGAqAAhwUn" leaf="false" name="balking" root="false"/>
-		<Stereotype abstract="false" baseType="MessageFrom" documentation="" iconPath="" id="Tzf2s_GGAqAAhwUo" leaf="false" name="time-out" root="false"/>
-		<Stereotype abstract="false" baseType="MessageTo" documentation="" iconPath="" id="Tzf2s_GGAqAAhwUp" leaf="false" name="balking" root="false"/>
-		<Stereotype abstract="false" baseType="MessageTo" documentation="" iconPath="" id="Tzf2s_GGAqAAhwUq" leaf="false" name="time-out" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="Tzf2s_GGAqAAhwUr" leaf="false" name="buildComponent" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="zzf2s_GGAqAAhwUs" leaf="false" name="document" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="zzf2s_GGAqAAhwUt" leaf="false" name="entity" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="Lzf2s_GGAqAAhwUu" leaf="false" name="focus" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="Lzf2s_GGAqAAhwUv" leaf="false" name="executable" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="Lzf2s_GGAqAAhwUw" leaf="false" name="file" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="Lzf2s_GGAqAAhwUx" leaf="false" name="implement" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="Lzf2s_GGAqAAhwUy" leaf="false" name="library" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="rzf2s_GGAqAAhwUz" leaf="false" name="metaclass" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="rzf2s_GGAqAAhwU0" leaf="false" name="powertype" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="rzf2s_GGAqAAhwU1" leaf="false" name="process" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="rzf2s_GGAqAAhwU2" leaf="false" name="service" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="bzf2s_GGAqAAhwU3" leaf="false" name="subsystem" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="bzf2s_GGAqAAhwU4" leaf="false" name="table" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="bzf2s_GGAqAAhwU5" leaf="false" name="thread" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="bzf2s_GGAqAAhwU6" leaf="false" name="utility" root="false"/>
-		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="bzf2s_GGAqAAhwU7" leaf="false" name="Participant" root="false"/>
-		<Stereotype abstract="false" baseType="Interface" documentation="" iconPath="" id="7zf2s_GGAqAAhwU8" leaf="false" name="metaclass" root="false"/>
-		<Stereotype abstract="false" baseType="Interface" documentation="" iconPath="" id="7zf2s_GGAqAAhwU9" leaf="false" name="powertype" root="false"/>
-		<Stereotype abstract="false" baseType="Interface" documentation="" iconPath="" id="7zf2s_GGAqAAhwU." leaf="false" name="process" root="false"/>
-		<Stereotype abstract="false" baseType="Interface" documentation="" iconPath="" id="Hzf2s_GGAqAAhwU_" leaf="false" name="thread" root="false"/>
-		<Stereotype abstract="false" baseType="Interface" documentation="" iconPath="" id="Hzf2s_GGAqAAhwVA" leaf="false" name="utility" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="Hzf2s_GGAqAAhwVB" leaf="false" name="auxiliary" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="nzf2s_GGAqAAhwVC" leaf="false" name="viewpoint" root="false">
-			<TaggedValueDefinitionContainer id="nzf2s_GGAqAAhwVD" name="">
+		<Stereotype abstract="false" baseType="SubSystem" documentation="" iconPath="" id="nGkM4GmGAqAA4gUU" leaf="false" name="facade" root="false"/>
+		<Stereotype abstract="false" baseType="SubSystem" documentation="" iconPath="" id="nGkM4GmGAqAA4gUV" leaf="false" name="framework" root="false"/>
+		<Stereotype abstract="false" baseType="SubSystem" documentation="" iconPath="" id="nGkM4GmGAqAA4gUW" leaf="false" name="modelLibrary" root="false"/>
+		<Stereotype abstract="false" baseType="SubSystem" documentation="" iconPath="" id="nGkM4GmGAqAA4gUX" leaf="false" name="profile" root="false"/>
+		<Stereotype abstract="false" baseType="SubSystem" documentation="" iconPath="" id="XGkM4GmGAqAA4gUY" leaf="false" name="stub" root="false"/>
+		<Stereotype abstract="false" baseType="SubSystem" documentation="" iconPath="" id="XGkM4GmGAqAA4gUZ" leaf="false" name="topLevel" root="false"/>
+		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="XGkM4GmGAqAA4gUa" leaf="false" name="appliedProfile" root="false"/>
+		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="XGkM4GmGAqAA4gUb" leaf="false" name="call" root="false"/>
+		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="XGkM4GmGAqAA4gUc" leaf="false" name="create" root="false"/>
+		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="XGkM4GmGAqAA4gUd" leaf="false" name="instantiate" root="false"/>
+		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="XGkM4GmGAqAA4gUe" leaf="false" name="modelLibrary" root="false"/>
+		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="XGkM4GmGAqAA4gUf" leaf="false" name="responsibility" root="false"/>
+		<Stereotype abstract="false" baseType="Usage" documentation="" iconPath="" id="XGkM4GmGAqAA4gUg" leaf="false" name="send" root="false"/>
+		<Stereotype abstract="false" baseType="DiagonalMessage" documentation="" iconPath="" id="XGkM4GmGAqAA4gUh" leaf="false" name="balking" root="false"/>
+		<Stereotype abstract="false" baseType="DiagonalMessage" documentation="" iconPath="" id="XGkM4GmGAqAA4gUi" leaf="false" name="time-out" root="false"/>
+		<Stereotype abstract="false" baseType="SelfMessage" documentation="" iconPath="" id="3GkM4GmGAqAA4gUj" leaf="false" name="balking" root="false"/>
+		<Stereotype abstract="false" baseType="SelfMessage" documentation="" iconPath="" id="3GkM4GmGAqAA4gUk" leaf="false" name="time-out" root="false"/>
+		<Stereotype abstract="false" baseType="SequenceMessage" documentation="" iconPath="" id="3GkM4GmGAqAA4gUl" leaf="false" name="balking" root="false"/>
+		<Stereotype abstract="false" baseType="SequenceMessage" documentation="" iconPath="" id="3GkM4GmGAqAA4gUm" leaf="false" name="time-out" root="false"/>
+		<Stereotype abstract="false" baseType="MessageFrom" documentation="" iconPath="" id="3GkM4GmGAqAA4gUn" leaf="false" name="balking" root="false"/>
+		<Stereotype abstract="false" baseType="MessageFrom" documentation="" iconPath="" id="3GkM4GmGAqAA4gUo" leaf="false" name="time-out" root="false"/>
+		<Stereotype abstract="false" baseType="MessageTo" documentation="" iconPath="" id="3GkM4GmGAqAA4gUp" leaf="false" name="balking" root="false"/>
+		<Stereotype abstract="false" baseType="MessageTo" documentation="" iconPath="" id="3GkM4GmGAqAA4gUq" leaf="false" name="time-out" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="3GkM4GmGAqAA4gUr" leaf="false" name="buildComponent" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="3GkM4GmGAqAA4gUs" leaf="false" name="document" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gUt" leaf="false" name="entity" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gUu" leaf="false" name="focus" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gUv" leaf="false" name="executable" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gUw" leaf="false" name="file" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gUx" leaf="false" name="implement" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gUy" leaf="false" name="library" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gUz" leaf="false" name="metaclass" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gU0" leaf="false" name="powertype" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gU1" leaf="false" name="process" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gU2" leaf="false" name="service" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gU3" leaf="false" name="subsystem" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gU4" leaf="false" name="table" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gU5" leaf="false" name="thread" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gU6" leaf="false" name="utility" root="false"/>
+		<Stereotype abstract="false" baseType="Component" documentation="" iconPath="" id="PGkM4GmGAqAA4gU7" leaf="false" name="Participant" root="false"/>
+		<Stereotype abstract="false" baseType="Interface" documentation="" iconPath="" id="PGkM4GmGAqAA4gU8" leaf="false" name="metaclass" root="false"/>
+		<Stereotype abstract="false" baseType="Interface" documentation="" iconPath="" id="vGkM4GmGAqAA4gU9" leaf="false" name="powertype" root="false"/>
+		<Stereotype abstract="false" baseType="Interface" documentation="" iconPath="" id="vGkM4GmGAqAA4gU." leaf="false" name="process" root="false"/>
+		<Stereotype abstract="false" baseType="Interface" documentation="" iconPath="" id="vGkM4GmGAqAA4gU_" leaf="false" name="thread" root="false"/>
+		<Stereotype abstract="false" baseType="Interface" documentation="" iconPath="" id="vGkM4GmGAqAA4gVA" leaf="false" name="utility" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="vGkM4GmGAqAA4gVB" leaf="false" name="auxiliary" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="vGkM4GmGAqAA4gVC" leaf="false" name="viewpoint" root="false">
+			<TaggedValueDefinitionContainer id="fGkM4GmGAqAA4gVD" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="The set of stakeholders." id="nzf2s_GGAqAAhwVE" name="Stakeholders" type="3"/>
-					<TaggedValueDefinition documentation="The purpose addresses the stakeholder concerns." id="nzf2s_GGAqAAhwVF" name="Purpose" type="0"/>
-					<TaggedValueDefinition documentation="The interest of the stakeholders." id="Xzf2s_GGAqAAhwVG" name="Concerns" type="0"/>
-					<TaggedValueDefinition documentation="The languages used to construct the viewpoint." id="Xzf2s_GGAqAAhwVH" name="Languages" type="0"/>
-					<TaggedValueDefinition documentation="The methods used to construct the views for this viewpoint." id="Xzf2s_GGAqAAhwVI" name="Methods" type="0"/>
+					<TaggedValueDefinition documentation="The set of stakeholders." id="fGkM4GmGAqAA4gVE" name="Stakeholders" type="3"/>
+					<TaggedValueDefinition documentation="The purpose addresses the stakeholder concerns." id="fGkM4GmGAqAA4gVF" name="Purpose" type="0"/>
+					<TaggedValueDefinition documentation="The interest of the stakeholders." id="fGkM4GmGAqAA4gVG" name="Concerns" type="0"/>
+					<TaggedValueDefinition documentation="The languages used to construct the viewpoint." id="fGkM4GmGAqAA4gVH" name="Languages" type="0"/>
+					<TaggedValueDefinition documentation="The methods used to construct the views for this viewpoint." id="fGkM4GmGAqAA4gVI" name="Methods" type="0"/>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="3zf2s_GGAqAAhwVJ" leaf="false" name="focus" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="Pzf2s_GGAqAAhwVK" leaf="false" name="implementationClass" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="Pzf2s_GGAqAAhwVL" leaf="false" name="Interface" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="Pzf2s_GGAqAAhwVM" leaf="false" name="metaclass" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="vzf2s_GGAqAAhwVN" leaf="false" name="XSDattributeGroup" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="vzf2s_GGAqAAhwVO" leaf="false" name="entity" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="vzf2s_GGAqAAhwVP" leaf="false" name="enumeration" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="vzf2s_GGAqAAhwVQ" leaf="false" name="primitive" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="fzf2s_GGAqAAhwVR" leaf="false" name="control" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="fzf2s_GGAqAAhwVS" leaf="false" name="boundary" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="fzf2s_GGAqAAhwVT" leaf="false" name="CORBAConstants" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="fzf2s_GGAqAAhwVU" leaf="false" name="CORBATypedef" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="fzf2s_GGAqAAhwVV" leaf="false" name="CORBAPrimitive" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="_zf2s_GGAqAAhwVW" leaf="false" name="CORBAException" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="_zf2s_GGAqAAhwVX" leaf="false" name="CORBAStruct" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" iconPath="" id="_zf2s_GGAqAAhwVY" leaf="false" name="entity" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" iconPath="" id="ALf2s_GGAqAAhwVZ" leaf="false" name="control" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" iconPath="" id="ALf2s_GGAqAAhwVa" leaf="false" name="boundary" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ALf2s_GGAqAAhwVb" leaf="false" name="ORM Abstract Persistable" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ALf2s_GGAqAAhwVc" leaf="false" name="XSDsequence" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ALf2s_GGAqAAhwVd" leaf="false" name="XSDchoice" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="gLf2s_GGAqAAhwVe" leaf="false" name="XSDcomplexType" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="gLf2s_GGAqAAhwVf" leaf="false" name="XSDsimpleType" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="gLf2s_GGAqAAhwVg" leaf="false" name="XSDelement" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="gLf2s_GGAqAAhwVh" leaf="false" name="XSDall" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="gLf2s_GGAqAAhwVi" leaf="false" name="XSDrestriction" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="QLf2s_GGAqAAhwVj" leaf="false" name="XSDunion" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="QLf2s_GGAqAAhwVk" leaf="false" name="XSDlist" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="QLf2s_GGAqAAhwVl" leaf="false" name="XSDschema" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="QLf2s_GGAqAAhwVm" leaf="false" name="Enum" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="wLf2s_GGAqAAhwVn" leaf="false" name="Struct" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="wLf2s_GGAqAAhwVo" leaf="false" name="Union" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ILf2s_GGAqAAhwVp" leaf="false" name="Typedef" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ILf2s_GGAqAAhwVq" leaf="false" name="type" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ILf2s_GGAqAAhwVr" leaf="false" name="utility" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ILf2s_GGAqAAhwVs" leaf="false" name="Delegate" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="oLf2s_GGAqAAhwVt" leaf="false" name="Entity Bean" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="oLf2s_GGAqAAhwVu" leaf="false" name="Session Bean" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="oLf2s_GGAqAAhwVv" leaf="false" name="Message Driven Bean" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="oLf2s_GGAqAAhwVw" leaf="false" name="ORM Component" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="YLf2s_GGAqAAhwVx" leaf="false" name="ORM Persistable" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="YLf2s_GGAqAAhwVy" leaf="false" name="ORM ID Generator" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="YLf2s_GGAqAAhwVz" leaf="false" name="ORM User Type" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="YLf2s_GGAqAAhwV0" leaf="false" name="ORM Parameterized Type" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="YLf2s_GGAqAAhwV1" leaf="false" name="PTN Members Creatable" root="false"/>
-		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="4Lf2s_GGAqAAhwV2" leaf="false" name="PTN Cloneable" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLConstraintBlock" documentation="" iconPath="" id="4Lf2s_GGAqAAhwV3" leaf="false" name="objectiveFunction" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLConstraintProperty" documentation="" iconPath="" id="4Lf2s_GGAqAAhwV4" leaf="false" name="objectiveFunction" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="4Lf2s_GGAqAAhwV5" leaf="false" name="moe" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="4Lf2s_GGAqAAhwV6" leaf="false" name="Constant" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="ELf2s_GGAqAAhwV7" leaf="false" name="Event" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="ELf2s_GGAqAAhwV8" leaf="false" name="PK" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="ELf2s_GGAqAAhwV9" leaf="false" name="Property" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="kLf2s_GGAqAAhwV." leaf="false" name="XSDelement" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="kLf2s_GGAqAAhwV_" leaf="false" name="XSDattribute" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="kLf2s_GGAqAAhwWA" leaf="false" name="XSDenumeration" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="kLf2s_GGAqAAhwWB" leaf="false" name="XSDpattern" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="ULf2s_GGAqAAhwWC" leaf="false" name="CMP" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="ULf2s_GGAqAAhwWD" leaf="false" name="ResourceRole" root="false">
-			<TaggedValueDefinitionContainer id="ULf2s_GGAqAAhwWE" name="">
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="fGkM4GmGAqAA4gVJ" leaf="false" name="focus" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="_GkM4GmGAqAA4gVK" leaf="false" name="implementationClass" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="_GkM4GmGAqAA4gVL" leaf="false" name="Interface" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="_GkM4GmGAqAA4gVM" leaf="false" name="metaclass" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="_GkM4GmGAqAA4gVN" leaf="false" name="XSDattributeGroup" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="_GkM4GmGAqAA4gVO" leaf="false" name="entity" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="_GkM4GmGAqAA4gVP" leaf="false" name="enumeration" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="_GkM4GmGAqAA4gVQ" leaf="false" name="primitive" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="AmkM4GmGAqAA4gVR" leaf="false" name="control" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="AmkM4GmGAqAA4gVS" leaf="false" name="boundary" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="AmkM4GmGAqAA4gVT" leaf="false" name="CORBAConstants" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="AmkM4GmGAqAA4gVU" leaf="false" name="CORBATypedef" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="AmkM4GmGAqAA4gVV" leaf="false" name="CORBAPrimitive" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="gmkM4GmGAqAA4gVW" leaf="false" name="CORBAException" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="gmkM4GmGAqAA4gVX" leaf="false" name="CORBAStruct" root="false"/>
+		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" iconPath="" id="gmkM4GmGAqAA4gVY" leaf="false" name="entity" root="false"/>
+		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" iconPath="" id="gmkM4GmGAqAA4gVZ" leaf="false" name="control" root="false"/>
+		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" iconPath="" id="gmkM4GmGAqAA4gVa" leaf="false" name="boundary" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="gmkM4GmGAqAA4gVb" leaf="false" name="ORM Abstract Persistable" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="QmkM4GmGAqAA4gVc" leaf="false" name="XSDsequence" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="QmkM4GmGAqAA4gVd" leaf="false" name="XSDchoice" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="QmkM4GmGAqAA4gVe" leaf="false" name="XSDcomplexType" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="QmkM4GmGAqAA4gVf" leaf="false" name="XSDsimpleType" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="QmkM4GmGAqAA4gVg" leaf="false" name="XSDelement" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="QmkM4GmGAqAA4gVh" leaf="false" name="XSDall" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="QmkM4GmGAqAA4gVi" leaf="false" name="XSDrestriction" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="wmkM4GmGAqAA4gVj" leaf="false" name="XSDunion" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="wmkM4GmGAqAA4gVk" leaf="false" name="XSDlist" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="wmkM4GmGAqAA4gVl" leaf="false" name="XSDschema" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="wmkM4GmGAqAA4gVm" leaf="false" name="Enum" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="wmkM4GmGAqAA4gVn" leaf="false" name="Struct" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ImkM4GmGAqAA4gVo" leaf="false" name="Union" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ImkM4GmGAqAA4gVp" leaf="false" name="Typedef" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ImkM4GmGAqAA4gVq" leaf="false" name="type" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ImkM4GmGAqAA4gVr" leaf="false" name="utility" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ImkM4GmGAqAA4gVs" leaf="false" name="Delegate" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ImkM4GmGAqAA4gVt" leaf="false" name="Entity Bean" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ImkM4GmGAqAA4gVu" leaf="false" name="Session Bean" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="ImkM4GmGAqAA4gVv" leaf="false" name="Message Driven Bean" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="omkM4GmGAqAA4gVw" leaf="false" name="ORM Component" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="omkM4GmGAqAA4gVx" leaf="false" name="ORM Persistable" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="omkM4GmGAqAA4gVy" leaf="false" name="ORM ID Generator" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="omkM4GmGAqAA4gVz" leaf="false" name="ORM User Type" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="omkM4GmGAqAA4gV0" leaf="false" name="ORM Parameterized Type" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="YmkM4GmGAqAA4gV1" leaf="false" name="PTN Members Creatable" root="false"/>
+		<Stereotype abstract="false" baseType="Class" documentation="" iconPath="" id="YmkM4GmGAqAA4gV2" leaf="false" name="PTN Cloneable" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLConstraintBlock" documentation="" iconPath="" id="YmkM4GmGAqAA4gV3" leaf="false" name="objectiveFunction" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLConstraintProperty" documentation="" iconPath="" id="YmkM4GmGAqAA4gV4" leaf="false" name="objectiveFunction" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="YmkM4GmGAqAA4gV5" leaf="false" name="moe" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="YmkM4GmGAqAA4gV6" leaf="false" name="Constant" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="YmkM4GmGAqAA4gV7" leaf="false" name="Event" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="YmkM4GmGAqAA4gV8" leaf="false" name="PK" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="4mkM4GmGAqAA4gV9" leaf="false" name="Property" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="4mkM4GmGAqAA4gV." leaf="false" name="XSDelement" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="4mkM4GmGAqAA4gV_" leaf="false" name="XSDattribute" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="4mkM4GmGAqAA4gWA" leaf="false" name="XSDenumeration" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="4mkM4GmGAqAA4gWB" leaf="false" name="XSDpattern" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="4mkM4GmGAqAA4gWC" leaf="false" name="CMP" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="EmkM4GmGAqAA4gWD" leaf="false" name="ResourceRole" root="false">
+			<TaggedValueDefinitionContainer id="EmkM4GmGAqAA4gWE" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition documentation="" id="ULf2s_GGAqAAhwWF" name="RoleKind" type="2">
+					<TaggedValueDefinition documentation="" id="EmkM4GmGAqAA4gWF" name="RoleKind" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF0" value="Part"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF1" value="Component"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF2" value="UsedConfiguration"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF3" value="HumanResource"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF4" value="Platform"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF5" value="System"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF6" value="SubOrganization"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF7" value="PostRole"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF8" value="ResponsibilityRole"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF9" value="Equipment"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF10" value="SubSystemPart"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF11" value="UsedPhysicalArchitecture"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF12" value="HostedSoftware"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF13" value="ArtifactComponent"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF14" value="NaturalResourceComponent"/>
-							<ValueSpecification id="ULf2s_GGAqAAhwWF15" value="Other"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF0" value="Part"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF1" value="Component"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF2" value="UsedConfiguration"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF3" value="HumanResource"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF4" value="Platform"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF5" value="System"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF6" value="SubOrganization"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF7" value="PostRole"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF8" value="ResponsibilityRole"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF9" value="Equipment"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF10" value="SubSystemPart"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF11" value="UsedPhysicalArchitecture"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF12" value="HostedSoftware"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF13" value="ArtifactComponent"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF14" value="NaturalResourceComponent"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF15" value="Other"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="ULf2s_GGAqAAhwWG" leaf="false" name="DistributedProperty" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="Basic Interval distribution - value between min and max inclusive" iconPath="" id="ULf2s_GGAqAAhwWH" leaf="false" name="BasicInterval" root="false">
-			<TaggedValueDefinitionContainer id="0Lf2s_GGAqAAhwWI" name="">
+		<Stereotype abstract="false" baseType="Attribute" documentation="" iconPath="" id="EmkM4GmGAqAA4gWG" leaf="false" name="DistributedProperty" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="Basic Interval distribution - value between min and max inclusive" iconPath="" id="EmkM4GmGAqAA4gWH" leaf="false" name="BasicInterval" root="false">
+			<TaggedValueDefinitionContainer id="EmkM4GmGAqAA4gWI" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition defaultValue="0.0" documentation="" id="0Lf2s_GGAqAAhwWJ" name="min" type="6"/>
-					<TaggedValueDefinition defaultValue="0.0" documentation="" id="0Lf2s_GGAqAAhwWK" name="max" type="6"/>
+					<TaggedValueDefinition defaultValue="0.0" documentation="" id="EmkM4GmGAqAA4gWJ" name="min" type="6"/>
+					<TaggedValueDefinition defaultValue="0.0" documentation="" id="EmkM4GmGAqAA4gWK" name="max" type="6"/>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="Attribute" documentation="Interval distribution - unknown probability between min and max" iconPath="" id="cLf2s_GGAqAAhwWM" leaf="false" name="Interval" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="Uniform distribution - constant probability between min and max" iconPath="" id="SLf2s_GGAqAAhwWO" leaf="false" name="Uniform" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="Normal distribution - constant probability between min and max" iconPath="" id="qLf2s_GGAqAAhwWQ" leaf="false" name="Normal" root="false">
-			<TaggedValueDefinitionContainer id="qLf2s_GGAqAAhwWR" name="">
+		<Stereotype abstract="false" baseType="Attribute" documentation="Interval distribution - unknown probability between min and max" iconPath="" id="UmkM4GmGAqAA4gWM" leaf="false" name="Interval" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="Uniform distribution - constant probability between min and max" iconPath="" id="0mkM4GmGAqAA4gWO" leaf="false" name="Uniform" root="false"/>
+		<Stereotype abstract="false" baseType="Attribute" documentation="Normal distribution - constant probability between min and max" iconPath="" id="smkM4GmGAqAA4gWQ" leaf="false" name="Normal" root="false">
+			<TaggedValueDefinitionContainer id="smkM4GmGAqAA4gWR" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition defaultValue="0.0" documentation="" id="qLf2s_GGAqAAhwWS" name="mean" type="6"/>
-					<TaggedValueDefinition defaultValue="0.0" documentation="" id="qLf2s_GGAqAAhwWT" name="standardDeviation" type="6"/>
+					<TaggedValueDefinition defaultValue="0.0" documentation="" id="smkM4GmGAqAA4gWS" name="mean" type="6"/>
+					<TaggedValueDefinition defaultValue="0.0" documentation="" id="smkM4GmGAqAA4gWT" name="standardDeviation" type="6"/>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="Deployment" documentation="" iconPath="" id="GLf2s_GGAqAAhwWV" leaf="false" name="deploy" root="false"/>
-		<Stereotype abstract="false" baseType="Operation" documentation="" iconPath="" id="GLf2s_GGAqAAhwWW" leaf="false" name="Event" root="false"/>
-		<Stereotype abstract="false" baseType="Operation" documentation="" iconPath="" id="mLf2s_GGAqAAhwWX" leaf="false" name="CORBAOneway" root="false"/>
-		<Stereotype abstract="false" baseType="Operation" documentation="" iconPath="" id="mLf2s_GGAqAAhwWY" leaf="false" name="default" root="false"/>
-		<Stereotype abstract="false" baseType="Generalization" documentation="" iconPath="" id="mLf2s_GGAqAAhwWZ" leaf="false" name="XSDextension" root="false"/>
-		<Stereotype abstract="false" baseType="Generalization" documentation="" iconPath="" id="mLf2s_GGAqAAhwWa" leaf="false" name="XSDrestriction" root="false"/>
-		<Stereotype abstract="false" baseType="AssociationEnd" documentation="" iconPath="" id="mLf2s_GGAqAAhwWb" leaf="false" name="XSDelement" root="false"/>
-		<Stereotype abstract="false" baseType="Association" documentation="" iconPath="" id="WLf2s_GGAqAAhwWc" leaf="false" name="PTN Operation Impl" root="false"/>
-		<Stereotype abstract="false" baseType="Association" documentation="" iconPath="" id="WLf2s_GGAqAAhwWd" leaf="false" name="PTN To-End Role Name Follow Class" root="false"/>
-		<Stereotype abstract="false" baseType="Object" documentation="" iconPath="" id="WLf2s_GGAqAAhwWe" leaf="false" name="entity" root="false"/>
-		<Stereotype abstract="false" baseType="Object" documentation="" iconPath="" id="WLf2s_GGAqAAhwWf" leaf="false" name="control" root="false"/>
-		<Stereotype abstract="false" baseType="Object" documentation="" iconPath="" id="2Lf2s_GGAqAAhwWg" leaf="false" name="boundary" root="false"/>
-		<Stereotype abstract="false" baseType="Model" documentation="" iconPath="" id="2Lf2s_GGAqAAhwWh" leaf="false" name="metamodel" root="false"/>
-		<Stereotype abstract="false" baseType="Model" documentation="" iconPath="" id="2Lf2s_GGAqAAhwWi" leaf="false" name="systemModel" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="1EKRs_GGAqAAhwlj" leaf="false" name="ActionConn" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="H8bls_GGAqAAhwll" leaf="false" name="ActionStruct" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="KmHls_GGAqAAhwln" leaf="false" name="CommChannel" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="PFXls_GGAqAAhwlp" leaf="false" name="ComponContain" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="693ls_GGAqAAhwlr" leaf="false" name="Database" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="b0vls_GGAqAAhwlt" leaf="false" name="GpPackages" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="3yfls_GGAqAAhwlv" leaf="false" name="Message" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="Ny_ls_GGAqAAhwlx" leaf="false" name="MsgStruct" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="kKAVs_GGAqAAhwlz" leaf="false" name="Namespace" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="wkoVs_GGAqAAhwl1" leaf="false" name="Node" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="KsYVs_GGAqAAhwl3" leaf="false" name="Nodelet" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="ws4Vs_GGAqAAhwl5" leaf="false" name="NRosCompon" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="X4EVs_GGAqAAhwl7" leaf="false" name="NRosConn" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="SokVs_GGAqAAhwl9" leaf="false" name="Package" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="LfkVs_GGAqAAhwl_" leaf="false" name="Parameter" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="KPUVs_GGAqAAhwmB" leaf="false" name="Repository" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="0osVs_GGAqAAhwmD" leaf="false" name="RosCompon" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="ynsVs_GGAqAAhwmF" leaf="false" name="RosConn" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="J9cVs_GGAqAAhwmH" leaf="false" name="RunSystemCompon" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="sF8Vs_GGAqAAhwmJ" leaf="false" name="ServiceConn" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="P5CVs_GGAqAAhwmL" leaf="false" name="SourcesContain" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="hUSVs_GGAqAAhwmN" leaf="false" name="SrvStruct" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="D6yVs_GGAqAAhwmP" leaf="false" name="System" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="IKaVs_GGAqAAhwmR" leaf="false" name="TopicConn" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="Bz6Vs_GGAqAAhwmT" leaf="false" name="VerSourcesContain" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="bMmVs_GGAqAAhwmV" leaf="false" name="Workspace" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="5db1s_GGAqAAhwrI" leaf="false" name="ActionStruct" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="QCsNs_GGAqAAhwr2" leaf="false" name="ActionConn" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="YCsNs_GGAqAAhwr3" leaf="false" name="ActionStruct2" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="sCsNs_GGAqAAhwr4" leaf="false" name="CommChannel" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="iCsNs_GGAqAAhwr5" leaf="false" name="ComponContain" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="KCsNs_GGAqAAhwr6" leaf="false" name="Database" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="GCsNs_GGAqAAhwr7" leaf="false" name="Message" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="2CsNs_GGAqAAhwr8" leaf="false" name="MsgStruct" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id=".CsNs_GGAqAAhwr9" leaf="false" name="Node" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="RCsNs_GGAqAAhwr." leaf="false" name="Nodelet" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="ZCsNs_GGAqAAhwr_" leaf="false" name="NRosCompon" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="VCsNs_GGAqAAhwsA" leaf="false" name="NRosConn" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="tCsNs_GGAqAAhwsB" leaf="false" name="Parameter" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="jCsNs_GGAqAAhwsC" leaf="false" name="RosCompon" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="LCsNs_GGAqAAhwsD" leaf="false" name="RosConn" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="7CsNs_GGAqAAhwsE" leaf="false" name="RunSystemCompon" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="3CsNs_GGAqAAhwsF" leaf="false" name="ServiceConn" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="_CsNs_GGAqAAhwsG" leaf="false" name="SourcesContain" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="QisNs_GGAqAAhwsH" leaf="false" name="SrvStruct" root="false"/>
-		<Stereotype abstract="false" baseType="Attribute" documentation="" id="oisNs_GGAqAAhwsI" leaf="false" name="System" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="engts_GGAqAAhwus" leaf="false" name="ActionConn" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="xngts_GGAqAAhwut" leaf="false" name="ActionStruct" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" iconPath="" id="5ngts_GGAqAAhwuu" leaf="false" name="block" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="1ngts_GGAqAAhwuv" leaf="false" name="CommChannel" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="dngts_GGAqAAhwuw" leaf="false" name="ComponContain" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="zngts_GGAqAAhwux" leaf="false" name="Database" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" iconPath="" id="bngts_GGAqAAhwuy" leaf="false" name="domain" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" iconPath="" id="Xngts_GGAqAAhwuz" leaf="false" name="external" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="vngts_GGAqAAhwu0" leaf="false" name="GpPackages" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="AXgts_GGAqAAhwu1" leaf="false" name="Message" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="oXgts_GGAqAAhwu2" leaf="false" name="MsgStruct" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="kXgts_GGAqAAhwu3" leaf="false" name="Namespace" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="MXgts_GGAqAAhwu4" leaf="false" name="Node" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="8Xgts_GGAqAAhwu5" leaf="false" name="Nodelet" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="KXgts_GGAqAAhwu6" leaf="false" name="NRosCompon" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="6Xgts_GGAqAAhwu7" leaf="false" name="NRosConn" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="WXgts_GGAqAAhwu8" leaf="false" name="Package" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="uXgts_GGAqAAhwu9" leaf="false" name="Parameter" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="hXgts_GGAqAAhwu." leaf="false" name="Repository" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="pXgts_GGAqAAhwu_" leaf="false" name="RosCompon" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="FXgts_GGAqAAhwvA" leaf="false" name="RosConn" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="1Xgts_GGAqAAhwvB" leaf="false" name="RunSystemCompon" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="9Xgts_GGAqAAhwvC" leaf="false" name="ServiceConn" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="zXgts_GGAqAAhwvD" leaf="false" name="SourcesContain" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="bXgts_GGAqAAhwvE" leaf="false" name="SrvStruct" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" iconPath="" id="XXgts_GGAqAAhwvF" leaf="false" name="system2" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="g3gts_GGAqAAhwvG" leaf="false" name="System" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="Y3gts_GGAqAAhwvH" leaf="false" name="TopicConn" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="k3gts_GGAqAAhwvI" leaf="false" name="VerSourcesContain" root="false"/>
-		<Stereotype abstract="false" baseType="InteractionLifeLine" documentation="" id="s3gts_GGAqAAhwvJ" leaf="false" name="Workspace" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="rMYts_GGAqAAhwvK" leaf="false" name="ActionConn" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="HMYts_GGAqAAhwvL" leaf="false" name="ActionStruct" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" iconPath="" id="PMYts_GGAqAAhwvM" leaf="false" name="block" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" iconPath="" id="_MYts_GGAqAAhwvN" leaf="false" name="boundary" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="wsYts_GGAqAAhwvO" leaf="false" name="CommChannel" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="4sYts_GGAqAAhwvP" leaf="false" name="ComponContain" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" iconPath="" id="UsYts_GGAqAAhwvQ" leaf="false" name="control" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="ssYts_GGAqAAhwvR" leaf="false" name="Database" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" iconPath="" id="isYts_GGAqAAhwvS" leaf="false" name="domain" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" iconPath="" id="KsYts_GGAqAAhwvT" leaf="false" name="entity" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" iconPath="" id="GsYts_GGAqAAhwvU" leaf="false" name="external" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="2sYts_GGAqAAhwvV" leaf="false" name="GpPackages" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id=".sYts_GGAqAAhwvW" leaf="false" name="Message" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="xsYts_GGAqAAhwvX" leaf="false" name="MsgStruct" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="ZsYts_GGAqAAhwvY" leaf="false" name="Namespace" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="lsYts_GGAqAAhwvZ" leaf="false" name="Node" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="tsYts_GGAqAAhwva" leaf="false" name="Nodelet" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="jsYts_GGAqAAhwvb" leaf="false" name="NRosCompon" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="LsYts_GGAqAAhwvc" leaf="false" name="NRosConn" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="7sYts_GGAqAAhwvd" leaf="false" name="Package" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="3sYts_GGAqAAhwve" leaf="false" name="Parameter" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="fsYts_GGAqAAhwvf" leaf="false" name="Repository" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="QcYts_GGAqAAhwvg" leaf="false" name="RosCompon" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="YcYts_GGAqAAhwvh" leaf="false" name="RosConn" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="kcYts_GGAqAAhwvi" leaf="false" name="RunSystemCompon" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="scYts_GGAqAAhwvj" leaf="false" name="ServiceConn" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="CcYts_GGAqAAhwvk" leaf="false" name="SourcesContain" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="KcYts_GGAqAAhwvl" leaf="false" name="SrvStruct" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" iconPath="" id="GcYts_GGAqAAhwvm" leaf="false" name="system" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="2cYts_GGAqAAhwvn" leaf="false" name="System" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" iconPath="" id="ecYts_GGAqAAhwvo" leaf="false" name="system2" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="hcYts_GGAqAAhwvp" leaf="false" name="TopicConn" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="pcYts_GGAqAAhwvq" leaf="false" name="VerSourcesContain" root="false"/>
-		<Stereotype abstract="false" baseType="Message" documentation="" id="lcYts_GGAqAAhwvr" leaf="false" name="Workspace" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="kDkts_GGAqAAhwvs" leaf="false" name="ActionConn" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="sDkts_GGAqAAhwvt" leaf="false" name="ActionStruct" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" iconPath="" id="iDkts_GGAqAAhwvu" leaf="false" name="block" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" iconPath="" id="qDkts_GGAqAAhwvv" leaf="false" name="boundary" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="GDkts_GGAqAAhwvw" leaf="false" name="CommChannel" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="ODkts_GGAqAAhwvx" leaf="false" name="ComponContain" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" iconPath="" id="BDkts_GGAqAAhwvy" leaf="false" name="control" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="JDkts_GGAqAAhwvz" leaf="false" name="Database" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" iconPath="" id="FDkts_GGAqAAhwv0" leaf="false" name="domain" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" iconPath="" id="1Dkts_GGAqAAhwv1" leaf="false" name="entity" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" iconPath="" id="dDkts_GGAqAAhwv2" leaf="false" name="external" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="TDkts_GGAqAAhwv3" leaf="false" name="GpPackages" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="bDkts_GGAqAAhwv4" leaf="false" name="Message" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="nDkts_GGAqAAhwv5" leaf="false" name="MsgStruct" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="Ajkts_GGAqAAhwv6" leaf="false" name="Namespace" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="Ijkts_GGAqAAhwv7" leaf="false" name="Node" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="Ejkts_GGAqAAhwv8" leaf="false" name="Nodelet" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="0jkts_GGAqAAhwv9" leaf="false" name="NRosCompon" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="cjkts_GGAqAAhwv." leaf="false" name="NRosConn" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="Sjkts_GGAqAAhwv_" leaf="false" name="Package" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="ajkts_GGAqAAhwwA" leaf="false" name="Parameter" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="mjkts_GGAqAAhwwB" leaf="false" name="Repository" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="Ojkts_GGAqAAhwwC" leaf="false" name="RosCompon" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id=".jkts_GGAqAAhwwD" leaf="false" name="RosConn" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="Rjkts_GGAqAAhwwE" leaf="false" name="RunSystemCompon" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="Zjkts_GGAqAAhwwF" leaf="false" name="ServiceConn" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="Vjkts_GGAqAAhwwG" leaf="false" name="SourcesContain" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="tjkts_GGAqAAhwwH" leaf="false" name="SrvStruct" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" iconPath="" id="jjkts_GGAqAAhwwI" leaf="false" name="system" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="Ljkts_GGAqAAhwwJ" leaf="false" name="System" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" iconPath="" id="Hjkts_GGAqAAhwwK" leaf="false" name="system2" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="3jkts_GGAqAAhwwL" leaf="false" name="TopicConn" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="fjkts_GGAqAAhwwM" leaf="false" name="VerSourcesContain" root="false"/>
-		<Stereotype abstract="false" baseType="Connector" documentation="" id="gTkts_GGAqAAhwwN" leaf="false" name="Workspace" root="false"/>
+		<Stereotype abstract="false" baseType="Deployment" documentation="" iconPath="" id="8mkM4GmGAqAA4gWV" leaf="false" name="deploy" root="false"/>
+		<Stereotype abstract="false" baseType="Operation" documentation="" iconPath="" id="8mkM4GmGAqAA4gWW" leaf="false" name="Event" root="false"/>
+		<Stereotype abstract="false" baseType="Operation" documentation="" iconPath="" id="8mkM4GmGAqAA4gWX" leaf="false" name="CORBAOneway" root="false"/>
+		<Stereotype abstract="false" baseType="Operation" documentation="" iconPath="" id="CmkM4GmGAqAA4gWY" leaf="false" name="default" root="false"/>
+		<Stereotype abstract="false" baseType="Generalization" documentation="" iconPath="" id="CmkM4GmGAqAA4gWZ" leaf="false" name="XSDextension" root="false"/>
+		<Stereotype abstract="false" baseType="Generalization" documentation="" iconPath="" id="CmkM4GmGAqAA4gWa" leaf="false" name="XSDrestriction" root="false"/>
+		<Stereotype abstract="false" baseType="AssociationEnd" documentation="" iconPath="" id="CmkM4GmGAqAA4gWb" leaf="false" name="XSDelement" root="false"/>
+		<Stereotype abstract="false" baseType="Association" documentation="" iconPath="" id="CmkM4GmGAqAA4gWc" leaf="false" name="PTN Operation Impl" root="false"/>
+		<Stereotype abstract="false" baseType="Association" documentation="" iconPath="" id="CmkM4GmGAqAA4gWd" leaf="false" name="PTN To-End Role Name Follow Class" root="false"/>
+		<Stereotype abstract="false" baseType="Object" documentation="" iconPath="" id="CmkM4GmGAqAA4gWe" leaf="false" name="entity" root="false"/>
+		<Stereotype abstract="false" baseType="Object" documentation="" iconPath="" id="imkM4GmGAqAA4gWf" leaf="false" name="control" root="false"/>
+		<Stereotype abstract="false" baseType="Object" documentation="" iconPath="" id="imkM4GmGAqAA4gWg" leaf="false" name="boundary" root="false"/>
+		<Stereotype abstract="false" baseType="Model" documentation="" iconPath="" id="imkM4GmGAqAA4gWh" leaf="false" name="metamodel" root="false"/>
+		<Stereotype abstract="false" baseType="Model" documentation="" iconPath="" id="imkM4GmGAqAA4gWi" leaf="false" name="systemModel" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="8EZg1emGAqAA4guQ" leaf="false" name="System" root="false"/>
 	</ApplicationStereotypes>
 	<ProjectStereotypes>
-		<Stereotype abstract="false" baseType="UseCase" documentation="" id="zBIes_GGAqAAhwfL" leaf="false" name="UseCase" root="false">
-			<TaggedValueDefinitionContainer id="bBIes_GGAqAAhwfM" name="">
+		<Stereotype abstract="false" baseType="UseCase" documentation="" id="fN9vVemGAqAA4gme" leaf="false" name="UseCase" root="false">
+			<TaggedValueDefinitionContainer id="gt9vVemGAqAA4gmf" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition defaultValue="" documentation="" id="7BIes_GGAqAAhwfN" name="Level" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="Qt9vVemGAqAA4gmg" name="Level" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="7BIes_GGAqAAhwfN0" value="Summary"/>
-							<ValueSpecification id="7BIes_GGAqAAhwfN1" value="User"/>
-							<ValueSpecification id="7BIes_GGAqAAhwfN2" value="Subfunction"/>
+							<ValueSpecification id="Qt9vVemGAqAA4gmg0" value="Summary"/>
+							<ValueSpecification id="Qt9vVemGAqAA4gmg1" value="User"/>
+							<ValueSpecification id="Qt9vVemGAqAA4gmg2" value="Subfunction"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="HBIes_GGAqAAhwfO" name="Complexity" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="Qt9vVemGAqAA4gmh" name="Complexity" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="HBIes_GGAqAAhwfO0" value="Low"/>
-							<ValueSpecification id="HBIes_GGAqAAhwfO1" value="Medium"/>
-							<ValueSpecification id="HBIes_GGAqAAhwfO2" value="High"/>
+							<ValueSpecification id="Qt9vVemGAqAA4gmh0" value="Low"/>
+							<ValueSpecification id="Qt9vVemGAqAA4gmh1" value="Medium"/>
+							<ValueSpecification id="Qt9vVemGAqAA4gmh2" value="High"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="nBIes_GGAqAAhwfP" name="Use Case Status" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="wt9vVemGAqAA4gmi" name="Use Case Status" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="nBIes_GGAqAAhwfP0" value="Name Only"/>
-							<ValueSpecification id="nBIes_GGAqAAhwfP1" value="Initial"/>
-							<ValueSpecification id="nBIes_GGAqAAhwfP2" value="Base"/>
-							<ValueSpecification id="nBIes_GGAqAAhwfP3" value="Complete"/>
-							<ValueSpecification id="nBIes_GGAqAAhwfP4" value="Deferred"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmi0" value="Name Only"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmi1" value="Initial"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmi2" value="Base"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmi3" value="Complete"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmi4" value="Deferred"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="XBIes_GGAqAAhwfQ" name="Implementation Status" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="wt9vVemGAqAA4gmj" name="Implementation Status" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="XBIes_GGAqAAhwfQ0" value="Scheduled"/>
-							<ValueSpecification id="XBIes_GGAqAAhwfQ1" value="Started"/>
-							<ValueSpecification id="XBIes_GGAqAAhwfQ2" value="Partially Complete"/>
-							<ValueSpecification id="XBIes_GGAqAAhwfQ3" value="Complete"/>
-							<ValueSpecification id="XBIes_GGAqAAhwfQ4" value="Partially Deferred"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmj0" value="Scheduled"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmj1" value="Started"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmj2" value="Partially Complete"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmj3" value="Complete"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmj4" value="Partially Deferred"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="PBIes_GGAqAAhwfR" name="Preconditions" type="4"/>
-					<TaggedValueDefinition defaultValue="" documentation="" id="vBIes_GGAqAAhwfS" name="Post-conditions" type="4"/>
-					<TaggedValueDefinition defaultValue="" documentation="" id="_BIes_GGAqAAhwfT" name="Author" type="0"/>
-					<TaggedValueDefinition defaultValue="" documentation="" id="AhIes_GGAqAAhwfU" name="Assumptions" type="4"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id="wt9vVemGAqAA4gmk" name="Preconditions" type="4"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id="It9vVemGAqAA4gml" name="Post-conditions" type="4"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id="It9vVemGAqAA4gmm" name="Author" type="0"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id="It9vVemGAqAA4gmn" name="Assumptions" type="4"/>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="UseCase" documentation="" id="8hIes_GGAqAAhwfV" leaf="false" name="Case Story" root="false"/>
-		<Stereotype abstract="false" baseType="UseCase" documentation="" id="ehIes_GGAqAAhwfW" leaf="false" name="Context" root="false">
+		<Stereotype abstract="false" baseType="UseCase" documentation="" id="kt9vVemGAqAA4gmo" leaf="false" name="Case Story" root="false"/>
+		<Stereotype abstract="false" baseType="UseCase" documentation="" id="8t9vVemGAqAA4gmp" leaf="false" name="Context" root="false">
 			<Formats>
 				<Fill color1="Cr:71,151,250,255" gradientStyle="0" transparency="0" type="1"/>
 			</Formats>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="Requirement" documentation="" id="XhIes_GGAqAAhwfb" leaf="false" name="requirement" root="false">
-			<TaggedValueDefinitionContainer id="vhIes_GGAqAAhwfc" name="">
+		<Stereotype abstract="false" baseType="Requirement" documentation="" id="Wt9vVemGAqAA4gmu" leaf="false" name="requirement" root="false">
+			<TaggedValueDefinitionContainer id="2t9vVemGAqAA4gmv" name="">
 				<TaggedValueDefinitions>
-					<TaggedValueDefinition defaultValue="" documentation="" id="vhIes_GGAqAAhwfd" name="Text" type="3"/>
-					<TaggedValueDefinition defaultValue="" documentation="" id="ARIes_GGAqAAhwfe" name="ID" type="0"/>
-					<TaggedValueDefinition defaultValue="" documentation="" id="gRIes_GGAqAAhwff" name="source" type="0"/>
-					<TaggedValueDefinition defaultValue="" documentation="" id="QRIes_GGAqAAhwfg" name="kind" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="2t9vVemGAqAA4gmw" name="Text" type="3"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id="Ot9vVemGAqAA4gmx" name="ID" type="0"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id="Ot9vVemGAqAA4gmy" name="source" type="0"/>
+					<TaggedValueDefinition defaultValue="" documentation="" id="Ot9vVemGAqAA4gmz" name="kind" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="QRIes_GGAqAAhwfg0" value="Functional"/>
-							<ValueSpecification id="QRIes_GGAqAAhwfg1" value="Performance"/>
-							<ValueSpecification id="QRIes_GGAqAAhwfg2" value="Interface"/>
+							<ValueSpecification id="Ot9vVemGAqAA4gmz0" value="Functional"/>
+							<ValueSpecification id="Ot9vVemGAqAA4gmz1" value="Performance"/>
+							<ValueSpecification id="Ot9vVemGAqAA4gmz2" value="Interface"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="wRIes_GGAqAAhwfh" name="verifyMethod" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="ut9vVemGAqAA4gm0" name="verifyMethod" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="wRIes_GGAqAAhwfh0" value="Analysis"/>
-							<ValueSpecification id="wRIes_GGAqAAhwfh1" value="Demonstration"/>
-							<ValueSpecification id="wRIes_GGAqAAhwfh2" value="Inspection"/>
-							<ValueSpecification id="wRIes_GGAqAAhwfh3" value="Test"/>
+							<ValueSpecification id="ut9vVemGAqAA4gm00" value="Analysis"/>
+							<ValueSpecification id="ut9vVemGAqAA4gm01" value="Demonstration"/>
+							<ValueSpecification id="ut9vVemGAqAA4gm02" value="Inspection"/>
+							<ValueSpecification id="ut9vVemGAqAA4gm03" value="Test"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="oRIes_GGAqAAhwfi" name="risk" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="ut9vVemGAqAA4gm1" name="risk" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="oRIes_GGAqAAhwfi0" value="High"/>
-							<ValueSpecification id="oRIes_GGAqAAhwfi1" value="Medium"/>
-							<ValueSpecification id="oRIes_GGAqAAhwfi2" value="Low"/>
+							<ValueSpecification id="ut9vVemGAqAA4gm10" value="High"/>
+							<ValueSpecification id="ut9vVemGAqAA4gm11" value="Medium"/>
+							<ValueSpecification id="ut9vVemGAqAA4gm12" value="Low"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
-					<TaggedValueDefinition defaultValue="" documentation="" id="YRIes_GGAqAAhwfj" name="status" type="2">
+					<TaggedValueDefinition defaultValue="" documentation="" id="et9vVemGAqAA4gm2" name="status" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="YRIes_GGAqAAhwfj0" value="Proposed"/>
-							<ValueSpecification id="YRIes_GGAqAAhwfj1" value="Approved"/>
-							<ValueSpecification id="YRIes_GGAqAAhwfj2" value="Rejected"/>
-							<ValueSpecification id="YRIes_GGAqAAhwfj3" value="Deferred"/>
-							<ValueSpecification id="YRIes_GGAqAAhwfj4" value="Implemented"/>
-							<ValueSpecification id="YRIes_GGAqAAhwfj5" value="Mandatory"/>
-							<ValueSpecification id="YRIes_GGAqAAhwfj6" value="Obsolete"/>
+							<ValueSpecification id="et9vVemGAqAA4gm20" value="Proposed"/>
+							<ValueSpecification id="et9vVemGAqAA4gm21" value="Approved"/>
+							<ValueSpecification id="et9vVemGAqAA4gm22" value="Rejected"/>
+							<ValueSpecification id="et9vVemGAqAA4gm23" value="Deferred"/>
+							<ValueSpecification id="et9vVemGAqAA4gm24" value="Implemented"/>
+							<ValueSpecification id="et9vVemGAqAA4gm25" value="Mandatory"/>
+							<ValueSpecification id="et9vVemGAqAA4gm26" value="Obsolete"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
 			</TaggedValueDefinitionContainer>
 		</Stereotype>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="spUes_GGAqAAhwlL" leaf="false" name="block" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="1Iug1emGAqAA4gt_" leaf="false" name="block" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="erjg1emGAqAA4guS" leaf="false" name="System" root="false"/>
 	</ProjectStereotypes>
 </Stereotypes>
