@@ -88,7 +88,7 @@
 		\label{fig:general_req}
 	\end{figure}
 		
-	The SysML models have two main parts: behavioural [R1] and structural [R2]. MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. The ROS system is two-faced. While it is executed [R4], it has a~specific structure and behaviour, but from the developers' point of view, the sources [R5] are the exposed aspect. The model should be compact and straightforward [R6] rather than unnecessarily elaborate and complicated. It is also universal. It does not imply itself the specific procedure of its use [R7]. These procedures are specified outside of the MeROS metamodel. Although the SysML-based MeROS is classified into PSM [R8], it should be compatible with Non-ROS elements [R9]. MeROS metamodel should be valid both for ROS~2 [R10]. Finally, embodiment [R11] (e.g. system deployment) should be considered.
+	The SysML models have two main parts: behavioural [R1] and structural [R2]. MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. The ROS system is two-faced. While it is executed [R4], it has a~specific structure and behaviour, but from the developers' point of view, the sources [R5] are the exposed aspect. The model should be compact and straightforward [R6] rather than unnecessarily elaborate and complicated. It is also universal. It does not imply itself the specific procedure of its use [R7]. These procedures are specified outside of the MeROS metamodel. Although the SysML-based MeROS is classified into PSM [R8], it should be compatible with Non-ROS elements [R9]. MeROS metamodel should be valid for ROS~2 [R10]. Finally, embodiment [R11] (e.g. system deployment) should be considered.
 	
 	The system's structural aspects requirements are presented in Fig.~\ref{fig:structural_aspects_req}.
 	
@@ -97,7 +97,7 @@
 		\begin{center}
 			{\includegraphics[scale=1.0]{diagrams/structural_aspects_req.png}}
 		\end{center}
-		\caption{Structural aspects requirements.} 
+		\caption{Structural aspects requirements.  \twci{tutaj w ogóle jest kuriozum. Abstrakt grouping jest w nieintuicyjny sposób pod kompactenss i simliity. Tew grupowania to odrazu powinny być grupy i raczej dołączone do ogólnego wymagania na grupowania a nie aspektów strukturalnych}} 
 		\label{fig:structural_aspects_req}
 	\end{figure}
 	
@@ -111,10 +111,10 @@
 		\begin{center}
 			{\includegraphics[scale=1.1]{diagrams/original_ros_concepts_req.png}}
 		\end{center}
-		\caption{ROS concepts requirements.} 
+		\caption{ROS concepts requirements. \twci{tutaj w miejsce ros workspace powinno być ROS source containers}} 
 		\label{fig:ros_concepts_req}
 	\end{figure}
-	
+	 \twci{gałąź ros concepts powinna być konsekwetnie poprowadzona}
 	\pagebreak
 	
 	ROS Communicating components [R3.1] are (Fig.~\ref{fig:communicating_components_req}): (i) ROS Node.
@@ -170,13 +170,14 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{img/requirement_pkg/running_system_req.png}}
+			{\includegraphics[scale=1.0]{diagrams/running_system_req.png}}
 		\end{center}
-		\caption{Running system requirements.} 
+		\caption{Running system requirements. \twci{Dlaczego nie ma ros topic presentation? Dlazego nei wuzględniono roznych metod prezetnacji akcji i serwisow? Dlaczego nei ma prezetancji wezłow?}} 
 		\label{fig:running_system_req}
 	\end{figure}
 	 The dedicated components are especially useful in the presentation when many communication components use the same topic both on the publisher and the subscriber side. In opposition, the expression of topic names on arrows connecting communicating components, i.e., without dedicated communication components, let to reduce the number of components needed to depict communication for many topics and a~low number of communicating components. The other advantage of using dedicated communication components is that the particular connection can be split into several diagrams (e.g. ibd (internal block diagram) or sd (sequence diagram)), where the same object represents this connection in every associated diagram. Services [R4.2] and actions [R4.3] should be depicted as an addition to the presentation of the particular topics. It should be noted that rqt\_graph represents actions as a~number of topics and services. In MeROS, the topics and services being part of an action can be aggregated, which reduces the number of depicted connections.
 		
+	\pagebreak
 			
 	The compactness and simplicity [R6] and its nesting requirements are presented in Fig.~\ref{fig:compactness_and_simplicity_req}. 
 	
@@ -185,7 +186,7 @@
 		\begin{center}
 			{\includegraphics[scale=1.0]{diagrams/compactness_and_simplicity_req.png}}
 		\end{center}
-		\caption{Compactness and simplicity requirements.} 
+		\caption{Compactness and simplicity requirements.  \twci{tutaj 6.3 nie pasuje. Coś trzeba z tym zrobić.}} 
 		\label{fig:compactness_and_simplicity_req}
 	\end{figure}
 	
@@ -233,7 +234,7 @@
 		\begin{center}
 			{\includegraphics[scale=1.0]{img/meros_pkg/system_bdd.png}}
 		\end{center}
-		\caption{System general composition.} 
+		\caption{System general composition.  \twci{dlaczego system nie zawiera metod komunikacji?}} 
 		\label{fig:ros_system_bdd}
 	\end{figure}
 	
@@ -444,7 +445,7 @@ The composition of ROS Workspace is presented in Fig.~\ref{fig:ros_workspace_bdd
 		\begin{center}
 			{\includegraphics[scale=1.0]{img/meros_pkg/ros_workspace_bdd.png}}
 		\end{center}
-		\caption{ROS Workspace composition.} 
+		\caption{ROS Workspace composition.  \twci{dlaczeggo worskapce nie agraguej grupy pakietów?}} 
 		\label{fig:ros_workspace_bdd}
 	\end{figure}
 	
