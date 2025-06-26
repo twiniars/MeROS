@@ -102,9 +102,7 @@
 	\end{figure}
 	
 	A~vital addition to the original ROS concepts is the abstract grouping of: (i) communicating methods [R2.1] and (ii) communicating components [R2.2]. The motivation for the introduction of these aggregates is presented further on. It should be noted that several ROS concepts group other concepts in a~particular way, especially to deploy the system. Action aggregates Topics and Services (in ROS~2), ROS~1 Node aggregates Nodelets, and ROS~2 Component Container aggregates Nodes.
-	
-	\pagebreak
-	
+		
 	The ROS concepts that MeROS models are organised into four major classes (Fig.~\ref{fig:ros_concepts_req}): (i)~Communicating components [R3.1], (ii) Communication methods [R3.2], (iii) Workspace [R3.3], and (iv) Other [R3.4].
 	
 
@@ -117,7 +115,9 @@
 		\label{fig:ros_concepts_req}
 	\end{figure}
 	
-	ROS Communicating components [R3.1] are (Fig.~\ref{fig:communicating_components_req}): (i) ROS Node, (ii) ROS Nodelet. Two ROS nodes are mandatory to execute the ROS~1 system: (i) ROS Master and (ii)~rosout.
+	\pagebreak
+	
+	ROS Communicating components [R3.1] are (Fig.~\ref{fig:communicating_components_req}): (i) ROS Node.
 
 	\begin{figure}[H]
 		\centering
@@ -128,15 +128,13 @@
 		\label{fig:communicating_components_req}
 	\end{figure}
 	
-	\pagebreak
-	
 	Communication methods are depicted in Fig.~\ref{fig:communication_concepts_req}.
 	 Three methods of communication are considered [R3.2] with their inter-component connections and data structures: (i) ROS Topic, its Message and connection, (ii) ROS Service comprising data structure and connection, and finally (iii) ROS Action including data structure and connection.
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1]{img/requirement_pkg/communication_concepts_req.png}}
+			{\includegraphics[scale=.98]{diagrams/communication_concepts_req.png}}
 		\end{center}
 		\caption{Communication concepts requirements.} 
 		\label{fig:communication_concepts_req}
@@ -147,18 +145,20 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/requirement_pkg/workspace_concepts_req.png}}
+			{\includegraphics[scale=1.0]{diagrams/workspace_concepts_req.png}}
 		\end{center}
 		\caption{Workspace concepts requirements.} 
 		\label{fig:workspace_concepts_req}
 	\end{figure}
 	
-	Other concepts (Fig.~\ref{fig:other_concepts_req}) [R3.4] include four elements: (i) ROS Parameter Server manages (ii) ROS Parameters, (iii) roscore forms a~collection of programs and nodes that are pre-requisites of a~ROS~1-based system. Finally, (iv) ROS Namespace reflects the ROS concept to organise nodes and communication connections. Both ROS Master and rosout are executed with roscore. ROS Parameter Server is a~part of ROS Master.
+	\pagebreak
+	
+	Other concepts (Fig.~\ref{fig:other_concepts_req}) [R3.4] include two elements: (i) ROS Parameters, (ii) ROS Namespace reflects the ROS concept to organise nodes and communication connections.
 	
 	\begin{figure}[H]
 			\centering
 			\begin{center}
-					{\includegraphics[scale=1.1]{img/requirement_pkg/other_concepts_req.png}}
+					{\includegraphics[scale=1.0]{diagrams/other_concepts_req.png}}
 				\end{center}
 			\caption{Other ROS concepts requirements.} 
 			\label{fig:other_concepts_req}
