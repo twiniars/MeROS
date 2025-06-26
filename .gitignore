@@ -3,7 +3,7 @@
 /src/meros-doc.*
 !/src/meros-doc.tex
 
-/src/ea-project/meros-ea-project.ldb
-
-/meros_tutorial.vpp.*
-/.meros_tutorial.vpp.lck
+/src/vp-project/meros_tutorial.vpp.*
+/src/vp-project/.meros_tutorial.vpp.lck
+/src/vp-project/meros_metamodel.vpp.*
+/src/vp-project/.meros_metamodel.vpp.lck
