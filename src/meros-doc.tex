@@ -29,7 +29,7 @@
 
 \begin{document}
 	
-	\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 3.0.1 - reference manual}
+	\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 4.0.0 - reference manual}
 \author{MeROS developers group - https://github.com/twiniars/MeROS \\ tomasz.winiarski@pw.edu.pl}
 \date{\today}
 \maketitle
@@ -53,12 +53,10 @@
 
 	The development of civilisation has led to an increase in the importance of robotics. Many modern robotic systems are complex. To create them as effectively and reliably as possible, it is necessary to follow systems engineering (SE), where metamodels play an essential role~\cite{bezivin2004search,schmidt2006model,kent2002model}.
 	Robots, especially complex ones, are mostly controlled with usage of software. Hence, in robotics, SE is inextricably linked with software engineering, where frameworks have been crucial for many years \cite{mnkandla2009software,shehory2014agent}.
-	Diverse robotics frameworks have been developed so far \cite{inigo2012robotics,tsardoulias2017robotic,hentout2016survey}. Some steps towards standardisation have been made in recent years, and ROS (Robot Operating System) has come to the fore. Stand-alone ROS~1 (ROS version~1)~\cite{quigley2009ros} is unsuitable for hard RT (Real Time) systems, so one of the solutions in practical applications (e.g., \cite{lages2014architecture,buys2011haptic,pages2016tiago,Seredynski-fabric-romoco-2019,kornuta-bpan-2020,cholewinski2015software}), is to integrate ROS~1 with Orocos \cite{bruyninckx2001open,bruyninckx2002orocos}. Over time, ROS~1 has evolved to, among other things, improve its performance. Known and crucial problems in the face of some contemporary applications (e.g. cybersecurity, RT performance) led to the development of a~new version of the framework, ROS~2 \cite{maruyama2016exploring,park2020real}.   
-
-	ROS~1 has evolved considerably from the initial distributions. According to ROS metrics\footnote{\url{https://discourse.ros.org/t/2023-ros-metrics-report/35837}}, new ROS~1 distributions have practically replaced older ones in terms of distro downloads stats. Above indications point to the need to formulate an up-to-date, recent metamodel for the latest versions of ROS~1 and ROS~2, which this documentation undertakes by presenting the new metamodel for ROS -- MeROS.
+	Diverse robotics frameworks have been developed so far \cite{inigo2012robotics,tsardoulias2017robotic,hentout2016survey}. Some steps towards standardisation have been made in recent years, and ROS (Robot Operating System) has come to the fore, currently in ROS~2 version \cite{maruyama2016exploring,park2020real}.   
 	
 	The robotic models can be subdivided~\cite{de2021survey} into Platform Independent Models (PIM), e.g., \cite{zielinski2017variable,zielinski2010motion,tasker2020,earl2020}, and Platform Specific Models (PSM). The metamodels of ROS, including MeROS, belong to PSM and should answer to the component nature of ROS \cite{Figat:2022:RAS,wenger2016model}.
-	 MeROS is founded on SysML (Systems Modeling Language) \cite{omg-sysml16,Friedenthal:2015}, a~profile of UML (Unified Modeling Language). Modelling in languages from the UML family addresses a~number of important aspects of systems engineering \cite{chaudron2012effective}. These include the use cases [UCX]:
+	 MeROS is founded on SysML (Systems Modeling Language) \cite{omg-sysml17,Friedenthal:2015}, a~profile of UML (Unified Modeling Language). Modelling in languages from the UML family addresses a~number of important aspects of systems engineering \cite{chaudron2012effective}. These include the use cases [UCX]:
 	\begin{itemize}
 		\item $[$UC1] Systems' documentation and presentation,
 		\item $[$UC2] Effective analysis of systems, especially in interdisciplinary teams (graphical language is more understandable for non-specialists in the field), 
@@ -67,12 +65,12 @@
 		\item $[$UC5] Resuming work after a~break,
 		\item $[$UC6] Extension and modification of existing systems,
 		\item $[$UC7] Support the implementation of new systems,
-		\item $[$UC8] Migration of systems.   
+		\item $[$UC8] Migration of systems.
 	\end{itemize}
 	
-	In practice, documentation is created both prior to implementation and, in many cases, through a~process of reverse  engineering \cite{canfora2007new} for existing systems. Agile-type strategies involve modifying the documentation as the project develops \cite{habib2021systematic}.
+	In practice, documentation is created both prior to implementation and, in many cases, through a~process of reverse  engineering \cite{canfora2007new} for existing systems. Agile-type strategies involve modifying the documentation as the project develops \cite{habib2021systematic}. Systems development with V-model-based application of MeROS metamodel was proposed in \cite{winiarski2025-v-model}.
 			
-	The following presentation starts with formulating the requirements (chapter~\ref{ch:requirements}) for the MeROS metamodel. These requirements are allocated to the metamodel that is described in chapter~\ref{ch:metamodel}. The way to present a~model of a~specific application based on MeROS is presented on a~practical example in chapter~\ref{ch:application}.
+	The following presentation starts with formulating the requirements (chapter~\ref{ch:requirements}) for the MeROS metamodel. These requirements are allocated to the metamodel that's architecture is described in chapter~\ref{ch:metamodel}. The way to present a~model of a~specific application based on MeROS is presented on a~practical example in chapter~\ref{ch:application}.
 	
 	
 \chapter{Metamodel requirements}

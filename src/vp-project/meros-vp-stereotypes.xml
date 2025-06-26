@@ -266,8 +266,6 @@
 		<Stereotype abstract="false" baseType="SysMLUnit" documentation="" iconPath="" id="UGkM4GmGAqAA4gSA" leaf="false" name="unit" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLQuantityKind" documentation="" iconPath="" id="UGkM4GmGAqAA4gSB" leaf="false" name="quantityKind" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="UGkM4GmGAqAA4gSC" leaf="false" name="block" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="UGkM4GmGAqAA4gSD" leaf="false" name="domain" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="UGkM4GmGAqAA4gSE" leaf="false" name="external" root="false"/>
 		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="0GkM4GmGAqAA4gSG" leaf="false" name="act as" root="false"/>
 		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="0GkM4GmGAqAA4gSH" leaf="false" name="act as regulation" root="false"/>
 		<Stereotype abstract="false" baseType="BMMRelationship" documentation="" iconPath="" id="0GkM4GmGAqAA4gSI" leaf="false" name="affect achievement" root="false"/>
@@ -669,6 +667,10 @@
 		<Stereotype abstract="false" baseType="Model" documentation="" iconPath="" id="imkM4GmGAqAA4gWh" leaf="false" name="metamodel" root="false"/>
 		<Stereotype abstract="false" baseType="Model" documentation="" iconPath="" id="imkM4GmGAqAA4gWi" leaf="false" name="systemModel" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="8EZg1emGAqAA4guQ" leaf="false" name="System" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="DPZ01emGAqAA4hKj" leaf="false" name="RunSystemCompon" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="HCuS1emGAqAA4hRG" leaf="false" name="SourcesContain" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="_5Gy1emGAqAA4hUA" leaf="false" name="CommChannel" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="5R9y1emGAqAA4hVA" leaf="false" name="Hardware" root="false"/>
 	</ApplicationStereotypes>
 	<ProjectStereotypes>
 		<Stereotype abstract="false" baseType="UseCase" documentation="" id="fN9vVemGAqAA4gme" leaf="false" name="UseCase" root="false">
@@ -763,5 +765,11 @@
 		</Stereotype>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" iconPath="" id="1Iug1emGAqAA4gt_" leaf="false" name="block" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="erjg1emGAqAA4guS" leaf="false" name="System" root="false"/>
+		<Stereotype abstract="false" baseType="Satisfy" documentation="" id="hoA41emGAqAA4g_t" leaf="false" name="satisfy" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="IFV01emGAqAA4hKl" leaf="false" name="RunSystemCompon" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLAllocate" documentation="" iconPath="" id="YOuM1emGAqAA4hN1" leaf="false" name="allocate" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="aq.S1emGAqAA4hRI" leaf="false" name="SourcesContain" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="2qWy1emGAqAA4hUC" leaf="false" name="CommChannel" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="mWjy1emGAqAA4hVC" leaf="false" name="Hardware" root="false"/>
 	</ProjectStereotypes>
 </Stereotypes>
