@@ -36,7 +36,7 @@
 
 
 	\begin{abstract}
-		The complexity of today's robot control systems implies difficulty in developing them efficiently and reliably. Systems engineering (SE) and frameworks come to help. The framework metamodels are needed to support the standardisation and correctness of the created application models. MeROS is a~metamodel for ROS, which addresses the running system and developer workspace. The ROS comes in two versions: ROS~1 and ROS~2. The metamodel includes both versions. In particular, the latest ROS~1 concepts are considered, such as nodelet, and action. An essential addition to the original ROS concepts is the grouping of these concepts, which provides an opportunity to illustrate the system's decomposition and varying degrees of detail in its presentation. The metamodel is derived from the requirements and verified on the practical examples. The matter is described in a~standardised way in SysML (Systems Modeling Language). Hence, common development tools that support SysML can help develop robot controllers in the spirit of SE.
+		The complexity of today's robot control systems implies difficulty in developing them efficiently and reliably. Systems engineering (SE) and frameworks come to help. The frameworks' metamodels are needed to support the standardisation and correctness of the created application models. MeROS is a~metamodel for ROS, which addresses the running system and developer workspace. An essential addition to the original ROS concepts is the grouping of these concepts, which provides an opportunity to illustrate the system's decomposition and varying degrees of detail in its presentation. The metamodel is derived from the requirements and verified on the practical examples. The matter is described in a~standardised way in SysML (Systems Modeling Language). Hence, common development tools that support SysML can help develop robot controllers in the spirit of SE.
 	\end{abstract}
 	
 	
@@ -164,19 +164,7 @@
 			\label{fig:other_concepts_req}
 		\end{figure}
 
-	Fig.~\ref{fig:roscore_req} presents additional roscore-related relations.
 
-
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.1]{img/requirement_pkg/roscore_req.png}}
-		\end{center}
-		\caption{roscore related requirements dependences.} 
-		\label{fig:roscore_req}
-	\end{figure}
-	
-	
 	To achieve intuitiveness, MeROS presents a~Running system structure (Fig.~\ref{fig:running_system_req}) following ROS rqt\_graph pattern [R4.1]. In particular, there are two ways to visualise communication, including [R4.1.1] and without [R4.1.2]
 	dedicated communication components.
 	\begin{figure}[H]
@@ -195,7 +183,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{img/requirement_pkg/compactness_and_simplicity_req.png}}
+			{\includegraphics[scale=1.0]{diagrams/compactness_and_simplicity_req.png}}
 		\end{center}
 		\caption{Compactness and simplicity requirements.} 
 		\label{fig:compactness_and_simplicity_req}
