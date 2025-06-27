@@ -271,13 +271,13 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{diagrams/communicating_component_services_bdd.png}}
+			{\includegraphics[scale=1.0]{diagrams/communicating_component_services_bdd.png}}
 		\end{center}
 		\caption{ROS Communicating Component relations -- Services.} 
 		\label{fig:communication_blocks_services_bdd}
 	\end{figure}
 	
-	In ROS~2, an Action bases on Topics and Services while in ROS~1 only on Topics. From functional point of view, ROS~1 specific Topics included in Action have their equivalents in ROS~2 specific Services. 
+	In ROS~2, an Action bases on Topics and Services.
 	
 	
 	The Actions are depicted in two diagrams -- Fig.~\ref{fig:communicating_component_actions_bdd} and Fig.~\ref{fig:action_bdd}. Similarly to Services, the ROS Communicating Component can act as a~server or a~client.	 
@@ -286,7 +286,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.97]{img/meros_pkg/communicating_component_actions_bdd.png}}
+			{\includegraphics[scale=1.0]{diagrams/communicating_component_actions_bdd.png}}
 		\end{center}
 		\caption{ROS Communicating Component relations -- Actions.} 
 		\label{fig:communicating_component_actions_bdd}
@@ -297,7 +297,7 @@
 	\begin{figure}[hbt]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/action_bdd.png}}
+			{\includegraphics[scale=1.0]{diagrams/action_bdd.png}}
 		\end{center}
 		\caption{Action.} 
 		\label{fig:action_bdd}
@@ -310,9 +310,9 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/communicating_component_other_bdd.png}}
+			{\includegraphics[scale=1.0]{diagrams/communicating_component_other_bdd.png}}
 		\end{center}
-		\caption{Communicating Component relations -- aggregates, Non-ROS elements -- bdd.} 
+		\caption{ROS Communicating Component relations -- bdd.} 
 		\label{fig:communicating_component_other_bdd}
 	\end{figure}
 	
@@ -326,21 +326,21 @@
  	\begin{figure}[H]
 	 	\centering
 	 	\begin{center}
-	 		{\includegraphics[scale=1.0]{img/meros_pkg/node_bdd.png}}
+	 		{\includegraphics[scale=1.0]{diagrams/node_bdd.png}}
 	 	\end{center}
 	 	\caption{Node.} 
 		 	\label{fig:node_bdd}
 	 \end{figure}
 	 
-	The Running System Component (Fig.~\ref{fig:running_system_component_bdd}) is a~generalisation of Communicating Components specializations as well as Connections between them. A~Parameter block is introduced also for ROS~1. In ROS~2, due to safety reasons, Parameter is composed only into Nodes.
+	The Running System Component (Fig.~\ref{fig:running_system_component_bdd}) is a~generalisation of Communicating Components specializations as well as Connections between them.
 	
 
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_pkg/running_system_component_bdd.png}}
+			{\includegraphics[scale=1.0]{diagrams/running_system_component_bdd.png}}
 		\end{center}
-		\caption{Running System Component specialisations.} 
+		\caption{Running System Component specialisations. \twci{Dziwne jakieś. }} 
 		\label{fig:running_system_component_bdd}
 	\end{figure} 
 	 	 
