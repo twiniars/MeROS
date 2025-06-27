@@ -199,22 +199,16 @@
 	
 \chapter{MeROS metamodel}
 \label{ch:metamodel}
+
+	\twci{Do aktualizacji. Teraz będą dwie dokumentacje. Oddzielnie dla metamodelu i oddzielnie dla przykłądu z turtlesimem. W tym przykładzie będzie omówienie jak on powstawał, w sensie dodatkowych zrzutów ekranu z retrospekcji działającego systemu ROS. Czyli pokazujemy jak za pomocą rowowych komend uzyskać informacje potrzebne do stworzenia modelu. Jest to bezcenne na ANRO i nie tylko.}
 	
 	MeROS metamodel is formulated according to the requirements discussed in the previous section. Sec.~\ref{sec:metamodel-composition} presents MeROS blocks' structural composition, and sec.~\ref{sec:metamodel-communication} describes inter-component communication. From the metamodel perspective, the structural aspects [R2] are formulated in both sections, while behavioural [R1] is in the latter. The diagrams comprise selected requirements being allocated to expose the MeROS metamodel development process. 
 	
 	The MeROS diagrams were created in the Enterprise Architect development tool within the SysML project [R8] and organised in three packages [R6.1] (Fig.~\ref{fig:meros_project_packages_pkg}): (i) Requirement Model related to requirements formulation and analysis, (ii) MeROS -- the metamodel itself, (iii) Rico Controller -- the exemplary ROS~1 application of MeROS described in sec.~\ref{ch:application-example}. 
 	
-		
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_project_packages_pkg.png}}
-		\end{center}
-		\caption{MeROS project SysML packages, where Rico Controller is an exemplary realisation of MeROS metamodel.} 
-		\label{fig:meros_project_packages_pkg}
-	\end{figure}
 	
-	The stereotypes are introduced in MeROS metamodel with the dedicated MeROS profile [R6.2].
+	
+	The stereotypes are introduced in MeROS metamodel [R6.2].
 	The stereotypes names are created to compromise the descriptiveness and short length. Hence, the ROS phrase is avoided in stereotypes as long as there is only the ROS concept of a~given type.
 	
 	
@@ -232,7 +226,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_pkg/system_bdd.png}}
+			{\includegraphics[scale=1.0]{diagrams/system_bdd.png}}
 		\end{center}
 		\caption{System general composition.  \twci{dlaczego system nie zawiera metod komunikacji?}} 
 		\label{fig:ros_system_bdd}
@@ -242,15 +236,15 @@
 		
 	\pagebreak	
 		
-	In MeROS, a~ROS Communicating Component (Fig.~\ref{fig:communicating_components_bdd}) is a~crucial abstraction of a~number of ROS concepts to represent their standardised role regarding communication. 
+	In MeROS, a~gro (Fig.~\ref{fig:communicating_components_bdd}) is a~crucial abstraction of a~number of ROS concepts to represent their standardised role regarding communication. 
 	
 		
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_pkg/communicating_component_specialisations_bdd.png}}
+			{\includegraphics[scale=1.0]{diagrams/communicating_component_specialisations_bdd.png}}
 		\end{center}
-		\caption{Communicating Component and specialised blocks -- bdd.} 
+		\caption{Communicating Component and specialised blocks -- bdd. \twci{możę nazwa do skrócenia, żeby diagram nie był sztucznie poszerzony przez długą nazwę diagramu w etykiecie na górze}} 
 		\label{fig:communicating_components_bdd}
 	\end{figure}
 	
