@@ -90,15 +90,15 @@
 		
 	The SysML models have two main parts: behavioural [R1] and structural [R2]. MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. The ROS system is two-faced. While it is executed [R4], it has a~specific structure and behaviour, but from the developers' point of view, the sources [R5] are the exposed aspect. The model should be compact and straightforward [R6] rather than unnecessarily elaborate and complicated. It is also universal. It does not imply itself the specific procedure of its use [R7]. These procedures are specified outside of the MeROS metamodel. Although the SysML-based MeROS is classified into PSM [R8], it should be compatible with Non-ROS elements [R9]. MeROS metamodel should be valid for ROS~2 [R10]. Finally, embodiment [R11] (e.g. system deployment) should be considered.
 	
-	The system's structural aspects requirements are presented in Fig.~\ref{fig:structural_aspects_req}.
+	The system's structural aspects requirements are presented in Fig.~\ref{fig:grouping_req}.
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/structural_aspects_req.png}}
+			{\includegraphics[scale=1.0]{diagrams/grouping_req.png}}
 		\end{center}
-		\caption{Structural aspects requirements.  \twci{tutaj w ogóle jest kuriozum. Abstrakt grouping jest w nieintuicyjny sposób pod kompactenss i simliity. Tew grupowania to odrazu powinny być grupy i raczej dołączone do ogólnego wymagania na grupowania a nie aspektów strukturalnych}} 
-		\label{fig:structural_aspects_req}
+		\caption{Grouping of concepts requirements.} 
+		\label{fig:grouping_req}
 	\end{figure}
 	
 	A~vital addition to the original ROS concepts is the abstract grouping of: (i) communicating methods [R2.1] and (ii) communicating components [R2.2]. The motivation for the introduction of these aggregates is presented further on. It should be noted that several ROS concepts group other concepts in a~particular way, especially to deploy the system. Action aggregates Topics and Services (in ROS~2), ROS~1 Node aggregates Nodelets, and ROS~2 Component Container aggregates Nodes.
@@ -111,10 +111,10 @@
 		\begin{center}
 			{\includegraphics[scale=1.0]{diagrams/original_ros_concepts_req.png}}
 		\end{center}
-		\caption{ROS concepts requirements. \twci{tutaj w miejsce ros workspace powinno być ROS source containers}} 
+		\caption{ROS concepts requirements.} 
 		\label{fig:ros_concepts_req}
 	\end{figure}
-	 \twci{gałąź ros concepts powinna być konsekwetnie poprowadzona}
+
 	\pagebreak
 	
 	ROS Communicating components [R3.1] are (Fig.~\ref{fig:communicating_components_req}): (i) ROS Node.
