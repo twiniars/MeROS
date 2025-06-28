@@ -671,6 +671,19 @@
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="HCuS1emGAqAA4hRG" leaf="false" name="SourcesContain" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="_5Gy1emGAqAA4hUA" leaf="false" name="CommChannel" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="5R9y1emGAqAA4hVA" leaf="false" name="Hardware" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="Z8CpjemGAqAA4gxr" leaf="false" name="RosCompon" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="0TnpjemGAqAA4gzU" leaf="false" name="Node" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="syNsTemGAqAA4g.D" leaf="false" name="TopicConn" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="017sTemGAqAA4hED" leaf="false" name="MsgStruct" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="4N9yTemGAqAA4hRt" leaf="false" name="ServiceConn" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="OmTyTemGAqAA4hRv" leaf="false" name="SrvStruct" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="jllZTemGAqAA4heQ" leaf="false" name="ActionConn" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="dmNZTemGAqAA4heS" leaf="false" name="ActionStruct" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="m2wLTemGAqAA4h0B" leaf="false" name="MicroNode" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="kD4LTemGAqAA4h0D" leaf="false" name="Parameter" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="i.0LTemGAqAA4h0F" leaf="false" name="ComponContain" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="xPfHTemGAqAA4h7s" leaf="false" name="RosConn" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="YPAnTemGAqAA4h7u" leaf="false" name="Namespace" root="false"/>
 	</ApplicationStereotypes>
 	<ProjectStereotypes>
 		<Stereotype abstract="false" baseType="UseCase" documentation="" id="fN9vVemGAqAA4gme" leaf="false" name="UseCase" root="false">
@@ -771,5 +784,19 @@
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="aq.S1emGAqAA4hRI" leaf="false" name="SourcesContain" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="2qWy1emGAqAA4hUC" leaf="false" name="CommChannel" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="mWjy1emGAqAA4hVC" leaf="false" name="Hardware" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="zYxpjemGAqAA4gx7" leaf="false" name="RosCompon" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="yT3pjemGAqAA4gzW" leaf="false" name="Node" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="Wc3sTemGAqAA4hEF" leaf="false" name="TopicConn" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="zVPsTemGAqAA4hEM" leaf="false" name="MsgStruct" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="QaPyTemGAqAA4hR0" leaf="false" name="ServiceConn" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="RUfyTemGAqAA4hR8" leaf="false" name="SrvStruct" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="1xdZTemGAqAA4heU" leaf="false" name="ActionConn" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="6TjZTemGAqAA4hec" leaf="false" name="ActionStruct" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLInterfaceBlock" documentation="" id="1HCLTemGAqAA4h0P" leaf="false" name="interfaceBlock" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="XRKLTemGAqAA4h0g" leaf="false" name="MicroNode" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="HZaLTemGAqAA4h0o" leaf="false" name="Parameter" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="y0mLTemGAqAA4h0w" leaf="false" name="ComponContain" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="PSInTemGAqAA4h7z" leaf="false" name="Namespace" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="Y2YnTemGAqAA4h77" leaf="false" name="RosConn" root="false"/>
 	</ProjectStereotypes>
 </Stereotypes>
