@@ -161,7 +161,7 @@
 					{\includegraphics[scale=1.0]{diagrams/other_ros_concepts_req.png}}
 				\end{center}
 			\caption{Other ROS concepts requirements.} 
-			\label{fig:other_concepts_req}
+			\label{fig:other_ros_concepts_req}
 		\end{figure}
 
 Extra concepts (Fig.~\ref{fig:extra_concepts_req})
@@ -183,13 +183,11 @@ Extra concepts (Fig.~\ref{fig:extra_concepts_req})
 		\begin{center}
 			{\includegraphics[scale=1.0]{diagrams/running_system_req.png}}
 		\end{center}
-		\caption{Running system requirements. \twci{Dlaczego nie ma ros topic presentation? Dlazego nei wuzględniono roznych metod prezetnacji akcji i serwisow? Dlaczego nei ma prezetancji wezłow?}} 
+		\caption{Running system requirements. } 
 		\label{fig:running_system_req}
 	\end{figure}
 	 The dedicated components are especially useful in the presentation when many communication components use the same topic both on the publisher and the subscriber side. In opposition, the expression of topic names on arrows connecting communicating components, i.e., without dedicated communication components, let to reduce the number of components needed to depict communication for many topics and a~low number of communicating components. The other advantage of using dedicated communication components is that the particular connection can be split into several diagrams (e.g. ibd (internal block diagram) or sd (sequence diagram)), where the same object represents this connection in every associated diagram. Services [R4.2] and actions [R4.3] should be depicted as an addition to the presentation of the particular topics. It should be noted that rqt\_graph represents actions as a~number of topics and services. In MeROS, the topics and services being part of an action can be aggregated, which reduces the number of depicted connections.
 		
-	\pagebreak
-			
 	The compactness and simplicity [R6] and its nesting requirements are presented in Fig.~\ref{fig:compactness_and_simplicity_req}. 
 	
 	\begin{figure}[H]
@@ -197,7 +195,7 @@ Extra concepts (Fig.~\ref{fig:extra_concepts_req})
 		\begin{center}
 			{\includegraphics[scale=1.0]{diagrams/compactness_and_simplicity_req.png}}
 		\end{center}
-		\caption{Compactness and simplicity requirements.  \twci{tutaj 6.3 nie pasuje. Coś trzeba z tym zrobić.}} 
+		\caption{Compactness and simplicity requirements.} 
 		\label{fig:compactness_and_simplicity_req}
 	\end{figure}
 	
