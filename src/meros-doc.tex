@@ -93,7 +93,7 @@
 	MeROS is a  SysML-based metamodel and is classified into PSM [R2].
 	 MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. To achieve completeness of the metamodel extra concepts are needed [R4]. The ROS system is two-faced. While it is executed [R5], it has a~specific structure and behaviour, but from the developers' point of view, the sources [R6] are the exposed aspect. The model should be compact and straightforward [R7] rather than unnecessarily elaborate and complicated. It is also universal. It does not imply itself the specific procedure of its use [R8]. These procedures are specified outside of the MeROS metamodel. Although the SysML-based MeROS is classified into PSM, it should be compatible with Non-ROS elements [R9]. MeROS metamodel should be valid for ROS~2 [R10]. Finally, embodiment [R11] (e.g. system deployment) should be considered.
 	
-	The grouping of concepts requirements are presented in Fig.~\ref{fig:grouping_req}.
+	The grouping of concepts requirements are presented in Fig.~\ref{fig:grouping_req}. It has diverse aims. It enables the presentation of the system part in a~general, PIM-like abstract way, on the logical level rather than a~detailed, PSM-like implementation one. The aggregation reduces the number of objects represented on the diagram to highlight the essential aspects and stay compact and consistent in presentation.
 	
 	\begin{figure}[H]
 		\centering
@@ -104,9 +104,10 @@
 		\label{fig:grouping_req}
 	\end{figure}
 	
-	A~vital addition to the original ROS concepts is the abstract grouping of: (i) communicating methods [R2.1]  (i) communicating methods [R2.1] and (ii) communicating components [R2.2]. The motivation for the introduction of these aggregates is presented further on. It should be noted that several ROS concepts group other concepts in a~particular way, especially to deploy the system. Action aggregates Topics and Services (in ROS~2), ROS~1 Node aggregates Nodelets, and ROS~2 Component Container aggregates Nodes.
+	A~vital addition to the original ROS concepts is the abstract grouping of:  (i) communication methods and (ii) communicating components and ROS packages.  It should be noted that several ROS concepts group other concepts in a~particular way, especially to deploy the system. Action aggregates Topics and Services, Component Container aggregates Nodes.
+
 		
-	The ROS concepts that MeROS models are organised into four major classes (Fig.~\ref{fig:ros_concepts_req}): (i)~Communicating components [R3.1], (ii) Communication methods [R3.2], (iii) Workspace [R3.3], and (iv) Other [R3.4].
+	The ROS concepts that MeROS models are organised into four major classes (Fig.~\ref{fig:ros_concepts_req}): (i)~Communicating components, (ii) Communication methods, (iii) Sources containers, and (iv) Other.
 	
 
 	\begin{figure}[H]
@@ -120,19 +121,19 @@
 
 	\pagebreak
 	
-	ROS Communicating components [R3.1] are (Fig.~\ref{fig:communicating_components_req}): (i) ROS Node.
+	 ROS Node is member of ROS Communicating components [R3.1]  (Fig.~\ref{fig:communicating_components_req}).
 
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.1]{diagrams/communicating_components_req.png}}
+			{\includegraphics[scale=1.0]{diagrams/communicating_components_req.png}}
 		\end{center}
 		\caption{Communicating components requirements.} 
 		\label{fig:communicating_components_req}
 	\end{figure}
 	
 	Communication methods are depicted in Fig.~\ref{fig:communication_concepts_req}.
-	 Three methods of communication are considered [R3.2] with their inter-component connections and data structures: (i) ROS Topic, its Message and connection, (ii) ROS Service comprising data structure and connection, and finally (iii) ROS Action including data structure and connection.
+	 Three methods of communication are considered with their inter-component connections and data structures: (i) ROS Topic, its Message and connection, (ii) ROS Service comprising data structure and connection, and finally (iii) ROS Action including data structure and connection.
 	
 	\begin{figure}[H]
 		\centering
@@ -143,20 +144,20 @@
 		\label{fig:communication_concepts_req}
 	\end{figure}
 	
-	Workspace concept [R3.3] comprises (Fig.~\ref{fig:workspace_concepts_req}): (i) ROS Package [R3.3.1], (ii) ROS Metapackage [R3.3.2] introduced in the latest releases of ROS~1, (iii) Group of ROS packages [R3.3.3], and (iv) Repository [R3.3.4]. In practise ROS Metapackage is a~specific, degenerated ROS Package.
+	ROS Sources containers comprises (Fig.~\ref{fig:sources_containers_req}): (i) ROS Package, (ii) ROS Metapackage, (iii) Group of ROS packages. It also relates to Group of packages and Repository. In practise ROS Metapackage is a~specific, degenerated ROS Package.
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
 			{\includegraphics[scale=1.0]{diagrams/sources_containers_concepts_req.png}}
 		\end{center}
-		\caption{Workspace concepts requirements.} 
-		\label{fig:workspace_concepts_req}
+		\caption{ROS Sources containers requirements.} 
+		\label{fig:sources_containers_req}
 	\end{figure}
 	
 	\pagebreak
 	
-	Other ROS concepts (Fig.~\ref{fig:other_ros_concepts_req}) [R3.4] include two elements: (i) ROS Parameters, (ii) ROS Namespace reflects the ROS concept to organise nodes and communication connections.
+	Other ROS concepts (Fig.~\ref{fig:other_ros_concepts_req}) include two elements: (i) ROS Parameters, (ii) ROS Namespace reflects the ROS concept to organise nodes and communication connections.
 	
 	\begin{figure}[H]
 			\centering
@@ -167,7 +168,7 @@
 			\label{fig:other_ros_concepts_req}
 		\end{figure}
 
-Extra concepts (Fig.~\ref{fig:extra_concepts_req})
+Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 
 \begin{figure}[H]
 	\centering
@@ -179,8 +180,7 @@ Extra concepts (Fig.~\ref{fig:extra_concepts_req})
 \end{figure}
 
 
-	To achieve intuitiveness, MeROS presents a~Running system structure (Fig.~\ref{fig:running_system_req}) following ROS rqt\_graph pattern [R4.1]. In particular, there are two ways to visualise communication, including [R4.1.1] and without [R4.1.2]
-	dedicated communication components.
+	To achieve intuitiveness, MeROS presents a~Running system structure (Fig.~\ref{fig:running_system_req}) following ROS rqt\_graph pattern. In particular, there are two ways to visualise communication, including and without	dedicated communication components.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
@@ -189,9 +189,9 @@ Extra concepts (Fig.~\ref{fig:extra_concepts_req})
 		\caption{Running system requirements. } 
 		\label{fig:running_system_req}
 	\end{figure}
-	 The dedicated components are especially useful in the presentation when many communication components use the same topic both on the publisher and the subscriber side. In opposition, the expression of topic names on arrows connecting communicating components, i.e., without dedicated communication components, let to reduce the number of components needed to depict communication for many topics and a~low number of communicating components. The other advantage of using dedicated communication components is that the particular connection can be split into several diagrams (e.g. ibd (internal block diagram) or sd (sequence diagram)), where the same object represents this connection in every associated diagram. Services [R4.2] and actions [R4.3] should be depicted as an addition to the presentation of the particular topics. It should be noted that rqt\_graph represents actions as a~number of topics and services. In MeROS, the topics and services being part of an action can be aggregated, which reduces the number of depicted connections.
+	 The dedicated components are especially useful in the presentation when many communication components use the same topic both on the publisher and the subscriber side. In opposition, the expression of topic names on arrows connecting communicating components, i.e., without dedicated communication components, let to reduce the number of components needed to depict communication for many topics and a~low number of communicating components. The other advantage of using dedicated communication components is that the particular connection can be split into several diagrams (e.g. ibd (internal block diagram) or sd (sequence diagram)), where the same object represents this connection in every associated diagram. Services and actions should be depicted as an addition to the presentation of the particular topics. It should be noted that rqt\_graph represents actions as a~number of topics and services. In MeROS, the topics and services being part of an action can be aggregated, which reduces the number of depicted connections.
 		
-	The compactness and simplicity [R6] and its nesting requirements are presented in Fig.~\ref{fig:compactness_and_simplicity_req}. 
+	The compactness and simplicity and its nesting requirements are presented in Fig.~\ref{fig:compactness_and_simplicity_req}. 
 	
 	\begin{figure}[H]
 		\centering
@@ -202,10 +202,9 @@ Extra concepts (Fig.~\ref{fig:extra_concepts_req})
 		\label{fig:compactness_and_simplicity_req}
 	\end{figure}
 	
-	A SysML project to develop and represent MeROS metamodel should consist of a~small number of packages [R6.1], but still, the packages should distinguish the major aspects of development process: (i) metamodel requirements formulation, (ii) metamodel itself, and (iii) metamodel realizations/applications.
+	A SysML project to develop and represent MeROS metamodel should consist of a~small number of packages, but still the packages should distinguish the major aspects of development process: (i) metamodel requirements formulation, (ii) metamodel itself, and (iii) metamodel realisations/applications.
 	Dedicated SysML stereotypes [R6.2] are introduced to MeROS to replace the direct block specialization representation on diagrams and improve the legibility and compactness of diagrams.
-	The grouping of concepts [R6.3] has diverse aims. It enables the presentation of the system part in a~general, PIM-like abstract way, on the logical level rather than a~detailed, PSM-like implementation one. The aggregation reduces the number of objects represented on the diagram to highlight the essential aspects and stay compact and consistent in presentation.
-	The number of SysML blocks should be reduced to a~reasonable level [R6.4]. Both [R6.1] and [R6.4] help in the Avoidance of unnecessary mapping of SysML blocks [R6.5].
+	The number of SysML blocks should be reduced to a~reasonable level. Both [R7.1] and [R7.3] help in the Avoidance of unnecessary mapping of SysML blocks.
 
 	
 	
