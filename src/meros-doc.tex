@@ -211,38 +211,29 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 \chapter{MeROS architecture}
 \label{ch:architecture}
 
-	MeROS architecture is formulated according to the requirements discussed in the previous section. Sec.~\ref{sec:metamodel-composition} presents MeROS blocks' structural composition, and sec.~\ref{sec:metamodel-communication} describes inter-component communication. From the metamodel perspective, the structural aspects [R2] are formulated in both sections, while behavioural [R1] is in the latter. The diagrams comprise selected requirements being allocated to expose the MeROS metamodel development process. 
-	
-	The MeROS diagrams were created in the Enterprise Architect development tool within the SysML project [R8] and organised in three packages [R6.1] (Fig.~\ref{fig:meros_project_packages_pkg}): (i) Requirement Model related to requirements formulation and analysis, (ii) MeROS -- the metamodel itself, (iii) Rico Controller -- the exemplary ROS~1 application of MeROS described in sec.~\ref{ch:application-example}. 
-	
-	
-	
-	The stereotypes are introduced in MeROS metamodel [R6.2].
+	MeROS architecture is formulated according to the requirements discussed in the previous section. The diagrams comprise selected requirements being allocated to expose the MeROS metamodel development process. 
+	The MeROS diagrams were created in the Visual Paradigm development tool within the SysML project [R8] and organised in two packages [R7.1]: (i) MeROS Requirements related to requirements formulation and analysis, (ii) MeROS Architecture.
+		
+	The stereotypes are introduced in MeROS metamodel [R7.2].
 	The stereotypes names are created to compromise the descriptiveness and short length. Hence, the ROS phrase is avoided in stereotypes as long as there is only the ROS concept of a~given type.
 	
+	The degree of specificity of a~metamodel is a~compromise between its comprehensiveness (and, therefore, more general formulation) and a~more accurate representation of a~particular subclass of specific implementations. The metamodel contains compositions of elements and other primary relationships. Attributes and operations of elements range widely, hence their inclusion would lead to overgrowth and complication of the metamodel [R7]. The MeROS Metamodel is lightweight and general for various system development procedures and non-ROS parts of the whole System. The fundamental decision was to make it compact, so due to the extremely wide range of Non-ROS context variants [R9], they are specific for particular applications and are not specified in the metamodel itself. Hence, models derived from the metamodel can define their stereotypes, operations and new relations specific to a~particular System. 
 	
-	
-\section{Metamodel composition}
-\label{sec:metamodel-composition}
-
-	The degree of specificity of a~metamodel is a~compromise between its comprehensiveness (and, therefore, more general formulation) and a~more accurate representation of a~particular subclass of specific implementations. The metamodel contains compositions of elements and other primary relationships. Attributes and operations range widely, in particular between ROS~1 and ROS~2. Hence, their inclusion would lead to overgrowth and complication of the metamodel [R6]. The MeROS Metamodel is lightweight and general for various system development procedures and non-ROS parts of the whole System. The fundamental decision was to make it compact, so due to the extremely wide range of Non-ROS context variants [R9], they are specific for particular applications and are not specified in the metamodel itself.
-	Hence, models derived from the metamodel can define their stereotypes, operations and new relations specific to a~particular System. 
-	
-	
-	The SysML blocks reflect ROS concepts [R3], and their composition is depicted in bdd (block definition diagrams). The metamodel is formulated in a~single SysML package. Hence blocks, i.e., Sources Containers (specialised especially by Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}). The Communication Channel as as specialisation of the System is introduced to specify communication between various Communicating Components. Hardware block reflects to embodiment [R11]. System can aggregate other Systems.
+	The SysML blocks reflects concepts pointed out in requirements, and their composition is depicted in block definition diagrams (bdd). Sources Containers (specialised especially by Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}). Hardware block reflects to embodiment. System can aggregate other Systems.
 	
 		
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/system_bdd.png}}
+			{\includegraphics[scale=.98]{diagrams/system_bdd.png}}
 		\end{center}
 		\caption{System general composition.} 
 		\label{fig:ros_system_bdd}
 	\end{figure}
 	
-	Consequently, some concepts (e.g., Node), a~specialisations of Running System Component, occur in Sources Containers. It reduces the number of SysML blocks in the metamodel [R6.4] and eliminates the need for unnecessary mapping of SysML blocks [R6.5].
-		
+	Consequently, some concepts (e.g., Node), a~specialisations of Running System Component, occur in Sources Containers. It reduces the number of SysML blocks in the metamodel [R7.3] and eliminates the need for unnecessary mapping of SysML blocks [7.4]. The general 
+	
+	
 	\pagebreak	
 		
 	In MeROS, a~gro (Fig.~\ref{fig:communicating_components_bdd}) is a~crucial abstraction of a~number of ROS concepts to represent their standardised role regarding communication. 
@@ -313,6 +304,8 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\end{figure}
 	
 	\pagebreak
+		The Communication Channel is introduced to specify communication between various Communicating Components.
+	
 	Fig.~\ref{fig:communication_channel_bdd} describes how Non-ROS elements are taken into account in relation to communication. Additionally, the figure presents Communication Channel relation to ROS Communicating Component. Besides standard ROS communication methods, the Non-ROS are also included (e.g., http request) to achieve interfaces with Non-ROS parts of the general system. 
 	
 
