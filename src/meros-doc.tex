@@ -70,7 +70,7 @@
 	
 	In practice, documentation is created both prior to implementation and, in many cases, through a~process of reverse  engineering \cite{canfora2007new} for existing systems. Agile-type strategies involve modifying the documentation as the project develops \cite{habib2021systematic}. Systems development with V-model-based application of MeROS metamodel was proposed in \cite{winiarski2025-v-model}.
 			
-	The following presentation was prepared basing on the diagrams created as the core of the Visual Paradigm project. It starts with formulating the requirements (chapter~\ref{ch:requirements}). These requirements are allocated to the MeROS metamodel that's architecture is described in chapter~\ref{ch:metamodel}. The applications of MeROS are presented in other documents.
+	The following presentation was prepared basing on the diagrams created as the core of the Visual Paradigm project. It starts with formulating the requirements (chapter~\ref{ch:requirements}). These requirements are allocated to the MeROS metamodel that's architecture is described in chapter~\ref{ch:architecture}. The applications of MeROS are presented in other documents.
 	% The way to present a~model of a~specific application based on MeROS is presented on a~practical example in chapter~\ref{ch:application}.
 	
 	
@@ -208,10 +208,10 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 
 	
 	
-\chapter{MeROS metamodel}
-\label{ch:metamodel}
+\chapter{MeROS architecture}
+\label{ch:architecture}
 
-	MeROS metamodel is formulated according to the requirements discussed in the previous section. Sec.~\ref{sec:metamodel-composition} presents MeROS blocks' structural composition, and sec.~\ref{sec:metamodel-communication} describes inter-component communication. From the metamodel perspective, the structural aspects [R2] are formulated in both sections, while behavioural [R1] is in the latter. The diagrams comprise selected requirements being allocated to expose the MeROS metamodel development process. 
+	MeROS architecture is formulated according to the requirements discussed in the previous section. Sec.~\ref{sec:metamodel-composition} presents MeROS blocks' structural composition, and sec.~\ref{sec:metamodel-communication} describes inter-component communication. From the metamodel perspective, the structural aspects [R2] are formulated in both sections, while behavioural [R1] is in the latter. The diagrams comprise selected requirements being allocated to expose the MeROS metamodel development process. 
 	
 	The MeROS diagrams were created in the Enterprise Architect development tool within the SysML project [R8] and organised in three packages [R6.1] (Fig.~\ref{fig:meros_project_packages_pkg}): (i) Requirement Model related to requirements formulation and analysis, (ii) MeROS -- the metamodel itself, (iii) Rico Controller -- the exemplary ROS~1 application of MeROS described in sec.~\ref{ch:application-example}. 
 	
@@ -451,179 +451,7 @@ The composition of ROS Workspace is presented in Fig.~\ref{fig:ros_workspace_bdd
 		\caption{ROS Workspace composition.} 
 		\label{fig:ros_workspace_bdd}
 	\end{figure}
-	
-\pagebreak
 
-\section{Communication}
-\label{sec:metamodel-communication}
-	
-	\twci{Ten rozdział idzie do odstrzału. To co w nim jest zasadniczo powinno być w przykładzie}
-	
-	
-	This section depicts the behavioural and structural aspects of communication in the system. The previous section considers block definition diagrams (bdd). In the following part, the internal block diagrams (ibd) and behavioural diagrams are discussed. The goal is to present three modes of communication: ROS Topic [R4.1] (sec.~\ref{ch:metamodel-topic}), ROS Service [R4.2] (sec.~\ref{ch:metamodel-service}) and ROS Action [R4.3] (sec.~\ref{ch:metamodel-action}). It should be noted that the concept of presentation of communication with and without a~dedicated communication component is illustrated on communication with Topics but can also be applied to Services, Actions and Communication Channels. The dedicated component is especially needed when the particular Communication Channel is at first represented in a~general way as the separated block corresponding to this component, then specified in detail in the internal block diagram. 
-	
-	\subsection{ROS Topic}
-	\label{ch:metamodel-topic}
-		
-	Fig.~\ref{fig:topic_communication_with_dedicated_component_ibd} presents the ibd diagram of publishers' and subscribers' communication via topics. This diagram uses a~dedicated communication component for each Topic [R4.1.1]. There are no general limits to the number of publishers, subscribers and Topics they communicate with. 
-	
-
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/topic_communication_with_compon_ibd.png}}
-		\end{center}
-		\caption{Topics with dedicated communication components -- all components.} 
-		\label{fig:topic_communication_with_dedicated_component_ibd}
-	\end{figure}
-
-	Thanks to a~dedicated component to represent communication, the diagram in Fig.~\ref{fig:topic_communication_with_dedicated_component_ibd} can be split into two considering publisher (Fig.~\ref{fig:topic_split_publisher_ibd}) and subscriber (Fig.~\ref{fig:topic_split_subscriber_ibd}) separately, without losing information. It is especially useful when system fragments are presented after its decomposition that subdivides communication channels.
-	
-	
-	 \begin{figure}[H]
-		\begin{subfigure}[b]{0.49\textwidth}
-			\includegraphics[width=\textwidth]{img/meros_pkg/topic_split_publisher_ibd.png}
-			\caption{publisher}
-			\label{fig:topic_split_publisher_ibd}
-		\end{subfigure}
-		\begin{subfigure}[b]{0.51\textwidth}
-			\includegraphics[width=\textwidth]{img/meros_pkg/topic_split_subscriber_ibd.png}
-			\caption{subscriber}
-			\label{fig:topic_split_subscriber_ibd}
-		\end{subfigure}
-		\caption{Topics with dedicated communication components.}
-	\end{figure}
-	
-
-	
-	
-%
-%	\begin{figure}[H]
-%		\centering
-%		\begin{center}
-%			{\includegraphics[scale=1.0]{img/meros_pkg/topic_split_publisher_ibd.png}}
-%		\end{center}
-%		\caption{Topics with dedicated communication components -- publisher -- ibd.} 
-%		\label{fig:topic_split_publisher_ibd}
-%	\end{figure}
-%
-%
-%	\begin{figure}[H]
-%		\centering
-%		\begin{center}
-%			{\includegraphics[scale=1.0]{img/meros_pkg/topic_split_subscriber_ibd.png}}
-%		\end{center}
-%		\caption{Topics with dedicated communication components -- subscriber -- ibd.} 
-%		\label{fig:topic_split_subscriber_ibd}
-%	\end{figure}
-	
-	\pagebreak
-	
-	Fig. \ref{fig:topic_communication_with_dedicated_component_sd} depicts the corresponding sequence diagram. Publishers send a~message through Topics to the subscribers. The incoming message cause the subscriber to execute the callback function. 
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_pkg/topic_communication_with_compon_sd.png}}
-		\end{center}
-		\caption{Topics with dedicated communication components.} 
-		\label{fig:topic_communication_with_dedicated_component_sd}
-	\end{figure}
-		
-	
-	Fig.~\ref{fig:topic_communication_without_dedicated_component_ibd} and Fig.~\ref{fig:topic_communication_without_dedicated_component_sd} present an alternative approach to depict the system communicating via topics. In this case, no dedicated communication components are used [R4.1.2]. 
-	
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_pkg/topic_communication_non_compon_ibd.png}}
-		\end{center}
-		\caption{Topics without dedicated communication components.} 
-		\label{fig:topic_communication_without_dedicated_component_ibd}
-	\end{figure}
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_pkg/topic_communication_non_compon_sd.png}}
-		\end{center}
-		\caption{Topics without dedicated communication components.} 
-		\label{fig:topic_communication_without_dedicated_component_sd}
-	\end{figure}
-	
-	
-	\pagebreak
-	
-	
-\subsection{ROS Service}
-\label{ch:metamodel-service}
-	
-	For each ROS Service, there is at most one server and a~number of clients (Fig.~\ref{fig:service_communication_ibd} and Fig.~\ref{fig:service_communication_sd}). Service-type communication is bidirectional and realises RPC (remote procedure call).
-	
-
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/service_communication_ibd.png}}
-		\end{center}
-		\caption{Service-based communication.} 
-		\label{fig:service_communication_ibd}
-	\end{figure}
-	
-
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/service_communication_sd.png}}
-		\end{center}
-		\caption{Service-based communication.} 
-		\label{fig:service_communication_sd}
-	\end{figure}
-	
-	
-\subsection{ROS Action}
-\label{ch:metamodel-action}
-	
-	ROS Action communication's general, simplified structure (Fig.~\ref{fig:action_communication_compact_ibd}) is analogous to ROS Service. These type of presentation is universal for ROS~1 and ROS~2.
-	
-
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/action_communication_compact_ibd.png}}
-		\end{center}
-		\caption{Action-based communication -- compact representation.} 
-		% https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Actions/Understanding-ROS2-Actions.html
-		\label{fig:action_communication_compact_ibd}
-	\end{figure}
-	
-	
-	 An Action (Fig.~\ref{fig:action_communication_detailed_ibd}) is based on several Topics in ROS~1, while on Topics and Services in ROS~2.
-	
-
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.0]{img/meros_pkg/action_communication_detailed_ibd.png}}
-		\end{center}
-		\caption{Action-based communication -- detailed.} 
-		% https://design.ros2.org/articles/actions.html
-		\label{fig:action_communication_detailed_ibd}
-	\end{figure}
-	
-	In practice, to present an action-related communication compactly on sd diagram (Fig.~\ref{fig:action_communication_compact_sd}) particular Topics and Services can be generalised as a~request (for /goal and /cancel) and a~response (for /status, /feedback and /result). It should be noted that this diagram presents the Action communication sequence in a~simplified way.
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.1]{img/meros_pkg/action_communication_compact_sd.png}}
-		\end{center}
-		\caption{Action-based communication sequence -- compact presentation.} 
-		\label{fig:action_communication_compact_sd}
-	\end{figure}
-
-	
 	
 \chapter{MeROS application}
 \label{ch:application}
