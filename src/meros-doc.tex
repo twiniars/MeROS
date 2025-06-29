@@ -70,7 +70,7 @@
 	
 	In practice, documentation is created both prior to implementation and, in many cases, through a~process of reverse  engineering \cite{canfora2007new} for existing systems. Agile-type strategies involve modifying the documentation as the project develops \cite{habib2021systematic}. Systems development with V-model-based application of MeROS metamodel was proposed in \cite{winiarski2025-v-model}.
 			
-	The following presentation was prepared basing on the diagrams created as the core of the Visual Paradigm project. It starts with formulating the requirements (chapter~\ref{ch:requirements}). These requirements are allocated to the MeROS metamodel that's architecture is described in chapter~\ref{ch:metamodel}.
+	The following presentation was prepared basing on the diagrams created as the core of the Visual Paradigm project. It starts with formulating the requirements (chapter~\ref{ch:requirements}). These requirements are allocated to the MeROS metamodel that's architecture is described in chapter~\ref{ch:metamodel}. The applications of MeROS are presented in other documents.
 	% The way to present a~model of a~specific application based on MeROS is presented on a~practical example in chapter~\ref{ch:application}.
 	
 	
@@ -211,8 +211,6 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 \chapter{MeROS metamodel}
 \label{ch:metamodel}
 
-	\twci{Do aktualizacji. Teraz będą dwie dokumentacje. Oddzielnie dla metamodelu i oddzielnie dla przykłądu z turtlesimem. W tym przykładzie będzie omówienie jak on powstawał, w sensie dodatkowych zrzutów ekranu z retrospekcji działającego systemu ROS. Czyli pokazujemy jak za pomocą rowowych komend uzyskać informacje potrzebne do stworzenia modelu. Jest to bezcenne na ANRO i nie tylko.}
-	
 	MeROS metamodel is formulated according to the requirements discussed in the previous section. Sec.~\ref{sec:metamodel-composition} presents MeROS blocks' structural composition, and sec.~\ref{sec:metamodel-communication} describes inter-component communication. From the metamodel perspective, the structural aspects [R2] are formulated in both sections, while behavioural [R1] is in the latter. The diagrams comprise selected requirements being allocated to expose the MeROS metamodel development process. 
 	
 	The MeROS diagrams were created in the Enterprise Architect development tool within the SysML project [R8] and organised in three packages [R6.1] (Fig.~\ref{fig:meros_project_packages_pkg}): (i) Requirement Model related to requirements formulation and analysis, (ii) MeROS -- the metamodel itself, (iii) Rico Controller -- the exemplary ROS~1 application of MeROS described in sec.~\ref{ch:application-example}. 
@@ -630,6 +628,7 @@ The composition of ROS Workspace is presented in Fig.~\ref{fig:ros_workspace_bdd
 \chapter{MeROS application}
 \label{ch:application}
 	
+	\twci{Do aktualizacji. Teraz będą dwie dokumentacje. Oddzielnie dla metamodelu i oddzielnie dla przykłądu z turtlesimem. W tym przykładzie będzie omówienie jak on powstawał, w sensie dodatkowych zrzutów ekranu z retrospekcji działającego systemu ROS. Czyli pokazujemy jak za pomocą rowowych komend uzyskać informacje potrzebne do stworzenia modelu. Jest to bezcenne na ANRO i nie tylko.}
 	
 	MeROS metamodel can be employed in various ways in broad context of SE. To help to develop projects, the MeROS UML profile and other materials are accessible from MeROS project page\footnote{\url{http://github.com/twiniars/meros}}. 
 	
