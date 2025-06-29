@@ -71,7 +71,7 @@
 	In practice, documentation is created both prior to implementation and, in many cases, through a~process of reverse  engineering \cite{canfora2007new} for existing systems. Agile-type strategies involve modifying the documentation as the project develops \cite{habib2021systematic}. Systems development with V-model-based application of MeROS metamodel was proposed in \cite{winiarski2025-v-model}.
 			
 	The following presentation was prepared basing on the diagrams created as the core of the Visual Paradigm project. It starts with formulating the requirements (chapter~\ref{ch:requirements}). These requirements are allocated to the MeROS metamodel that's architecture is described in chapter~\ref{ch:architecture}. The applications of MeROS are presented in other documents.
-	% The way to present a~model of a~specific application based on MeROS is presented on a~practical example in chapter~\ref{ch:application}.
+	MeROS metamodel can be employed in various ways in broad context of SE. To help to develop projects, the MeROS Visual Paradigm stereotypes and other materials are accessible from MeROS project page\footnote{\url{http://github.com/twiniars/meros}}. 
 	
 	
 \chapter{MeROS requirements}
@@ -283,7 +283,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\label{fig:communicating_component_actions_bdd}
 	\end{figure}
 	
-	A ROS Connection comprises two Topics and three Services (Fig.~\ref{fig:action_bdd}).
+	The ROS Action Connection comprises two Topics and three Services (Fig.~\ref{fig:action_bdd}).
 	
 	\begin{figure}[hbt]
 		\centering
@@ -296,9 +296,8 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	
 	\pagebreak
 	
-	The Communication Channel is introduced to specify communication between various Communicating Components.
-	
-	Fig.~\ref{fig:communication_channel_bdd} describes how Non-ROS elements are taken into account in relation to communication. Additionally, the figure presents Communication Channel relation to ROS Communicating Component. Besides standard ROS communication methods, the Non-ROS are also included (e.g., http request) to achieve interfaces with Non-ROS parts of the general system. 
+	The Communication Channel is introduced to specify communication between various Communicating Components (Fig.~\ref{fig:communication_channel_bdd}).
+	Besides standard ROS communication methods, the Non-ROS can also be included (e.g., http request) to achieve interfaces with Non-ROS parts of the general system. 
 	
 
 	\begin{figure}[H]
@@ -310,12 +309,9 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\label{fig:communication_channel_bdd}
 	\end{figure}
 	
-
-	\pagebreak
 		 
- 	The Node (Fig.~\ref{fig:node_bdd}) composes Parameters and Nodelets (the latter in ROS~1). Two specific Nodes are considered in the metamodel: ROS Master and rosout. In ROS~2, Component Container aggregates Nodes executed in a~single process. The Micro ROS was also considered in the model. 
+ 	The Node (Fig.~\ref{fig:node_bdd}) composes Parameters. Component Container aggregates Nodes executed in a~single process. The Micro ROS Node is also considered in the model as the specialisation of the Node. 
  	
-
 	 
  	\begin{figure}[H]
 	 	\centering
@@ -338,29 +334,15 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\label{fig:running_system_component_bdd}
 	\end{figure} 
 	 	 
-
-	It should be noted that although MeROS could be classified as PSM, the initial, general system description with Communications Channels and general Running System corresponds to PIM specification. Then, the detailing of these aggregates corresponds to the transition from PIM to PSM. 
-	
-		
-%	The way Communicating Components use various types of connections is presented in Fig.~\ref{fig:system_communication_bdd}. Both ROS and Non-ROS Communicating Components can communicate via Non-ROS Connections, but only ROS Communicating Components use ROS Connections.
-%
-%
-%	\begin{figure}[H]
-%		\centering
-%		\begin{center}
-%			{\includegraphics[scale=1.15]{img/meros_pkg/system_communication_bdd.png}}
-%		\end{center}
-%		\caption{System communication.} 
-%		\label{fig:system_communication_bdd}
-%	\end{figure}
-	
-		 The specializations of ROS connection (Topic connections, Service connections, and Action connections) are depicted in Fig.~\ref{fig:ros_connections_bdd}. 
+	 \pagebreak	 
+	 	 
+	 The specializations of ROS connection (Topic connections, Service connections, and Action connections) are depicted in Fig.~\ref{fig:ros_connections_bdd}. 
 	
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/ros_connections_bdd.png}}
+			{\includegraphics[scale=.94]{diagrams/ros_connections_bdd.png}}
 		\end{center}
 		\caption{ROS Connections.} 
 		\label{fig:ros_connections_bdd}
@@ -373,7 +355,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/namespace_bdd.png}}
+			{\includegraphics[scale=.94]{diagrams/namespace_bdd.png}}
 		\end{center}
 		\caption{Namespace composition.}
 		\label{fig:namespace_bdd}
@@ -386,7 +368,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/sources_container_bdd.png}}
+			{\includegraphics[scale=.94]{diagrams/sources_container_bdd.png}}
 		\end{center}
 		\caption{Sources Container and its specialisations.} 
 		\label{fig:sources_container_bdd}
@@ -403,18 +385,6 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\label{fig:ros_package_bdd}
 	\end{figure}
 		
-		
-%The composition of Versatile Sources Container is presented in Fig.~\ref{fig:ver_sources_contain_bdd}.
-%
-%	\begin{figure}[H]
-%		\centering
-%		\begin{center}
-%			{\includegraphics[scale=1.0]{img/meros_pkg/ver_sources_contain_bdd.png}}
-%		\end{center}
-%		\caption{Versatile Sources Container composition.} 
-%		\label{fig:ver_sources_contain_bdd}
-%	\end{figure}
-	
 The composition of Repository is presented in Fig.~\ref{fig:repository_bdd}.	
 	
 	\begin{figure}[H]
@@ -441,15 +411,11 @@ The composition of ROS Workspace is presented in Fig.~\ref{fig:ros_workspace_bdd
 \chapter{MeROS application}
 \label{ch:application}
 	
-	\twci{Do aktualizacji. Teraz będą dwie dokumentacje. Oddzielnie dla metamodelu i oddzielnie dla przykłądu z turtlesimem. W tym przykładzie będzie omówienie jak on powstawał, w sensie dodatkowych zrzutów ekranu z retrospekcji działającego systemu ROS. Czyli pokazujemy jak za pomocą rowowych komend uzyskać informacje potrzebne do stworzenia modelu. Jest to bezcenne na ANRO i nie tylko.}
+	\twci{Do aktualizacji. Ma być przykład z turtlesimem. W tym przykładzie będzie omówienie jak on powstawał, w sensie dodatkowych zrzutów ekranu z retrospekcji działającego systemu ROS. Czyli pokazujemy jak za pomocą rowowych komend uzyskać informacje potrzebne do stworzenia modelu. Jest to bezcenne na ANRO i nie tylko.}
 	
-	MeROS metamodel can be employed in various ways in broad context of SE. To help to develop projects, the MeROS UML profile and other materials are accessible from MeROS project page\footnote{\url{http://github.com/twiniars/meros}}. 
-	
-	
-\section{Exemplary system}
-\label{ch:application-example}
 
-	This section presents key aspects of an exemplary system development process incorporating MeROS. The exemplary system was created within the AAL INCARE project to control the Rico assistive robot (modified TIAGo platform with controller based on ROS~1) to execute transportation attendance tasks (Fig.~\ref{fig:herbatka_u_winiara}).
+	
+	This documentation presents key aspects of an exemplary system development process incorporating MeROS. The exemplary system was created within the AAL INCARE project to control the Rico assistive robot (modified TIAGo platform with controller based on ROS~1) to execute transportation attendance tasks (Fig.~\ref{fig:herbatka_u_winiara}).
 	
 	\begin{figure}[H]
 		\centering
