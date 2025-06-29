@@ -231,12 +231,9 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\label{fig:ros_system_bdd}
 	\end{figure}
 	
-	Consequently, some concepts (e.g., Node), a~specialisations of Running System Component, occur in Sources Containers. It reduces the number of SysML blocks in the metamodel [R7.3] and eliminates the need for unnecessary mapping of SysML blocks [7.4]. The general 
+	Consequently, some concepts (e.g., Node), a~specialisations of Running System Component, occur in Sources Containers. It reduces the number of SysML blocks in the metamodel [R7.3] and eliminates the need for unnecessary mapping of SysML blocks [7.4]. In MeROS applications, the System formulation methodology is to create various views on it (in particular its: sources containers, running components, embodiment). They all together depict the complete view on the System.
 	
-	
-	\pagebreak	
-		
-	In MeROS, a~gro (Fig.~\ref{fig:communicating_components_bdd}) is a~crucial abstraction of a~number of ROS concepts to represent their standardised role regarding communication. 
+	In MeROS, ROS Communicating Component (Fig.~\ref{fig:communicating_components_bdd}) forms a~crucial generalisation to represent standardised role regarding communication. 
 	
 		
 	\begin{figure}[H]
@@ -248,10 +245,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\label{fig:communicating_components_bdd}
 	\end{figure}
 	
-	It should be noted that behavioural aspects of a~particular model specified in MeROS can be formulated by operation specification as an act (activity), sd (sequence), or stm (state machine) diagrams. 
-	
-	
-	For clarity, relations of Communicating Components are depicted in several diagrams. Fig.~\ref{fig:communicating_component_topics_bdd} considers Topics and their Data Structures. Here, the ROS Communicating Component can act as a~publisher or a~subscriber.	
+	For clarity, relations of ROS Communicating Component are depicted in several diagrams. Fig.~\ref{fig:communicating_component_topics_bdd} considers Topics and their Data Structures. Here, the ROS Communicating Component can act as a~publisher or a~subscriber.	
 	 
 	
 	\begin{figure}[H]
@@ -276,10 +270,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\caption{ROS Communicating Component relations -- Services.} 
 		\label{fig:communication_blocks_services_bdd}
 	\end{figure}
-	
-	In ROS~2, an Action bases on Topics and Services.
-	
-	
+		
 	The Actions are depicted in two diagrams -- Fig.~\ref{fig:communicating_component_actions_bdd} and Fig.~\ref{fig:action_bdd}. Similarly to Services, the ROS Communicating Component can act as a~server or a~client.	 
 	
 	
@@ -292,7 +283,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\label{fig:communicating_component_actions_bdd}
 	\end{figure}
 	
-	An Action Data Structure comprises data used by three of five Topics composed in Action, i.e., goal, feedback and result. Two remaining Topics, i.e., cancel and status are standardised.
+	A ROS Connection comprises two Topics and three Services (Fig.~\ref{fig:action_bdd}).
 	
 	\begin{figure}[hbt]
 		\centering
@@ -304,7 +295,8 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\end{figure}
 	
 	\pagebreak
-		The Communication Channel is introduced to specify communication between various Communicating Components.
+	
+	The Communication Channel is introduced to specify communication between various Communicating Components.
 	
 	Fig.~\ref{fig:communication_channel_bdd} describes how Non-ROS elements are taken into account in relation to communication. Additionally, the figure presents Communication Channel relation to ROS Communicating Component. Besides standard ROS communication methods, the Non-ROS are also included (e.g., http request) to achieve interfaces with Non-ROS parts of the general system. 
 	
