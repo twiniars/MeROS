@@ -51,12 +51,12 @@
 \chapter{Introduction}
 \label{ch:intro}	
 
-	The development of civilisation has led to an increase in the importance of robotics. Many modern robotic systems are complex. To create them as effectively and reliably as possible, it is necessary to follow systems engineering (SE), where metamodels play an essential role~\cite{bezivin2004search,schmidt2006model,kent2002model}.
+	The development of civilisation has led to an increase in the importance of robotics. Many modern robotic systems are complex. To create them as effectively and reliably as possible, it is necessary to follow systems engineering (SE), where metamodels play an essential role~\cite{bezivin2004search,kent2002model,schmidt2006model}.
 	Robots, especially complex ones, are mostly controlled with usage of software. Hence, in robotics, SE is inextricably linked with software engineering, where frameworks have been crucial for many years \cite{mnkandla2009software,shehory2014agent}.
-	Diverse robotics frameworks have been developed so far \cite{inigo2012robotics,tsardoulias2017robotic,hentout2016survey}. Some steps towards standardisation have been made in recent years, and ROS (Robot Operating System) has come to the fore, currently in ROS~2 version \cite{maruyama2016exploring,park2020real}.   
+	Diverse robotics frameworks have been developed so far \cite{hentout2016survey,inigo2012robotics,tsardoulias2017robotic}. Some steps towards standardisation have been made in recent years, and ROS (Robot Operating System) has come to the fore, currently in ROS~2 version \cite{maruyama2016exploring,park2020real}.   
 	
-	The robotic models can be subdivided~\cite{de2021survey} into Platform Independent Models (PIM), e.g., \cite{zielinski2017variable,zielinski2010motion,tasker2020,earl2020}, and Platform Specific Models (PSM). The metamodels of ROS, including MeROS, belong to PSM and should answer to the component nature of ROS \cite{Figat:2022:RAS,wenger2016model}.
-	 MeROS is founded on SysML (Systems Modeling Language) \cite{omg-sysml17,Friedenthal:2015}, a~profile of UML (Unified Modeling Language). Modelling in languages from the UML family addresses a~number of important aspects of systems engineering \cite{chaudron2012effective}. These include the use cases [UCX]:
+	The robotic models can be subdivided~\cite{de2021survey} into Platform Independent Models (PIM), e.g., \cite{tasker2020,earl2020,zielinski2010motion,zielinski2017variable}, and Platform Specific Models (PSM). The metamodels of ROS, including MeROS, belong to PSM and should answer to the component nature of ROS \cite{Figat:2022:RAS,wenger2016model}.
+	 MeROS is founded on SysML (Systems Modeling Language) \cite{Friedenthal:2015,omg-sysml17}, a~profile of UML (Unified Modeling Language). Modelling in languages from the UML family addresses a~number of important aspects of systems engineering \cite{chaudron2012effective}. These include the use cases [UCX]:
 	\begin{itemize}
 		\item $[$UC1] Systems' documentation and presentation,
 		\item $[$UC2] Effective analysis of systems, especially in interdisciplinary teams (graphical language is more understandable for non-specialists in the field), 
@@ -70,12 +70,13 @@
 	
 	In practice, documentation is created both prior to implementation and, in many cases, through a~process of reverse  engineering \cite{canfora2007new} for existing systems. Agile-type strategies involve modifying the documentation as the project develops \cite{habib2021systematic}. Systems development with V-model-based application of MeROS metamodel was proposed in \cite{winiarski2025-v-model}.
 			
-	The following presentation starts with formulating the requirements (chapter~\ref{ch:requirements}) for the MeROS metamodel. These requirements are allocated to the metamodel that's architecture is described in chapter~\ref{ch:metamodel}. The way to present a~model of a~specific application based on MeROS is presented on a~practical example in chapter~\ref{ch:application}.
+	The following presentation was prepared basing on the diagrams created as the core of the Visual Paradigm project. It starts with formulating the requirements (chapter~\ref{ch:requirements}). These requirements are allocated to the MeROS metamodel that's architecture is described in chapter~\ref{ch:metamodel}.
+	% The way to present a~model of a~specific application based on MeROS is presented on a~practical example in chapter~\ref{ch:application}.
 	
 	
 \chapter{Metamodel requirements}
 \label{ch:requirements}
-	The requirements [RX] formulation process for MeROS metamodel is multi-stage and iterative. In the beginning, the initial requirements were formulated based on: (i) literature review (both scientific and ROS wiki/community sources), (ii) author experience from supervising and supporting ROS-related projects, and finally, (iii) author experience from EARL (Embodied Agent-based cybeR-physical control systems modelling Language) \cite{earl2020} PIM development and its applications (e.g. \cite{tasker2020,karwowski2021hubero,en14206693-grav-comp}). Verification of subsequent versions of MeROS by its practical applications led to an iterative reformulation of requirements and MeROS itself. 
+	The requirements [RX] formulation process for MeROS metamodel is multi-stage and iterative. In the beginning, the initial requirements were formulated based on: (i) literature review (both scientific and ROS wiki/community sources), (ii) author experience from supervising and supporting ROS-related projects, and finally, (iii) author experience from EARL (Embodied Agent-based cybeR-physical control systems modelling Language) \cite{earl2020} PIM development and its applications (e.g. \cite{tasker2020,karwowski2021hubero,en14206693-grav-comp}). Verification of subsequent versions of MeROS by its practical applications led to an iterative reformulation of the following requirements and respective MeROS architecture.
 	
 	MeROS requirements are depicted on a~number of dedicated SysML diagrams. The requirements are organised in a~tree-like nesting structure, with additional internal relations, and labelled following this structure. The general requirements are presented in Fig.~\ref{fig:general_req}. 
 		
@@ -88,9 +89,11 @@
 		\label{fig:general_req}
 	\end{figure}
 		
-	The SysML models have two main parts: behavioural [R1] and structural [R2]. MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. The ROS system is two-faced. While it is executed [R4], it has a~specific structure and behaviour, but from the developers' point of view, the sources [R5] are the exposed aspect. The model should be compact and straightforward [R6] rather than unnecessarily elaborate and complicated. It is also universal. It does not imply itself the specific procedure of its use [R7]. These procedures are specified outside of the MeROS metamodel. Although the SysML-based MeROS is classified into PSM [R8], it should be compatible with Non-ROS elements [R9]. MeROS metamodel should be valid for ROS~2 [R10]. Finally, embodiment [R11] (e.g. system deployment) should be considered.
+	Grouping of concepts [R1] is a crucial addition to pure ROS metamodel. 
+	MeROS is a  SysML-based metamodel and is classified into PSM [R2].
+	 MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. To achieve completeness of the metamodel extra concepts are needed [R4]. The ROS system is two-faced. While it is executed [R5], it has a~specific structure and behaviour, but from the developers' point of view, the sources [R6] are the exposed aspect. The model should be compact and straightforward [R7] rather than unnecessarily elaborate and complicated. It is also universal. It does not imply itself the specific procedure of its use [R8]. These procedures are specified outside of the MeROS metamodel. Although the SysML-based MeROS is classified into PSM, it should be compatible with Non-ROS elements [R9]. MeROS metamodel should be valid for ROS~2 [R10]. Finally, embodiment [R11] (e.g. system deployment) should be considered.
 	
-	The system's structural aspects requirements are presented in Fig.~\ref{fig:grouping_req}.
+	The grouping of concepts requirements are presented in Fig.~\ref{fig:grouping_req}.
 	
 	\begin{figure}[H]
 		\centering
@@ -101,7 +104,7 @@
 		\label{fig:grouping_req}
 	\end{figure}
 	
-	A~vital addition to the original ROS concepts is the abstract grouping of: (i) communicating methods [R2.1] and (ii) communicating components [R2.2]. The motivation for the introduction of these aggregates is presented further on. It should be noted that several ROS concepts group other concepts in a~particular way, especially to deploy the system. Action aggregates Topics and Services (in ROS~2), ROS~1 Node aggregates Nodelets, and ROS~2 Component Container aggregates Nodes.
+	A~vital addition to the original ROS concepts is the abstract grouping of: (i) communicating methods [R2.1]  (i) communicating methods [R2.1] and (ii) communicating components [R2.2]. The motivation for the introduction of these aggregates is presented further on. It should be noted that several ROS concepts group other concepts in a~particular way, especially to deploy the system. Action aggregates Topics and Services (in ROS~2), ROS~1 Node aggregates Nodelets, and ROS~2 Component Container aggregates Nodes.
 		
 	The ROS concepts that MeROS models are organised into four major classes (Fig.~\ref{fig:ros_concepts_req}): (i)~Communicating components [R3.1], (ii) Communication methods [R3.2], (iii) Workspace [R3.3], and (iv) Other [R3.4].
 	
