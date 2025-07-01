@@ -233,7 +233,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	
 	Consequently, some concepts (e.g., Node), a~specialisations of Running System Component, occur in Sources Containers. It reduces the number of SysML blocks in the metamodel [R7.3] and eliminates the need for unnecessary mapping of SysML blocks [7.4]. In MeROS applications, the System formulation methodology is to create various views on it (in particular its: sources containers, running components, embodiment). They all together depict the complete view on the System.
 	
-	In MeROS, ROS Communicating Component (Fig.~\ref{fig:communicating_components_bdd}) forms a~crucial generalisation to represent standardised role regarding communication. 
+	In MeROS, ROS Communicating Component (Fig.~\ref{fig:communicating_components_bdd}) forms a~crucial generalisation to represent standardised role regarding communication. The Operating System Terminal is introduced as it also can communicate with other Communicating Components after execution of particular ROS-related commands.
 	
 		
 	\begin{figure}[H]
@@ -310,7 +310,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\end{figure}
 	
 		 
- 	The Node (Fig.~\ref{fig:node_bdd}) composes Parameters. Component Container aggregates Nodes executed in a~single process. The Micro ROS Node is also considered in the model as the specialisation of the Node. 
+ 	The Node (Fig.~\ref{fig:node_bdd}) aggregates ROS Parameters. ROS Component Container aggregates Nodes executed in a~single process. The Micro ROS Node, RQt Plugin Node and RViz are also considered in the model as the specialisations of the Node.
  	
 	 
  	\begin{figure}[H]
@@ -322,7 +322,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		 	\label{fig:node_bdd}
 	 \end{figure}
 	 
-	The Running System Component (Fig.~\ref{fig:running_system_component_bdd}) is a~generalisation of Communicating Components specializations as well as Connections between them.
+	The Running System Component (Fig.~\ref{fig:running_system_component_bdd}) is a~generalisation of Communicating Components specializations as well as Connections between them. 
 	
 
 	\begin{figure}[H]
