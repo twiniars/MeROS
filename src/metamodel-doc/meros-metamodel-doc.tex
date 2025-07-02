@@ -91,7 +91,7 @@
 		
 	Grouping of concepts [R1] is a crucial addition to pure ROS metamodel. 
 	MeROS is a  SysML-based metamodel and is classified into PSM [R2].
-	 MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. To achieve completeness of the metamodel extra concepts are needed [R4]. The ROS system is two-faced. While it is executed [R5], it has a~specific structure and behaviour, but from the developers' point of view, the sources [R6] are the exposed aspect. The model should be compact and straightforward [R7] rather than unnecessarily elaborate and complicated. It is also universal. It does not imply itself the specific procedure of its use [R8]. These procedures are specified outside of the MeROS metamodel. Although the SysML-based MeROS is classified into PSM, it should be compatible with Non-ROS elements [R9]. MeROS metamodel should be valid for ROS~2 [R10]. Finally, embodiment [R11] (e.g. system deployment) should be considered.
+	 MeROS aims to cover ROS concepts [R3] and not change their labels as long as possible, to maintain conformity and intuitiveness. To achieve completeness of the metamodel extra concepts are needed [R4]. The ROS system is two-faced. While it is executed [R5], it has a~specific structure and behaviour, but from the developers' point of view, the sources and executables [R6] are the exposed aspect. The model should be compact and straightforward [R7] rather than unnecessarily elaborate and complicated. It is also universal. It does not imply itself the specific procedure of its use [R8]. These procedures are specified outside of the MeROS metamodel. Although the SysML-based MeROS is classified into PSM, it should be compatible with Non-ROS elements [R9]. MeROS metamodel should be valid for ROS~2 [R10]. Finally, embodiment [R11] (e.g. system deployment) should be considered.
 	
 	The grouping of concepts requirements are presented in Fig.~\ref{fig:grouping_req}. It has diverse aims. It enables the presentation of the system part in a~general, PIM-like abstract way, on the logical level rather than a~detailed, PSM-like implementation one. The aggregation reduces the number of objects represented on the diagram to highlight the essential aspects and stay compact and consistent in presentation.
 	
@@ -107,7 +107,7 @@
 	A~vital addition to the original ROS concepts is the abstract grouping of:  (i) communication methods and (ii) communicating components and ROS packages.  It should be noted that several ROS concepts group other concepts in a~particular way, especially to deploy the system. Action aggregates Topics and Services, Component Container aggregates Nodes.
 
 		
-	The ROS concepts that MeROS models are organised into four major classes (Fig.~\ref{fig:ros_concepts_req}): (i)~Communicating components, (ii) Communication methods, (iii) Sources containers, and (iv) Other.
+	The ROS concepts that MeROS models are organised into four major classes (Fig.~\ref{fig:ros_concepts_req}): (i)~Communicating components, (ii) Communication methods, (iii) Sources and executables containers, and (iv) Other.
 	
 
 	\begin{figure}[H]
@@ -144,15 +144,15 @@
 		\label{fig:communication_concepts_req}
 	\end{figure}
 	
-	ROS Sources containers comprises (Fig.~\ref{fig:sources_containers_req}): (i) ROS Package, (ii) ROS Metapackage, (iii) Group of ROS packages. It also relates to Group of packages and Repository. In practise ROS Metapackage is a~specific, degenerated ROS Package.
+	ROS Sources and executables containers comprises (Fig.~\ref{fig:sources_executables_req}): (i) ROS Package, (ii) ROS Metapackage, (iii) Group of ROS packages. It also relates to Group of packages and Repository. In practise ROS Metapackage is a~specific, degenerated ROS Package.
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/sources_containers_concepts_req.png}}
+			{\includegraphics[scale=1.0]{diagrams/sources_executables_req.png}}
 		\end{center}
-		\caption{ROS Sources containers requirements.} 
-		\label{fig:sources_containers_req}
+		\caption{ROS Sources and executables containers requirements.} 
+		\label{fig:sources_executables_req}
 	\end{figure}
 	
 	\pagebreak
@@ -219,19 +219,19 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	
 	The degree of specificity of a~metamodel is a~compromise between its comprehensiveness (and, therefore, more general formulation) and a~more accurate representation of a~particular subclass of specific implementations. The metamodel contains compositions of elements and other primary relationships. Attributes and operations of elements range widely, hence their inclusion would lead to overgrowth and complication of the metamodel [R7]. The MeROS Metamodel is lightweight and general for various system development procedures and non-ROS parts of the whole System. The fundamental decision was to make it compact, so due to the extremely wide range of Non-ROS context variants [R9], they are specific for particular applications and are not specified in the metamodel itself. Hence, models derived from the metamodel can define their stereotypes, operations and new relations specific to a~particular System. 
 	
-	The SysML blocks reflects concepts pointed out in requirements, and their composition is depicted in block definition diagrams (bdd). Sources Containers (specialised especially by Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}). Hardware block reflects to embodiment. System can aggregate other Systems.
+	The SysML blocks reflects concepts pointed out in requirements, and their composition is depicted in block definition diagrams (bdd). Sources and Executables Containers (specialised especially by Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}). Hardware block reflects to embodiment. System can aggregate other Systems.
 	
 		
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.98]{diagrams/system_bdd.png}}
+			{\includegraphics[scale=.95]{diagrams/system_bdd.png}}
 		\end{center}
 		\caption{System general composition.} 
 		\label{fig:ros_system_bdd}
 	\end{figure}
 	
-	Consequently, some concepts (e.g., Node), a~specialisations of Running System Component, occur in Sources Containers. It reduces the number of SysML blocks in the metamodel [R7.3] and eliminates the need for unnecessary mapping of SysML blocks [7.4]. In MeROS applications, the System formulation methodology is to create various views on it (in particular its: sources containers, running components, embodiment). They all together depict the complete view on the System.
+	Consequently, some concepts (e.g., Node), a~specialisations of Running System Component, occur in Sources and Executables Containers. It reduces the number of SysML blocks in the metamodel [R7.3] and eliminates the need for unnecessary mapping of SysML blocks [7.4]. In MeROS applications, the System formulation methodology is to create various views on it (in particular its: sources and executables containers, running components, embodiment). They all together depict the complete view on the System.
 	
 	In MeROS, ROS Communicating Component (Fig.~\ref{fig:communicating_components_bdd}) forms a~crucial generalisation to represent standardised role regarding communication. The Operating System Terminal is introduced as it also can communicate with other Communicating Components after execution of particular ROS-related commands.
 	
@@ -361,17 +361,17 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\label{fig:namespace_bdd}
 	\end{figure}
 	
-	The Sources Container (Fig.~\ref{fig:sources_container_bdd}) has various specialisations such as Group of Packages, ROS Workspace, ROS Package and Repository. It also plays a~role of general container.  
+	The Sources and Executables Container (Fig.~\ref{fig:sources_executables_container_bdd}) has various specialisations such as Group of Packages, ROS Workspace, ROS Package and Repository. It also plays a~role of general container.  
 	The Workspace contains, i.a., Packages that compose the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. As Workspace has a~specific file-system nature with various types of files stored, Group of Packages were introduced as specific aggregation of ROS Packages only.
 	
 	
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.94]{diagrams/sources_container_bdd.png}}
+			{\includegraphics[scale=.94]{diagrams/sources_executables_container_bdd.png}}
 		\end{center}
 		\caption{Sources Container and its specialisations.} 
-		\label{fig:sources_container_bdd}
+		\label{fig:sources_executables_container_bdd}
 	\end{figure}
 	
 	The ROS Package (Fig.~\ref{fig:ros_package_bdd}) composes the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. These components are composed as parts and theirs types are unique for the particular Package. For consistency, while MeROS is applied and two components of the same stereotype and the same type name are added in various Packages, theirs names should include Package name.  It should be noted that in case of Actions, specific communication structures definitions are stored in Action Data Structures. ROS Meta Package was introduced as a~specific ROS Package specialisation.
@@ -396,7 +396,7 @@ The composition of Repository is presented in Fig.~\ref{fig:repository_bdd}.
 		\label{fig:repository_bdd}
 	\end{figure}
 
-The composition of ROS Workspace is presented in Fig.~\ref{fig:ros_workspace_bdd}.
+The composition of ROS Workspace is presented in Fig.~\ref{fig:ros_workspace_bdd}. The Workspace can extend other Workspaces by usage of source command.
 
 	\begin{figure}[H]
 		\centering
