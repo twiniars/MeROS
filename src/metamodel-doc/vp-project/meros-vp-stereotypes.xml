@@ -678,7 +678,7 @@
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="uIe4bemGAqAA4iah" leaf="false" name="MetaPackage" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="8OLho.mGAqAA4goV" leaf="false" name="LaunchFile" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="C_HRo.mGAqAA4goZ" leaf="false" name="RQtNode" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="z0PRo.mGAqAA4gob" leaf="false" name="Terminal" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="z0PRo.mGAqAA4gob" leaf="false" name="CLTool" root="false"/>
 	</ApplicationStereotypes>
 	<ProjectStereotypes>
 		<Stereotype abstract="false" baseType="UseCase" documentation="" id="fN9vVemGAqAA4gme" leaf="false" name="UseCase" root="false">
@@ -799,5 +799,7 @@
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="ksswbemGAqAA4iSo" leaf="false" name="Repository" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="acB4bemGAqAA4iaj" leaf="false" name="MetaPackage" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="XubRo.mGAqAA4goY" leaf="false" name="LaunchFile" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="Tzwpo.mGAqAA4gtA" leaf="false" name="RQtNode" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="Hqi5o.mGAqAA4g.G" leaf="false" name="CLTool" root="false"/>
 	</ProjectStereotypes>
 </Stereotypes>
