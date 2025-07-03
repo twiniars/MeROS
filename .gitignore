@@ -1,12 +1,13 @@
 /meros.bib.sav
 
-/src/metamodel-doc/meros-metamodel-doc.*
-!/src/metamodel-doc/meros-metamodel-doc.tex
-/src/turtlesim-doc/meros-turtlesim-doc.*
-!/src/turtlesim-doc/meros-turtlesim-doc.tex
+src/metamodel-doc/meros-metamodel-doc.*
+!src/metamodel-doc/meros-metamodel-doc.tex
+src/turtlesim-doc/meros-turtlesim-doc.*
+!src/turtlesim-doc/meros-turtlesim-doc.tex
 
 
-/src/metamodel-doc/vp-project/meros_metamodel.vpp.*
-/src/metamodel-doc/vp-project/.meros_metamodel.vpp.lck
-/src/turtlesim-doc/vp-project/meros-turtlesim.vpp.*
-/src/turtlesim-doc/vp-project/.meros_turtlesim.vpp.lck
+src/metamodel-doc/vp-project/meros_metamodel.vpp.*
+src/metamodel-doc/vp-project/.meros_metamodel.vpp.lck
+src/turtlesim-doc/vp-project/meros-turtlesim.vpp.*
+src/turtlesim-doc/vp-project/.meros_turtlesim.vpp.lck
+src/turtlesim-doc/vp-project/.meros-turtlesim.vpp.lck
