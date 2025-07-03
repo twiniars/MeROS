@@ -31,8 +31,8 @@
 
 
 \lstdefinestyle{terminal}{
-	backgroundcolor=\color{black},
-	basicstyle=\ttfamily\color{green},
+	backgroundcolor=\color{darkgray},
+	basicstyle=\ttfamily\color{green}\footnotesize,
 	frame=single,
 	rulecolor=\color{gray},
 }
@@ -54,27 +54,35 @@
 	
 	\maketitle
 	
-\chapter*{Experiments}
 
-\begin{lstlisting}[style=terminal]
- $ git status
- On branch main
- nothing to commit, working tree clean
-\end{lstlisting}
-
-	
-	
-	
 	
 \chapter*{Important citation notice}
 
 \textbf{If you are to use MeROS in your papers, please first cite the IEEE ACCESS  article~\cite{meros-access}, where the initial version of the MeROS is presented. You can also refer to MeROS project page \cite{meros-www} and mention the actual MeROS version you are using.}
 	
-	
+\chapter{Introduction}
+\label{ch:introduction}
+
+	This document is to present some basics of MeROS metamodel usage (its application). It bases on popular turtlesim ROS2 tutorial \url{https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools.html} and has an introspection, reverse engineering nature. The procedure of the new systems creation with V-model and MerROS is presented in \cite{winiarski2025-v-model}.
+
 \chapter{MeROS application}
 \label{ch:application}
+
+
+The MeROS System structure presentation is composed by different views on it. In this example we start with Sources and Executables composition into the System. 
+
+\begin{lstlisting}[style=terminal]
+$ ros2 pkg executables turtlesim
+turtlesim draw_square
+turtlesim mimic
+turtlesim turtle_teleop_key
+turtlesim turtlesim_node
+\end{lstlisting}
 	
-	\twci{Do aktualizacji. Ma być przykład z turtlesimem. W tym przykładzie będzie omówienie jak on powstawał, w sensie dodatkowych zrzutów ekranu z retrospekcji działającego systemu ROS. Czyli pokazujemy jak za pomocą rosowych komend uzyskać informacje potrzebne do stworzenia modelu. Jest to bezcenne na ANRO i nie tylko.}
+\chapter{Old MeROS application - to be removed}
+\label{ch:application}
+	
+
 	
 
 	
