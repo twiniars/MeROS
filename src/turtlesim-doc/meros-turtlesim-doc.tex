@@ -14,6 +14,8 @@
 \usepackage{subcaption}
 \usepackage{mathtools}
 \usepackage{color}
+\usepackage{listings}
+\usepackage{xcolor}
 \usepackage[backend=biber,maxnames=10,style=numeric,sorting=nty,abbreviate=false,giveninits=true,language=english]{biblatex}
 
 \addbibresource{../meros.bib}
@@ -26,6 +28,15 @@
 	\textcolor{amber}{TW: #1}}
 
 \input{../meros-stereotypes}
+
+
+\lstdefinestyle{terminal}{
+	backgroundcolor=\color{black},
+	basicstyle=\ttfamily\color{green},
+	frame=single,
+	rulecolor=\color{gray},
+}
+
 
 \begin{document}
 	
@@ -42,6 +53,18 @@
 	
 	
 	\maketitle
+	
+\chapter*{Experiments}
+
+\begin{lstlisting}[style=terminal]
+	$ git status
+	On branch main
+	nothing to commit, working tree clean
+\end{lstlisting}
+
+	
+	
+	
 	
 \chapter*{Important citation notice}
 
