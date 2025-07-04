@@ -138,7 +138,7 @@
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.98]{diagrams/communication_concepts_req.png}}
+			{\includegraphics[scale=1.0]{diagrams/communication_concepts_req.png}}
 		\end{center}
 		\caption{Communication concepts requirements.} 
 		\label{fig:communication_concepts_req}
@@ -245,45 +245,20 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\label{fig:communicating_components_bdd}
 	\end{figure}
 	
-	For clarity, relations of ROS Communicating Component are depicted in several diagrams. Fig.~\ref{fig:communicating_component_topics_bdd} considers Topics. Here, the ROS Communicating Component can act as a~publisher or a~subscriber.	
-	 
+	Relations of ROS Communicating Component are depicted in Fig.~\ref{fig:communicating_component_connections_bdd}.
 	
-	\begin{figure}[H]
+		 \begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/communicating_component_topics_bdd.png}}
+			{\includegraphics[scale=1.0]{diagrams/communicating_component_connections_bdd.png}}
 		\end{center}
-		\caption{ROS Communicating Component relations -- Topics.} 
-		\label{fig:communicating_component_topics_bdd}
+		\caption{ROS Communicating Component connections.} 
+		\label{fig:communicating_component_connections_bdd}
 	\end{figure}
 	
-	\pagebreak
-	
-	Fig.~\ref{fig:communication_blocks_services_bdd} depicts Services in the context of ROS Communicating Component. In this case, the ROS Communicating Component can act as a~server or a~client.	
-	
-		
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/communicating_component_services_bdd.png}}
-		\end{center}
-		\caption{ROS Communicating Component relations -- Services.} 
-		\label{fig:communication_blocks_services_bdd}
-	\end{figure}
-		
-	The Actions are depicted in two diagrams -- Fig.~\ref{fig:communicating_component_actions_bdd} and Fig.~\ref{fig:action_bdd}. Similarly to Services, the ROS Communicating Component can act as a~server or a~client.	 
-	
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/communicating_component_actions_bdd.png}}
-		\end{center}
-		\caption{ROS Communicating Component relations -- Actions.} 
-		\label{fig:communicating_component_actions_bdd}
-	\end{figure}
-	
-	The ROS Action Connection comprises two Topics and three Services (Fig.~\ref{fig:action_bdd}).
+	 The diagram considers Topics, where the ROS Communicating Component can act as a~publisher or a~subscriber. In the case of Services, the ROS Communicating Component can act as a~server or a~client.	Similarly to Services, the ROS Communicating Component can act as a~server or a~client to an Action.	
+	 	 
+	 The ROS Action Connection comprises two Topics and three Services (Fig.~\ref{fig:action_bdd}).
 	
 	\begin{figure}[hbt]
 		\centering
@@ -293,8 +268,6 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\caption{Action.} 
 		\label{fig:action_bdd}
 	\end{figure}
-	
-	\pagebreak
 	
 	The Communication Channel is introduced to specify communication between various Communicating Components (Fig.~\ref{fig:communication_channel_bdd}).
 	Besides standard ROS communication methods, the Non-ROS can also be included (e.g., http request) to achieve interfaces with Non-ROS parts of the general system. 
@@ -321,6 +294,8 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	 	\caption{Node.} 
 		 	\label{fig:node_bdd}
 	 \end{figure}
+	
+	\pagebreak
 	 
 	The Running System Component (Fig.~\ref{fig:running_system_component_bdd}) is a~generalisation of Communicating Components specializations as well as Connections between them. 
 	
@@ -333,8 +308,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\caption{Running System Component specialisations.} 
 		\label{fig:running_system_component_bdd}
 	\end{figure} 
-	 	 
-	 \pagebreak	 
+	 	  
 	 	 
 	 The specializations of ROS connection (Topic connections, Service connections, and Action connections) are depicted in Fig.~\ref{fig:ros_connections_bdd}. 
 	
@@ -342,7 +316,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.94]{diagrams/ros_connections_bdd.png}}
+			{\includegraphics[scale=1.0]{diagrams/ros_connections_bdd.png}}
 		\end{center}
 		\caption{ROS Connections.} 
 		\label{fig:ros_connections_bdd}
@@ -355,11 +329,13 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.94]{diagrams/namespace_bdd.png}}
+			{\includegraphics[scale=1.0]{diagrams/namespace_bdd.png}}
 		\end{center}
 		\caption{Namespace composition.}
 		\label{fig:namespace_bdd}
 	\end{figure}
+	
+	\pagebreak
 	
 	The Sources and Executables Container (Fig.~\ref{fig:sources_executables_container_bdd}) has various specialisations such as Group of Packages, ROS Workspace, ROS Package and Repository. It also plays a~role of general container.  
 	The Workspace contains, i.a., Packages that compose the files related to general ROS concepts such as Node source codes, communication structures definitions, etc. As Workspace has a~specific file-system nature with various types of files stored, Group of Packages were introduced as specific aggregation of ROS Packages only.
@@ -368,7 +344,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.94]{diagrams/sources_executables_container_bdd.png}}
+			{\includegraphics[scale=1.0]{diagrams/sources_executables_container_bdd.png}}
 		\end{center}
 		\caption{Sources Container and its specialisations.} 
 		\label{fig:sources_executables_container_bdd}
@@ -384,6 +360,9 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\caption{ROS Package composition.} 
 		\label{fig:ros_package_bdd}
 	\end{figure}
+		
+		\pagebreak
+		
 		
 The composition of Repository is presented in Fig.~\ref{fig:repository_bdd}.	
 	
