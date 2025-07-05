@@ -65,9 +65,6 @@
 \label{ch:application}
 Scenariusz - raczej do usuniecia na koniec:
 \begin{itemize}
-	\item powołujemy system z turtlesim i teleop turtle
-	\item rysujemy rqt\_graph z wylaczonymi wszystkimi extra opcjami. Zaczłączamy ten rysunek w tej dokumentacji
-	\item Zaznaczamy, że system prezentuje te elementy i zachowania, ktore sa istotne z punktu widzenia prezentowanego przykladu
 	\item Pakiety dla nodow z rqt\_graph  znamy, bo do ich uruchomienia potrzebowalismy je podac. Co wiecej mozemy to sprawdzic poleceniem ros2 pkg executables turtlesim
 	\item sprawdzamy ros2 node info interesujace nas pakiety dla metod komunikacji
 	\item rysujemy diagram dla workspace z pakietami z nodami i pakietami z metodami komunikacji. Nawy nodow i metod komunikacji z nazwa pakietu. Uzywamy podwojengo dwukropka w srodku w nazwach nodow z pakietami i analogicznie dla metod komunikacji.
@@ -103,7 +100,7 @@ $ ros2 run turtlesim turtlesim_node
 [INFO] [1751724881.196178869] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
 \end{lstlisting}
 
-The second \stNode{} to be executed, \textsf{turtle\_teleop\_key} also origins from the \textsf{turtlesim} \stPackage{}. It should be noted that typically new instance of system terminal is needed to execute extra \stNode{} with \textsf{ros2 run} \stCLTool{}.
+The second \stNode{} to be executed, \textsf{turtle\_teleop\_key} also origins from the \textsf{turtlesim} \stPackage{}. It should be noted that typically new system terminal is needed to execute extra \stNode{} with \textsf{ros2 run} \stCLTool{}.
 
 \begin{lstlisting}[style=terminal]
 $ ros2 run turtlesim turtle_teleop_key
@@ -114,7 +111,23 @@ Use g|b|v|c|d|e|r|t keys to rotate to absolute orientations. 'f' to cancel a rot
 'q' to quit.
 \end{lstlisting}
 
+It is time to draw \stSystem{} structure with \textsf{rqt\_graph} \stCLTool{} (in new system terminal). All of the extra elements should be hided, to concentrate on the scenario relevant \stSystem{} components, that are also considered in the following diagrams.
 
+\begin{lstlisting}[style=terminal]
+$ rqt_graph
+\end{lstlisting}
+
+The resultant rosgraph diagram is presented in Fig.~\ref{fig:rqt_graph}.
+
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=.5]{diagrams/rosgraph.png}}
+	\end{center}
+	\caption{System structure by rqt\_graph}
+	\label{fig:rqt_graph}
+\end{figure}
+There are two \stNode{}s visible as well as three \stTopic{}s between them. Two of them belong to an \stAction{}.
 
 The MeROS \stSystem{} structure presentation is composed by different views on it. In this example we start with Sources and Executables composition into the System. It should be noted that tourtlesim package should be installed before as well as  source command should be executed properly in each system console.
 
