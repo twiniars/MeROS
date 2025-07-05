@@ -63,11 +63,10 @@
 
 \chapter{MeROS application}
 \label{ch:application}
+
+
 Scenariusz - raczej do usuniecia na koniec:
 \begin{itemize}
-	\item Potem rysujmy diagram bdd dla uruchomionego systemu. Musi on bezposrednio agregowac nody i kanal komunikacyjny. W skład kanału komunikacyjngo metody komunikacyjne. Pytanko jak zapewnic uniwersalnosc kanalu komunikacyjnego - jakies uniwersalne etykiety komponentow komunikujacych się na bokach?
-	\item Rysujemy diagram ibd dla bdd powyzej. Może Kanał zdefiniowany powyżej, a nie dalej?
-	\item Bdd i ibd dla kanału komunikacyjnego.
 	\item Podsumowujący diagram sekwencji ma charakter szczegolowy. Tu sa juz wciskane konkretne przyciski i pojawiaja sie zamiast Systemu jego komponenty takie jak nody, topiki i akcje. Można pokazać trzy zrzuty okna z zolwiem w roznych fazach wykonania zadania. Jakoś to trzeba zmapowac na chwile czasowe z diagramu sd.
 \end{itemize}
 
@@ -231,9 +230,25 @@ Then, the ibd can be created (Fig.~\ref{fig:running_system_general_ibd}).
 			
 			
 			
-The running system architecture can be also depicted in detailed way at once.
+The running system architecture can be also depicted in detailed way at once in Fig.~\ref{fig:running_system_detailed_bdd} and Fig.~\ref{fig:running_system_detailed_ibd}.
 			
-			
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/running_system_detailed_bdd.png}}
+	\end{center}
+	\caption{Running System detailed view bdd}
+	\label{fig:running_system_detailed_bdd}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/running_system_detailed_ibd.png}}
+	\end{center}
+	\caption{Running System detailed view ibd}
+	\label{fig:running_system_detailed_ibd}
+\end{figure}
 			
 			
 \AtNextBibliography{\small}
