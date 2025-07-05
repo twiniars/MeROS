@@ -65,8 +65,6 @@
 \label{ch:application}
 Scenariusz - raczej do usuniecia na koniec:
 \begin{itemize}
-	\item sprawdzamy ros2 node info interesujace nas pakiety dla metod komunikacji
-	\item rysujemy diagram dla workspace z pakietami z nodami i pakietami z metodami komunikacji. Nawy nodow i metod komunikacji z nazwa pakietu. Uzywamy podwojengo dwukropka w srodku w nazwach nodow z pakietami i analogicznie dla metod komunikacji.
 	\item Potem rysujmy diagram bdd dla uruchomionego systemu. Musi on bezposrednio agrogowac nody i kanal komunikacyjny. W skład kanału komunikacyjngo metody komunikacyjne. Pytanko jak zapewnic uniwersalnosc kanalu komunikacyjnego - jakies uniwersalne etykiety komponentow komunikujacych się na bokac?
 	\item Rysujemy diagram ibd dla bdd powyzej. Może Kanał zdefiniowany powyżej, a nie dalej?
 	\item Bdd i ibd dla kanału komunikacyjnego.
@@ -91,17 +89,17 @@ The general scenario is presented in Fig.~\ref{fig:general_scenario_sd}.
 \end{figure}
 
 
-The decision is to build the \stSystem{} comprising two \stNode{}s that are executed. the first is \textsf{turtlesim\_node} \stNode{} from \textsf{turtlesim} \stPackage{}. It should be noted that tourtlesim ROS package should be installed before as well as source command should be executed properly in each system terminal.
+The decision is to build the \stSystem{} comprising two \stNode{}s that are executed. the first is \textsf{turtlesim\_node} \stNode{} from \textsf{turtlesim} \stPackage{}. It should be noted that tourtlesim ROS package should be installed before as well as source command should be executed properly in each system terminal (List.~\ref{lst:ros2_run_turtlesim_turtlesim_node}).
 
-\begin{lstlisting}[style=terminal]
+\begin{lstlisting}[style=terminal,label={lst:ros2_run_turtlesim_turtlesim_node},caption={ros2 run turtlesim turtlesim\_node}]
 $ ros2 run turtlesim turtlesim_node
 [INFO] [1751724881.187110472] [turtlesim]: Starting turtlesim with node name /turtlesim
 [INFO] [1751724881.196178869] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
 \end{lstlisting}
 
-The second \stNode{} to be executed, \textsf{turtle\_teleop\_key} also origins from the \textsf{turtlesim} \stPackage{}. It should be noted that typically new system terminal is needed to execute extra \stNode{} with \textsf{ros2 run} \stCLTool{}.
+The second \stNode{} to be executed, \textsf{turtle\_teleop\_key} also origins from the \textsf{turtlesim} \stPackage{}. It should be noted that typically new system terminal is needed to execute extra \stNode{} with \textsf{ros2 run} \stCLTool{} (List.~\ref{lst:ros2_run_turtle_teleop_key}).
 
-\begin{lstlisting}[style=terminal]
+\begin{lstlisting}[style=terminal,label={lst:ros2_run_turtle_teleop_key},caption={ros2 run turtlesim turtle\_teleop\_key}]
 $ ros2 run turtlesim turtle_teleop_key
 Reading from keyboard
 ---------------------------
@@ -110,9 +108,9 @@ Use g|b|v|c|d|e|r|t keys to rotate to absolute orientations. 'f' to cancel a rot
 'q' to quit.
 \end{lstlisting}
 
-It is time to draw \stSystem{} structure with \textsf{rqt\_graph} \stCLTool{} (in new system terminal). All of the extra elements should be hided, to concentrate on the scenario relevant \stSystem{} components, that are also considered in the following diagrams.
+It is time to draw \stSystem{} structure with \textsf{rqt\_graph} \stCLTool{} (in new system terminal)  (List.~\ref{lst:rqt_graph}). All of the extra elements should be hided, to concentrate on the scenario relevant \stSystem{} components, that are also considered in the following diagrams .
 
-\begin{lstlisting}[style=terminal]
+\begin{lstlisting}[style=terminal,label={lst:rqt_graph},caption={rqt\_graph}]
 $ rqt_graph
 \end{lstlisting}
 
@@ -128,9 +126,9 @@ The resultant rosgraph diagram is presented in Fig.~\ref{fig:rqt_graph}. There a
 \end{figure}
 
 
-The MeROS \stSystem{} structure presentation is composed by different views on it. In this example we start with Sources and Executables composition into the System. There are two scenario relevant \stNode{}s to be considered in the in \textsf{Turtle} \stSystem{}. They were run from \textsf{turtlesim} \stPackage{} that can be validated by the \textsf{ros2 pkg} \stCLTool.
+The MeROS \stSystem{} structure presentation is composed by different views on it. In this example we start with Sources and Executables composition into the System. There are two scenario relevant \stNode{}s to be considered in the in \textsf{Turtle} \stSystem{}. They were run from \textsf{turtlesim} \stPackage{} that can be validated by the \textsf{ros2 pkg} \stCLTool{} (List.~\ref{lst:ros2_pkg_executables_turtlesim}).
 
-\begin{lstlisting}[style=terminal]
+\begin{lstlisting}[style=terminal,label={lst:ros2_pkg_executables_turtlesim},caption={ros2 pkg executables turtlesim}]
 $ ros2 pkg executables turtlesim
 turtlesim draw_square
 turtlesim mimic
@@ -138,10 +136,44 @@ turtlesim turtle_teleop_key
 turtlesim turtlesim_node
 \end{lstlisting}
 
-The two extra executables from this \stPackage{} are not considered further on. 
+The two extra executables from this \stPackage{} are not considered further on. It is also needed to find the \stPackage{}s containing \stRosConnection{}s used in our example. One of the ways is two find all of the connections for the particular \stNode{} with \textsf{ros2 node} \stCLTool{} (List.~\ref{lst:ros2_node_info_turtlesim}).
 
-There are four executables in the turtlesim \stPackage{} that can be treated as \stNode{}s. They are composed into the ROS 2 \stWorkspace{} localised in /opt directory (Fig.~\ref{fig:system_sourexec_composition_bdd}).
 
+\begin{lstlisting}[style=terminal,label={lst:ros2_node_info_turtlesim},caption={ros2 node info /turtlesim}]
+$ ros2 node info /turtlesim 
+/turtlesim
+Subscribers:
+/parameter_events: rcl_interfaces/msg/ParameterEvent
+/turtle1/cmd_vel: geometry_msgs/msg/Twist
+Publishers:
+/parameter_events: rcl_interfaces/msg/ParameterEvent
+/rosout: rcl_interfaces/msg/Log
+/turtle1/color_sensor: turtlesim/msg/Color
+/turtle1/pose: turtlesim/msg/Pose
+Service Servers:
+/clear: std_srvs/srv/Empty
+/kill: turtlesim/srv/Kill
+/reset: std_srvs/srv/Empty
+/spawn: turtlesim/srv/Spawn
+/turtle1/set_pen: turtlesim/srv/SetPen
+/turtle1/teleport_absolute: turtlesim/srv/TeleportAbsolute
+/turtle1/teleport_relative: turtlesim/srv/TeleportRelative
+/turtlesim/describe_parameters: rcl_interfaces/srv/DescribeParameters
+/turtlesim/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+/turtlesim/get_parameters: rcl_interfaces/srv/GetParameters
+/turtlesim/get_type_description: type_description_interfaces/srv/GetTypeDescription
+/turtlesim/list_parameters: rcl_interfaces/srv/ListParameters
+/turtlesim/set_parameters: rcl_interfaces/srv/SetParameters
+/turtlesim/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+Service Clients:
+
+Action Servers:
+/turtle1/rotate_absolute: turtlesim/action/RotateAbsolute
+Action Clients:
+\end{lstlisting}
+
+By taking into account \stRosConnection{}s from Fig.~ \ref{fig:rqt_graph} listed in List.~\ref{lst:ros2_node_info_turtlesim} the \stPackage{}s containing theirs sources can be found as well as 
+instances names, used in, e.g. ibd. Finally, taking into account the data presented above, the bdd with \textsf{turtlesim} \stSystem{} sources and containers can be prepared (Fig.~\ref{fig:system_sourexec_composition_bdd}). For that purpose the ROS 2 \stWorkspace{} localisation is needed, but it easy te recognise, especially the initial \textsf{source} command needs it. It is  \textsf{/opt/ros/jazzy} in case of the ROS version used in the time of the creation of this documentation.
 
 \begin{figure}[H]
 	\centering
@@ -152,6 +184,7 @@ There are four executables in the turtlesim \stPackage{} that can be treated as 
 	\label{fig:system_sourexec_composition_bdd}
 \end{figure}
 
+As all of the sources and executables are defined for the particular \stPackage{} it is a good practice to take it into account, and define the names of the \stPackage{} parts with the \stPackage{} name at the beginning followed by the double colon. 
 
 			
 \AtNextBibliography{\small}
