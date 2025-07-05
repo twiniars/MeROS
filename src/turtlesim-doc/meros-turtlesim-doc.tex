@@ -76,7 +76,7 @@ Scenariusz - raczej do usuniecia na koniec:
 
 
 
-The general scenario is presented in Fig.~\ref{fig:general_scenario_sd}.
+The general scenario is presented in Fig.~\ref{fig:general_scenario_sd}. It is convenient to create the dedicated package in Visual Paradigm (VP) and place the diagrams and other elements inside this package.
 
 
 \begin{figure}[H]
@@ -186,6 +186,27 @@ instances names, used in, e.g. ibd. Finally, taking into account the data presen
 
 As all of the sources and executables are defined for the particular \stPackage{} it is a good practice to take it into account, and define the names of the \stPackage{} parts with the \stPackage{} name at the beginning followed by the double colon. 
 
+Another view on \stSystem{} depicts the running system architecture. It can be depicted in general way. It is needed to first create bdd with all of the elements considered in this view (Fig.~\ref{fig:running_system_general_bdd}).
+			
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/running_system_general_bdd.png}}
+	\end{center}
+	\caption{Running System general view bdd}
+	\label{fig:running_system_general_bdd}
+\end{figure}
+
+Then, the ibd can be created (Fig.~\ref{fig:running_system_general_ibd}). 
+
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/running_system_general_ibd.png}}
+	\end{center}
+	\caption{Running System general view ibd}
+	\label{fig:running_system_general_ibd}
+\end{figure}
 			
 \AtNextBibliography{\small}
 \printbibliography
