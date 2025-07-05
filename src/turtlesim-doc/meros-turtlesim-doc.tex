@@ -58,10 +58,37 @@
 \chapter{Introduction}
 \label{ch:introduction}
 
-	This document is to present some basics of MeROS metamodel usage (its application). It bases on popular turtlesim ROS2 tutorial \url{https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools.html} and has an introspection, reverse engineering nature. The procedure of the new systems creation with V-model and MerROS is presented in \cite{winiarski2025-v-model}.
+	This document is to present basics of MeROS metamodel usage (its application). It bases on popular turtlesim ROS2 tutorial \url{https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools.html} and has an introspection, reverse engineering nature. The procedure of the new systems creation with V-model and MerROS is presented in \cite{winiarski2025-v-model}. We advice to read it after this documentation as the article adds a lot of valuable examples on MeROS related diagrams creation. 
 
 \chapter{MeROS application}
 \label{ch:application}
+Scenariusz - raczej do usuniecia na koniec:
+\begin{itemize}
+	\item Zaczynamy od określenia ogólnego działania systemu. Pierwszy sd ma charakter ogolny z operatorem i Systemem. Operator wysyla polecenia ruchu do przodu i robot jedzie do przodu. Potem wysyla na akcji polecenie oborotu do pozycji aboslutnej i system to wykonuje.
+	\item powołujemy system z turtlesim i teleop turtle
+	\item rysujemy rqt\_graph z wylaczonymi wszystkimi extra opcjami. Zaczłączamy ten rysunek w tej dokumentacji
+	\item Zaznaczamy, że system prezentuje te elementy i zachowania, ktore sa istotne z punktu widzenia prezentowanego przykladu
+	\item Pakiety dla nodow z rqt\_graph  znamy, bo do ich uruchomienia potrzebowalismy je podac. Co wiecej mozemy to sprawdzic poleceniem ros2 pkg executables turtlesim
+	\item sprawdzamy ros2 node info interesujace nas pakiety dla metod komunikacji
+	\item rysujemy diagram dla workspace z pakietami z nodami i pakietami z metodami komunikacji. Nawy nodow i metod komunikacji z nazwa pakietu. Uzywamy podwojengo dwukropka w srodku w nazwach nodow z pakietami i analogicznie dla metod komunikacji.
+	\item Potem rysujmy diagram bdd dla uruchomionego systemu. Musi on bezposrednio agrogowac nody i kanal komunikacyjny. W skład kanału komunikacyjngo metody komunikacyjne. Pytanko jak zapewnic uniwersalnosc kanalu komunikacyjnego - jakies uniwersalne etykiety komponentow komunikujacych się na bokac?
+	\item Rysujemy diagram ibd dla bdd powyzej. Może Kanał zdefiniowany powyżej, a nie dalej?
+	\item Bdd i ibd dla kanału komunikacyjnego.
+	\item Podsumowujący diagram sekwencji ma charakter szczegolowy. Tu sa juz wciskane konkretne przyciski i pojawiaja sie zamiast Systemu jego komponenty takie jak nody, topiki i akcje. Można pokazać trzy zrzuty okna z zolwiem w roznych fazach wykonania zadania. Jakoś to trzeba zmapowac na chwile czasowe z diagramu sd.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 The MeROS \stSystem{} structure presentation is composed by different views on it. In this example we start with Sources and Executables composition into the System. It should be noted that tourtlesim package should be installed before as well as  source command should be executed properly in each system console.
