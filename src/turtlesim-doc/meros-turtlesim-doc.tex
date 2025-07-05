@@ -65,7 +65,6 @@
 \label{ch:application}
 Scenariusz - raczej do usuniecia na koniec:
 \begin{itemize}
-	\item Pakiety dla nodow z rqt\_graph  znamy, bo do ich uruchomienia potrzebowalismy je podac. Co wiecej mozemy to sprawdzic poleceniem ros2 pkg executables turtlesim
 	\item sprawdzamy ros2 node info interesujace nas pakiety dla metod komunikacji
 	\item rysujemy diagram dla workspace z pakietami z nodami i pakietami z metodami komunikacji. Nawy nodow i metod komunikacji z nazwa pakietu. Uzywamy podwojengo dwukropka w srodku w nazwach nodow z pakietami i analogicznie dla metod komunikacji.
 	\item Potem rysujmy diagram bdd dla uruchomionego systemu. Musi on bezposrednio agrogowac nody i kanal komunikacyjny. W skład kanału komunikacyjngo metody komunikacyjne. Pytanko jak zapewnic uniwersalnosc kanalu komunikacyjnego - jakies uniwersalne etykiety komponentow komunikujacych się na bokac?
@@ -92,7 +91,7 @@ The general scenario is presented in Fig.~\ref{fig:general_scenario_sd}.
 \end{figure}
 
 
-The decision is to build the \stSystem{} comprising two \stNode{}s that are executed. the first is \textsf{turtlesim\_node} \stNode{} from \textsf{turtlesim} \stPackage{}.
+The decision is to build the \stSystem{} comprising two \stNode{}s that are executed. the first is \textsf{turtlesim\_node} \stNode{} from \textsf{turtlesim} \stPackage{}. It should be noted that tourtlesim ROS package should be installed before as well as source command should be executed properly in each system terminal.
 
 \begin{lstlisting}[style=terminal]
 $ ros2 run turtlesim turtlesim_node
@@ -117,7 +116,7 @@ It is time to draw \stSystem{} structure with \textsf{rqt\_graph} \stCLTool{} (i
 $ rqt_graph
 \end{lstlisting}
 
-The resultant rosgraph diagram is presented in Fig.~\ref{fig:rqt_graph}.
+The resultant rosgraph diagram is presented in Fig.~\ref{fig:rqt_graph}. There are two \stNode{}s visible as well as three \stTopic{}s between them. Two of them belong to an \stAction{}.
 
 \begin{figure}[H]
 	\centering
@@ -127,9 +126,9 @@ The resultant rosgraph diagram is presented in Fig.~\ref{fig:rqt_graph}.
 	\caption{System structure by rqt\_graph}
 	\label{fig:rqt_graph}
 \end{figure}
-There are two \stNode{}s visible as well as three \stTopic{}s between them. Two of them belong to an \stAction{}.
 
-The MeROS \stSystem{} structure presentation is composed by different views on it. In this example we start with Sources and Executables composition into the System. It should be noted that tourtlesim package should be installed before as well as  source command should be executed properly in each system console.
+
+The MeROS \stSystem{} structure presentation is composed by different views on it. In this example we start with Sources and Executables composition into the System. There are two scenario relevant \stNode{}s to be considered in the in \textsf{Turtle} \stSystem{}. They were run from \textsf{turtlesim} \stPackage{} that can be validated by the \textsf{ros2 pkg} \stCLTool.
 
 \begin{lstlisting}[style=terminal]
 $ ros2 pkg executables turtlesim
@@ -138,6 +137,8 @@ turtlesim mimic
 turtlesim turtle_teleop_key
 turtlesim turtlesim_node
 \end{lstlisting}
+
+The two extra executables from this \stPackage{} are not considered further on. 
 
 There are four executables in the turtlesim \stPackage{} that can be treated as \stNode{}s. They are composed into the ROS 2 \stWorkspace{} localised in /opt directory (Fig.~\ref{fig:system_sourexec_composition_bdd}).
 
