@@ -41,7 +41,7 @@
 
 \begin{document}
 	
-\title{MeROS: basics of metamodel usage with turtlesim}
+\title{MeROS 4.0.0: basics of metamodel usage with turtlesim}
 \author{MeROS developers group - https://github.com/twiniars/MeROS \\ tomasz.winiarski@pw.edu.pl}
 \date{\today}
 \maketitle
@@ -65,7 +65,7 @@
 \label{ch:application}
 Scenariusz - raczej do usuniecia na koniec:
 \begin{itemize}
-	\item Potem rysujmy diagram bdd dla uruchomionego systemu. Musi on bezposrednio agrogowac nody i kanal komunikacyjny. W skład kanału komunikacyjngo metody komunikacyjne. Pytanko jak zapewnic uniwersalnosc kanalu komunikacyjnego - jakies uniwersalne etykiety komponentow komunikujacych się na bokac?
+	\item Potem rysujmy diagram bdd dla uruchomionego systemu. Musi on bezposrednio agregowac nody i kanal komunikacyjny. W skład kanału komunikacyjngo metody komunikacyjne. Pytanko jak zapewnic uniwersalnosc kanalu komunikacyjnego - jakies uniwersalne etykiety komponentow komunikujacych się na bokach?
 	\item Rysujemy diagram ibd dla bdd powyzej. Może Kanał zdefiniowany powyżej, a nie dalej?
 	\item Bdd i ibd dla kanału komunikacyjnego.
 	\item Podsumowujący diagram sekwencji ma charakter szczegolowy. Tu sa juz wciskane konkretne przyciski i pojawiaja sie zamiast Systemu jego komponenty takie jak nody, topiki i akcje. Można pokazać trzy zrzuty okna z zolwiem w roznych fazach wykonania zadania. Jakoś to trzeba zmapowac na chwile czasowe z diagramu sd.
@@ -97,7 +97,7 @@ $ ros2 run turtlesim turtlesim_node
 [INFO] [1751724881.196178869] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
 \end{lstlisting}
 
-The second \stNode{} to be executed, \textsf{turtle\_teleop\_key} also origins from the \textsf{turtlesim} \stPackage{}. It should be noted that typically new system terminal is needed to execute extra \stNode{} with \textsf{ros2 run} \stCLTool{} (List.~\ref{lst:ros2_run_turtle_teleop_key}).
+The second \stNode{} to be executed, \textsf{turtle\_teleop\_key}, also origins from the \textsf{turtlesim} \stPackage{}. It should be noted that typically new system terminal is needed to execute extra \stNode{} with \textsf{ros2 run} \stCLTool{} (List.~\ref{lst:ros2_run_turtle_teleop_key}).
 
 \begin{lstlisting}[style=terminal,label={lst:ros2_run_turtle_teleop_key},caption={ros2 run turtlesim turtle\_teleop\_key}]
 $ ros2 run turtlesim turtle_teleop_key
@@ -108,7 +108,7 @@ Use g|b|v|c|d|e|r|t keys to rotate to absolute orientations. 'f' to cancel a rot
 'q' to quit.
 \end{lstlisting}
 
-It is time to draw \stSystem{} structure with \textsf{rqt\_graph} \stCLTool{} (in new system terminal)  (List.~\ref{lst:rqt_graph}). All of the extra elements should be hided, to concentrate on the scenario relevant \stSystem{} components, that are also considered in the following diagrams .
+It is time to draw \stSystem{} structure with \textsf{rqt\_graph} \stCLTool{} (in new system terminal)  (List.~\ref{lst:rqt_graph}). All of the extra elements should be hided, to concentrate on the scenario relevant \stSystem{} components, that are also considered in the following diagrams.
 
 \begin{lstlisting}[style=terminal,label={lst:rqt_graph},caption={rqt\_graph}]
 $ rqt_graph
@@ -126,7 +126,7 @@ The resultant rosgraph diagram is presented in Fig.~\ref{fig:rqt_graph}. There a
 \end{figure}
 
 
-The MeROS \stSystem{} structure presentation is composed by different views on it. In this example we start with Sources and Executables composition into the System. There are two scenario relevant \stNode{}s to be considered in the in \textsf{Turtle} \stSystem{}. They were run from \textsf{turtlesim} \stPackage{} that can be validated by the \textsf{ros2 pkg} \stCLTool{} (List.~\ref{lst:ros2_pkg_executables_turtlesim}).
+The MeROS \stSystem{} structure presentation is composed by different views on it. In this example we start with Sources and Executables composition into the \stSystem{}. There are two scenario relevant \stNode{}s to be considered in the in \textsf{Turtle} \stSystem{}. They were run from \textsf{turtlesim} \stPackage{} that can be validated by the \textsf{ros2 pkg} \stCLTool{} (List.~\ref{lst:ros2_pkg_executables_turtlesim}).
 
 \begin{lstlisting}[style=terminal,label={lst:ros2_pkg_executables_turtlesim},caption={ros2 pkg executables turtlesim}]
 $ ros2 pkg executables turtlesim
