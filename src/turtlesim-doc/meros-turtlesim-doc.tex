@@ -47,11 +47,6 @@
 \maketitle
 
 	
-	
-	\maketitle
-	
-
-	
 \chapter*{Important citation notice}
 
 \textbf{If you are to use MeROS in your papers, please first cite the IEEE ACCESS  article~\cite{meros-access}, where the initial version of the MeROS is presented. You can also refer to MeROS project page \cite{meros-www} and mention the actual MeROS version you are using.}
@@ -59,12 +54,12 @@
 \chapter{Introduction}
 \label{ch:introduction}
 
-	This document is to present basics of MeROS metamodel usage (its application). It bases on popular turtlesim ROS2 tutorial \url{https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools.html} and has an introspection, reverse engineering nature. The procedure of the new systems creation with V-model and MerROS is presented in \cite{winiarski2025-v-model}. We advice to read it after this documentation as the article adds a lot of valuable examples of MeROS related diagrams creation. 
+	This document is to present basics of MeROS metamodel usage (its application). It bases on popular turtlesim ROS2 tutorial \url{https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools.html} and has an introspection, reverse engineering nature. The more elaborated procedure of the ROS-based systems development with V-model and MerROS is presented in \cite{winiarski2025-v-model}. We advice to read it after this documentation as the article adds a lot of valuable examples of MeROS related diagrams creation. 
 
 \chapter{MeROS application}
 \label{ch:application}
 
-The general scenario is presented in Fig.~\ref{fig:general_scenario_sd}. It is convenient to create the dedicated package in Visual Paradigm (VP) and place the diagrams and other elements inside this package.
+The general scenario of application execution is presented in Fig.~\ref{fig:general_scenario_sd}. It is convenient to create the dedicated package in Visual Paradigm (VP) project (VP project package, not ROS or MeROS \stPackage{}) and place the diagrams and other elements inside this package.
 
 
 \begin{figure}[H]
@@ -72,12 +67,12 @@ The general scenario is presented in Fig.~\ref{fig:general_scenario_sd}. It is c
 	\begin{center}
 		{\includegraphics[scale=1.0]{diagrams/general_scenario_sd.png}}
 	\end{center}
-	\caption{General scenario}
+	\caption{General scenario sd}
 	\label{fig:general_scenario_sd}
 \end{figure}
 
 
-The decision is to build the \stSystem{} comprising two \stNode{}s that are executed. the first is \textsf{turtlesim\_node} \stNode{} from \textsf{turtlesim} \stPackage{}. It should be noted that tourtlesim ROS package should be installed before as well as source command should be executed properly in each system terminal (List.~\ref{lst:ros2_run_turtlesim_turtlesim_node}).
+The decision is to build the \stSystem{} comprising two \stNode{}s that are executed. The first is \textsf{turtlesim\_node} \stNode{} from \textsf{turtlesim} \stPackage{}. It should be noted that before \stNode{}s execution in operating system, tourtlesim ROS package should be installed as well as source command should be executed properly in each system terminal (List.~\ref{lst:ros2_run_turtlesim_turtlesim_node}).
 
 \begin{lstlisting}[style=terminal,label={lst:ros2_run_turtlesim_turtlesim_node},caption={ros2 run turtlesim turtlesim\_node}]
 $ ros2 run turtlesim turtlesim_node
@@ -96,7 +91,7 @@ Use g|b|v|c|d|e|r|t keys to rotate to absolute orientations. 'f' to cancel a rot
 'q' to quit.
 \end{lstlisting}
 
-It is time to draw \stSystem{} structure with \textsf{rqt\_graph} \stCLTool{} (in new system terminal)  (List.~\ref{lst:rqt_graph}). All of the extra elements should be hided, to concentrate on the scenario relevant \stSystem{} components, that are also considered in the following diagrams.
+It is time to draw \stSystem{} structure with \textsf{rqt\_graph} \stCLTool{} (in new system terminal)  (List.~\ref{lst:rqt_graph}). In rqt\_graph all of the extra elements should be hided, to concentrate on the scenario relevant \stSystem{} components, that are also considered in the following diagrams.
 
 \begin{lstlisting}[style=terminal,label={lst:rqt_graph},caption={rqt\_graph}]
 $ rqt_graph
@@ -160,8 +155,8 @@ Action Servers:
 Action Clients:
 \end{lstlisting}
 
-By taking into account \stRosConnection{}s from Fig.~ \ref{fig:rqt_graph} listed in List.~\ref{lst:ros2_node_info_turtlesim} the \stPackage{}s containing theirs sources can be found as well as 
-instances names, used in, e.g. ibd. Finally, taking into account the data presented above, the bdd with \textsf{turtlesim} \stSystem{} sources and containers can be prepared (Fig.~\ref{fig:system_sourexec_composition_bdd}). For that purpose the ROS 2 \stWorkspace{} localisation is needed, but it easy te recognise, especially the initial \textsf{source} command needs it. It is  \textsf{/opt/ros/jazzy} in case of the ROS version used in the time of the creation of this documentation.
+By taking into account \stRosConnection{}s from Fig.~\ref{fig:rqt_graph} listed in List.~\ref{lst:ros2_node_info_turtlesim} the \stPackage{}s containing theirs sources can be found as well as 
+instances names, used in, e.g. ibd. Finally, taking into account the data presented above, the bdd with \textsf{turtlesim} \stSystem{} sources and containers can be prepared (Fig.~\ref{fig:system_sourexec_composition_bdd}). For that purpose the ROS 2 \stWorkspace{} localisation is needed, but it easy to find out, especially the initial \textsf{source} command needs that localisation. It is  \textsf{/opt/ros/jazzy} in case of the ROS version used in the time of the creation of this documentation.
 
 \begin{figure}[H]
 	\centering
@@ -198,7 +193,7 @@ Then, the ibd can be created (Fig.~\ref{fig:running_system_general_ibd}).
 	\label{fig:running_system_general_ibd}
 \end{figure}
 
-\textsf{turtlesim\_command command} \stCommChannel{} is depicted in Fig.~\ref{fig:turtlesim_command_channel_bdd} and Fig.~\ref{fig:turtlesim_command_channel_ibd}. It should be noted that connector direction denote the publisher to subscriber data flow in case of \stTopic{}s or client to server in case of \stService{}s or \stAction{}s.
+\textsf{turtlesim\_command command} \stCommChannel{} is depicted in detailed way in Fig.~\ref{fig:turtlesim_command_channel_bdd} and Fig.~\ref{fig:turtlesim_command_channel_ibd}. It should be noted that connector direction denote the publisher to subscriber data flow in case of \stTopic{}s or client to server in case of \stService{}s or \stAction{}s.
 
 
 \begin{figure}[H]
@@ -248,7 +243,7 @@ Now the detailed validation scenario can be presented (Fig.~ \ref{fig:detailed_s
 	\begin{center}
 		{\includegraphics[scale=.9]{diagrams/detailed_scenario_sd.png}}
 	\end{center}
-	\caption{Running System detailed view ibd}
+	\caption{Detailed scenario sd}
 	\label{fig:detailed_scenario_sd}
 \end{figure}
 			
