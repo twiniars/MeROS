@@ -64,17 +64,6 @@
 \chapter{MeROS application}
 \label{ch:application}
 
-
-Scenariusz - raczej do usuniecia na koniec:
-\begin{itemize}
-	\item Podsumowujący diagram sekwencji ma charakter szczegolowy. Tu sa juz wciskane konkretne przyciski i pojawiaja sie zamiast Systemu jego komponenty takie jak nody, topiki i akcje. Można pokazać trzy zrzuty okna z zolwiem w roznych fazach wykonania zadania. Jakoś to trzeba zmapowac na chwile czasowe z diagramu sd.
-\end{itemize}
-
-
-\pagebreak
-
-
-
 The general scenario is presented in Fig.~\ref{fig:general_scenario_sd}. It is convenient to create the dedicated package in Visual Paradigm (VP) and place the diagrams and other elements inside this package.
 
 
@@ -196,6 +185,8 @@ Another view on \stSystem{} depicts the running system architecture. It can be d
 	\label{fig:running_system_general_bdd}
 \end{figure}
 
+\pagebreak
+
 Then, the ibd can be created (Fig.~\ref{fig:running_system_general_ibd}). 
 
 \begin{figure}[H]
@@ -228,14 +219,14 @@ Then, the ibd can be created (Fig.~\ref{fig:running_system_general_ibd}).
 	\label{fig:turtlesim_command_channel_ibd}
 \end{figure}
 			
-			
+\pagebreak			
 			
 The running system architecture can be also depicted in detailed way at once in Fig.~\ref{fig:running_system_detailed_bdd} and Fig.~\ref{fig:running_system_detailed_ibd}.
 			
 \begin{figure}[H]
 	\centering
 	\begin{center}
-		{\includegraphics[scale=1.0]{diagrams/running_system_detailed_bdd.png}}
+		{\includegraphics[scale=.9]{diagrams/running_system_detailed_bdd.png}}
 	\end{center}
 	\caption{Running System detailed view bdd}
 	\label{fig:running_system_detailed_bdd}
@@ -244,18 +235,18 @@ The running system architecture can be also depicted in detailed way at once in 
 \begin{figure}[H]
 	\centering
 	\begin{center}
-		{\includegraphics[scale=1.0]{diagrams/running_system_detailed_ibd.png}}
+		{\includegraphics[scale=.9]{diagrams/running_system_detailed_ibd.png}}
 	\end{center}
 	\caption{Running System detailed view ibd}
 	\label{fig:running_system_detailed_ibd}
 \end{figure}
 			
-			
+Now the detailed validation scenario can be presented (Fig.~ \ref{fig:detailed_scenario_sd}). It should be noted that \stAction{} call is depicted in one of the sequences that can occur during \stSystem{} execution.
 			
 \begin{figure}[H]
 	\centering
 	\begin{center}
-		{\includegraphics[scale=1.0]{diagrams/detailed_scenario_sd.png}}
+		{\includegraphics[scale=.9]{diagrams/detailed_scenario_sd.png}}
 	\end{center}
 	\caption{Running System detailed view ibd}
 	\label{fig:detailed_scenario_sd}
