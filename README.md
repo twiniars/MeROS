@@ -3,7 +3,7 @@
 The complexity of today's robot control systems implies difficulty in developing them efficiently and reliably. Systems engineering (SE) and frameworks come to help. The frameworks' metamodels are needed to support the standardisation and correctness of the created application models. MeROS is a metamodel for ROS, which addresses the running system and developer workspace. An essential addition to the original ROS concepts is the grouping of these concepts, which provides an opportunity to illustrate the system's decomposition and varying degrees of detail in its presentation. The metamodel is derived from the requirements and verified on the practical examples. The matter is described in a standardised way in SysML (Systems Modeling Language). Hence, common development tools that support SysML can help develop robot controllers in the spirit of SE.
 
 <p align="center">
-<img src="https://github.com/twiniars/MeROS/blob/main/meros-graphical-abstract.png"> 
+<img src="https://github.com/twiniars/MeROS/blob/main/src/img/meros-graphical-abstract.png"> 
 </p>
 
 ## Resources
