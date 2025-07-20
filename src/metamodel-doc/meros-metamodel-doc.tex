@@ -187,7 +187,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		\caption{Running system requirements. } 
 		\label{fig:running_system_req}
 	\end{figure}
-	 The dedicated components are especially useful in the presentation when many communication components use the same topic both on the publisher and the subscriber side. In opposition, the expression of topic names on arrows connecting communicating components, i.e., without dedicated communication components, let to reduce the number of components needed to depict communication for many topics and a~low number of communicating components. The other advantage of using dedicated communication components is that the particular connection can be split into several diagrams (e.g. ibd (internal block diagram) or sd (sequence diagram)), where the same object represents this connection in every associated diagram. Services and actions should be depicted as an addition to the presentation of the particular topics. It should be noted that rqt\_graph represents actions as a~number of topics and services. In MeROS, the topics and services being part of an action can be aggregated, which reduces the number of depicted connections.
+	 The dedicated components are especially useful in the presentation when many communication components use the same topic both on the publisher and the subscriber side. In opposition, the expression of topic names on arrows connecting communicating components, i.e., without dedicated communication components, let to reduce the number of components needed to depict communication for many topics and a~low number of communicating components. The other advantage of using dedicated communication components is that the particular connection can be split into several diagrams (e.g. ibd (internal block diagram) or sd (sequence diagram)), where the same object represents this connection in every associated diagram. Services and actions should be depicted as an addition to the presentation of the particular topics. It should be noted that rqt\_graph represents actions as a~number of topics and services. In MeROS, the topics and services being part of an action can be aggregated, which reduces the number of depicted connections. System state should be considered in the metamodel.
 		
 	The compactness and simplicity and its nesting requirements are presented in Fig.~\ref{fig:compactness_and_simplicity_req}. 
 	
@@ -217,17 +217,18 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	
 	The degree of specificity of a~metamodel is a~compromise between its comprehensiveness (and, therefore, more general formulation) and a~more accurate representation of a~particular subclass of specific implementations. The metamodel contains compositions of elements and other primary relationships. Attributes and operations of elements range widely, hence their inclusion would lead to overgrowth and complication of the metamodel [R7]. The MeROS Metamodel is lightweight and general for various system development procedures and non-ROS parts of the whole System. The fundamental decision was to make it compact, so due to the extremely wide range of Non-ROS context variants [R9], they are specific for particular applications and are not specified in the metamodel itself. Hence, models derived from the metamodel can define their stereotypes, operations and new relations specific to a~particular System. 
 	
-	The SysML blocks reflects concepts pointed out in requirements, and their composition is depicted in block definition diagrams (bdd). Sources and Executables Containers (specialised especially by Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}). Hardware block reflects to embodiment. System can aggregate other Systems.
+	The SysML blocks reflects concepts pointed out in requirements, and their composition is depicted in block definition diagrams (bdd). Sources and Executables Containers (specialised especially by Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}).
 	
 		
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/system_bdd.png}}
+			{\includegraphics[scale=.92]{diagrams/system_bdd.png}}
 		\end{center}
 		\caption{System general composition.} 
 		\label{fig:ros_system_bdd}
 	\end{figure}
+    Hardware block reflects to embodiment. System can aggregate other Systems. System state is represented by the state machine states dedicated for this System. These states have specific stereotypes.
 	
 	Consequently, some concepts (e.g., Node), a~specialisations of Running System Component, occur in Sources and Executables Containers. It reduces the number of SysML blocks in the metamodel [R7.3] and eliminates the need for unnecessary mapping of SysML blocks [7.4]. In MeROS applications, the System formulation methodology is to create various views on it (in particular its: sources and executables containers, running components, embodiment). They all together depict the complete view on the System.
 	
@@ -237,7 +238,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/communicating_component_specialisations_bdd.png}}
+			{\includegraphics[scale=.95]{diagrams/communicating_component_specialisations_bdd.png}}
 		\end{center}
 		\caption{Communicating Component and specialised blocks -- bdd.} 
 		\label{fig:communicating_components_bdd}
@@ -248,7 +249,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 		 \begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/communicating_component_connections_bdd.png}}
+			{\includegraphics[scale=.95]{diagrams/communicating_component_connections_bdd.png}}
 		\end{center}
 		\caption{ROS Communicating Component connections.} 
 		\label{fig:communicating_component_connections_bdd}
@@ -274,9 +275,9 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/communication_channel_bdd.png}}
+			{\includegraphics[scale=.97]{diagrams/communication_channel_bdd.png}}
 		\end{center}
-		\caption{Communication Channel -- bdd.} 
+		\caption{Communication Channel composition.} 
 		\label{fig:communication_channel_bdd}
 	\end{figure}
 	
@@ -287,9 +288,9 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
  	\begin{figure}[H]
 	 	\centering
 	 	\begin{center}
-	 		{\includegraphics[scale=1.0]{diagrams/node_bdd.png}}
+	 		{\includegraphics[scale=.97]{diagrams/node_bdd.png}}
 	 	\end{center}
-	 	\caption{Node.} 
+	 	\caption{ROS Node composition and specialisation.} 
 		 	\label{fig:node_bdd}
 	 \end{figure}
 	
