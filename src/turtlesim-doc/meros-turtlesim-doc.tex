@@ -53,12 +53,12 @@
 \chapter{Introduction}
 \label{ch:introduction}
 
-	This document is to present basics of MeROS metamodel usage (its application). It bases on popular turtlesim ROS2 tutorial \url{https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools.html} and has an introspection, reverse engineering nature. The more elaborated procedure of the ROS-based systems development with V-model and MerROS is presented in \cite{winiarski2025-v-model}. We advice to read it after this documentation as the article adds a lot of valuable examples of MeROS related diagrams creation. 
+	This document is to present basics of MeROS metamodel usage (its application). It bases on popular turtlesim ROS2 tutorial \url{https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools.html} and has an introspection, reverse engineering nature. The more elaborated procedure of the ROS-based systems development with V-model and MerROS is presented in \cite{winiarski2025-v-model}. We advice to read it after this documentation as the article adds a lot of valuable examples of MeROS related diagrams creation. It is convenient to create the dedicated package in Visual Paradigm (VP) project (VP project package, not ROS or MeROS \stPackage{}) and place the diagrams and other elements inside this package.
 
 \chapter{MeROS application}
 \label{ch:application}
 
-The general scenario of application execution is presented in Fig.~\ref{fig:general_scenario_sd}. The scenario is subdivided into two fragments that will be presented further on in the detailed way considering the system realisation. It is convenient to create the dedicated package in Visual Paradigm (VP) project (VP project package, not ROS or MeROS \stPackage{}) and place the diagrams and other elements inside this package.
+The general scenario of application execution is presented in Fig.~\ref{fig:general_scenario_sd}. The scenario is subdivided into two fragments that will be presented further on in the detailed way considering the system realisation. The \textsf{Turtle} \stSystem{} is initially in \textsf{Turtle::initial} \stSystemState{} and transits to \textsf{Turtle::operational} \stSystemState{} after execution of all of the \stNode{}s. As all of the \stSystemState{}s are defined for the particular \stSystem{} it is a good practice to take it into account, and define \stSystemState{}s with the associated \stSystem{} name at the beginning followed by the double colon. The \stSystemState{}s in VP are defined on the dedicated \texttt{stm} subdiagram of the \stSystem{}.
 
 
 \begin{figure}[H]
@@ -71,7 +71,7 @@ The general scenario of application execution is presented in Fig.~\ref{fig:gene
 \end{figure}
 
 
-The decision is to build the \stSystem{} comprising two \stNode{}s that are executed. The first is \textsf{turtlesim\_node} \stNode{} from \textsf{turtlesim} \stPackage{}. It should be noted that before \stNode{}s execution in operating system, tourtlesim ROS package should be installed as well as source command should be executed properly in each system terminal (List.~\ref{lst:ros2_run_turtlesim_turtlesim_node}).
+The decision is to build the \stSystem{} comprising two \stNode{}s that are executed.   The first is \textsf{turtlesim\_node} \stNode{} from \textsf{turtlesim} \stPackage{}. It should be noted that before \stNode{}s execution in operating system, tourtlesim ROS package should be installed as well as source command should be executed properly in each system terminal (List.~\ref{lst:ros2_run_turtlesim_turtlesim_node}).
 
 \begin{lstlisting}[style=terminal,label={lst:ros2_run_turtlesim_turtlesim_node},caption={ros2 run turtlesim turtlesim\_node}]
 $ ros2 run turtlesim turtlesim_node
@@ -159,7 +159,7 @@ instances names, used in, e.g. ibd. Finally, taking into account the data presen
 \begin{figure}[H]
 	\centering
 	\begin{center}
-		{\includegraphics[scale=.9]{diagrams/system_sourexec_composition_bdd.png}}
+		{\includegraphics[scale=1.0]{diagrams/system_sourexec_composition_bdd.png}}
 	\end{center}
 	\caption{System sources and executables composition}
 	\label{fig:system_sourexec_composition_bdd}
@@ -167,18 +167,20 @@ instances names, used in, e.g. ibd. Finally, taking into account the data presen
 
 As all of the sources and executables are defined for the particular \stPackage{} it is a good practice to take it into account, and define the names of the \stPackage{} parts with the \stPackage{} name at the beginning followed by the double colon. 
 
+\pagebreak
+
 Another view on \stSystem{} depicts the running system architecture. It can be depicted in general way. It is needed to first create bdd with all of the elements considered in this view (Fig.~\ref{fig:running_system_general_bdd}).
 			
 \begin{figure}[H]
 	\centering
 	\begin{center}
-		{\includegraphics[scale=.9]{diagrams/running_system_general_bdd.png}}
+		{\includegraphics[scale=1.0]{diagrams/running_system_general_bdd.png}}
 	\end{center}
 	\caption{Running System general view bdd}
 	\label{fig:running_system_general_bdd}
 \end{figure}
 
-\pagebreak
+
 
 Then, the ibd can be created (Fig.~\ref{fig:running_system_general_ibd}). 
 
@@ -212,14 +214,13 @@ Then, the ibd can be created (Fig.~\ref{fig:running_system_general_ibd}).
 	\label{fig:turtlesim_command_channel_ibd}
 \end{figure}
 			
-\pagebreak			
 			
 The running system architecture can be also depicted in detailed way at once in Fig.~\ref{fig:running_system_detailed_bdd} and Fig.~\ref{fig:running_system_detailed_ibd}.
 			
 \begin{figure}[H]
 	\centering
 	\begin{center}
-		{\includegraphics[scale=.9]{diagrams/running_system_detailed_bdd.png}}
+		{\includegraphics[scale=1.0]{diagrams/running_system_detailed_bdd.png}}
 	\end{center}
 	\caption{Running System detailed view bdd}
 	\label{fig:running_system_detailed_bdd}
@@ -228,18 +229,20 @@ The running system architecture can be also depicted in detailed way at once in 
 \begin{figure}[H]
 	\centering
 	\begin{center}
-		{\includegraphics[scale=.9]{diagrams/running_system_detailed_ibd.png}}
+		{\includegraphics[scale=1.0]{diagrams/running_system_detailed_ibd.png}}
 	\end{center}
 	\caption{Running System detailed view ibd}
 	\label{fig:running_system_detailed_ibd}
 \end{figure}
-			
+
+\pagebreak
+
 Now the detailed validation scenario can be presented (Fig.~ \ref{fig:system_initilisation_sd}). It should be noted that \stAction{} call is depicted in one of the sequences that can occur during \stSystem{} execution.
 			
 \begin{figure}[H]
 	\centering
 	\begin{center}
-		{\includegraphics[scale=.9]{diagrams/system_initilisation_sd.png}}
+		{\includegraphics[scale=1.0]{diagrams/system_initilisation_sd.png}}
 	\end{center}
 	\caption{Detailed system initialisation scenario scenario sd}
 	\label{fig:system_initilisation_sd}
@@ -248,7 +251,7 @@ Now the detailed validation scenario can be presented (Fig.~ \ref{fig:system_ini
 \begin{figure}[H]
 	\centering
 	\begin{center}
-		{\includegraphics[scale=.9]{diagrams/turtle_motion_sd.png}}
+		{\includegraphics[scale=1.0]{diagrams/turtle_motion_sd.png}}
 	\end{center}
 	\caption{Detailed turtle motion scenario sd}
 	\label{fig:turtle_motion_sd}
