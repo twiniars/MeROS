@@ -215,20 +215,22 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	The stereotypes are introduced in MeROS metamodel [R7.2].
 	The stereotypes names are created to compromise the descriptiveness and short length. Hence, the ROS phrase is avoided in stereotypes as long as there is only the ROS concept of a~given type.
 	
-	The degree of specificity of a~metamodel is a~compromise between its comprehensiveness (and, therefore, more general formulation) and a~more accurate representation of a~particular subclass of specific implementations. The metamodel contains compositions of elements and other primary relationships. Attributes and operations of elements range widely, hence their inclusion would lead to overgrowth and complication of the metamodel [R7]. The MeROS Metamodel is lightweight and general for various system development procedures and non-ROS parts of the whole System. The fundamental decision was to make it compact, so due to the extremely wide range of Non-ROS context variants [R9], they are specific for particular applications and are not specified in the metamodel itself. Hence, models derived from the metamodel can define their stereotypes, operations and new relations specific to a~particular System. 
+	The degree of specificity of a~metamodel is a~compromise between its comprehensiveness (and, therefore, more general formulation) and a~more accurate representation of a~particular subclass of specific implementations. The metamodel contains compositions of elements and other primary relationships. Attributes and operations of elements range widely, hence their inclusion would lead to overgrowth and complication of the metamodel [R7]. The MeROS Metamodel is lightweight and general for various system development procedures and non-ROS parts of the whole System. The fundamental decision was to make it compact, so due to the extremely wide range of Non-ROS context variants [R9], they are specific for particular applications and are not specified in the metamodel itself. Hence, models derived from the metamodel can define their stereotypes, operations and new relations specific for a~particular System. 
 	
-	The SysML blocks reflects concepts pointed out in requirements, and their composition is depicted in block definition diagrams (bdd). Sources and Executables Containers (specialised especially by Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}).
+	\pagebreak
+	
+	The SysML blocks reflects concepts pointed out in requirements, and their composition is depicted in block definition diagrams (bdd). Sources and Executables Containers (specialised especially by Workspaces) and Running System Components are composed into System (Fig.~\ref{fig:ros_system_bdd}). Hardware block reflects to embodiment. System can aggregate other Systems. System state is represented by the state machine states dedicated for this System. These states have specific stereotypes.
 	
 		
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.92]{diagrams/system_bdd.png}}
+			{\includegraphics[scale=.98]{diagrams/system_bdd.png}}
 		\end{center}
 		\caption{System general composition.} 
 		\label{fig:ros_system_bdd}
 	\end{figure}
-    Hardware block reflects to embodiment. System can aggregate other Systems. System state is represented by the state machine states dedicated for this System. These states have specific stereotypes.
+  
 	
 	Consequently, some concepts (e.g., Node), a~specialisations of Running System Component, occur in Sources and Executables Containers. It reduces the number of SysML blocks in the metamodel [R7.3] and eliminates the need for unnecessary mapping of SysML blocks [7.4]. In MeROS applications, the System formulation methodology is to create various views on it (in particular its: sources and executables containers, running components, embodiment). They all together depict the complete view on the System.
 	
@@ -238,35 +240,38 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.95]{diagrams/communicating_component_specialisations_bdd.png}}
+			{\includegraphics[scale=.98]{diagrams/communicating_component_specialisations_bdd.png}}
 		\end{center}
 		\caption{Communicating Component and specialised blocks -- bdd.} 
 		\label{fig:communicating_components_bdd}
 	\end{figure}
 	
-	Relations of ROS Communicating Component are depicted in Fig.~\ref{fig:communicating_component_connections_bdd}.
+	Relations of ROS Communicating Component are depicted in Fig.~\ref{fig:communicating_component_connections_bdd}. The diagram considers Topics, where the ROS Communicating Component can act as a~publisher or a~subscriber. In the case of Services, the ROS Communicating Component can act as a~server or a~client.	Similarly to Services, the ROS Communicating Component can act as a~server or a~client to an Action.	
 	
 		 \begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.95]{diagrams/communicating_component_connections_bdd.png}}
+			{\includegraphics[scale=1.1]{diagrams/communicating_component_connections_bdd.png}}
 		\end{center}
 		\caption{ROS Communicating Component connections.} 
 		\label{fig:communicating_component_connections_bdd}
 	\end{figure}
 	
-	 The diagram considers Topics, where the ROS Communicating Component can act as a~publisher or a~subscriber. In the case of Services, the ROS Communicating Component can act as a~server or a~client.	Similarly to Services, the ROS Communicating Component can act as a~server or a~client to an Action.	
+	
 	 	 
 	 The ROS Action Connection comprises two Topics and three Services (Fig.~\ref{fig:action_bdd}).
 	
 	\begin{figure}[hbt]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/action_bdd.png}}
+			{\includegraphics[scale=1.1]{diagrams/action_bdd.png}}
 		\end{center}
 		\caption{Action.} 
 		\label{fig:action_bdd}
 	\end{figure}
+	
+	\pagebreak
+	
 	
 	The Communication Channel is introduced to specify communication between various Communicating Components (Fig.~\ref{fig:communication_channel_bdd}).
 	Besides standard ROS communication methods, the Non-ROS can also be included (e.g., http request) to achieve interfaces with Non-ROS parts of the general system. 
@@ -275,20 +280,20 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=.97]{diagrams/communication_channel_bdd.png}}
+			{\includegraphics[scale=1.1]{diagrams/communication_channel_bdd.png}}
 		\end{center}
 		\caption{Communication Channel composition.} 
 		\label{fig:communication_channel_bdd}
 	\end{figure}
 	
 		 
- 	The Node (Fig.~\ref{fig:node_bdd}) aggregates ROS Parameters. ROS Component Container aggregates Nodes executed in a~single process. The Micro ROS Node, RQt Plugin Node and RViz are also considered in the model as the specialisations of the Node.
+ 	The Node (Fig.~\ref{fig:node_bdd}) aggregates ROS Parameters. ROS Component Container aggregates Nodes executed in a~single process. The Micro ROS Node, RQt Plugin Node and RViz are also considered in the model as the specialisations of the Node. Node lifecycle state\footnote{\url{https://design.ros2.org/articles/node_lifecycle.html}} is represented by the state machine states dedicated for this Node. These states have specific stereotypes.
  	
 	 
  	\begin{figure}[H]
 	 	\centering
 	 	\begin{center}
-	 		{\includegraphics[scale=.97]{diagrams/node_bdd.png}}
+	 		{\includegraphics[scale=1.1]{diagrams/node_bdd.png}}
 	 	\end{center}
 	 	\caption{ROS Node composition and specialisation.} 
 		 	\label{fig:node_bdd}
@@ -302,7 +307,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/running_system_component_bdd.png}}
+			{\includegraphics[scale=1.1]{diagrams/running_system_component_bdd.png}}
 		\end{center}
 		\caption{Running System Component specialisations.} 
 		\label{fig:running_system_component_bdd}
@@ -315,7 +320,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/ros_connections_bdd.png}}
+			{\includegraphics[scale=1.1]{diagrams/ros_connections_bdd.png}}
 		\end{center}
 		\caption{ROS Connections.} 
 		\label{fig:ros_connections_bdd}
@@ -328,7 +333,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/namespace_bdd.png}}
+			{\includegraphics[scale=1.1]{diagrams/namespace_bdd.png}}
 		\end{center}
 		\caption{Namespace composition.}
 		\label{fig:namespace_bdd}
@@ -343,7 +348,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/sources_executables_container_bdd.png}}
+			{\includegraphics[scale=1.1]{diagrams/sources_executables_container_bdd.png}}
 		\end{center}
 		\caption{Sources and Executables Container and its specialisations.} 
 		\label{fig:sources_executables_container_bdd}
@@ -354,7 +359,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/ros_package_bdd.png}}
+			{\includegraphics[scale=1.1]{diagrams/ros_package_bdd.png}}
 		\end{center}
 		\caption{ROS Package composition.} 
 		\label{fig:ros_package_bdd}
@@ -368,7 +373,7 @@ The composition of Repository is presented in Fig.~\ref{fig:repository_bdd}.
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/repository_bdd.png}}
+			{\includegraphics[scale=1.1]{diagrams/repository_bdd.png}}
 		\end{center}
 		\caption{Repository composition.} 
 		\label{fig:repository_bdd}
@@ -379,7 +384,7 @@ The composition of ROS Workspace is presented in Fig.~\ref{fig:ros_workspace_bdd
 	\begin{figure}[H]
 		\centering
 		\begin{center}
-			{\includegraphics[scale=1.0]{diagrams/ros_workspace_bdd.png}}
+			{\includegraphics[scale=1.1]{diagrams/ros_workspace_bdd.png}}
 		\end{center}
 		\caption{ROS Workspace composition.} 
 		\label{fig:ros_workspace_bdd}
