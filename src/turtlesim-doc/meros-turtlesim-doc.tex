@@ -154,7 +154,7 @@ Action Clients:
 \end{lstlisting}
 
 By taking into account \stRosConnection{}s from Fig.~\ref{fig:rqt_graph} listed in List.~\ref{lst:ros2_node_info_turtlesim} the \stPackage{}s containing theirs sources can be found as well as 
-instances names, used in, e.g. ibd. Finally, taking into account the data presented above, the bdd with \textsf{turtlesim} \stSystem{} sources and containers can be prepared (Fig.~\ref{fig:system_sourexec_composition_bdd}). For that purpose the ROS 2 \stWorkspace{} localisation is needed, but it easy to find out, especially the initial \textsf{source} command needs that localisation. It is  \textsf{/opt/ros/jazzy} in case of the ROS version used in the time of the creation of this documentation. 
+instances names, used in, e.g. ibd. Finally, taking into account the data presented above, the bdd with \textsf{turtlesim} \stSystem{} sources and containers can be prepared (Fig.~\ref{fig:system_sourexec_composition_bdd}). For that purpose the ROS 2 \stWorkspace{} localisation is needed, but it easy to find out, especially the initial \textsf{source} command needs that localisation. It is  \textsf{/opt/ros/jazzy} in case of the ROS version used in the time of the creation of this documentation. Here, additionally the communication structures are presented.
 
 \begin{figure}[H]
 	\centering
@@ -165,8 +165,7 @@ instances names, used in, e.g. ibd. Finally, taking into account the data presen
 	\label{fig:system_sourexec_composition_bdd}
 \end{figure}
 
-As all of the sources and executables are defined for the particular \stPackage{} it is a good practice to take it into account, and define the names of the \stPackage{} parts with the \stPackage{} name at the beginning followed by the double colon. 
-
+As all of the sources and executables are defined for the particular \stPackage{} it is a good practice to take it into account, and define the names of the \stPackage{} parts with the \stPackage{} name at the beginning followed by the double colon. Similarly, communication structures are defined for the particular \stPackage{}.
 \pagebreak
 
 Another view on \stSystem{} depicts the running system architecture. It can be depicted in general way. It is needed to first create bdd with all of the elements considered in this view (Fig.~\ref{fig:running_system_general_bdd}).
@@ -215,7 +214,7 @@ Then, the ibd can be created (Fig.~\ref{fig:running_system_general_ibd}).
 \end{figure}
 			
 			
-The running system architecture can be also depicted in detailed way at once in Fig.~\ref{fig:running_system_detailed_bdd} and Fig.~\ref{fig:running_system_detailed_ibd}. Here, additionally the communication structures are presented.
+The running system architecture can be also depicted in detailed way at once in Fig.~\ref{fig:running_system_detailed_bdd} and Fig.~\ref{fig:running_system_detailed_ibd}. 
 			
 \begin{figure}[H]
 	\centering
