@@ -14,6 +14,8 @@
 \usepackage{subcaption}
 \usepackage{mathtools}
 \usepackage{color}
+\usepackage{listings}
+\usepackage{xcolor}
 \usepackage[backend=biber,maxnames=10,style=numeric,sorting=nty,abbreviate=false,giveninits=true,language=english]{biblatex}
 
 \addbibresource{../meros.bib}
@@ -25,160 +27,234 @@
 \newcommand{\twci}[1]{
 	\textcolor{amber}{TW: #1}}
 
-\input{meros-stereotypes}
+\input{../meros-stereotypes}
+
+\lstdefinestyle{terminal}{
+	backgroundcolor=\color{darkgray},
+	basicstyle=\ttfamily\color{green}\scriptsize,
+	frame=single,
+	breaklines=true,
+	rulecolor=\color{gray},
+}
+
 
 \begin{document}
 	
-\title{MeROS: SysML-based Metamodel for ROS-related Systems - version 4.0.0 - reference manual}
+\title{MeROS 4.0.0: basics of metamodel usage with turtlesim}
 \author{MeROS developers group - https://github.com/twiniars/MeROS \\ tomasz.winiarski@pw.edu.pl}
 \date{\today}
 \maketitle
 
-
-\begin{abstract}
-	The complexity of today's robot control systems implies difficulty in developing them efficiently and reliably. Systems engineering (SE) and frameworks come to help. The frameworks' metamodels are needed to support the standardisation and correctness of the created application models. MeROS is a~metamodel for ROS, which addresses the running system and developer workspace. An essential addition to the original ROS concepts is the grouping of these concepts, which provides an opportunity to illustrate the system's decomposition and varying degrees of detail in its presentation. The metamodel is derived from the requirements and verified on the practical examples. The matter is described in a~standardised way in SysML (Systems Modeling Language). Hence, common development tools that support SysML can help develop robot controllers in the spirit of SE.
-\end{abstract}
-	
-	
-	
-	\maketitle
 	
 \chapter*{Important citation notice}
 
 \textbf{If you are to use MeROS in your papers, please first cite the IEEE ACCESS  article~\cite{meros-access}, where the initial version of the MeROS is presented. You can also refer to MeROS project page \cite{meros-www} and mention the actual MeROS version you are using.}
 	
-	
+\chapter{Introduction}
+\label{ch:introduction}
+
+	This document is to present basics of MeROS metamodel usage (its application). It bases on popular turtlesim ROS2 tutorial \url{https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools.html} and has an introspection, reverse engineering nature. The more elaborated procedure of the ROS-based systems development with V-model and MerROS is presented in \cite{winiarski2025-v-model}. We advice to read it after this documentation as the article adds a lot of valuable examples of MeROS related diagrams creation. It is convenient to create the dedicated package in Visual Paradigm (VP) project (VP project package, not ROS or MeROS \stPackage{}) and place the diagrams and other elements inside this package.
+
 \chapter{MeROS application}
 \label{ch:application}
-	
-	\twci{Do aktualizacji. Ma być przykład z turtlesimem. W tym przykładzie będzie omówienie jak on powstawał, w sensie dodatkowych zrzutów ekranu z retrospekcji działającego systemu ROS. Czyli pokazujemy jak za pomocą rosowych komend uzyskać informacje potrzebne do stworzenia modelu. Jest to bezcenne na ANRO i nie tylko.}
-	
 
-	
-	This documentation presents key aspects of an exemplary system development process incorporating MeROS. The exemplary system was created within the AAL INCARE project to control the Rico assistive robot (modified TIAGo platform with controller based on ROS~1) to execute transportation attendance tasks (Fig.~\ref{fig:herbatka_u_winiara}).
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[width=\columnwidth]{img/herbatka_u_winiara.jpg}}
-		\end{center}
-		\caption{Transportation attendance by Rico robot \url{https://vimeo.com/670252925}} 
-		\label{fig:herbatka_u_winiara}
-	\end{figure}
-	
-	
-	
-	 The purpose of the following description is not to document the entire system but to illustrate, by example, representative aspects of the MeROS application.
-	 
-	\newpage
-	The Rico \stSystem{} consists of two parts. Its \stWorkspace{} and a~number of \stRunSystemCompon{} (Fig.~\ref{fig:rico_system_bdd}).
-	
-	
-	\begin{figure}[H] 
-		\centering
-		\begin{center}
-			{\includegraphics[scale=.9]{img/rico_pkg/rico_system_bdd.png}}
-		\end{center}
-		\caption{Rico \stSystem{} composition.} 
-		\label{fig:rico_system_bdd}
-	\end{figure}
-	
-	
-	The fragment of the application scenario is conceptually presented in Fig.~\ref{fig:general_sd}.
-	
-
-	\begin{figure}[H] 
-		\centering
-		\begin{center}
-			{\includegraphics[scale=.9]{img/rico_pkg/general_sd.png}}
-		\end{center}
-		\caption{Concept scenario.} 
-		\label{fig:general_sd}
-	\end{figure}
-	
-	Here, the system (\stSystem{} \texttt{:Rico}) and its behaviour are formulated in a~general way. An actor (e.g. an elderly person) asks the robot to move. Then, the system recognises the voice command and vocally confirms the command's acceptance. Finally, the robot executes the motion and vocally informs that the motion is finished.
-	In the following part of the description, the \stSystem{} \texttt{:Rico} and sequence diagram frame \texttt{motion execution} from Fig.~\ref{fig:general_sd} are presented in a~explicit way.
-	
-		The \stSystem{} \texttt{:Rico} structure is depicted in Fig.~\ref{fig:rico_system_ibd}. Here, and in the following diagrams, the \texttt{rosout} and \texttt{ROS master} \stNode{}s were omitted to make the diagrams more compact. Dedicated block is needed for \stCommChannel{} \texttt{:Move To to Robot Core}, because this \stCommChannel{} is specified in detail later on.
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=0.85]{img/rico_pkg/rico_system_ibd.png}}
-		\end{center}
-		\caption{Structure of \stSystem{}\texttt{:Rico}.} 
-		\label{fig:rico_system_ibd}
-	\end{figure}
-
-	The system is based on TaskER framework \cite{tasker2020} developed from the RAPP approach to construct systems with variable structure \cite{zielinski2017variable}. The role of the TaskER is to schedule a~robot’s tasks. It consists of (i) Task Requesters \stNode{}s to submit new tasks, (ii) Task Harmoniser \stNode{} to schedule tasks execution, (iii) dynamic \stNode{}s (here, \stNode{} \texttt{:Move To}) to execute a~particular task on the robot hardware and (iv) cloud part, here <<NRosCompon>> \texttt{:Voice Recognition and Synthesis Platform}. The common part of the controller is located in \stSystem{} \texttt{:Rico}.
-	
-	Fig.~\ref{fig:robot_core_ibd} illustrates how various instances of the same block are depicted in the model. Two \stParameter{} Objects of the same classifier \texttt{:Double} are composed into \stNode{} \texttt{:MoveBase}.
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=.85]{img/rico_pkg/robot_core_ibd.png}}
-		\end{center}
-		\caption{Selected elements of \stSystem{} \texttt{:Robot Core}.} 
-		\label{fig:robot_core_ibd}
-	\end{figure}
-				
-	\stCommChannel{} \texttt{:Move To to Robot Core} is depicted in Fig.~\ref{fig:move_to_2_core_cm_ibd}. It comprises three actions.
-	
-
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.1]{img/rico_pkg/move_to_2_core_cm_ibd.png}}
-		\end{center}
-		\caption{Example of \stCommChannel{}.} 
-		\label{fig:move_to_2_core_cm_ibd}
-	\end{figure}
-	
-		
-	The part of the scenario generally described in Fig.~\ref{fig:general_sd} is depicted in detail in Fig.~\ref{fig:motion_execution_sd}. The presentation remains conceptual from the behavioural point of view, but it considers the particular parts of the \stSystem{} \texttt{:Rico}.
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.1]{img/rico_pkg/motion_execution_sd.png}}
-		\end{center}
-		\caption{Motion execution operation.} 
-		\label{fig:motion_execution_sd}
-	\end{figure}
+The general scenario of application execution is presented in Fig.~\ref{fig:general_scenario_sd}. The scenario is subdivided into two fragments that will be presented further on in the detailed way considering the system realisation. The \textsf{Turtle} \stSystem{} is initially in \textsf{Turtle::initial} \stSystemState{} and transits to \textsf{Turtle::operational} \stSystemState{} after execution of all of the \stNode{}s. As all of the \stSystemState{}s are defined for the particular \stSystem{} it is a good practice to take it into account, and define \stSystemState{}s with the associated \stSystem{} name at the beginning followed by the double colon. The \stSystemState{}s in VP are defined on the dedicated \texttt{stm} subdiagram of the \stSystem{}.
 
 
-	Finally, the particular communication methods are specified on the most detailed, ROS-specific level (Fig.~\ref{fig:command_motion_sd}). The command\_motion operation includes the sequence of four steps of communication. Three Actions realise the communication, one utilised twice. The diagram comprises extra notes that make it easier to interpret.
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.0]{img/rico_pkg/command_motion_sd.png}}
-		\end{center}
-		\caption{Command motion operation with detailed Communication methods presentation.} 
-		\label{fig:command_motion_sd}
-	\end{figure}
-	
-	The part of the \stWorkspace{} \texttt{:Rico} that includes previously mentioned elements is presented in Fig.~\ref{fig:rico_workspace_nodes_bdd} and Fig.~\ref{fig:rico_workspace_msgs_bdd}.
-	
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.0]{img/rico_pkg/rico_workspace_nodes_bdd.png}}
-		\end{center}
-		\caption{Rico \stWorkspace{} composition -- Packages with Nodes.}
-		\label{fig:rico_workspace_nodes_bdd}
-	\end{figure}
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/general_scenario_sd.png}}
+	\end{center}
+	\caption{General scenario sd}
+	\label{fig:general_scenario_sd}
+\end{figure}
 
-	\begin{figure}[H]
-		\centering
-		\begin{center}
-			{\includegraphics[scale=1.0]{img/rico_pkg/rico_workspace_msgs_bdd.png}}
-		\end{center}
-		\caption{Rico \stWorkspace{} composition -- Packages with Msgs.}
-		\label{fig:rico_workspace_msgs_bdd}
-	\end{figure}
-	
+
+The decision is to build the \stSystem{} comprising two \stNode{}s that are executed.   The first is \textsf{turtlesim\_node} \stNode{} from \textsf{turtlesim} \stPackage{}. It should be noted that before \stNode{}s execution in operating system, tourtlesim ROS package should be installed as well as source command should be executed properly in each system terminal (List.~\ref{lst:ros2_run_turtlesim_turtlesim_node}).
+
+\begin{lstlisting}[style=terminal,label={lst:ros2_run_turtlesim_turtlesim_node},caption={ros2 run turtlesim turtlesim\_node}]
+$ ros2 run turtlesim turtlesim_node
+[INFO] [1751724881.187110472] [turtlesim]: Starting turtlesim with node name /turtlesim
+[INFO] [1751724881.196178869] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+\end{lstlisting}
+
+The second \stNode{} to be executed, \textsf{turtle\_teleop\_key}, also origins from the \textsf{turtlesim} \stPackage{}. It should be noted that typically new system terminal is needed to execute extra \stNode{} with \textsf{ros2 run} \stCLTool{} (List.~\ref{lst:ros2_run_turtle_teleop_key}).
+
+\begin{lstlisting}[style=terminal,label={lst:ros2_run_turtle_teleop_key},caption={ros2 run turtlesim turtle\_teleop\_key}]
+$ ros2 run turtlesim turtle_teleop_key
+Reading from keyboard
+---------------------------
+Use arrow keys to move the turtle.
+Use g|b|v|c|d|e|r|t keys to rotate to absolute orientations. 'f' to cancel a rotation.
+'q' to quit.
+\end{lstlisting}
+
+It is time to draw \stSystem{} structure with \textsf{rqt\_graph} \stCLTool{} (in new system terminal)  (List.~\ref{lst:rqt_graph}). In rqt\_graph all of the extra elements should be hided, to concentrate on the scenario relevant \stSystem{} components, that are also considered in the following diagrams.
+
+\begin{lstlisting}[style=terminal,label={lst:rqt_graph},caption={rqt\_graph}]
+$ rqt_graph
+\end{lstlisting}
+
+The resultant rosgraph diagram is presented in Fig.~\ref{fig:rqt_graph}. There are two \stNode{}s visible as well as three \stTopic{}s between them. Two of them belong to an \stAction{}.
+
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=.5]{diagrams/rosgraph.png}}
+	\end{center}
+	\caption{System structure by rqt\_graph}
+	\label{fig:rqt_graph}
+\end{figure}
+
+The MeROS \stSystem{} structure presentation is composed by different views on it. In this example we start with Sources and Executables composition into the \stSystem{}. There are two scenario relevant \stNode{}s to be considered in the in \textsf{Turtle} \stSystem{}. They were run from \textsf{turtlesim} \stPackage{} that can be validated by the \textsf{ros2 pkg} \stCLTool{} (List.~\ref{lst:ros2_pkg_executables_turtlesim}).
+
+\begin{lstlisting}[style=terminal,label={lst:ros2_pkg_executables_turtlesim},caption={ros2 pkg executables turtlesim}]
+$ ros2 pkg executables turtlesim
+turtlesim draw_square
+turtlesim mimic
+turtlesim turtle_teleop_key
+turtlesim turtlesim_node
+\end{lstlisting}
+
+The two extra executables from this \stPackage{} are not considered further on. It is also needed to find the \stPackage{}s containing \stRosConnection{}s used in our example. One of the ways is two find all of the connections for the particular \stNode{} with \textsf{ros2 node} \stCLTool{} (List.~\ref{lst:ros2_node_info_turtlesim}).
+
+
+\begin{lstlisting}[style=terminal,label={lst:ros2_node_info_turtlesim},caption={ros2 node info /turtlesim}]
+$ ros2 node info /turtlesim 
+/turtlesim
+Subscribers:
+/parameter_events: rcl_interfaces/msg/ParameterEvent
+/turtle1/cmd_vel: geometry_msgs/msg/Twist
+Publishers:
+/parameter_events: rcl_interfaces/msg/ParameterEvent
+/rosout: rcl_interfaces/msg/Log
+/turtle1/color_sensor: turtlesim/msg/Color
+/turtle1/pose: turtlesim/msg/Pose
+Service Servers:
+/clear: std_srvs/srv/Empty
+/kill: turtlesim/srv/Kill
+/reset: std_srvs/srv/Empty
+/spawn: turtlesim/srv/Spawn
+/turtle1/set_pen: turtlesim/srv/SetPen
+/turtle1/teleport_absolute: turtlesim/srv/TeleportAbsolute
+/turtle1/teleport_relative: turtlesim/srv/TeleportRelative
+/turtlesim/describe_parameters: rcl_interfaces/srv/DescribeParameters
+/turtlesim/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+/turtlesim/get_parameters: rcl_interfaces/srv/GetParameters
+/turtlesim/get_type_description: type_description_interfaces/srv/GetTypeDescription
+/turtlesim/list_parameters: rcl_interfaces/srv/ListParameters
+/turtlesim/set_parameters: rcl_interfaces/srv/SetParameters
+/turtlesim/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+Service Clients:
+
+Action Servers:
+/turtle1/rotate_absolute: turtlesim/action/RotateAbsolute
+Action Clients:
+\end{lstlisting}
+
+By taking into account \stRosConnection{}s from Fig.~\ref{fig:rqt_graph} listed in List.~\ref{lst:ros2_node_info_turtlesim} the \stPackage{}s containing theirs sources can be found as well as 
+instances names, used in, e.g. ibd. Finally, taking into account the data presented above, the bdd with \textsf{turtlesim} \stSystem{} sources and containers can be prepared (Fig.~\ref{fig:system_sourexec_composition_bdd}). For that purpose the ROS 2 \stWorkspace{} localisation is needed, but it easy to find out, especially the initial \textsf{source} command needs that localisation. It is  \textsf{/opt/ros/jazzy} in case of the ROS version used in the time of the creation of this documentation. Here, additionally the communication structures are presented.
+
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/system_sourexec_composition_bdd.png}}
+	\end{center}
+	\caption{System sources and executables composition}
+	\label{fig:system_sourexec_composition_bdd}
+\end{figure}
+
+As all of the sources and executables are defined for the particular \stPackage{} it is a good practice to take it into account, and define the names of the \stPackage{} parts with the \stPackage{} name at the beginning followed by the double colon. Similarly, communication structures are defined for the particular \stPackage{}.
+\pagebreak
+
+Another view on \stSystem{} depicts the running system architecture. It can be depicted in general way. It is needed to first create bdd with all of the elements considered in this view (Fig.~\ref{fig:running_system_general_bdd}).
+			
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/running_system_general_bdd.png}}
+	\end{center}
+	\caption{Running System general view bdd}
+	\label{fig:running_system_general_bdd}
+\end{figure}
+
+
+
+Then, the ibd can be created (Fig.~\ref{fig:running_system_general_ibd}). 
+
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/running_system_general_ibd.png}}
+	\end{center}
+	\caption{Running System general view ibd}
+	\label{fig:running_system_general_ibd}
+\end{figure}
+
+\textsf{turtlesim\_command command} \stCommChannel{} is depicted in detailed way in Fig.~\ref{fig:turtlesim_command_channel_bdd} and Fig.~\ref{fig:turtlesim_command_channel_ibd}. It should be noted that connector direction denote the publisher to subscriber data flow in case of \stTopic{}s or client to server in case of \stService{}s or \stAction{}s.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/turtlesim_command_channel_bdd.png}}
+	\end{center}
+	\caption{turtlesim\_command command channel bdd}
+	\label{fig:turtlesim_command_channel_bdd}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/turtlesim_command_channel_ibd.png}}
+	\end{center}
+	\caption{turtlesim\_command command channel ibd}
+	\label{fig:turtlesim_command_channel_ibd}
+\end{figure}
+			
+			
+The running system architecture can be also depicted in detailed way at once in Fig.~\ref{fig:running_system_detailed_bdd} and Fig.~\ref{fig:running_system_detailed_ibd}. 
+			
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/running_system_detailed_bdd.png}}
+	\end{center}
+	\caption{Running System detailed view bdd}
+	\label{fig:running_system_detailed_bdd}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/running_system_detailed_ibd.png}}
+	\end{center}
+	\caption{Running System detailed view ibd}
+	\label{fig:running_system_detailed_ibd}
+\end{figure}
+
+\pagebreak
+
+Now the detailed validation scenario can be presented (Fig.~ \ref{fig:system_initilisation_sd}). It should be noted that \stAction{} call is depicted in one of the sequences that can occur during \stSystem{} execution.
+			
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/system_initilisation_sd.png}}
+	\end{center}
+	\caption{Detailed system initialisation scenario scenario sd}
+	\label{fig:system_initilisation_sd}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		{\includegraphics[scale=1.0]{diagrams/turtle_motion_sd.png}}
+	\end{center}
+	\caption{Detailed turtle motion scenario sd}
+	\label{fig:turtle_motion_sd}
+\end{figure}
 			
 \AtNextBibliography{\small}
 \printbibliography

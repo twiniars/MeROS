@@ -10,8 +10,8 @@
 					<TaggedValueDefinition defaultValue="" documentation="" id="zEkM4GmGAqAA4gBU" name="kind" type="2">
 						<EnumerationValues>
 							<ValueSpecification id="zEkM4GmGAqAA4gBU0" value="Functional"/>
-							<ValueSpecification id="zEkM4GmGAqAA4gBU1" value="Performance"/>
-							<ValueSpecification id="zEkM4GmGAqAA4gBU2" value="Interface"/>
+							<ValueSpecification id="zEkM4GmGAqAA4gBU1" value="Interface"/>
+							<ValueSpecification id="zEkM4GmGAqAA4gBU2" value="Performance"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 					<TaggedValueDefinition defaultValue="" documentation="" id="LEkM4GmGAqAA4gBV" name="verifyMethod" type="2">
@@ -25,19 +25,19 @@
 					<TaggedValueDefinition defaultValue="" documentation="" id="LEkM4GmGAqAA4gBW" name="risk" type="2">
 						<EnumerationValues>
 							<ValueSpecification id="LEkM4GmGAqAA4gBW0" value="High"/>
-							<ValueSpecification id="LEkM4GmGAqAA4gBW1" value="Medium"/>
-							<ValueSpecification id="LEkM4GmGAqAA4gBW2" value="Low"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBW1" value="Low"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBW2" value="Medium"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 					<TaggedValueDefinition defaultValue="" documentation="" id="LEkM4GmGAqAA4gBX" name="status" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="LEkM4GmGAqAA4gBX0" value="Proposed"/>
-							<ValueSpecification id="LEkM4GmGAqAA4gBX1" value="Approved"/>
-							<ValueSpecification id="LEkM4GmGAqAA4gBX2" value="Rejected"/>
-							<ValueSpecification id="LEkM4GmGAqAA4gBX3" value="Deferred"/>
-							<ValueSpecification id="LEkM4GmGAqAA4gBX4" value="Implemented"/>
-							<ValueSpecification id="LEkM4GmGAqAA4gBX5" value="Mandatory"/>
-							<ValueSpecification id="LEkM4GmGAqAA4gBX6" value="Obsolete"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX0" value="Approved"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX1" value="Deferred"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX2" value="Implemented"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX3" value="Mandatory"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX4" value="Obsolete"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX5" value="Proposed"/>
+							<ValueSpecification id="LEkM4GmGAqAA4gBX6" value="Rejected"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -48,34 +48,34 @@
 				<TaggedValueDefinitions>
 					<TaggedValueDefinition defaultValue="" documentation="" id="eSkM4GmGAqAA4gKo" name="Level" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="eSkM4GmGAqAA4gKo0" value="Summary"/>
-							<ValueSpecification id="eSkM4GmGAqAA4gKo1" value="User"/>
-							<ValueSpecification id="eSkM4GmGAqAA4gKo2" value="Subfunction"/>
+							<ValueSpecification id="eSkM4GmGAqAA4gKo0" value="Subfunction"/>
+							<ValueSpecification id="eSkM4GmGAqAA4gKo1" value="Summary"/>
+							<ValueSpecification id="eSkM4GmGAqAA4gKo2" value="User"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 					<TaggedValueDefinition defaultValue="" documentation="" id=".SkM4GmGAqAA4gKp" name="Complexity" type="2">
 						<EnumerationValues>
-							<ValueSpecification id=".SkM4GmGAqAA4gKp0" value="Low"/>
-							<ValueSpecification id=".SkM4GmGAqAA4gKp1" value="Medium"/>
-							<ValueSpecification id=".SkM4GmGAqAA4gKp2" value="High"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKp0" value="High"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKp1" value="Low"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKp2" value="Medium"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 					<TaggedValueDefinition defaultValue="" documentation="" id=".SkM4GmGAqAA4gKq" name="Use Case Status" type="2">
 						<EnumerationValues>
-							<ValueSpecification id=".SkM4GmGAqAA4gKq0" value="Name Only"/>
-							<ValueSpecification id=".SkM4GmGAqAA4gKq1" value="Initial"/>
-							<ValueSpecification id=".SkM4GmGAqAA4gKq2" value="Base"/>
-							<ValueSpecification id=".SkM4GmGAqAA4gKq3" value="Complete"/>
-							<ValueSpecification id=".SkM4GmGAqAA4gKq4" value="Deferred"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKq0" value="Base"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKq1" value="Complete"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKq2" value="Deferred"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKq3" value="Initial"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKq4" value="Name Only"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 					<TaggedValueDefinition defaultValue="" documentation="" id=".SkM4GmGAqAA4gKr" name="Implementation Status" type="2">
 						<EnumerationValues>
-							<ValueSpecification id=".SkM4GmGAqAA4gKr0" value="Scheduled"/>
-							<ValueSpecification id=".SkM4GmGAqAA4gKr1" value="Started"/>
-							<ValueSpecification id=".SkM4GmGAqAA4gKr2" value="Partially Complete"/>
-							<ValueSpecification id=".SkM4GmGAqAA4gKr3" value="Complete"/>
-							<ValueSpecification id=".SkM4GmGAqAA4gKr4" value="Partially Deferred"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKr0" value="Complete"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKr1" value="Partially Complete"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKr2" value="Partially Deferred"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKr3" value="Scheduled"/>
+							<ValueSpecification id=".SkM4GmGAqAA4gKr4" value="Started"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 					<TaggedValueDefinition defaultValue="" documentation="" id=".SkM4GmGAqAA4gKs" name="Preconditions" type="4"/>
@@ -177,8 +177,8 @@
 					<TaggedValueDefinition documentation="" id="IGkM4GmGAqAA4gRq" name="FeatureDirectionKind" type="2">
 						<EnumerationValues>
 							<ValueSpecification id="IGkM4GmGAqAA4gRq0" value="provided"/>
-							<ValueSpecification id="IGkM4GmGAqAA4gRq1" value="required"/>
-							<ValueSpecification id="IGkM4GmGAqAA4gRq2" value="providedrequired"/>
+							<ValueSpecification id="IGkM4GmGAqAA4gRq1" value="providedrequired"/>
+							<ValueSpecification id="IGkM4GmGAqAA4gRq2" value="required"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -190,8 +190,8 @@
 					<TaggedValueDefinition documentation="" id="oGkM4GmGAqAA4gRt" name="FeatureDirectionKind" type="2">
 						<EnumerationValues>
 							<ValueSpecification id="oGkM4GmGAqAA4gRt0" value="provided"/>
-							<ValueSpecification id="oGkM4GmGAqAA4gRt1" value="required"/>
-							<ValueSpecification id="oGkM4GmGAqAA4gRt2" value="providedrequired"/>
+							<ValueSpecification id="oGkM4GmGAqAA4gRt1" value="providedrequired"/>
+							<ValueSpecification id="oGkM4GmGAqAA4gRt2" value="required"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -203,8 +203,8 @@
 					<TaggedValueDefinition documentation="" id="YGkM4GmGAqAA4gRw" name="FeatureDirectionKind" type="2">
 						<EnumerationValues>
 							<ValueSpecification id="YGkM4GmGAqAA4gRw0" value="provided"/>
-							<ValueSpecification id="YGkM4GmGAqAA4gRw1" value="required"/>
-							<ValueSpecification id="YGkM4GmGAqAA4gRw2" value="providedrequired"/>
+							<ValueSpecification id="YGkM4GmGAqAA4gRw1" value="providedrequired"/>
+							<ValueSpecification id="YGkM4GmGAqAA4gRw2" value="required"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -216,8 +216,8 @@
 					<TaggedValueDefinition documentation="" id="YGkM4GmGAqAA4gRz" name="FeatureDirectionKind" type="2">
 						<EnumerationValues>
 							<ValueSpecification id="YGkM4GmGAqAA4gRz0" value="provided"/>
-							<ValueSpecification id="YGkM4GmGAqAA4gRz1" value="required"/>
-							<ValueSpecification id="YGkM4GmGAqAA4gRz2" value="providedrequired"/>
+							<ValueSpecification id="YGkM4GmGAqAA4gRz1" value="providedrequired"/>
+							<ValueSpecification id="YGkM4GmGAqAA4gRz2" value="required"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -229,8 +229,8 @@
 					<TaggedValueDefinition documentation="" id="4GkM4GmGAqAA4gR2" name="FeatureDirectionKind" type="2">
 						<EnumerationValues>
 							<ValueSpecification id="4GkM4GmGAqAA4gR20" value="provided"/>
-							<ValueSpecification id="4GkM4GmGAqAA4gR21" value="required"/>
-							<ValueSpecification id="4GkM4GmGAqAA4gR22" value="providedrequired"/>
+							<ValueSpecification id="4GkM4GmGAqAA4gR21" value="providedrequired"/>
+							<ValueSpecification id="4GkM4GmGAqAA4gR22" value="required"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -242,8 +242,8 @@
 					<TaggedValueDefinition documentation="" id="4GkM4GmGAqAA4gR5" name="FeatureDirectionKind" type="2">
 						<EnumerationValues>
 							<ValueSpecification id="4GkM4GmGAqAA4gR50" value="provided"/>
-							<ValueSpecification id="4GkM4GmGAqAA4gR51" value="required"/>
-							<ValueSpecification id="4GkM4GmGAqAA4gR52" value="providedrequired"/>
+							<ValueSpecification id="4GkM4GmGAqAA4gR51" value="providedrequired"/>
+							<ValueSpecification id="4GkM4GmGAqAA4gR52" value="required"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -370,8 +370,8 @@
 				<TaggedValueDefinitions>
 					<TaggedValueDefinition documentation="" id="zGkM4GmGAqAA4gTj" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="zGkM4GmGAqAA4gTj0" value="Enable"/>
-							<ValueSpecification id="zGkM4GmGAqAA4gTj1" value="Disable"/>
+							<ValueSpecification id="zGkM4GmGAqAA4gTj0" value="Disable"/>
+							<ValueSpecification id="zGkM4GmGAqAA4gTj1" value="Enable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -382,8 +382,8 @@
 				<TaggedValueDefinitions>
 					<TaggedValueDefinition documentation="" id="LGkM4GmGAqAA4gTm" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="LGkM4GmGAqAA4gTm0" value="Enable"/>
-							<ValueSpecification id="LGkM4GmGAqAA4gTm1" value="Disable"/>
+							<ValueSpecification id="LGkM4GmGAqAA4gTm0" value="Disable"/>
+							<ValueSpecification id="LGkM4GmGAqAA4gTm1" value="Enable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -394,8 +394,8 @@
 				<TaggedValueDefinitions>
 					<TaggedValueDefinition documentation="" id="rGkM4GmGAqAA4gTp" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="rGkM4GmGAqAA4gTp0" value="Enable"/>
-							<ValueSpecification id="rGkM4GmGAqAA4gTp1" value="Disable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTp0" value="Disable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTp1" value="Enable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -406,8 +406,8 @@
 				<TaggedValueDefinitions>
 					<TaggedValueDefinition documentation="" id="rGkM4GmGAqAA4gTs" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="rGkM4GmGAqAA4gTs0" value="Enable"/>
-							<ValueSpecification id="rGkM4GmGAqAA4gTs1" value="Disable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTs0" value="Disable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTs1" value="Enable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -418,8 +418,8 @@
 				<TaggedValueDefinitions>
 					<TaggedValueDefinition documentation="" id="rGkM4GmGAqAA4gTv" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="rGkM4GmGAqAA4gTv0" value="Enable"/>
-							<ValueSpecification id="rGkM4GmGAqAA4gTv1" value="Disable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTv0" value="Disable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTv1" value="Enable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -430,8 +430,8 @@
 				<TaggedValueDefinitions>
 					<TaggedValueDefinition documentation="" id="rGkM4GmGAqAA4gTy" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="rGkM4GmGAqAA4gTy0" value="Enable"/>
-							<ValueSpecification id="rGkM4GmGAqAA4gTy1" value="Disable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTy0" value="Disable"/>
+							<ValueSpecification id="rGkM4GmGAqAA4gTy1" value="Enable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -442,8 +442,8 @@
 				<TaggedValueDefinitions>
 					<TaggedValueDefinition documentation="" id="bGkM4GmGAqAA4gT1" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="bGkM4GmGAqAA4gT10" value="Enable"/>
-							<ValueSpecification id="bGkM4GmGAqAA4gT11" value="Disable"/>
+							<ValueSpecification id="bGkM4GmGAqAA4gT10" value="Disable"/>
+							<ValueSpecification id="bGkM4GmGAqAA4gT11" value="Enable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -454,8 +454,8 @@
 				<TaggedValueDefinitions>
 					<TaggedValueDefinition documentation="" id="bGkM4GmGAqAA4gT4" name="value" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="bGkM4GmGAqAA4gT40" value="Enable"/>
-							<ValueSpecification id="bGkM4GmGAqAA4gT41" value="Disable"/>
+							<ValueSpecification id="bGkM4GmGAqAA4gT40" value="Disable"/>
+							<ValueSpecification id="bGkM4GmGAqAA4gT41" value="Enable"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -612,22 +612,22 @@
 				<TaggedValueDefinitions>
 					<TaggedValueDefinition documentation="" id="EmkM4GmGAqAA4gWF" name="RoleKind" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF0" value="Part"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF0" value="ArtifactComponent"/>
 							<ValueSpecification id="EmkM4GmGAqAA4gWF1" value="Component"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF2" value="UsedConfiguration"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF3" value="HumanResource"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF4" value="Platform"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF5" value="System"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF6" value="SubOrganization"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF7" value="PostRole"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF8" value="ResponsibilityRole"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF9" value="Equipment"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF10" value="SubSystemPart"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF11" value="UsedPhysicalArchitecture"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF12" value="HostedSoftware"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF13" value="ArtifactComponent"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF14" value="NaturalResourceComponent"/>
-							<ValueSpecification id="EmkM4GmGAqAA4gWF15" value="Other"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF2" value="Equipment"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF3" value="HostedSoftware"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF4" value="HumanResource"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF5" value="NaturalResourceComponent"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF6" value="Other"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF7" value="Part"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF8" value="Platform"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF9" value="PostRole"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF10" value="ResponsibilityRole"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF11" value="SubOrganization"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF12" value="SubSystemPart"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF13" value="System"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF14" value="UsedConfiguration"/>
+							<ValueSpecification id="EmkM4GmGAqAA4gWF15" value="UsedPhysicalArchitecture"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -668,7 +668,7 @@
 		<Stereotype abstract="false" baseType="Model" documentation="" iconPath="" id="imkM4GmGAqAA4gWi" leaf="false" name="systemModel" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="8EZg1emGAqAA4guQ" leaf="false" name="System" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="DPZ01emGAqAA4hKj" leaf="false" name="RunSystemCompon" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="HCuS1emGAqAA4hRG" leaf="false" name="SourcesContain" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="HCuS1emGAqAA4hRG" leaf="false" name="SourExeContain" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="_5Gy1emGAqAA4hUA" leaf="false" name="CommChannel" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="5R9y1emGAqAA4hVA" leaf="false" name="Hardware" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="7drQbemGAqAA4iSI" leaf="false" name="Package" root="false"/>
@@ -676,6 +676,12 @@
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="D2PQbemGAqAA4iSM" leaf="false" name="Workspace" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="kjgwbemGAqAA4iSO" leaf="false" name="Repository" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="uIe4bemGAqAA4iah" leaf="false" name="MetaPackage" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="8OLho.mGAqAA4goV" leaf="false" name="LaunchFile" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="C_HRo.mGAqAA4goZ" leaf="false" name="RQtNode" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="z0PRo.mGAqAA4gob" leaf="false" name="CLTool" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="qyHQa.mGAqAA4hFw" leaf="false" name="Topic" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="D9nQa.mGAqAA4hFy" leaf="false" name="Service" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="QHXQa.mGAqAA4hF0" leaf="false" name="Action" root="false"/>
 	</ApplicationStereotypes>
 	<ProjectStereotypes>
 		<Stereotype abstract="false" baseType="UseCase" documentation="" id="fN9vVemGAqAA4gme" leaf="false" name="UseCase" root="false">
@@ -683,34 +689,34 @@
 				<TaggedValueDefinitions>
 					<TaggedValueDefinition defaultValue="" documentation="" id="Qt9vVemGAqAA4gmg" name="Level" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="Qt9vVemGAqAA4gmg0" value="Summary"/>
-							<ValueSpecification id="Qt9vVemGAqAA4gmg1" value="User"/>
-							<ValueSpecification id="Qt9vVemGAqAA4gmg2" value="Subfunction"/>
+							<ValueSpecification id="Qt9vVemGAqAA4gmg0" value="Subfunction"/>
+							<ValueSpecification id="Qt9vVemGAqAA4gmg1" value="Summary"/>
+							<ValueSpecification id="Qt9vVemGAqAA4gmg2" value="User"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 					<TaggedValueDefinition defaultValue="" documentation="" id="Qt9vVemGAqAA4gmh" name="Complexity" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="Qt9vVemGAqAA4gmh0" value="Low"/>
-							<ValueSpecification id="Qt9vVemGAqAA4gmh1" value="Medium"/>
-							<ValueSpecification id="Qt9vVemGAqAA4gmh2" value="High"/>
+							<ValueSpecification id="Qt9vVemGAqAA4gmh0" value="High"/>
+							<ValueSpecification id="Qt9vVemGAqAA4gmh1" value="Low"/>
+							<ValueSpecification id="Qt9vVemGAqAA4gmh2" value="Medium"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 					<TaggedValueDefinition defaultValue="" documentation="" id="wt9vVemGAqAA4gmi" name="Use Case Status" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="wt9vVemGAqAA4gmi0" value="Name Only"/>
-							<ValueSpecification id="wt9vVemGAqAA4gmi1" value="Initial"/>
-							<ValueSpecification id="wt9vVemGAqAA4gmi2" value="Base"/>
-							<ValueSpecification id="wt9vVemGAqAA4gmi3" value="Complete"/>
-							<ValueSpecification id="wt9vVemGAqAA4gmi4" value="Deferred"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmi0" value="Base"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmi1" value="Complete"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmi2" value="Deferred"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmi3" value="Initial"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmi4" value="Name Only"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 					<TaggedValueDefinition defaultValue="" documentation="" id="wt9vVemGAqAA4gmj" name="Implementation Status" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="wt9vVemGAqAA4gmj0" value="Scheduled"/>
-							<ValueSpecification id="wt9vVemGAqAA4gmj1" value="Started"/>
-							<ValueSpecification id="wt9vVemGAqAA4gmj2" value="Partially Complete"/>
-							<ValueSpecification id="wt9vVemGAqAA4gmj3" value="Complete"/>
-							<ValueSpecification id="wt9vVemGAqAA4gmj4" value="Partially Deferred"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmj0" value="Complete"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmj1" value="Partially Complete"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmj2" value="Partially Deferred"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmj3" value="Scheduled"/>
+							<ValueSpecification id="wt9vVemGAqAA4gmj4" value="Started"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 					<TaggedValueDefinition defaultValue="" documentation="" id="wt9vVemGAqAA4gmk" name="Preconditions" type="4"/>
@@ -735,8 +741,8 @@
 					<TaggedValueDefinition defaultValue="" documentation="" id="Ot9vVemGAqAA4gmz" name="kind" type="2">
 						<EnumerationValues>
 							<ValueSpecification id="Ot9vVemGAqAA4gmz0" value="Functional"/>
-							<ValueSpecification id="Ot9vVemGAqAA4gmz1" value="Performance"/>
-							<ValueSpecification id="Ot9vVemGAqAA4gmz2" value="Interface"/>
+							<ValueSpecification id="Ot9vVemGAqAA4gmz1" value="Interface"/>
+							<ValueSpecification id="Ot9vVemGAqAA4gmz2" value="Performance"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 					<TaggedValueDefinition defaultValue="" documentation="" id="ut9vVemGAqAA4gm0" name="verifyMethod" type="2">
@@ -750,19 +756,19 @@
 					<TaggedValueDefinition defaultValue="" documentation="" id="ut9vVemGAqAA4gm1" name="risk" type="2">
 						<EnumerationValues>
 							<ValueSpecification id="ut9vVemGAqAA4gm10" value="High"/>
-							<ValueSpecification id="ut9vVemGAqAA4gm11" value="Medium"/>
-							<ValueSpecification id="ut9vVemGAqAA4gm12" value="Low"/>
+							<ValueSpecification id="ut9vVemGAqAA4gm11" value="Low"/>
+							<ValueSpecification id="ut9vVemGAqAA4gm12" value="Medium"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 					<TaggedValueDefinition defaultValue="" documentation="" id="et9vVemGAqAA4gm2" name="status" type="2">
 						<EnumerationValues>
-							<ValueSpecification id="et9vVemGAqAA4gm20" value="Proposed"/>
-							<ValueSpecification id="et9vVemGAqAA4gm21" value="Approved"/>
-							<ValueSpecification id="et9vVemGAqAA4gm22" value="Rejected"/>
-							<ValueSpecification id="et9vVemGAqAA4gm23" value="Deferred"/>
-							<ValueSpecification id="et9vVemGAqAA4gm24" value="Implemented"/>
-							<ValueSpecification id="et9vVemGAqAA4gm25" value="Mandatory"/>
-							<ValueSpecification id="et9vVemGAqAA4gm26" value="Obsolete"/>
+							<ValueSpecification id="et9vVemGAqAA4gm20" value="Approved"/>
+							<ValueSpecification id="et9vVemGAqAA4gm21" value="Deferred"/>
+							<ValueSpecification id="et9vVemGAqAA4gm22" value="Implemented"/>
+							<ValueSpecification id="et9vVemGAqAA4gm23" value="Mandatory"/>
+							<ValueSpecification id="et9vVemGAqAA4gm24" value="Obsolete"/>
+							<ValueSpecification id="et9vVemGAqAA4gm25" value="Proposed"/>
+							<ValueSpecification id="et9vVemGAqAA4gm26" value="Rejected"/>
 						</EnumerationValues>
 					</TaggedValueDefinition>
 				</TaggedValueDefinitions>
@@ -773,7 +779,7 @@
 		<Stereotype abstract="false" baseType="Satisfy" documentation="" id="hoA41emGAqAA4g_t" leaf="false" name="satisfy" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="IFV01emGAqAA4hKl" leaf="false" name="RunSystemCompon" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLAllocate" documentation="" iconPath="" id="YOuM1emGAqAA4hN1" leaf="false" name="allocate" root="false"/>
-		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="aq.S1emGAqAA4hRI" leaf="false" name="SourcesContain" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="aq.S1emGAqAA4hRI" leaf="false" name="SourExeContain" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="2qWy1emGAqAA4hUC" leaf="false" name="CommChannel" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="mWjy1emGAqAA4hVC" leaf="false" name="Hardware" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="zYxpjemGAqAA4gx7" leaf="false" name="RosCompon" root="false"/>
@@ -795,5 +801,8 @@
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="f40wbemGAqAA4iSg" leaf="false" name="Workspace" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="ksswbemGAqAA4iSo" leaf="false" name="Repository" root="false"/>
 		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="acB4bemGAqAA4iaj" leaf="false" name="MetaPackage" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="XubRo.mGAqAA4goY" leaf="false" name="LaunchFile" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="Tzwpo.mGAqAA4gtA" leaf="false" name="RQtNode" root="false"/>
+		<Stereotype abstract="false" baseType="SysMLBlock" documentation="" id="Hqi5o.mGAqAA4g.G" leaf="false" name="CLTool" root="false"/>
 	</ProjectStereotypes>
 </Stereotypes>
