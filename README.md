@@ -7,8 +7,9 @@ The complexity of today's robot control systems implies difficulty in developing
 </p>
 
 ## Resources
-* [MeROS documentation (pdf)](https://github.com/twiniars/MeROS/releases/download/3.0.1/meros-3-0-1-doc.pdf) (current version - recommended for use)
-* [MeROS poster (pdf)](https://github.com/twiniars/MeROS/releases/download/3.0.1/meros-3-0-1-poster-b0.pdf) (B0 size)
+* [MeROS documentation (pdf)](https://github.com/twiniars/MeROS/releases/download/4.0.0/meros-4-0-0-metamodel-doc.pdf) (current version - strongly recommended for use)
+* [MeROS tutorial (pdf)](https://github.com/twiniars/MeROS/releases/download/4.0.0/meros-4-0-0-turtlesim-doc.pdf) (current version - strongly recommended for use)
+* [MeROS poster (pdf)](https://github.com/twiniars/MeROS/releases/download/4.0.4/meros-4-0-0-poster-b0.pdf) (B0 size)
 * [Releases and Changelog](https://github.com/twiniars/MeROS/releases)
 * [Wskazówki dla studentów i nie tylko (in Polish)](doc/THESES_QUESTIONS_CHECK.md)
 * Author profie - https://www.robotyka.ia.pw.edu.pl/team/twiniarski/
