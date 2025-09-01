@@ -234,7 +234,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	
 	Consequently, some concepts (e.g., Node), a~specialisations of Running System Component, occur in Sources and Executables Containers. It reduces the number of SysML blocks in the metamodel [R7.3] and eliminates the need for unnecessary mapping of SysML blocks [7.4]. In MeROS applications, the System formulation methodology is to create various views on it (in particular its: sources and executables containers, running components, embodiment). They all together depict the complete view on the System.
 	
-	In MeROS, ROS Communicating Component (Fig.~\ref{fig:communicating_components_bdd}) forms a~crucial generalisation to represent standardised role regarding communication. The Operating System Terminal is introduced as it also can communicate with other Communicating Components after execution of particular ROS-related commands.
+	In MeROS, ROS Communicating Component (Fig.~\ref{fig:communicating_components_bdd}) forms a~crucial generalisation to represent standardised role regarding communication. The ROS Command Line Tool is introduced as it also can communicate with other ROS Communicating Components after execution of particular ROS-related commands.
 	
 		
 	\begin{figure}[H]
@@ -287,7 +287,7 @@ Extra concepts are depicted in Fig.~\ref{fig:extra_concepts_req}.
 	\end{figure}
 	
 		 
- 	The Node (Fig.~\ref{fig:node_bdd}) aggregates ROS Parameters. ROS Component Container aggregates Nodes executed in a~single process. The Micro ROS Node, RQt Plugin Node and RViz are also considered in the model as the specialisations of the Node. Node lifecycle state\footnote{\url{https://design.ros2.org/articles/node_lifecycle.html}} is represented by the state machine states dedicated for this Node. These states have specific stereotypes.
+ 	The Node (Fig.~\ref{fig:node_bdd}) aggregates ROS Parameters. ROS Component Container aggregates Nodes executed in a~single process. The Micro ROS Node is also considered in the model as the specialisation of the Node. Node lifecycle state\footnote{\url{https://design.ros2.org/articles/node_lifecycle.html}} is represented by the state machine states dedicated for this Node. These states have specific stereotypes.
  	
 	 
  	\begin{figure}[H]
