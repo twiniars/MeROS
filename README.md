@@ -12,7 +12,6 @@ The complexity of today's robot control systems implies difficulty in developing
 * [MeROS poster (pdf)](https://github.com/twiniars/MeROS/releases/download/4.0.4/meros-4-0-0-poster-b0.pdf) (B0 size)
 * [Releases and Changelog](https://github.com/twiniars/MeROS/releases)
 * [Wskazówki dla studentów i nie tylko (in Polish)](doc/THESES_QUESTIONS_CHECK.md)
-* Author profie - https://www.robotyka.ia.pw.edu.pl/team/twiniarski/
 * IEEE ACCESS scientific paper with a complete description of the initial version of MeROS - https://ieeexplore.ieee.org/document/10207804. **Please cite it while publishing articles that relates to MeROS**.
 * arxiv scientific paper with a MeROS-related V-model - https://arxiv.org/abs/2506.08706. **Please cite it while publishing articles that relates to MeROS**.
 
