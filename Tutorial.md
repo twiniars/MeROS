@@ -1,6 +1,6 @@
 ## MeROS: SysML-based Metamodel for ROS-based Systems 
 
-# Practical tutorial to MeROS usage with Visual Paradigm (in Polish, Polish and English subtitles)
+# -- OLD Version -- Practical tutorial to MeROS usage with Visual Paradigm (in Polish, Polish and English subtitles)
 
 ## Part I - Introduction
 
